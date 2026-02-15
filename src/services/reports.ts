@@ -1,0 +1,187 @@
+// Handle user reports for listings, tasks, and wishes
+// Updated: Fixed exports for admin functions
+
+import { supabase } from '../lib/supabaseClient';
+
+interface ReportData {
+  listingId: string;
+  reporterPhone?: string; // Updated: Use reporter_phone for anonymous reports
+  reportedBy?: string; // Updated: Use reported_by for authenticated user reports (uuid)
+  reason: string;
+}
+
+interface TaskWishReportData {
+  itemType: 'task' | 'wish';
+  itemId: string;
+  reporterId: string;
+  reportedUserId: string;
+  issueType: string;
+  details?: string;
+  conversationId?: string;
+}
+
+/**
+ * Submit a report for a listing
+ */
+export async function submitReport(reportData: ReportData) {
+  console.log('[Service] submitReport called with:', reportData);
+  
+  try {
+    const { data, error } = await supabase
+      .from('reports')
+      .insert({
+        listing_id: reportData.listingId,
+        reporter_phone: reportData.reporterPhone || null, // Fixed: Use correct column name
+        reported_by: reportData.reportedBy || null, // Fixed: Use correct column name (uuid)
+        reason: reportData.reason,
+      })
+      .select()
+      .single();
+    
+    if (error) {
+      console.error('[Service] Error submitting report:', error);
+      throw error;
+    }
+    
+    return data;
+  } catch (error) {
+    console.error('[Service] submitReport error:', error);
+    throw error;
+  }
+}
+
+/**
+ * Get all reports (admin only)
+ */
+export async function getAllReports() {
+  console.log('[Service] getAllReports called');
+  
+  try {
+    const { data, error } = await supabase
+      .from('reports')
+      .select(`
+        *,
+        listings:listing_id (
+          title,
+          owner_name,
+          phone
+        )
+      `)
+      .order('created_at', { ascending: false });
+    
+    if (error) {
+      console.error('[Service] Error fetching reports:', error);
+      throw error;
+    }
+    
+    return data;
+  } catch (error) {
+    console.error('[Service] getAllReports error:', error);
+    throw error;
+  }
+}
+
+/**
+ * Get all reports with full details (admin only)
+ */
+export async function getReportsAdmin() {
+  console.log('[Service] getReportsAdmin called');
+  
+  try {
+    const { data, error } = await supabase
+      .from('reports')
+      .select(`
+        *,
+        listings:listing_id (
+          title,
+          is_hidden
+        ),
+        profiles:reported_by (
+          name,
+          email
+        )
+      `)
+      .order('created_at', { ascending: false });
+    
+    return { data, error };
+  } catch (error) {
+    console.error('[Service] getReportsAdmin error:', error);
+    return { data: null, error };
+  }
+}
+
+/**
+ * Update report status (admin only)
+ */
+export async function updateReportStatusAdmin(reportId: string, status: string) {
+  console.log('[Service] updateReportStatusAdmin called with:', { reportId, status });
+  
+  try {
+    const { data, error } = await supabase
+      .from('reports')
+      .update({ status })
+      .eq('id', reportId)
+      .select()
+      .single();
+    
+    return { data, error };
+  } catch (error) {
+    console.error('[Service] updateReportStatusAdmin error:', error);
+    return { data: null, error };
+  }
+}
+
+/**
+ * Delete a report (admin only)
+ */
+export async function deleteReport(reportId: string) {
+  console.log('[Service] deleteReport called with id:', reportId);
+  
+  try {
+    const { error } = await supabase
+      .from('reports')
+      .delete()
+      .eq('id', reportId);
+    
+    if (error) {
+      console.error('[Service] Error deleting report:', error);
+      throw error;
+    }
+  } catch (error) {
+    console.error('[Service] deleteReport error:', error);
+    throw error;
+  }
+}
+
+/**
+ * Submit a report for a task or wish
+ */
+export async function submitTaskWishReport(reportData: TaskWishReportData) {
+  console.log('[Service] submitTaskWishReport called with:', reportData);
+  
+  try {
+    const { data, error } = await supabase
+      .from('task_wish_reports')
+      .insert({
+        item_type: reportData.itemType,
+        item_id: reportData.itemId,
+        reporter_id: reportData.reporterId,
+        reported_user_id: reportData.reportedUserId,
+        issue_type: reportData.issueType,
+        details: reportData.details || null,
+        conversation_id: reportData.conversationId || null,
+      })
+      .select()
+      .single();
+    
+    if (error) {
+      console.error('[Service] Error submitting task/wish report:', error);
+      throw error;
+    }
+    
+    return data;
+  } catch (error) {
+    console.error('[Service] submitTaskWishReport error:', error);
+    throw error;
+  }
+}

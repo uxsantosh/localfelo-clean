@@ -1,0 +1,106 @@
+╔══════════════════════════════════════════════════════════════╗
+║  ✅ SIMPLE CHECKLIST - What to Copy to Your Local           ║
+╚══════════════════════════════════════════════════════════════╝
+
+## 📦 COPY THESE 6 FILES FROM FIGMA MAKE:
+
+1. ✅ /styles/globals.css
+2. ✅ /components/PasswordSetupModal.tsx
+3. ✅ /components/ChatWindow.tsx
+4. ✅ /components/ListingCard.tsx
+5. ✅ /components/HorizontalScroll.tsx
+6. ✅ /screens/NewHomeScreen.tsx
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## ✅ WHAT GETS FIXED:
+
+✔️ Password modal - black text on lemon green
+✔️ Chat bubbles - lemon green with BLACK text (not white!)
+✔️ Chat send button - lemon green with BLACK text
+✔️ "View All" links - black and readable
+✔️ All cards - rounded corners (inline styles)
+✔️ Listing cards - distance badge visible
+✔️ ALL text-primary - auto-converted to black (globals.css)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🚀 AFTER COPYING:
+
+1. Hard refresh: Ctrl+Shift+R (or Cmd+Shift+R on Mac)
+2. Test chat - send a message
+3. Check cards - should have rounded corners
+4. Done! ✨
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 📝 REMAINING TASKS (Do Later):
+
+### Not Critical - Can Do Whenever:
+
+7. ⏭️ Header.tsx - Allow location before login
+   → Remove `isLoggedIn &&` check from location button
+
+8. ⏭️ WishesScreen.tsx - Add "My Wishes" tab
+   → Copy pattern from TasksScreen
+
+9. ⏭️ ProfileScreen.tsx - Add wishlist section
+   → Show user's saved listings
+
+10. ⏭️ ProfileScreen.tsx - Add edit profile & change password
+    → Create EditProfileModal, ChangePasswordModal
+
+11. ⏭️ AdminScreen.tsx - Add broadcast notifications
+    → Build notification system for promotions
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 📚 DOCUMENTATION:
+
+- FINAL_UPDATE_SUMMARY.md ← Full details of all changes
+- REMAINING_FIXES_TODO.md ← Detailed guide for remaining tasks
+- QUICK_START.md ← Quick deployment guide
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🎯 THE MAGIC FIX:
+
+In globals.css, we added this ONE LINE that fixes ALL text:
+
+.text-primary {
+  color: #000000 !important;
+}
+
+This automatically makes ALL lemon green text BLACK across:
+- Task detail screens ✅
+- Wish detail screens ✅  
+- Market detail screens ✅
+- Chat screens ✅
+- Everywhere else! ✅
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## ⚡ QUICK TEST:
+
+After copying files and hard refreshing:
+
+1. Open chat → Send message → Should be LEMON GREEN with BLACK text ✅
+2. Check home cards → Should have ROUNDED CORNERS ✅
+3. Click "View All" → Should be BLACK text ✅
+4. Open password modal → Should have BLACK text ✅
+
+If all 4 pass → You're done! 🎉
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🎨 REMEMBER:
+
+✅ Lemon Green (#CDFF00) = BACKGROUNDS
+❌ Lemon Green (#CDFF00) ≠ TEXT
+✅ Black (#000000) = ALL TEXT
+
+Simple rule, accessible app! 🚀
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+That's it! Copy 6 files, refresh, done! ✨

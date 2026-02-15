@@ -1,0 +1,63 @@
+🔥 URGENT FIXES - COPY THESE FILES NOW!
+
+═══════════════════════════════════════════════════
+
+📦 4 FILES TO COPY:
+═══════════════════════════════════════════════════
+
+1. /services/notifications.ts
+   ✅ Fixed: 'users' → 'profiles' table
+   ✅ Fixed: Added required notification fields
+
+2. /screens/AdminScreen.tsx
+   ✅ Fixed: Users tab activated
+   ✅ Fixed: Full user management UI
+
+3. /components/admin/BroadcastTab.tsx
+   ✅ Fixed: User selection added
+   ✅ Fixed: Send to all or selected users
+
+4. /screens/WishesScreen.tsx
+   ✅ Fixed: Better layout (My Wishes in top row)
+
+═══════════════════════════════════════════════════
+
+🗄️ 1 SQL FILE TO RUN:
+═══════════════════════════════════════════════════
+
+Run in Supabase SQL Editor:
+   /FIX_NOTIFICATIONS_RLS.sql
+   
+This fixes all 406 errors and RLS policies.
+
+═══════════════════════════════════════════════════
+
+⚡ DEPLOYMENT (5 MINUTES):
+═══════════════════════════════════════════════════
+
+1. Copy 4 files above → 2 min
+2. Run SQL in Supabase → 1 min
+3. Clear cache (Ctrl+Shift+R) → 30 sec
+4. Test → 1.5 min
+
+═══════════════════════════════════════════════════
+
+✅ WHAT'S FIXED:
+═══════════════════════════════════════════════════
+
+✅ Broadcast notifications working
+✅ User selection in broadcast
+✅ Users tab activated
+✅ Notifications RLS fixed (no 406 errors)
+✅ Profile wishes tab exists (clear cache!)
+
+═══════════════════════════════════════════════════
+
+📖 READ FULL DETAILS:
+═══════════════════════════════════════════════════
+
+/🚨_URGENT_FIXES_COMPLETE.md
+
+═══════════════════════════════════════════════════
+
+🚀 DEPLOY NOW!

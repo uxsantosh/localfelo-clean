@@ -1,0 +1,57 @@
+╔══════════════════════════════════════════════════════════════╗
+║  📋 FILES TO UPDATE - OldCycle Complete Fix                  ║
+╚══════════════════════════════════════════════════════════════╝
+
+## ✅ ALREADY UPDATED (Copy from Figma Make):
+
+1. ✅ /styles/globals.css
+2. ✅ /components/PasswordSetupModal.tsx
+3. ✅ /components/ChatWindow.tsx
+4. ✅ /components/ListingCard.tsx
+5. ✅ /components/HorizontalScroll.tsx
+6. ✅ /screens/NewHomeScreen.tsx
+7. ✅ /components/Header.tsx (location already works without login)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🆕 NEW FILES BEING CREATED:
+
+8. 🆕 /components/EditProfileModal.tsx (Creating now...)
+9. 🆕 /components/ChangePasswordModal.tsx (Creating now...)
+10. 🆕 /services/notifications.ts (Creating now...)
+11. 🆕 /components/BroadcastNotificationForm.tsx (Creating now...)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🔧 NEED TO UPDATE (Implementing now...):
+
+12. 🔧 /screens/WishesScreen.tsx - Add "My Wishes" button + modal
+13. 🔧 /screens/ProfileScreen.tsx - Add wishlist, edit, password change
+14. 🔧 /screens/AdminScreen.tsx - Complete redesign with broadcast
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 📊 TOTAL FILES:
+
+✅ Already done: 7 files
+🆕 Creating new: 4 files
+🔧 Updating: 3 files
+
+**GRAND TOTAL: 14 FILES**
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🚀 AFTER COPYING ALL FILES:
+
+Your OldCycle app will have:
+✅ All text readable (black, not lemon green)
+✅ Location works before login
+✅ "My Wishes" tab
+✅ Profile with wishlist
+✅ Edit profile & change password
+✅ Admin broadcast notifications
+✅ Complete accessibility fixes
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Next: Creating new components and updating screens...

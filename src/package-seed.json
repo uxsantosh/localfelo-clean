@@ -1,0 +1,12 @@
+{
+  "name": "oldcycle-seed",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Seed script for OldCycle listings",
+  "scripts": {
+    "seed": "node seed-listings.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0"
+  }
+}

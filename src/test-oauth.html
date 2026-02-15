@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OAuth Debug - OldCycle</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    button {
+      background: #6366f1;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      margin-bottom: 12px;
+    }
+    button:hover {
+      background: #5558e3;
+    }
+    .log {
+      background: #1e1e1e;
+      color: #d4d4d4;
+      padding: 16px;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      max-height: 400px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+    .status {
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+    .status.success { background: #d4edda; color: #155724; }
+    .status.error { background: #f8d7da; color: #721c24; }
+    .status.info { background: #d1ecf1; color: #0c5460; }
+  </style>
+</head>
+<body>
+  <h1>🔍 Google OAuth Debug Tool</h1>
+  
+  <div class="card">
+    <h2>Current Status</h2>
+    <div id="status"></div>
+  </div>
+
+  <div class="card">
+    <h2>Actions</h2>
+    <button onclick="checkSession()">1. Check Current Session</button>
+    <button onclick="triggerGoogleLogin()">2. Test Google Login</button>
+    <button onclick="clearStorage()">3. Clear All Storage</button>
+    <button onclick="showStorage()">4. Show All Storage</button>
+  </div>
+
+  <div class="card">
+    <h2>Console Log</h2>
+    <div id="log" class="log">Waiting for actions...</div>
+  </div>
+
+  <script type="module">
+    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+
+    const SUPABASE_URL = 'https://drofnrntrbedtjtpseve.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRyb2Zucm50cmJlZHRqdHBzZXZlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM3ODMzMjQsImV4cCI6MjA3OTM1OTMyNH0.HONRnz8phA-6j0hwf6XLhD8aRX4zwQR-2x6pQHcUBAo';
+
+    const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+      auth: {
+        autoRefreshToken: true,
+        persistSession: true,
+        detectSessionInUrl: true,
+        storage: window.localStorage,
+        storageKey: 'oldcycle-auth-token',
+        flowType: 'pkce',
+        debug: true,
+      }
+    });
+
+    let logContent = '';
+
+    function log(message, type = 'info') {
+      const timestamp = new Date().toLocaleTimeString();
+      const prefix = type === 'error' ? '❌' : type === 'success' ? '✅' : 'ℹ️';
+      logContent += `[${timestamp}] ${prefix} ${message}\n`;
+      document.getElementById('log').textContent = logContent;
+      console.log(message);
+    }
+
+    function updateStatus(message, type = 'info') {
+      const statusDiv = document.getElementById('status');
+      statusDiv.innerHTML = `<div class="status ${type}">${message}</div>`;
+    }
+
+    window.checkSession = async function() {
+      log('Checking for Supabase session...');
+      
+      try {
+        const { data: { session }, error } = await supabase.auth.getSession();
+        
+        if (error) {
+          log(`Error: ${error.message}`, 'error');
+          updateStatus(`❌ Session Error: ${error.message}`, 'error');
+          return;
+        }
+
+        if (session) {
+          log('✅ Session found!', 'success');
+          log(`Email: ${session.user.email}`);
+          log(`User ID: ${session.user.id}`);
+          log(`Expires: ${new Date(session.expires_at * 1000).toLocaleString()}`);
+          updateStatus(`✅ Logged in as: ${session.user.email}`, 'success');
+        } else {
+          log('No session found', 'error');
+          updateStatus('❌ Not logged in', 'error');
+        }
+
+        // Check localStorage
+        const authToken = localStorage.getItem('oldcycle-auth-token');
+        log(`LocalStorage auth token: ${authToken ? 'Present' : 'Not found'}`);
+        
+        const userToken = localStorage.getItem('oldcycle_token');
+        log(`LocalStorage user token: ${userToken ? userToken.substring(0, 20) + '...' : 'Not found'}`);
+
+      } catch (error) {
+        log(`Exception: ${error.message}`, 'error');
+        updateStatus(`❌ Error: ${error.message}`, 'error');
+      }
+    };
+
+    window.triggerGoogleLogin = async function() {
+      log('Initiating Google OAuth...');
+      updateStatus('🔄 Redirecting to Google...', 'info');
+
+      try {
+        const { error } = await supabase.auth.signInWithOAuth({
+          provider: 'google',
+          options: {
+            redirectTo: window.location.href,
+            queryParams: {
+              access_type: 'offline',
+              prompt: 'consent',
+            },
+          },
+        });
+
+        if (error) {
+          log(`OAuth error: ${error.message}`, 'error');
+          updateStatus(`❌ OAuth failed: ${error.message}`, 'error');
+        } else {
+          log('Redirecting to Google...', 'success');
+        }
+      } catch (error) {
+        log(`Exception: ${error.message}`, 'error');
+        updateStatus(`❌ Error: ${error.message}`, 'error');
+      }
+    };
+
+    window.clearStorage = function() {
+      log('Clearing all storage...');
+      localStorage.clear();
+      sessionStorage.clear();
+      log('Storage cleared!', 'success');
+      updateStatus('✅ All storage cleared', 'success');
+    };
+
+    window.showStorage = function() {
+      log('=== LocalStorage Contents ===');
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        const value = localStorage.getItem(key);
+        log(`${key}: ${value ? value.substring(0, 100) + (value.length > 100 ? '...' : '') : 'null'}`);
+      }
+      log('=== End of Storage ===');
+      updateStatus('✅ Storage contents logged', 'success');
+    };
+
+    // Auto-check session on load
+    window.addEventListener('load', () => {
+      log('Page loaded. Checking for session...');
+      checkSession();
+    });
+
+    // Listen for auth state changes
+    supabase.auth.onAuthStateChange((event, session) => {
+      log(`🔔 Auth state changed: ${event}`);
+      if (session) {
+        log(`✅ Session detected: ${session.user.email}`);
+        updateStatus(`✅ Logged in as: ${session.user.email}`, 'success');
+      } else {
+        log('❌ No session');
+        updateStatus('❌ Not logged in', 'error');
+      }
+    });
+  </script>
+</body>
+</html>

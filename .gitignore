@@ -1,0 +1,20 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn.lock
+
+# Build
+dist/
+
+# Capacitor / Android
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+
+# Env
+.env
+
+# OS
+.DS_Store
+Thumbs.db

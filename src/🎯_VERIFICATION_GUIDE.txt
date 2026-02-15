@@ -1,0 +1,225 @@
+🎯 VERIFICATION GUIDE - Is it deployed correctly?
+═══════════════════════════════════════════════════════════
+
+After deploying the 5 files, verify they're correct:
+
+═══════════════════════════════════════════════════════════
+✅ CHECK 1: /services/notifications.ts
+═══════════════════════════════════════════════════════════
+
+Open the file in your deployed app and find line 43:
+
+❌ WRONG (Old code):
+const { data: users, error: usersError } = await supabase
+  .from('users')
+  .select('id');
+
+✅ CORRECT (New code):
+const { data: users, error: usersError } = await supabase
+  .from('profiles')
+  .select('id');
+
+SEARCH TEST:
+- Search for: .from('users')
+- Should find: 0 results
+- If found: You didn't copy the file!
+
+═══════════════════════════════════════════════════════════
+✅ CHECK 2: /components/EditProfileModal.tsx
+═══════════════════════════════════════════════════════════
+
+Open the file in your deployed app and find line 45-46:
+
+❌ WRONG (Old code):
+const { error } = await supabase
+  .from('users')
+  .update({
+
+✅ CORRECT (New code):
+const { error } = await supabase
+  .from('profiles')
+  .update({
+
+SEARCH TEST:
+- Search for: .from('users')
+- Should find: 0 results
+- If found: You didn't copy the file!
+
+═══════════════════════════════════════════════════════════
+✅ CHECK 3: /screens/AdminScreen.tsx
+═══════════════════════════════════════════════════════════
+
+Open the file in your deployed app and find line 860-870:
+
+❌ WRONG (Old code):
+) : activeTab === 'users' ? (
+  <div className="text-center py-12 text-muted">
+    <p>Users Management Tab temporarily disabled</p>
+  </div>
+
+✅ CORRECT (New code):
+) : activeTab === 'users' ? (
+  <div>
+    {usersLoading ? (
+      <div className="text-center py-12">
+        <div className="inline-block w-8 h-8..."></div>
+        <p className="text-muted mt-4">Loading users...</p>
+      </div>
+    ) : filteredUsers.length === 0 ? (
+      <EmptyState 
+        type="no-listings" 
+        message={searchTerm ? 'No users found' : 'No users yet'} 
+      />
+    ) : (
+      <div className="grid grid-cols-1 sm:grid-cols-2...">
+
+SEARCH TEST:
+- Search for: "temporarily disabled"
+- Should find: 0 results
+- If found: You didn't copy the file!
+
+═══════════════════════════════════════════════════════════
+✅ CHECK 4: /components/admin/BroadcastTab.tsx
+═══════════════════════════════════════════════════════════
+
+Open the file in your deployed app and search for:
+
+✅ Should find these:
+- recipientMode
+- selectedUserIds
+- toggleUserSelection
+- filteredUsers
+- "Send To"
+- "All Users"
+- "Selected Users"
+
+❌ Should NOT find:
+- Old simple UI with only "Send to All"
+
+FEATURE TEST:
+- Broadcast tab should have TWO buttons:
+  [All Users] [Selected Users]
+- Should have search input
+- Should have user checkboxes
+
+═══════════════════════════════════════════════════════════
+✅ CHECK 5: SQL Script Run
+═══════════════════════════════════════════════════════════
+
+Go to Supabase Dashboard:
+1. Database → Tables → notifications
+2. Check "RLS enabled" is ✅
+3. SQL Editor → History
+4. Should see "FIX_NOTIFICATIONS_RLS" with ✅ Success
+
+VERIFY POLICIES:
+Database → Authentication → Policies → notifications
+
+Should see 5 policies:
+1. Users can view their own notifications
+2. Users can update their own notifications
+3. Users can delete their own notifications
+4. Admins can insert broadcast notifications
+5. System can insert notifications
+
+═══════════════════════════════════════════════════════════
+🧪 FUNCTIONAL TESTS
+═══════════════════════════════════════════════════════════
+
+TEST 1: Broadcast to All
+─────────────────────────
+1. Admin → Broadcast tab
+2. Click "All Users"
+3. Fill title and message
+4. Click "Send to All Users"
+5. Expected: ✅ Success message "Notification sent to X users"
+
+TEST 2: Broadcast to Selected
+──────────────────────────────
+1. Admin → Broadcast tab
+2. Click "Selected Users"
+3. Search for a user
+4. Check 2-3 users
+5. Fill title and message
+6. Click "Send to X User(s)"
+7. Expected: ✅ Success message "Notification sent to X users"
+
+TEST 3: Users Tab
+─────────────────
+1. Admin → Users tab
+2. Expected: ✅ Grid of user cards
+3. Expected: ✅ Search box
+4. Expected: ✅ Filter buttons
+5. Expected: ✅ Activate/Deactivate buttons
+6. Expected: ✅ Make Admin buttons
+
+TEST 4: Profile Editing
+────────────────────────
+1. Profile → Edit Profile
+2. Change name
+3. Click "Save Changes"
+4. Expected: ✅ Success message "Profile updated"
+
+TEST 5: Notifications
+─────────────────────
+1. Send a test broadcast to yourself
+2. Click bell icon
+3. Expected: ✅ Notification appears
+4. Expected: ✅ No 406 errors
+
+═══════════════════════════════════════════════════════════
+❌ COMMON ISSUES
+═══════════════════════════════════════════════════════════
+
+ISSUE: Still seeing "users table not found"
+CAUSE: Files not deployed
+FIX: Check verification steps above. Copy files again.
+
+ISSUE: Users tab still says "temporarily disabled"
+CAUSE: Old AdminScreen.tsx
+FIX: Delete old file, copy new one, hard refresh (Ctrl+Shift+R)
+
+ISSUE: Broadcast has no user selection
+CAUSE: Old BroadcastTab.tsx
+FIX: Delete old file, copy new one, hard refresh (Ctrl+Shift+R)
+
+ISSUE: 406 errors on notifications
+CAUSE: SQL script not run
+FIX: Run /FIX_NOTIFICATIONS_RLS.sql in Supabase
+
+ISSUE: Changes not visible
+CAUSE: Browser cache
+FIX: Hard refresh (Ctrl+Shift+R) or clear cache
+
+═══════════════════════════════════════════════════════════
+✅ FINAL VERIFICATION CHECKLIST
+═══════════════════════════════════════════════════════════
+
+Files deployed:
+[ ] /services/notifications.ts - has .from('profiles')
+[ ] /components/EditProfileModal.tsx - has .from('profiles')
+[ ] /screens/AdminScreen.tsx - has full users UI
+[ ] /components/admin/BroadcastTab.tsx - has user selection
+[ ] /screens/WishesScreen.tsx - has My Wishes button
+
+SQL run:
+[ ] /FIX_NOTIFICATIONS_RLS.sql - 5 policies created
+
+Cache cleared:
+[ ] Hard refresh done (Ctrl+Shift+R)
+[ ] Browser restarted
+
+Tests passing:
+[ ] Broadcast to all works
+[ ] Broadcast to selected works
+[ ] Users tab shows users
+[ ] Profile editing works
+[ ] Notifications appear
+
+═══════════════════════════════════════════════════════════
+
+If ALL checkboxes are ✅, everything is deployed correctly!
+
+═══════════════════════════════════════════════════════════
+
+🚀 Ready to use OldCycle with all features working!
