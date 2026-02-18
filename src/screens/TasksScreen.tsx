@@ -8,13 +8,15 @@ import { SelectField } from '../components/SelectField';
 import { MapView } from '../components/MapView';
 import { Modal } from '../components/Modal';
 import { AppFooter } from '../components/AppFooter';
-import { Plus, Filter, MapPin, List, Map, Briefcase, User as UserIcon, Edit2, Trash2, Search, X, SlidersHorizontal, Sparkles } from 'lucide-react';
-import { getAllTasks, getUserActiveTasks, getUserTasks } from '../services/tasks';
+import { Plus, Filter, MapPin, List, Map, Briefcase, User as UserIcon, Edit2, Trash2, Search, X, SlidersHorizontal, Sparkles, ArrowUp } from 'lucide-react';
+import { getTasks, getUserActiveTasks, getUserTasks } from '../services/tasks';
 import { getTaskCategories, Category } from '../services/categories';
 import { useLocation } from '../hooks/useLocation';
 import { getOrCreateConversation } from '../services/chat';
 import { toast } from 'sonner';
 import { calculateDistance, formatDistance } from '../services/geocoding';
+import { useInfiniteScroll } from '../hooks/useInfiniteScroll';
+import { InfiniteScrollLoading } from '../components/InfiniteScrollLoading';
 
 interface TasksScreenProps {
   user: User | null;
@@ -75,6 +77,14 @@ export function TasksScreen({
   const [selectedStatus, setSelectedStatus] = useState(''); // Changed from 'open' to '' to show all statuses by default
   const [distanceFilter, setDistanceFilter] = useState<string>(''); // Distance filter: '1', '5', '10', '25', ''
 
+  // Pagination state
+  const [nextCursor, setNextCursor] = useState<string | null>(null);
+  const [hasMore, setHasMore] = useState(true);
+  const [loadingMore, setLoadingMore] = useState(false);
+
+  // Back to top button visibility
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
   const { location } = useLocation(user?.id || null);
 
   // Load categories
@@ -88,15 +98,36 @@ export function TasksScreen({
 
   // Load tasks
   useEffect(() => {
-    loadTasks();
+    loadTasks(false); // false = not loading more, reset pagination
     if (isLoggedIn && user?.id) {
       loadActiveTasks();
     }
-  }, [userCoordinates, selectedCategory, selectedCity, selectedArea, selectedStatus, isLoggedIn, user?.id, globalLocationCity, globalLocationArea, distanceFilter]);
+  }, [userCoordinates, selectedCategory, selectedCity, selectedArea, selectedStatus, isLoggedIn, user?.id, globalLocationCity, globalLocationArea, distanceFilter, searchQuery]);
 
-  const loadTasks = async () => {
+  // Track scroll position for back to top button
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 400);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const loadTasks = async (isLoadingMore = false) => {
     try {
-      setLoading(true);
+      if (isLoadingMore) {
+        setLoadingMore(true);
+      } else {
+        setLoading(true);
+        setNextCursor(null); // Reset cursor for fresh load
+        setHasMore(true);
+      }
       
       // Determine which city and area to use
       // Only apply manual filters if user explicitly selects them
@@ -105,14 +136,18 @@ export function TasksScreen({
       let effectiveAreaId = selectedArea;
       
       const filters: any = {
+        limit: 20, // ✅ Now loading 20 items per page
+        cursor: isLoadingMore ? nextCursor : undefined,
         categoryId: selectedCategory?.toString() || undefined,
         cityId: effectiveCityId || undefined,
         areaId: effectiveAreaId || undefined,
         status: selectedStatus || undefined,
+        searchQuery: searchQuery || undefined,
       };
       
-      console.log('🔍 [TasksScreen] Loading tasks from ALL cities with filters:', {
+      console.log('🔍 [TasksScreen] Loading tasks with pagination:', {
         ...filters,
+        isLoadingMore,
         note: 'Showing all tasks everywhere, sorted by distance (nearest first)'
       });
       
@@ -125,13 +160,21 @@ export function TasksScreen({
         console.log('ℹ️ [TasksScreen] User coordinates NOT SET - distance will not show. Set location to see distances.');
       }
       
-      const data = await getAllTasks(filters);
+      const response = await getTasks(filters); // Returns { data, nextCursor, hasMore }
       
-      setTasks(data);
+      if (isLoadingMore) {
+        setTasks(prev => [...prev, ...response.data]); // Append
+      } else {
+        setTasks(response.data); // Replace
+      }
+      
+      setNextCursor(response.nextCursor);
+      setHasMore(response.hasMore);
     } catch (error) {
       console.error('Failed to load tasks:', error);
     } finally {
       setLoading(false);
+      setLoadingMore(false);
     }
   };
 
@@ -155,6 +198,18 @@ export function TasksScreen({
       setLoadingMyTasks(false);
     }
   };
+
+  // Infinite scroll hook
+  const { sentinelRef } = useInfiniteScroll({
+    onLoadMore: () => {
+      if (!loading && hasMore && !loadingMore) {
+        loadTasks(true); // true = loading more
+      }
+    },
+    hasMore,
+    loading: loadingMore,
+    threshold: 300,
+  });
 
   const selectedCityData = cities.find(c => c.id === selectedCity);
 
@@ -470,8 +525,15 @@ export function TasksScreen({
                     }
                   />
                 ))}
+                {/* Infinite Scroll Sentinel */}
+                <div ref={sentinelRef} className="h-10 col-span-full" />
               </div>
             )}
+            {/* Loading Indicator */}
+            <InfiniteScrollLoading 
+              isLoading={loadingMore} 
+              hasMore={hasMore} 
+            />
           </>
         )}
 
@@ -516,6 +578,17 @@ export function TasksScreen({
       {/* Floating View Mode Toggle - Rapido Style */}
       {tasks.length > 0 && (
         <div className="fixed right-4 bottom-24 sm:bottom-6 z-40 flex flex-col gap-2 shadow-2xl rounded-[4px] overflow-hidden">
+          {/* Back to Top Button */}
+          {showBackToTop && (
+            <button
+              onClick={scrollToTop}
+              className="w-12 h-12 flex items-center justify-center bg-[#CDFF00] text-black hover:bg-[#b8e600] transition-all border-b border-black/10"
+              title="Back to Top"
+            >
+              <ArrowUp className="w-5 h-5" />
+            </button>
+          )}
+          
           <button
             onClick={() => setViewMode('list')}
             className={`w-12 h-12 flex items-center justify-center transition-all ${

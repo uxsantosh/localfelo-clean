@@ -12,7 +12,7 @@ import { SkeletonLoader } from '../components/SkeletonLoader';
 import { MapView } from '../components/MapView';
 import { Modal } from '../components/Modal';
 import { AppFooter } from '../components/AppFooter';
-import { Plus, Sparkles, SlidersHorizontal, Search, X, List, Map, Heart, User as UserIcon } from 'lucide-react';
+import { Plus, Sparkles, SlidersHorizontal, Search, X, List, Map, Heart, User as UserIcon, ArrowUp } from 'lucide-react';
 import { Wish, City } from '../types';
 import { getWishes, getUserActiveWishes, getUserWishes } from '../services/wishes';
 import { getWishCategories, Category } from '../services/categories';
@@ -20,6 +20,8 @@ import { toast } from 'sonner';
 import { getOrCreateConversation } from '../services/chat';
 import { getCurrentUser } from '../services/auth';
 import { calculateDistance, formatDistance } from '../services/geocoding';
+import { useInfiniteScroll } from '../hooks/useInfiniteScroll';
+import { InfiniteScrollLoading } from '../components/InfiniteScrollLoading';
 
 interface WishesScreenProps {
   onNavigate: (screen: string, data?: any) => void;
@@ -77,27 +79,61 @@ export function WishesScreen({
   const [viewMode, setViewMode] = useState<'list' | 'map'>('list');
   const [distanceFilter, setDistanceFilter] = useState<string>(''); // Distance filter: '1', '5', '10', '25', ''
 
+  // Pagination state
+  const [nextCursor, setNextCursor] = useState<string | null>(null);
+  const [hasMore, setHasMore] = useState(true);
+  const [loadingMore, setLoadingMore] = useState(false);
+
+  // Back to top button visibility
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
   const selectedCityData = cities.find(c => c.id === selectedCity);
 
+  // Track scroll position for back to top button
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 400);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   // Load wishes
-  const loadWishes = async () => {
-    setLoading(true);
+  const loadWishes = async (isLoadingMore = false) => {
     try {
+      if (isLoadingMore) {
+        setLoadingMore(true);
+      } else {
+        setLoading(true);
+        setNextCursor(null); // Reset cursor for fresh load
+        setHasMore(true);
+      }
+      
       // Determine which city and area to use
       // Only apply manual filters if user explicitly selects them
       // DO NOT auto-filter by global location - show ALL wishes everywhere
       let effectiveCityId = selectedCity;
       let effectiveAreaId = selectedArea;
       
-      const filters: any = {};
+      const filters: any = {
+        limit: 20, // ✅ Load 20 items per page
+        cursor: isLoadingMore ? nextCursor : undefined,
+      };
       if (selectedCategory) filters.categoryId = selectedCategory;
       if (effectiveCityId) filters.cityId = effectiveCityId;
       if (effectiveAreaId) filters.areaId = effectiveAreaId;
       if (searchQuery.trim()) filters.searchQuery = searchQuery.trim();
       if (distanceFilter) filters.distance = distanceFilter;
       
-      console.log('🔍 [WishesScreen] Loading wishes from ALL cities with filters:', {
+      console.log('🔍 [WishesScreen] Loading wishes with pagination:', {
         ...filters,
+        isLoadingMore,
         note: 'Showing all wishes everywhere, sorted by distance (nearest first)'
       });
       
@@ -110,19 +146,52 @@ export function WishesScreen({
         console.log('ℹ️ [WishesScreen] User coordinates NOT SET - distance will not show. Set location to see distances.');
       }
 
-      const data = await getWishes(filters);
-      setWishes(data);
+      const response = await getWishes(filters);
+      
+      // Ensure we always set an array
+      if (response && Array.isArray(response.data)) {
+        if (isLoadingMore) {
+          setWishes(prev => [...prev, ...response.data]); // Append
+        } else {
+          setWishes(response.data); // Replace
+        }
+        setNextCursor(response.nextCursor);
+        setHasMore(response.hasMore);
+      } else if (Array.isArray(response)) {
+        // Fallback: if service returns array directly (backward compatibility)
+        setWishes(response);
+        setHasMore(false);
+      } else {
+        console.error('❌ [WishesScreen] Invalid response format:', response);
+        setWishes([]);
+        setHasMore(false);
+      }
     } catch (error) {
       console.error('Failed to load wishes:', error);
+      setWishes([]); // ✅ Ensure empty array on error
+      setHasMore(false);
       toast.error('Failed to load wishes');
     } finally {
       setLoading(false);
+      setLoadingMore(false);
     }
   };
 
   useEffect(() => {
-    loadWishes();
+    loadWishes(false); // false = not loading more, reset pagination
   }, [selectedCategory, selectedCity, selectedArea, searchQuery, userCoordinates, globalLocationCity, globalLocationArea, distanceFilter]);
+
+  // Infinite scroll hook
+  const { sentinelRef } = useInfiniteScroll({
+    onLoadMore: () => {
+      if (!loading && hasMore && !loadingMore) {
+        loadWishes(true); // true = loading more
+      }
+    },
+    hasMore,
+    loading: loadingMore,
+    threshold: 300,
+  });
 
   const handleChatWithWisher = async (wish: Wish) => {
     if (!isLoggedIn) {
@@ -482,24 +551,33 @@ export function WishesScreen({
         ) : (
           <>
             {viewMode === 'list' && (
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                {wishes.map(wish => (
-                  <WishCard
-                    key={wish.id}
-                    wish={wish}
-                    onClick={() => {
-                      // Navigate to wish detail screen
-                      onNavigate('wish-detail', { wishId: wish.id });
-                    }}
-                    onChatClick={handleChatWithWisher}
-                  />
-                ))}
-              </div>
+              <>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                  {Array.isArray(wishes) && wishes.map(wish => (
+                    <WishCard
+                      key={wish.id}
+                      wish={wish}
+                      onClick={() => {
+                        // Navigate to wish detail screen
+                        onNavigate('wish-detail', { wishId: wish.id });
+                      }}
+                      onChatClick={handleChatWithWisher}
+                    />
+                  ))}
+                  {/* Infinite Scroll Sentinel */}
+                  <div ref={sentinelRef} className="h-10 col-span-full" />
+                </div>
+                {/* Loading Indicator */}
+                <InfiniteScrollLoading 
+                  isLoading={loadingMore} 
+                  hasMore={hasMore} 
+                />
+              </>
             )}
             {viewMode === 'map' && (
               <div className="bg-white rounded-xl border border-gray-200 overflow-hidden relative z-0" style={{ height: '500px' }}>
                 <MapView
-                  markers={wishes
+                  markers={Array.isArray(wishes) ? wishes
                     .filter(wish => wish.latitude && wish.longitude)
                     .map(wish => ({
                       id: wish.id,
@@ -510,7 +588,7 @@ export function WishesScreen({
                       type: 'wish' as const,
                       categoryEmoji: categories.find(c => String(c.id) === String(wish.categoryId))?.emoji,
                       status: wish.status,
-                    }))}
+                    })) : []}
                   onMarkerClick={(id) => {
                     // Navigate to wish detail page
                     onNavigate('wish-detail', { wishId: id });
@@ -526,6 +604,17 @@ export function WishesScreen({
       {/* Floating View Mode Toggle - Rapido Style */}
       {wishes.length > 0 && (
         <div className="fixed right-4 bottom-24 sm:bottom-6 z-40 flex flex-col gap-2 shadow-2xl rounded-[4px] overflow-hidden">
+          {/* Back to Top Button */}
+          {showBackToTop && (
+            <button
+              onClick={scrollToTop}
+              className="w-12 h-12 flex items-center justify-center bg-[#CDFF00] text-black hover:bg-[#b8e600] transition-all border-b border-black/10"
+              title="Back to Top"
+            >
+              <ArrowUp className="w-5 h-5" />
+            </button>
+          )}
+          
           <button
             onClick={() => setViewMode('list')}
             className={`w-12 h-12 flex items-center justify-center transition-all ${

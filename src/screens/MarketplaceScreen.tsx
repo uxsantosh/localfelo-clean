@@ -6,10 +6,12 @@ import { SkeletonLoader } from '../components/SkeletonLoader';
 import { EmptyState } from '../components/EmptyState';
 import { MarketplaceFilterModal } from '../components/MarketplaceFilterModal';
 import { AppFooter } from '../components/AppFooter';
-import { Filter, Sparkles } from 'lucide-react';
+import { Filter, Sparkles, ArrowUp } from 'lucide-react';
 import { getListings } from '../services/listings';
 import { getAllCategories } from '../services/categories';
 import { calculateDistance, formatDistance } from '../services/geocoding';
+import { useInfiniteScroll } from '../hooks/useInfiniteScroll';
+import { InfiniteScrollLoading } from '../components/InfiniteScrollLoading';
 
 interface MarketplaceScreenProps {
   onListingClick: (listing: Listing) => void;
@@ -69,6 +71,29 @@ export function MarketplaceScreen({
   const [showFilters, setShowFilters] = useState(false);
   const [maxDistance, setMaxDistance] = useState<number | undefined>();
   const [includeOwnListings, setIncludeOwnListings] = useState(true);  // ✅ TRUE for development - change to FALSE for production
+
+  // Pagination state
+  const [nextCursor, setNextCursor] = useState<string | null>(null);
+  const [hasMore, setHasMore] = useState(true);
+  const [loadingMore, setLoadingMore] = useState(false);
+
+  // Back to top button visibility
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
+  // Track scroll position for back to top button
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 400);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   // Load categories
   useEffect(() => {
@@ -161,6 +186,14 @@ export function MarketplaceScreen({
     loadListings();
   }, [selectedCategory, selectedCity, selectedArea, minPrice, maxPrice, searchQuery, globalLocationCity, globalLocationArea, categories, cities, userCoordinates, includeOwnListings]);
 
+  // All filtered listings (not paginated)
+  const [allFilteredListings, setAllFilteredListings] = useState<Listing[]>([]);
+  
+  // Paginated listings to display
+  const [displayedListings, setDisplayedListings] = useState<Listing[]>([]);
+  const [currentPage, setCurrentPage] = useState(0);
+  const ITEMS_PER_PAGE = 20;
+
   // Smart Filter listings with intelligent category matching
   useEffect(() => {
     let filtered = [...listings];
@@ -230,8 +263,44 @@ export function MarketplaceScreen({
       console.log('[MarketplaceScreen] 📍 Sorted by distance:', filtered.slice(0, 3).map(l => ({ title: l.title, distance: l.distance })));
     }
 
-    setFilteredListings(filtered);
+    setAllFilteredListings(filtered);
+    setFilteredListings(filtered); // Keep for backward compat
+    
+    // Reset pagination when filters change
+    setCurrentPage(0);
+    setDisplayedListings(filtered.slice(0, ITEMS_PER_PAGE));
+    setHasMore(filtered.length > ITEMS_PER_PAGE);
   }, [listings, selectedCategory, selectedCity, selectedArea, minPrice, maxPrice, searchQuery, maxDistance, categories, userCoordinates]);
+
+  // Load more listings (pagination)
+  const loadMoreListings = () => {
+    const nextPage = currentPage + 1;
+    const startIndex = nextPage * ITEMS_PER_PAGE;
+    const endIndex = startIndex + ITEMS_PER_PAGE;
+    const moreListings = allFilteredListings.slice(startIndex, endIndex);
+    
+    if (moreListings.length > 0) {
+      setDisplayedListings(prev => [...prev, ...moreListings]);
+      setCurrentPage(nextPage);
+      setHasMore(endIndex < allFilteredListings.length);
+    } else {
+      setHasMore(false);
+    }
+  };
+
+  // Infinite scroll hook
+  const { sentinelRef } = useInfiniteScroll({
+    onLoadMore: () => {
+      if (!loading && hasMore && !loadingMore) {
+        setLoadingMore(true);
+        loadMoreListings();
+        setLoadingMore(false);
+      }
+    },
+    hasMore,
+    loading: loadingMore,
+    threshold: 300,
+  });
 
   const clearFilters = () => {
     setSelectedCategory('');
@@ -381,7 +450,7 @@ export function MarketplaceScreen({
               Showing {filteredListings.length} of {listings.length} listings
             </div>
             <div className="listing-grid">
-              {filteredListings.map((listing) => (
+              {displayedListings.map((listing) => (
                 <ListingCard
                   key={listing.id}
                   listing={listing}
@@ -389,6 +458,13 @@ export function MarketplaceScreen({
                 />
               ))}
             </div>
+            {/* Infinite Scroll Sentinel */}
+            <div ref={sentinelRef} className="h-10" />
+            {/* Loading Indicator */}
+            <InfiniteScrollLoading 
+              isLoading={loadingMore} 
+              hasMore={hasMore} 
+            />
           </>
         )}
       </div>
@@ -398,6 +474,17 @@ export function MarketplaceScreen({
         onContactClick={onContactClick || (() => {})}
         socialLinks={socialLinks}
       />
+
+      {/* Back to Top Button */}
+      {showBackToTop && displayedListings.length > 0 && (
+        <button
+          onClick={scrollToTop}
+          className="fixed right-4 bottom-24 sm:bottom-6 z-50 w-12 h-12 flex items-center justify-center bg-[#CDFF00] text-black hover:bg-[#b8e600] transition-all shadow-2xl rounded-[4px]"
+          title="Back to Top"
+        >
+          <ArrowUp className="w-5 h-5" />
+        </button>
+      )}
     </div>
   );
 }

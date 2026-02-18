@@ -28,21 +28,31 @@ function calculateDistance(
 }
 
 interface TaskFilters {
-  categoryId?: string | number;
+  categoryId?: string;
   cityId?: string;
   areaId?: string;
-  searchQuery?: string;
   status?: string;
+  searchQuery?: string;
   userLat?: number;
   userLon?: number;
+  // Pagination support
+  limit?: number;
+  cursor?: string; // created_at timestamp for cursor pagination
 }
 
-// Get all tasks with optional filters
-export async function getTasks(filters?: TaskFilters): Promise<Task[]> {
+interface TasksResponse {
+  data: Task[];
+  nextCursor: string | null;
+  hasMore: boolean;
+}
+
+// Get all tasks with optional filters and pagination
+export async function getTasks(filters?: TaskFilters): Promise<TasksResponse> {
   try {
     console.log('📋 [TaskService] getTasks called with filters:', filters);
     
     const currentUser = getCurrentUser();
+    const limit = filters?.limit || 20; // Default 20 items per page
     
     let query = supabase
       .from('tasks')
@@ -76,24 +86,34 @@ export async function getTasks(filters?: TaskFilters): Promise<Task[]> {
       query = query.eq('status', filters.status);
     }
 
-    query = query.order('created_at', { ascending: false });
+    // Cursor pagination
+    if (filters?.cursor) {
+      query = query.lt('created_at', filters.cursor);
+    }
+
+    query = query.order('created_at', { ascending: false }).limit(limit + 1);
 
     const { data, error } = await query;
 
     if (error) {
       // Silent graceful failure - return empty array
-      return [];
+      return { data: [], nextCursor: null, hasMore: false };
     }
 
     if (!data) {
       console.log('ℹ️ [TaskService] No tasks found');
-      return [];
+      return { data: [], nextCursor: null, hasMore: false };
     }
 
-    console.log(`✅ [TaskService] Found ${data.length} tasks`);
+    // Check if there are more results
+    const hasMore = data.length > limit;
+    const tasks = hasMore ? data.slice(0, limit) : data;
+    const nextCursor = hasMore ? tasks[tasks.length - 1].created_at : null;
+
+    console.log(`✅ [TaskService] Found ${tasks.length} tasks, hasMore: ${hasMore}`);
 
     // Transform data to Task type and calculate distance
-    const tasks: Task[] = data.map(task => {
+    const transformedTasks: Task[] = tasks.map(task => {
       let distance: number | undefined = undefined;
 
       // Calculate distance if user has coordinates
@@ -159,7 +179,7 @@ export async function getTasks(filters?: TaskFilters): Promise<Task[]> {
 
     // Sort by distance if available
     if (filters?.userLat && filters?.userLon) {
-      tasks.sort((a, b) => {
+      transformedTasks.sort((a, b) => {
         if (a.distance === undefined && b.distance === undefined) return 0;
         if (a.distance === undefined) return 1;
         if (b.distance === undefined) return -1;
@@ -168,10 +188,10 @@ export async function getTasks(filters?: TaskFilters): Promise<Task[]> {
       console.log('📊 [TaskService] Tasks sorted by distance');
     }
 
-    return tasks;
+    return { data: transformedTasks, nextCursor, hasMore };
   } catch (error) {
     // Silent graceful failure - return empty array
-    return [];
+    return { data: [], nextCursor: null, hasMore: false };
   }
 }
 
@@ -1113,7 +1133,9 @@ export async function startTask(taskId: string): Promise<Task> {
   }
 }
 
-// Get all tasks (alias for getTasks without filters)
+// Get all tasks (alias for getTasks - for backward compatibility)
+// Returns array directly like before
 export async function getAllTasks(filters?: TaskFilters): Promise<Task[]> {
-  return getTasks(filters);
+  const response = await getTasks(filters);
+  return response.data;
 }

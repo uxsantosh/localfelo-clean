@@ -138,7 +138,7 @@ export async function getUserActiveWishes(userId: string): Promise<Wish[]> {
 }
 
 /**
- * Get all wishes (with filters and helper preferences)
+ * Get all wishes (with filters, helper preferences, and pagination)
  */
 export async function getWishes(filters?: {
   categoryId?: string;
@@ -146,14 +146,17 @@ export async function getWishes(filters?: {
   areaId?: string;
   searchQuery?: string;
   status?: string;
-  helperPreferences?: string[]
-;
+  helperPreferences?: string[];
   showAll?: boolean;
   userLat?: number;
   userLon?: number;
-}): Promise<Wish[]> {
+  // Pagination support
+  limit?: number;
+  cursor?: string; // created_at timestamp for cursor pagination
+}): Promise<{ data: Wish[]; nextCursor: string | null; hasMore: boolean }> {
   try {
     const currentUser = getCurrentUser();
+    const limit = filters?.limit || 20; // Default 20 items per page
     
     let query = supabase
       .from('wishes')
@@ -191,12 +194,18 @@ export async function getWishes(filters?: {
       query = query.eq('status', 'open');
     }
 
+    // Cursor pagination
+    if (filters?.cursor) {
+      query = query.lt('created_at', filters.cursor);
+    }
+
+    query = query.order('created_at', { ascending: false }).limit(limit + 1);
+
     const { data, error } = await query;
 
     if (error) {
       console.error('Failed to fetch wishes:', error);
-      console.log('⚠️ Using mock wishes data as fallback');
-      return MOCK_WISHES;
+      return { data: [], nextCursor: null, hasMore: false };
     }
 
     console.log(`✅ [getWishes] Fetched ${data?.length || 0} wishes from database`);
@@ -206,11 +215,16 @@ export async function getWishes(filters?: {
       if (currentUser?.id) {
         console.log('💡 Note: Your own wishes are filtered out from this view. Check "My Wishes" to see wishes you created.');
       }
-      return [];
+      return { data: [], nextCursor: null, hasMore: false };
     }
 
+    // Check if there are more results
+    const hasMore = data.length > limit;
+    const wishesData = hasMore ? data.slice(0, limit) : data;
+    const nextCursor = hasMore ? wishesData[wishesData.length - 1].created_at : null;
+
     // Transform data and calculate distances
-    let wishes = (data || []).map((wish: any) => {
+    let wishes = (wishesData || []).map((wish: any) => {
       const wishObj: Wish = {
         id: wish.id,
         title: wish.title,
@@ -291,14 +305,14 @@ export async function getWishes(filters?: {
         const distB = b.distance ?? Infinity;
         return distA - distB;
       });
-    } else {
-      wishes.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+      console.log('📊 [getWishes] Wishes sorted by distance (nearest first)');
     }
 
-    return wishes;
+    console.log(`✅ [getWishes] Returning ${wishes.length} wishes, hasMore: ${hasMore}`);
+    return { data: wishes, nextCursor, hasMore };
   } catch (error) {
     console.error('Exception in getWishes:', error);
-    return [];
+    return { data: [], nextCursor: null, hasMore: false };
   }
 }
 

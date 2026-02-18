@@ -72,10 +72,12 @@ export function NewHomeScreen({
 
       // Get cities data once
       const cities = await getCitiesWithAreas();
+      console.log('[NewHomeScreen] Loaded cities:', cities.length);
 
       // Load wishes - filter by city if user has location
       const wishesFilters: any = {
         status: 'open',
+        limit: 10, // ✅ ADD: Limit wishes to 10
       };
       // Don't filter by city - show all wishes from everywhere
       // Just pass coordinates for distance calculation and sorting (nearest first)
@@ -89,13 +91,20 @@ export function NewHomeScreen({
         console.log('[NewHomeScreen] ⚠️ No user location available for distance calculation');
       }
       
+      console.log('[NewHomeScreen] 🔍 Calling getWishes with filters:', wishesFilters);
       const wishesData = await getWishes(wishesFilters);
-      console.log('[NewHomeScreen] Loaded wishes from ALL cities (sorted by distance):', wishesData.data?.length || 0);
-      setNearbyWishes(wishesData.data?.slice(0, 10) || []); // Limit to 10
+      console.log('[NewHomeScreen] ✅ Wishes response:', { 
+        dataLength: wishesData.data?.length || 0,
+        hasMore: wishesData.hasMore,
+        nextCursor: wishesData.nextCursor,
+        firstWish: wishesData.data?.[0]?.title
+      });
+      setNearbyWishes(wishesData.data || []); // Don't slice again, already limited to 10
 
       // Load tasks - filter by city if user has location
       const tasksFilters: any = {
         status: 'open',
+        limit: 10, // ✅ ADD: Limit tasks to 10
       };
       
       // Don't filter by city - show all tasks from everywhere
@@ -106,9 +115,15 @@ export function NewHomeScreen({
         tasksFilters.userLon = userLocation.longitude;
       }
       
+      console.log('[NewHomeScreen] 🔍 Calling getTasks with filters:', tasksFilters);
       const tasksData = await getTasks(tasksFilters);
-      console.log('[NewHomeScreen] Loaded tasks from ALL cities (sorted by distance):', tasksData.data?.length || 0);
-      setNearbyTasks(tasksData.data?.slice(0, 10) || []); // Limit to 10
+      console.log('[NewHomeScreen] ✅ Tasks response:', { 
+        dataLength: tasksData.data?.length || 0,
+        hasMore: tasksData.hasMore,
+        nextCursor: tasksData.nextCursor,
+        firstTask: tasksData.data?.[0]?.title
+      });
+      setNearbyTasks(tasksData.data || []); // Don't slice again, already limited to 10
 
       // Load marketplace listings
       const listingsFilters: any = {
@@ -124,10 +139,22 @@ export function NewHomeScreen({
         listingsFilters.userLon = userLocation.longitude;
       }
       
+      console.log('[NewHomeScreen] 🔍 Calling getListings with filters:', listingsFilters);
       const dealsResponse = await getListings(listingsFilters);
-      console.log('[NewHomeScreen] Loaded deals:', dealsResponse.data?.length);
+      console.log('[NewHomeScreen] ✅ Listings response:', { 
+        dataLength: dealsResponse.data?.length || 0,
+        nextCursor: dealsResponse.nextCursor,
+        firstListing: dealsResponse.data?.[0]?.title
+      });
       setNearbyDeals(dealsResponse.data || []);
+      
+      console.log('[NewHomeScreen] 🎉 All data loaded successfully:', {
+        wishes: wishesData.data?.length || 0,
+        tasks: tasksData.data?.length || 0,
+        listings: dealsResponse.data?.length || 0
+      });
     } catch (error) {
+      console.error('[NewHomeScreen] ❌ Error loading nearby content:', error);
       // Silent graceful failure - already setting empty arrays
     } finally {
       setLoading(false);
