@@ -291,18 +291,41 @@ export async function getCurrentPosition(): Promise<GeolocationPosition> {
       return;
     }
     
+    // Check if we're on mobile for better settings
+    const isMobile = isLikelyMobileDevice();
+    
+    console.log('📍 [getCurrentPosition] Requesting location...', {
+      isMobile,
+      userAgent: navigator.userAgent.substring(0, 50)
+    });
+    
     navigator.geolocation.getCurrentPosition(
-      resolve,
+      (position) => {
+        console.log('✅ [getCurrentPosition] SUCCESS:', {
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+          accuracy: `${Math.round(position.coords.accuracy)}m`
+        });
+        resolve(position);
+      },
       (error) => {
         // Provide specific error messages
         let errorMessage = 'Unable to get your location';
         
+        console.error('❌ [getCurrentPosition] ERROR:', {
+          code: error.code,
+          message: error.message,
+          PERMISSION_DENIED: error.PERMISSION_DENIED,
+          POSITION_UNAVAILABLE: error.POSITION_UNAVAILABLE,
+          TIMEOUT: error.TIMEOUT
+        });
+        
         switch (error.code) {
           case error.PERMISSION_DENIED:
-            errorMessage = 'Location permission denied. Please allow location access or use search.';
+            errorMessage = 'Location permission denied. Please allow location access in your browser settings or use search.';
             break;
           case error.POSITION_UNAVAILABLE:
-            errorMessage = 'Location information unavailable. Please try search instead.';
+            errorMessage = 'Location information unavailable. Please ensure location services are enabled on your device.';
             break;
           case error.TIMEOUT:
             errorMessage = 'Location request timed out. Please try again or use search.';
@@ -314,9 +337,10 @@ export async function getCurrentPosition(): Promise<GeolocationPosition> {
         reject(enhancedError);
       },
       {
-        enableHighAccuracy: true,
-        timeout: 15000,
-        maximumAge: 0
+        // ✅ MOBILE-FRIENDLY SETTINGS
+        enableHighAccuracy: isMobile, // Use GPS on mobile, network on desktop
+        timeout: 30000, // Increased to 30 seconds for mobile devices
+        maximumAge: 60000 // Allow cached position up to 1 minute (faster on mobile)
       }
     );
   });

@@ -60,6 +60,8 @@ export function LocationSelector({
     setIsDetecting(true);
     
     try {
+      console.log('📍 [LocationSelector] Starting auto-detect...');
+      
       const location = await detectUserLocation();
       
       if (location) {
@@ -69,9 +71,14 @@ export function LocationSelector({
         setTimeout(() => {
           setSelectedLocation(prev => prev ? {...prev} : null);
         }, 0);
+      } else {
+        console.log('⚠️ [LocationSelector] No location returned');
       }
     } catch (err: any) {
-      console.log('GPS not available:', err.message);
+      console.error('❌ [LocationSelector] GPS detection failed:', err);
+      
+      // Show user-friendly error message
+      alert(err.message || 'Unable to detect location. Please use search or drag the map pin.');
     } finally {
       setIsDetecting(false);
     }
