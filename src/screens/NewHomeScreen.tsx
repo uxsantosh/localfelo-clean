@@ -90,8 +90,8 @@ export function NewHomeScreen({
       }
       
       const wishesData = await getWishes(wishesFilters);
-      console.log('[NewHomeScreen] Loaded wishes from ALL cities (sorted by distance):', wishesData.length);
-      setNearbyWishes(wishesData.slice(0, 10)); // Limit to 10
+      console.log('[NewHomeScreen] Loaded wishes from ALL cities (sorted by distance):', wishesData.data?.length || 0);
+      setNearbyWishes(wishesData.data?.slice(0, 10) || []); // Limit to 10
 
       // Load tasks - filter by city if user has location
       const tasksFilters: any = {
@@ -107,8 +107,8 @@ export function NewHomeScreen({
       }
       
       const tasksData = await getTasks(tasksFilters);
-      console.log('[NewHomeScreen] Loaded tasks from ALL cities (sorted by distance):', tasksData.length);
-      setNearbyTasks(tasksData.slice(0, 10)); // Limit to 10
+      console.log('[NewHomeScreen] Loaded tasks from ALL cities (sorted by distance):', tasksData.data?.length || 0);
+      setNearbyTasks(tasksData.data?.slice(0, 10) || []); // Limit to 10
 
       // Load marketplace listings
       const listingsFilters: any = {
@@ -158,10 +158,10 @@ export function NewHomeScreen({
         {/* TOP BANNER - Primary Action */}
         <div className="relative bg-[#CDFF00] rounded-lg overflow-hidden p-4 md:p-6 mb-6">
           {/* Content */}
-          <div className="relative z-10 max-w-[70%] md:max-w-[60%]">
+          <div className="relative z-10 max-w-[85%] md:max-w-[60%]">
             <h1 className="text-black font-bold text-[18px] md:text-[22px] leading-tight mb-3 md:mb-4">
-              <span className="block md:hidden">Get help nearby. Or</span>
-              <span className="block md:hidden">help someone and earn locally.</span>
+              <span className="block md:hidden">Get help nearby.</span>
+              <span className="block md:hidden whitespace-nowrap">Or help someone and earn locally.</span>
               <span className="hidden md:inline">Get help nearby. Or help someone and earn locally.</span>
             </h1>
             
