@@ -283,6 +283,7 @@ export async function searchLocations(
 
 /**
  * Get current GPS position from browser
+ * OPTIMIZED HYBRID: Try GPS first (with short timeout), fallback to network
  */
 export async function getCurrentPosition(): Promise<GeolocationPosition> {
   return new Promise((resolve, reject) => {
@@ -291,56 +292,91 @@ export async function getCurrentPosition(): Promise<GeolocationPosition> {
       return;
     }
     
-    // Check if we're on mobile for better settings
     const isMobile = isLikelyMobileDevice();
     
-    console.log('📍 [getCurrentPosition] Requesting location...', {
+    console.log('📍 [getCurrentPosition] Starting OPTIMIZED GPS detection...', {
       isMobile,
-      userAgent: navigator.userAgent.substring(0, 50)
+      strategy: 'GPS first (3s timeout), fallback to network if slow'
     });
     
+    let resolved = false;
+    
+    // TRY GPS FIRST (with short timeout for speed) 🎯
     navigator.geolocation.getCurrentPosition(
       (position) => {
-        console.log('✅ [getCurrentPosition] SUCCESS:', {
-          latitude: position.coords.latitude,
-          longitude: position.coords.longitude,
-          accuracy: `${Math.round(position.coords.accuracy)}m`
-        });
-        resolve(position);
+        if (!resolved) {
+          resolved = true;
+          const accuracy = Math.round(position.coords.accuracy);
+          console.log('✅ [getCurrentPosition] GPS SUCCESS:', {
+            latitude: position.coords.latitude,
+            longitude: position.coords.longitude,
+            accuracy: `${accuracy}m`,
+            type: accuracy < 100 ? 'High-accuracy GPS' : 'Network/WiFi'
+          });
+          resolve(position);
+        }
       },
       (error) => {
-        // Provide specific error messages
-        let errorMessage = 'Unable to get your location';
-        
-        console.error('❌ [getCurrentPosition] ERROR:', {
-          code: error.code,
-          message: error.message,
-          PERMISSION_DENIED: error.PERMISSION_DENIED,
-          POSITION_UNAVAILABLE: error.POSITION_UNAVAILABLE,
-          TIMEOUT: error.TIMEOUT
-        });
-        
-        switch (error.code) {
-          case error.PERMISSION_DENIED:
-            errorMessage = 'Location permission denied. Please allow location access in your browser settings or use search.';
-            break;
-          case error.POSITION_UNAVAILABLE:
-            errorMessage = 'Location information unavailable. Please ensure location services are enabled on your device.';
-            break;
-          case error.TIMEOUT:
-            errorMessage = 'Location request timed out. Please try again or use search.';
-            break;
+        if (!resolved) {
+          // GPS failed or timed out, try network fallback
+          console.log('⚠️ [getCurrentPosition] GPS timeout/failed, trying network fallback...');
+          
+          navigator.geolocation.getCurrentPosition(
+            (position) => {
+              if (!resolved) {
+                resolved = true;
+                const accuracy = Math.round(position.coords.accuracy);
+                console.log('✅ [getCurrentPosition] Network fallback SUCCESS:', {
+                  latitude: position.coords.latitude,
+                  longitude: position.coords.longitude,
+                  accuracy: `${accuracy}m`,
+                  type: 'Network/WiFi (GPS unavailable)'
+                });
+                resolve(position);
+              }
+            },
+            (networkError) => {
+              if (!resolved) {
+                resolved = true;
+                
+                let errorMessage = 'Unable to get your location';
+                
+                console.error('❌ [getCurrentPosition] Both GPS and network failed:', {
+                  code: networkError.code,
+                  message: networkError.message
+                });
+                
+                switch (networkError.code) {
+                  case networkError.PERMISSION_DENIED:
+                    errorMessage = 'Location permission denied. Please allow location access in your browser settings or use search.';
+                    break;
+                  case networkError.POSITION_UNAVAILABLE:
+                    errorMessage = 'Location information unavailable. Please ensure location services are enabled on your device.';
+                    break;
+                  case networkError.TIMEOUT:
+                    errorMessage = 'Location request timed out. Please try again or use search.';
+                    break;
+                }
+                
+                const enhancedError = new Error(errorMessage);
+                (enhancedError as any).code = networkError.code;
+                reject(enhancedError);
+              }
+            },
+            {
+              // Network fallback settings (fast)
+              enableHighAccuracy: false,
+              timeout: 5000,
+              maximumAge: 300000
+            }
+          );
         }
-        
-        const enhancedError = new Error(errorMessage);
-        (enhancedError as any).code = error.code;
-        reject(enhancedError);
       },
       {
-        // ✅ MOBILE-FRIENDLY SETTINGS
-        enableHighAccuracy: isMobile, // Use GPS on mobile, network on desktop
-        timeout: 30000, // Increased to 30 seconds for mobile devices
-        maximumAge: 60000 // Allow cached position up to 1 minute (faster on mobile)
+        // ⚡ GPS with SHORT timeout for speed
+        enableHighAccuracy: true, // Use GPS for accuracy
+        timeout: 3000, // Only wait 3 seconds for GPS (if not available, fallback to network)
+        maximumAge: 300000 // Use cache if available (instant!)
       }
     );
   });
