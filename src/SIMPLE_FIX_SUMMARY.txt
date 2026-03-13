@@ -1,0 +1,93 @@
+╔══════════════════════════════════════════════════════════════╗
+║  🎨 SIMPLE ACCESSIBILITY FIX - Make Text Readable            ║
+╚══════════════════════════════════════════════════════════════╝
+
+🚨 PROBLEM: 
+Lemon green text on white background = UNREADABLE!
+
+✅ SIMPLE SOLUTION:
+Replace "text-primary" with these accessible classes:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 QUICK REFERENCE:
+
+❌ BEFORE              ✅ AFTER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+text-primary          → price-text         (for prices)
+text-primary          → distance-text      (for distances)  
+text-primary          → link-primary       (for links)
+text-primary          → clickable-text     (for clickable)
+text-primary          → text-gray-900      (for general)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 NEW CSS CLASSES ADDED TO globals.css:
+
+.price-text          → Black, bold (for ₹ amounts)
+.distance-text       → Amber-600 (for ~14 km away)
+.link-primary        → Black with green underline
+.clickable-text      → Black, bold, hover gray
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 HOW TO FIX IN YOUR CODE:
+
+1. Find any: className="...text-primary..."
+2. Replace with appropriate class above
+3. Test - text should now be BLACK and readable!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 THE RULE:
+
+✅ Lemon Green = Backgrounds, Icons, Highlights
+❌ Lemon Green ≠ Text (unless on dark background)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📖 EXAMPLES:
+
+Price: "₹ ₹100 - ₹10,000"
+OLD: <p className="text-primary">₹ ₹100 - ₹10,000</p>
+NEW: <p className="price-text">₹ ₹100 - ₹10,000</p>
+
+Distance: "~14.1 km away"  
+OLD: <p className="text-primary">~14.1 km away</p>
+NEW: <p className="distance-text">~14.1 km away</p>
+
+Link: "Open in Google Maps"
+OLD: <a className="text-primary">Open in Google Maps</a>
+NEW: <a className="link-primary">Open in Google Maps</a>
+
+Button: "Chat with Wisher" (ALREADY CORRECT - GREEN BACKGROUND!)
+KEEP: <button className="bg-primary text-black">Chat</button>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ WHAT'S FIXED:
+
+✓ globals.css updated with accessible classes
+✓ Price text = black/bold  
+✓ Distance text = amber (readable)
+✓ Links = black with green underline
+✓ Buttons = green background + black text (already good!)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 FILES YOU NEED TO UPDATE:
+
+Search for "text-primary" in these files and replace:
+
+1. /components/WishCard.tsx
+2. /screens/WishDetailScreen.tsx  
+3. /components/TaskCard.tsx
+4. /screens/TaskDetailScreen.tsx
+5. /components/ListingCard.tsx
+6. Any other component with price/distance/links
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 THAT'S IT!
+
+Now your app is accessible and readable! 🎉

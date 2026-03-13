@@ -1,0 +1,215 @@
+========================================
+TEMPLATE 1: OTP VERIFICATION
+========================================
+
+Template Name: localfelo_otp_verification
+Category: AUTHENTICATION
+Language: English
+
+Body Text (copy below):
+Hi {{customer_name}}, your LocalFelo verification code is {{otp_code}}. This code is valid for 10 minutes. Do not share this code with anyone.
+
+Footer (optional):
+LocalFelo
+
+Variables:
+1. customer_name (TEXT)
+2. otp_code (TEXT)
+
+Buttons: None
+
+
+========================================
+TEMPLATE 2: TASK REQUEST
+========================================
+
+Template Name: localfelo_task_request
+Category: MARKETING
+Language: English
+
+Body Text (copy below):
+Hi {{helper_name}}, you have received a new task request for {{task_title}} in {{location}}. Budget: Rs {{budget}}. Check details in the app.
+
+Footer (optional):
+LocalFelo
+
+Variables:
+1. helper_name (TEXT)
+2. task_title (TEXT)
+3. location (TEXT)
+4. budget (TEXT)
+5. task_id (TEXT) - for URL button
+
+Button:
+Type: URL
+Text: View Task
+URL: https://localfelo.com/tasks/{{task_id}}
+
+
+========================================
+TEMPLATE 3: TASK ACCEPTED
+========================================
+
+Template Name: localfelo_task_accepted
+Category: MARKETING
+Language: English
+
+Body Text (copy below):
+Good news {{customer_name}}, {{helper_name}} has accepted your task request for {{task_title}}. You can now chat with them to coordinate the details.
+
+Footer (optional):
+LocalFelo
+
+Variables:
+1. customer_name (TEXT)
+2. helper_name (TEXT)
+3. task_title (TEXT)
+4. conversation_id (TEXT) - for URL button
+
+Button:
+Type: URL
+Text: Open Chat
+URL: https://localfelo.com/chat/{{conversation_id}}
+
+
+========================================
+TEMPLATE 4: TASK COMPLETED
+========================================
+
+Template Name: localfelo_task_completed
+Category: MARKETING
+Language: English
+
+Body Text (copy below):
+Hi {{customer_name}}, {{helper_name}} has marked your task {{task_title}} as completed. Please review and confirm completion in the app.
+
+Footer (optional):
+LocalFelo
+
+Variables:
+1. customer_name (TEXT)
+2. helper_name (TEXT)
+3. task_title (TEXT)
+4. task_id (TEXT) - for URL button
+
+Button:
+Type: URL
+Text: Review Task
+URL: https://localfelo.com/tasks/{{task_id}}
+
+
+========================================
+TEMPLATE 5: LISTING INTEREST
+========================================
+
+Template Name: localfelo_listing_interest
+Category: MARKETING
+Language: English
+
+Body Text (copy below):
+Hi {{seller_name}}, {{buyer_name}} has sent you a message about your listing {{listing_title}}. Check your messages to respond.
+
+Footer (optional):
+LocalFelo
+
+Variables:
+1. seller_name (TEXT)
+2. buyer_name (TEXT)
+3. listing_title (TEXT)
+4. conversation_id (TEXT) - for URL button
+
+Button:
+Type: URL
+Text: View Message
+URL: https://localfelo.com/chat/{{conversation_id}}
+
+
+========================================
+TEMPLATE 6: WISH RESPONSE
+========================================
+
+Template Name: localfelo_wish_response
+Category: MARKETING
+Language: English
+
+Body Text (copy below):
+Hi {{customer_name}}, someone has responded to your wish for {{wish_title}}. View their response in the app to see if it matches what you are looking for.
+
+Footer (optional):
+LocalFelo
+
+Variables:
+1. customer_name (TEXT)
+2. wish_title (TEXT)
+3. wish_id (TEXT) - for URL button
+
+Button:
+Type: URL
+Text: View Response
+URL: https://localfelo.com/wishes/{{wish_id}}
+
+
+========================================
+TEMPLATE 7: WISH FULFILLED
+========================================
+
+Template Name: localfelo_wish_fulfilled
+Category: MARKETING
+Language: English
+
+Body Text (copy below):
+Great news {{customer_name}}, your wish for {{wish_title}} has been fulfilled by {{fulfiller_name}}. You can now start chatting to coordinate the next steps.
+
+Footer (optional):
+LocalFelo
+
+Variables:
+1. customer_name (TEXT)
+2. wish_title (TEXT)
+3. fulfiller_name (TEXT)
+4. conversation_id (TEXT) - for URL button
+
+Button:
+Type: URL
+Text: Start Chat
+URL: https://localfelo.com/chat/{{conversation_id}}
+
+
+========================================
+TEMPLATE 8: UNREAD REMINDER
+========================================
+
+Template Name: localfelo_unread_reminder
+Category: MARKETING
+Language: English
+
+Body Text (copy below):
+Hi {{user_name}}, you have {{unread_count}} unread messages on LocalFelo. Check your inbox to stay updated with your conversations.
+
+Footer (optional):
+LocalFelo
+
+Variables:
+1. user_name (TEXT)
+2. unread_count (TEXT)
+
+Button:
+Type: URL
+Text: View Messages
+URL: https://localfelo.com/chat
+
+
+========================================
+IMPORTANT NOTES
+========================================
+
+1. NO emojis anywhere
+2. Use "Rs" not "₹" symbol
+3. Category AUTHENTICATION = free, MARKETING = requires user opt-in
+4. Replace localfelo.com with your actual domain if different
+5. All variables are type: TEXT
+6. Variable names in {{}} must match exactly when sending
+7. Approval takes 1-24 hours per template
+8. Start with Template 1 (OTP) first - it's simplest
+
+========================================

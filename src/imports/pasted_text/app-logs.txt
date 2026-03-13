@@ -1,0 +1,135 @@
+{url: '/tasks'}
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 ➡️ Navigating to screen: tasks
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+2code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: true
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📊 [App] Active tasks count: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🎯 [CleanTasksScreen] Filtered by categories: 0 tasks match
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🎯 [CleanTasksScreen] Filtered by distance (5km): 0 tasks match
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: true
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Fetching unread count...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Fetching unread count...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🎯 [CleanTasksScreen] Filtered by distance (5km): 0 tasks match
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: false
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Fetching unread count...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📊 [App] Active tasks count: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: d7f66c14...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🚨🚨🚨 [App] usePushNotifications RETURNED: not-supported
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Cleaning up unread count subscription...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🌍 [MarketplaceScreen] Showing ALL listings from EVERYWHERE (sorted by distance)
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 [MarketplaceScreen] 📍 Passing user coordinates to listings: {lat: 12.9716, lon: 77.5946}
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 [MarketplaceScreen] Loading listings with filters: {page: 1, limit: 20, includeOwn: true, userLat: 12.9716, userLon: 77.5946}
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 [Service] getListings called with filters: {page: 1, limit: 20, includeOwn: true, userLat: 12.9716, userLon: 77.5946}
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 [Service] 🔍 DEBUGGING: Starting getListings function
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 [MarketplaceScreen] 📍 Sorted by distance: []
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Fetching unread count...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Setting up real-time subscription for unread count...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 Setting up real-time subscriptions...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: d7f66c14...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🚨🚨🚨 [App] usePushNotifications RETURNED: not-supported
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🌐 Web platform - skipping back button handler
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 [MarketplaceScreen] 📍 Sorted by distance: []
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 ✅ Real-time subscriptions active
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔍 [getListings] Current user: ID: undefined
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔍 [getListings] includeOwn flag: true
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔍 [getListings] Pagination: page 1 limit 20
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔙 Back button pressed - Path: /marketplace Screen: marketplace State: {url: '/marketplace'}
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 ➡️ Navigating to screen: marketplace
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 [MarketplaceScreen] 📍 Sorted by distance: []
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔍 [getListings] Base query created
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🌍 [getListings] Showing ALL listings from EVERYWHERE (sorted by distance)
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🧪 [Service] DEV MODE: Including own listings for testing
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 ✅ [getListings] Fetched 4 listings from database
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 ✅ [Listings] Sorted 4 listings by distance
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📍 [Listings] Nearest: Macbook Pro at 0.1 km
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 [MarketplaceScreen] 📍 Sorted by distance: (3) [{…}, {…}, {…}]
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 [ListingCard] "Macbook Pro" - distance: 0.1006166198837603 lat: 12.97079266 lon: 77.59501934
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 [ListingCard] "2 BHK Flat for Rent – Spacious & Well Ventilated" - distance: 4.1797854672540335 lat: 12.93819856 lon: 77.57690637
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 [ListingCard] "Powermax fitness motorized treadmill for sale" - distance: 5.9388716299393 lat: 12.93088951 lon: 77.63007463
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 [ListingCard] "Royal Enfield Bike for Sale – Well Maintained" - distance: 6.554694205950418 lat: 12.915 lon: 77.6115
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: d7f66c14...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🚨🚨🚨 [App] usePushNotifications RETURNED: not-supported
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Cleaning up unread count subscription...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Fetching unread count...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Setting up real-time subscription for unread count...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 Setting up real-time subscriptions...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: d7f66c14...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🚨🚨🚨 [App] usePushNotifications RETURNED: not-supported
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🌐 Web platform - skipping back button handler
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 ✅ Real-time subscriptions active
+2code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: true
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🎯 [CleanTasksScreen] Filtered by categories: 0 tasks match
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🎯 [CleanTasksScreen] Filtered by distance (5km): 0 tasks match
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: true
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔙 Back button pressed - Path: /tasks Screen: tasks State: {url: '/tasks'}
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 ➡️ Navigating to screen: tasks
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Fetching unread count...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Fetching unread count...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📊 [App] Active tasks count: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🎯 [CleanTasksScreen] Filtered by distance (5km): 0 tasks match
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: false
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Fetching unread count...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Fetching unread count...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Fetching unread count...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📊 [App] Active tasks count: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Fetching unread count...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Fetching unread count...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Fetching unread count...
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-7412fd47a5113f44.min.js.br:28 📊 [App] Active tasks count: 0

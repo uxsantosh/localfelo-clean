@@ -1,0 +1,94 @@
+https://drofnrntrbedtjtpseve.supabase.co
+index-IvKmAPmK.js:10    Key: ✅ Present
+index-IvKmAPmK.js:10    Platform: android
+index-IvKmAPmK.js:10    Using: Capacitor Storage
+index-IvKmAPmK.js:10 🔧 Supabase client initialized with PKCE flow (auto-refresh ON)
+index-IvKmAPmK.js:10 ✅ Supabase client ready. Connection will be established on first query.
+index-IvKmAPmK.js:38 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+index-IvKmAPmK.js:46 🗺️ Header Location Debug: {rawArea: undefined, rawCity: undefined, processedArea: '', processedCity: ''}
+index-IvKmAPmK.js:244 [NewHomeScreen] Loading nearby content with user location: {lat: undefined, lon: undefined, city: undefined, area: undefined, note: 'Filtering by city if location set, otherwise showing all content'}
+index-IvKmAPmK.js:10 🌆 [Locations] Fetching cities with 3-level hierarchy (City → Area → Sub-Area)...
+index-IvKmAPmK.js:38 📍 [useLocation] No saved location - setting default: Bangalore
+index-IvKmAPmK.js:38 [usePushNotifications] useEffect triggered, userId: NULL/UNDEFINED
+index-IvKmAPmK.js:38 [usePushNotifications] No userId provided, skipping
+index-IvKmAPmK.js:46 🔔 [SimpleNotification] Current notifications: []
+index-IvKmAPmK.js:244 🚀 App initializing...
+index-IvKmAPmK.js:244 ℹ️ No user in localStorage
+index-IvKmAPmK.js:244 ⏳ Waiting for storage to initialize...
+index-IvKmAPmK.js:244 🛡️ Initializing history for mobile back button support
+index-IvKmAPmK.js:244 🌆 Loading cities from Supabase...
+index-IvKmAPmK.js:10 🌆 [Locations] Fetching cities with 3-level hierarchy (City → Area → Sub-Area)...
+index-IvKmAPmK.js:244 🔄 [App] Loading app download settings...
+index-IvKmAPmK.js:244 👋 [App] Checking intro status: {introSkipped: null}
+index-IvKmAPmK.js:244 👋 [App] First time user - showing intro modal
+index-IvKmAPmK.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token-code-verifier
+VM28585:368 native Preferences.get (#43994243)
+index-IvKmAPmK.js:38 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+index-IvKmAPmK.js:46 🗺️ Header Location Debug: {rawArea: '', rawCity: 'Bangalore', processedArea: '', processedCity: 'Bangalore'}
+index-IvKmAPmK.js:244 [NewHomeScreen] Loading nearby content with user location: {lat: 12.9716, lon: 77.5946, city: 'Bangalore', area: '', note: 'Filtering by city if location set, otherwise showing all content'}
+index-IvKmAPmK.js:10 🌆 [Locations] Fetching cities with 3-level hierarchy (City → Area → Sub-Area)...
+index-IvKmAPmK.js:244 ✅ [App] User location SET: {city: 'Bangalore', area: '', lat: '12.9716', lon: '77.5946'}
+index-IvKmAPmK.js:244 🎯 [App] Distances will now be calculated for all items!
+index-IvKmAPmK.js:244 ⏸️ [App] Location modal waiting: hasCheckedIntro= false justCreatedContent= false
+VM28585:342 result Preferences.get (#43994243)
+index-IvKmAPmK.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token-code-verifier → Not found
+index-IvKmAPmK.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM28585:368 native Preferences.get (#43994244)
+VM28585:368 native App.addListener (#43994245)
+VM28585:368 native App.addListener (#43994246)
+VM28585:342 result Preferences.get (#43994244)
+index-IvKmAPmK.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-IvKmAPmK.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM28585:368 native Preferences.get (#43994247)
+index-IvKmAPmK.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM28585:368 native Preferences.get (#43994248)
+index-IvKmAPmK.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM28585:368 native Preferences.get (#43994249)
+VM28585:342 result Preferences.get (#43994247)
+index-IvKmAPmK.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+VM28585:342 result Preferences.get (#43994248)
+index-IvKmAPmK.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-IvKmAPmK.js:244 🔐 Auth event: INITIAL_SESSION
+VM28585:342 result Preferences.get (#43994249)
+index-IvKmAPmK.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-IvKmAPmK.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM28585:368 native Preferences.get (#43994250)
+VM28585:342 result Preferences.get (#43994250)
+index-IvKmAPmK.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-IvKmAPmK.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM28585:368 native Preferences.get (#43994251)
+VM28585:342 result Preferences.get (#43994251)
+index-IvKmAPmK.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-IvKmAPmK.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM28585:368 native Preferences.get (#43994252)
+VM28585:342 result Preferences.get (#43994252)
+index-IvKmAPmK.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-IvKmAPmK.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM28585:368 native Preferences.get (#43994253)
+VM28585:342 result Preferences.get (#43994253)
+index-IvKmAPmK.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-IvKmAPmK.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM28585:368 native Preferences.get (#43994254)
+VM28585:342 result Preferences.get (#43994254)
+index-IvKmAPmK.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-IvKmAPmK.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM28585:368 native Preferences.get (#43994255)
+VM28585:342 result Preferences.get (#43994255)
+index-IvKmAPmK.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-IvKmAPmK.js:244 📱 [App] App download settings: {data: {…}, error: null}
+index-IvKmAPmK.js:244 ✅ [App] App download settings loaded: {enabled: false, url: 'https://www.localfelo.com/'}
+index-IvKmAPmK.js:38 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+index-IvKmAPmK.js:46 🗺️ Header Location Debug: {rawArea: '', rawCity: 'Bangalore', processedArea: '', processedCity: 'Bangalore'}
+index-IvKmAPmK.js:244 [NewHomeScreen] Loading nearby content with user location: {lat: 12.9716, lon: 77.5946, city: 'Bangalore', area: '', note: 'Filtering by city if location set, otherwise showing all content'}
+index-IvKmAPmK.js:10 🌆 [Locations] Fetching cities with 3-level hierarchy (City → Area → Sub-Area)...
+VM28585:368 native App.removeListener (#43994256)
+VM28585:368 native App.addListener (#43994257)
+index-IvKmAPmK.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM28585:368 native Preferences.get (#43994258)
+vendor-supabase-CQnWzhEg.js:43  GET https://drofnrntrbedtjtpseve.supabase.co/rest/v1/site_settings?select=instagram_url%2Cfacebook_url%2Clinkedin_url&id=eq.social_links 400 (Bad Request)
+(anonymous) @ vendor-supabase-CQnWzhEg.js:43
+(anonymous) @ vendor-supabase-CQnWzhEg.js:43
+await in (anonymous)
+then @ vendor-supabase-CQnWzhEg.js:1Understand this error
+VM28585:342 result Preferences.get (#43994258)
+index-IvKmAPmK.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found

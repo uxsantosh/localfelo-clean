@@ -1,0 +1,198 @@
+📋 [TaskService] Getting active tasks for user: 9e2d9446-a999-4052-9203-d6affc9c29c5
+ ✅ [TaskService] Found 0 active tasks
+ 📊 [App] Active tasks count: 0
+ 🔔 [App] Unread count fetched: 0
+ By not specifying 'modelOrUrl' parameter, you're using the default model: 'MobileNetV2'. See NSFWJS docs for instructions on hosting your own model (https://github.com/infinitered/nsfwjs?tab=readme-ov-file#host-your-own-model).
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 📋 [TaskService] Getting active tasks for user: 9e2d9446-a999-4052-9203-d6affc9c29c5
+ ✅ [TaskService] Found 0 active tasks
+ 📊 [App] Active tasks count: 0
+ 🔵 [EDIT PROFILE] New avatar detected, attempting upload...
+ 🔵 [AVATAR UPLOAD] Starting upload for user: 9e2d9446-a999-4052-9203-d6affc9c29c5
+ 🔐 [AVATAR UPLOAD] Auth session check: {hasSession: false, sessionUser: undefined, sessionExpiry: undefined, isExpired: 'no session', error: null}
+ ❌ [AVATAR UPLOAD] NO ACTIVE SESSION - User is not authenticated!
+(anonymous) @ code_components_prev…113f44.min.js.br:28
+r @ code_components_prev…113f44.min.js.br:69
+error @ code_components_prev…113f44.min.js.br:28
+uploadAvatar @ avatarUpload.ts:21
+await in uploadAvatar
+handleSubmit @ EditProfileModal.tsx:56
+y @ code_components_prev…113f44.min.js.br:77
+i @ code_components_prev…113f44.min.js.br:28
+ik @ code_components_prev…113f44.min.js.br:77
+ij @ code_components_prev…113f44.min.js.br:77
+iz @ code_components_prev…113f44.min.js.br:77
+dP @ code_components_prev…113f44.min.js.br:89
+dM @ code_components_prev…113f44.min.js.br:89
+dG @ code_components_prev…113f44.min.js.br:89
+dk @ code_components_prev…113f44.min.js.br:89
+(anonymous) @ code_components_prev…113f44.min.js.br:89
+SR @ code_components_prev…113f44.min.js.br:89
+iR @ code_components_prev…113f44.min.js.br:77
+d$ @ code_components_prev…113f44.min.js.br:89
+lO @ code_components_prev…113f44.min.js.br:77
+lN @ code_components_prev…113f44.min.js.br:77
+lv @ code_components_prev…113f44.min.js.br:77
+i @ code_components_prev…113f44.min.js.br:28Understand this error
+ ⚠️ [EDIT PROFILE] Storage upload failed, falling back to base64: Error: Not authenticated - please login again
+    at uploadAvatar (avatarUpload.ts:22:11)
+    at async handleSubmit (EditProfileModal.tsx:56:23)
+(anonymous) @ code_components_prev…113f44.min.js.br:28
+r @ code_components_prev…113f44.min.js.br:69
+warn @ code_components_prev…113f44.min.js.br:28
+handleSubmit @ EditProfileModal.tsx:60
+await in handleSubmit
+y @ code_components_prev…113f44.min.js.br:77
+i @ code_components_prev…113f44.min.js.br:28
+ik @ code_components_prev…113f44.min.js.br:77
+ij @ code_components_prev…113f44.min.js.br:77
+iz @ code_components_prev…113f44.min.js.br:77
+dP @ code_components_prev…113f44.min.js.br:89
+dM @ code_components_prev…113f44.min.js.br:89
+dG @ code_components_prev…113f44.min.js.br:89
+dk @ code_components_prev…113f44.min.js.br:89
+(anonymous) @ code_components_prev…113f44.min.js.br:89
+SR @ code_components_prev…113f44.min.js.br:89
+iR @ code_components_prev…113f44.min.js.br:77
+d$ @ code_components_prev…113f44.min.js.br:89
+lO @ code_components_prev…113f44.min.js.br:77
+lN @ code_components_prev…113f44.min.js.br:77
+lv @ code_components_prev…113f44.min.js.br:77
+i @ code_components_prev…113f44.min.js.br:28Understand this warning
+ 👤 Profile updated - reloading user from localStorage
+ 🔍 [ProfileScreen] Initial user.id: 9e2d9446-a999-4052-9203-d6affc9c29c5
+ 🔍 [ProfileScreen] user.clientToken: token_1772860125326_gcg57icjrm
+ 🎯 [ProfileScreen] Final userId to use: 9e2d9446-a999-4052-9203-d6affc9c29c5
+ 📋 [ProfileScreen] Fetching listings...
+ 🔍 [Service] getMyListings called with clientToken: EXISTS
+ 📞 [Service] Fetching profile for clientToken...
+ ✅ User reloaded: Naveen Avatar: ✓
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: 9e2d9446...
+ [usePushNotifications] Hook called with userId: 9e2d9446...
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: not-supported
+ 🔔 [App] Cleaning up unread count subscription...
+ 🔍 [ProfileScreen] Initial user.id: 9e2d9446-a999-4052-9203-d6affc9c29c5
+ 🔍 [ProfileScreen] user.clientToken: token_1772860125326_gcg57icjrm
+ 🎯 [ProfileScreen] Final userId to use: 9e2d9446-a999-4052-9203-d6affc9c29c5
+ 📋 [ProfileScreen] Fetching listings...
+ 🔍 [Service] getMyListings called with clientToken: EXISTS
+ 📞 [Service] Fetching profile for clientToken...
+ 🔍🔍🔍 [App] USER STATE CHANGED:
+    user: {id: '9e2d9446-a999-4052-9203-d6affc9c29c5', name: 'Naveen', phone: '+919063261079', clientToken: 'Present'}
+    pushStatus: not-supported
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Setting up real-time subscription for unread count...
+ 🔔 Setting up real-time subscriptions...
+ 📋 [TaskService] Getting active tasks for user: 9e2d9446-a999-4052-9203-d6affc9c29c5
+ ✅ Real-time subscriptions active
+ ✅ [TaskService] Found 0 active tasks
+ 📊 [App] Active tasks count: 0
+ 📊 [Service] Profile query result: {profilesCount: 1, hasError: false, error: null}
+ ✅ [Service] Got profile ID: 9e2d9446-a999-4052-9203-d6affc9c29c5
+ 📞 [Service] Fetching listings for user...
+ 📡 [App] Helper status: Unavailable
+ 📊 [Service] Profile query result: {profilesCount: 1, hasError: false, error: null}
+ ✅ [Service] Got profile ID: 9e2d9446-a999-4052-9203-d6affc9c29c5
+ 📞 [Service] Fetching listings for user...
+ 🔔 [App] Unread count fetched: 0
+ 📊 [Service] Listings query result: {count: 4, hasError: false, error: null}
+ ✅ [Service] Found 4 listing(s)
+ 📞 [Service] Fetching images for each listing...
+   ✅ Listing b489dc21-3600-410a-9d2c-d9abcb0a98a6: 4 image(s)
+   ✅ Listing cfa2886e-dce0-41aa-b7b3-15c32a6745c3: 2 image(s)
+ 📊 [Service] Listings query result: {count: 4, hasError: false, error: null}
+ ✅ [Service] Found 4 listing(s)
+ 📞 [Service] Fetching images for each listing...
+   ✅ Listing 20cd5a11-6215-47ad-870a-c4122ae9ba6e: 4 image(s)
+   ✅ Listing 0775c2ea-cde8-4579-a449-841a6b3cfc61: 2 image(s)
+ ✅ [Service] All listings with images prepared
+ 📋 [ProfileScreen] Got listings: 4
+   ✅ Listing 0775c2ea-cde8-4579-a449-841a6b3cfc61: 2 image(s)
+   ✅ Listing cfa2886e-dce0-41aa-b7b3-15c32a6745c3: 2 image(s)
+   ✅ Listing 20cd5a11-6215-47ad-870a-c4122ae9ba6e: 4 image(s)
+   ✅ Listing b489dc21-3600-410a-9d2c-d9abcb0a98a6: 4 image(s)
+ ✅ [Service] All listings with images prepared
+ 📋 [ProfileScreen] Got listings: 4
+ 🌟 [ProfileScreen] Got ratings: {helper_rating_avg: 0, helper_rating_count: 0, task_owner_rating_avg: 0, task_owner_rating_count: 0}
+ 🌟 [ProfileScreen] Got ratings: {helper_rating_avg: 0, helper_rating_count: 0, task_owner_rating_avg: 0, task_owner_rating_count: 0}
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 📋 [TaskService] Getting active tasks for user: 9e2d9446-a999-4052-9203-d6affc9c29c5
+ ✅ [TaskService] Found 0 active tasks
+ 📊 [App] Active tasks count: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 📋 [TaskService] Getting active tasks for user: 9e2d9446-a999-4052-9203-d6affc9c29c5
+ ✅ [TaskService] Found 0 active tasks
+ 📊 [App] Active tasks count: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 📋 [TaskService] Getting active tasks for user: 9e2d9446-a999-4052-9203-d6affc9c29c5
+ ✅ [TaskService] Found 0 active tasks
+ 📊 [App] Active tasks count: 0
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 📋 [TaskService] Getting active tasks for user: 9e2d9446-a999-4052-9203-d6affc9c29c5
+ ✅ [TaskService] Found 0 active tasks
+ 📊 [App] Active tasks count: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 📋 [TaskService] Getting active tasks for user: 9e2d9446-a999-4052-9203-d6affc9c29c5
+ ✅ [TaskService] Found 0 active tasks
+ 📊 [App] Active tasks count: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0

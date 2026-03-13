@@ -1,0 +1,217 @@
+C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)> npm run dev
+
+> localfelo@1.0.0 dev
+> vite
+
+(!) Experimental optimizeDeps.disabled and deps pre-bundling during build were removed in Vite 5.1.
+    Setting it to false now has no effect.
+    Please remove optimizeDeps.disabled from your config.
+
+
+  VITE v6.3.5  ready in 1091 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+9:01:35 pm [vite] (client) Pre-transform error: Failed to resolve import "sonner@2.0.3" from "src/screens/NewTasksScreen.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/screens/NewTasksScreen.tsx:15:22    
+  29 |  import { HELPER_TASK_CATEGORIES, DISTANCE_OPTIONS } from "../constants/helperCategories";  30 |  import { supabase } from "../lib/supabaseClient";
+  31 |  import { toast } from "sonner@2.0.3";
+     |                         ^
+  32 |  import { calculateDistance } from "../utils/distance";
+  33 |  export function NewTasksScreen({
+9:01:35 pm [vite] (client) Pre-transform error: Failed to resolve import "sonner@2.0.3" from "src/screens/TaskDetailScreen.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/screens/TaskDetailScreen.tsx:11:22  
+  25 |  import { SkeletonLoader } from "../components/SkeletonLoader";
+  26 |  import { getTaskCategories } from "../services/categories";
+  27 |  import { toast } from "sonner@2.0.3";
+     |                         ^
+  28 |  import { getProfileById } from "../services/profile";
+  29 |  import { ReportModal } from "../components/ReportModal";
+9:01:35 pm [vite] (client) Pre-transform error: Failed to resolve import "sonner@2.0.3" from "src/screens/CleanTasksScreen.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/screens/CleanTasksScreen.tsx:13:22  
+  28 |  import { HELPER_TASK_CATEGORIES } from "../constants/helperCategories";
+  29 |  import { supabase } from "../lib/supabaseClient";
+  30 |  import { toast } from "sonner@2.0.3";
+     |                         ^
+  31 |  import { calculateDistance } from "../utils/distance";
+  32 |  import { Header } from "../components/Header";
+9:01:36 pm [vite] (client) Pre-transform error: Failed to resolve import "@capacitor/geolocation" from "src/services/geocoding.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/services/geocoding.ts:304:47        
+  168|        let Geolocation;
+  169|        try {
+  170|          const geolocationModule = await import("@capacitor/geolocation");
+     |                                                 ^
+  171|          Geolocation = geolocationModule.Geolocation;
+  172|        } catch (importError) {
+9:01:36 pm [vite] (client) Pre-transform error: Failed to resolve import "@capacitor/geolocation" from "src/services/geocoding.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/services/geocoding.ts:304:47        
+  168|        let Geolocation;
+  169|        try {
+  170|          const geolocationModule = await import("@capacitor/geolocation");
+     |                                                 ^
+  171|          Geolocation = geolocationModule.Geolocation;
+  172|        } catch (importError) { (x2)
+9:01:36 pm [vite] (client) warning: Duplicate key "technicl" in object literal
+53 |    'cookin': 'cooking',
+54 |    'technicl': 'technical',
+55 |    'technicl': 'technical',
+   |    ^
+56 |    'tecnical': 'technical',
+57 |    'oficce': 'office',
+
+  Plugin: vite:esbuild
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/services/contentModeration.ts       
+9:01:39 pm [vite] Internal server error: Failed to resolve import "sonner@2.0.3" from "src/screens/TaskDetailScreen.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/screens/TaskDetailScreen.tsx:11:22  
+  25 |  import { SkeletonLoader } from "../components/SkeletonLoader";
+  26 |  import { getTaskCategories } from "../services/categories";
+  27 |  import { toast } from "sonner@2.0.3";
+     |                         ^
+  28 |  import { getProfileById } from "../services/profile";
+  29 |  import { ReportModal } from "../components/ReportModal";
+      at TransformPluginContext._formatLog (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42499:41)
+      at TransformPluginContext.error (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42496:16)
+      at normalizeUrl (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40475:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      at async file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40594:37
+      at async Promise.all (index 12)
+      at async TransformPluginContext.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40521:7)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42294:18)
+      at async loadAndTransform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35735:27)
+      at async viteTransformMiddleware (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:37250:24)
+9:01:39 pm [vite] Internal server error: Failed to resolve import "sonner@2.0.3" from "src/screens/NewTasksScreen.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/screens/NewTasksScreen.tsx:15:22    
+  29 |  import { HELPER_TASK_CATEGORIES, DISTANCE_OPTIONS } from "../constants/helperCategories";  30 |  import { supabase } from "../lib/supabaseClient";
+  31 |  import { toast } from "sonner@2.0.3";
+     |                         ^
+  32 |  import { calculateDistance } from "../utils/distance";
+  33 |  export function NewTasksScreen({
+      at TransformPluginContext._formatLog (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42499:41)
+      at TransformPluginContext.error (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42496:16)
+      at normalizeUrl (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40475:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      at async file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40594:37
+      at async Promise.all (index 7)
+      at async TransformPluginContext.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40521:7)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42294:18)
+      at async loadAndTransform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35735:27)
+      at async viteTransformMiddleware (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:37250:24)
+9:01:39 pm [vite] Internal server error: Failed to resolve import "sonner@2.0.3" from "src/screens/CleanTasksScreen.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/screens/CleanTasksScreen.tsx:13:22  
+  28 |  import { HELPER_TASK_CATEGORIES } from "../constants/helperCategories";
+  29 |  import { supabase } from "../lib/supabaseClient";
+  30 |  import { toast } from "sonner@2.0.3";
+     |                         ^
+  31 |  import { calculateDistance } from "../utils/distance";
+  32 |  import { Header } from "../components/Header";
+      at TransformPluginContext._formatLog (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42499:41)
+      at TransformPluginContext.error (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42496:16)
+      at normalizeUrl (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40475:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      at async file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40594:37
+      at async Promise.all (index 7)
+      at async TransformPluginContext.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40521:7)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42294:18)
+      at async loadAndTransform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35735:27)
+      at async viteTransformMiddleware (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:37250:24)
+9:01:43 pm [vite] (client) ✨ new dependencies optimized: sonner, @supabase/supabase-js, motion/re
+act
+9:01:43 pm [vite] (client) ✨ optimized dependencies changed. reloading
+9:01:49 pm [vite] (client) Pre-transform error: Failed to resolve import "@capacitor/geolocation" from "src/services/geocoding.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/services/geocoding.ts:304:47        
+  168|        let Geolocation;
+  169|        try {
+  170|          const geolocationModule = await import("@capacitor/geolocation");
+     |                                                 ^
+  171|          Geolocation = geolocationModule.Geolocation;
+  172|        } catch (importError) {
+9:01:49 pm [vite] (client) Pre-transform error: Failed to resolve import "@capacitor/geolocation" from "src/services/geocoding.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/services/geocoding.ts:304:47        
+  168|        let Geolocation;
+  169|        try {
+  170|          const geolocationModule = await import("@capacitor/geolocation");
+     |                                                 ^
+  171|          Geolocation = geolocationModule.Geolocation;
+  172|        } catch (importError) { (x2)
+9:01:50 pm [vite] (client) warning: Duplicate key "technicl" in object literal
+53 |    'cookin': 'cooking',
+54 |    'technicl': 'technical',
+55 |    'technicl': 'technical',
+   |    ^
+56 |    'tecnical': 'technical',
+57 |    'oficce': 'office',
+
+  Plugin: vite:esbuild
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/services/contentModeration.ts       
+9:01:50 pm [vite] Internal server error: Failed to resolve import "sonner@2.0.3" from "src/screens/TaskDetailScreen.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/screens/TaskDetailScreen.tsx:11:22  
+  25 |  import { SkeletonLoader } from "../components/SkeletonLoader";
+  26 |  import { getTaskCategories } from "../services/categories";
+  27 |  import { toast } from "sonner@2.0.3";
+     |                         ^
+  28 |  import { getProfileById } from "../services/profile";
+  29 |  import { ReportModal } from "../components/ReportModal";
+      at TransformPluginContext._formatLog (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42499:41)
+      at TransformPluginContext.error (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42496:16)
+      at normalizeUrl (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40475:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      at async file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40594:37
+      at async Promise.all (index 12)
+      at async TransformPluginContext.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40521:7)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42294:18)
+      at async loadAndTransform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35735:27)
+      at async viteTransformMiddleware (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:37250:24)
+9:01:50 pm [vite] Internal server error: Failed to resolve import "sonner@2.0.3" from "src/screens/NewTasksScreen.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/screens/NewTasksScreen.tsx:15:22    
+  29 |  import { HELPER_TASK_CATEGORIES, DISTANCE_OPTIONS } from "../constants/helperCategories";  30 |  import { supabase } from "../lib/supabaseClient";
+  31 |  import { toast } from "sonner@2.0.3";
+     |                         ^
+  32 |  import { calculateDistance } from "../utils/distance";
+  33 |  export function NewTasksScreen({
+      at TransformPluginContext._formatLog (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42499:41)
+      at TransformPluginContext.error (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42496:16)
+      at normalizeUrl (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40475:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      at async file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40594:37
+      at async Promise.all (index 7)
+      at async TransformPluginContext.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40521:7)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42294:18)
+      at async loadAndTransform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35735:27)
+      at async viteTransformMiddleware (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:37250:24)
+9:01:50 pm [vite] Internal server error: Failed to resolve import "sonner@2.0.3" from "src/screens/CleanTasksScreen.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/screens/CleanTasksScreen.tsx:13:22  
+  28 |  import { HELPER_TASK_CATEGORIES } from "../constants/helperCategories";
+  29 |  import { supabase } from "../lib/supabaseClient";
+  30 |  import { toast } from "sonner@2.0.3";
+     |                         ^
+  31 |  import { calculateDistance } from "../utils/distance";
+  32 |  import { Header } from "../components/Header";
+      at TransformPluginContext._formatLog (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42499:41)
+      at TransformPluginContext.error (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42496:16)
+      at normalizeUrl (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40475:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      at async file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40594:37
+      at async Promise.all (index 7)
+      at async TransformPluginContext.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40521:7)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42294:18)
+      at async loadAndTransform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35735:27)
+      at async viteTransformMiddleware (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:37250:24)
+PS C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)>
+
+
+
+

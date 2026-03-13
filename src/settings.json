@@ -1,0 +1,14 @@
+{
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  "postcss.validate": false,
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "css.customData": ["./css-custom-data.json"]
+}

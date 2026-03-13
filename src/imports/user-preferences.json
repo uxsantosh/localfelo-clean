@@ -1,0 +1,116 @@
+[
+  {
+    "column_name": "id",
+    "data_type": "uuid",
+    "column_default": "gen_random_uuid()",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "user_id",
+    "data_type": "uuid",
+    "column_default": null,
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "is_active",
+    "data_type": "boolean",
+    "column_default": "false",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "preferred_intents",
+    "data_type": "ARRAY",
+    "column_default": "'{}'::text[]",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "max_distance_km",
+    "data_type": "integer",
+    "column_default": "5",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "min_budget",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "max_budget",
+    "data_type": "integer",
+    "column_default": null,
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "preferred_effort_levels",
+    "data_type": "ARRAY",
+    "column_default": "ARRAY['easy'::text, 'medium'::text, 'hard'::text]",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "column_default": "CURRENT_TIMESTAMP",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "updated_at",
+    "data_type": "timestamp with time zone",
+    "column_default": "CURRENT_TIMESTAMP",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "show_uncategorized_tasks",
+    "data_type": "boolean",
+    "column_default": "true",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "show_all_tasks",
+    "data_type": "boolean",
+    "column_default": "false",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "min_confidence_threshold",
+    "data_type": "integer",
+    "column_default": "60",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "onboarding_completed",
+    "data_type": "boolean",
+    "column_default": "false",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "onboarding_reminder_count",
+    "data_type": "integer",
+    "column_default": "0",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "onboarding_skipped_at",
+    "data_type": "timestamp without time zone",
+    "column_default": null,
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "notify_urgent_tasks",
+    "data_type": "boolean",
+    "column_default": "true",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "max_distance",
+    "data_type": "integer",
+    "column_default": "10",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "selected_categories",
+    "data_type": "ARRAY",
+    "column_default": "'{}'::text[]",
+    "is_nullable": "YES"
+  }
+]

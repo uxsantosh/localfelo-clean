@@ -1,0 +1,101 @@
+PS C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)> npm install
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: @capacitor/geolocation@8.1.0
+npm warn Found: @capacitor/core@6.2.1
+npm warn node_modules/@capacitor/core
+npm warn   @capacitor/core@"^6.0.0" from the root project
+npm warn   5 more (@capacitor/android, @capacitor/app, @capacitor/device, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peer @capacitor/core@">=8.0.0" from @capacitor/geolocation@8.1.0
+npm warn node_modules/@capacitor/geolocation
+npm warn
+npm warn Conflicting peer dependency: @capacitor/core@8.2.0
+npm warn node_modules/@capacitor/core
+npm warn   peer @capacitor/core@">=8.0.0" from @capacitor/geolocation@8.1.0
+npm warn   node_modules/@capacitor/geolocation
+npm warn deprecated tar@6.2.1: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated glob@9.3.5: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+
+added 326 packages, and audited 327 packages in 53s
+
+26 packages are looking for funding
+  run `npm fund` for details
+
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+PS C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)> npm run dev
+
+> localfelo@1.0.0 dev
+> vite
+
+failed to load config from C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)\vite.config.ts
+error when starting dev server:
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package '@vitejs/plugin-react-swc' imported from C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)\node_modules\.vite-temp\vite.config.ts.timestamp-1773069814365-0cca256b46f53.mjs
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:316:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at defaultResolve (node:internal/modules/esm/resolve:990:11)
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:735:38)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:620:35)
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:143:33)
+PS C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)> Remove-Item -Path "node_modules\.vite" -Recurse -Force -ErrorAction SilentlyContinue
+PS C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)> Remove-Item -Path "node_modules\.vite-temp" 
+-Recurse -Force -ErrorAction SilentlyContinue
+PS C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)> Remove-Item -Path ".vite" -Recurse -Force -ErrorAction SilentlyContinue
+PS C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)> npm run dev
+
+> localfelo@1.0.0 dev
+> vite
+
+failed to load config from C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)\vite.config.ts
+error when starting dev server:
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package '@vitejs/plugin-react-swc' imported from C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)\node_modules\.vite-temp\vite.config.ts.timestamp-1773070020224-fdb2f03bd818b.mjs
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:316:9)
+    at moduleResolve (node:internal/modules/esm/resolve:858:18)
+    at defaultResolve (node:internal/modules/esm/resolve:990:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:718:20)
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:735:38)
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:764:52)
+    at #resolve (node:internal/modules/esm/loader:700:17)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:620:35)
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:143:33)
+PS C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)> npm install
+
+up to date, audited 327 packages in 7s
+
+26 packages are looking for funding
+  run `npm fund` for details
+
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+PS C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)> npm run dev
+
+> localfelo@1.0.0 dev
+> vite
+
+failed to load config from C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)\vite.config.ts
+error when starting dev server:
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package '@vitejs/plugin-react-swc' imported from C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)\node_modules\.vite-temp\vite.config.ts.timestamp-1773070044275-2fd3364ca4693.mjs
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:316:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:858:18)
+    at defaultResolve (node:internal/modules/esm/resolve:990:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:718:20)
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:735:38)
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:764:52)
+    at #resolve (node:internal/modules/esm/loader:700:17)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:620:35)
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:143:33)
+PS C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)> 

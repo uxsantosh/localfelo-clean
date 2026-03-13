@@ -1,0 +1,53 @@
+❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-IvKmAPmK.js:10 ✅ User logged in successfully with client token
+index-IvKmAPmK.js:244 ✅ Login successful: Test User
+index-IvKmAPmK.js:38 [usePushNotifications] Hook called with userId: b2222222...
+index-IvKmAPmK.js:46 🗺️ Header Location Debug: {rawArea: '', rawCity: 'Bangalore', processedArea: '', processedCity: 'Bangalore'}
+index-IvKmAPmK.js:244 [NewHomeScreen] Loading nearby content with user location: {lat: 12.9716, lon: 77.5946, city: 'Bangalore', area: '', note: 'Filtering by city if location set, otherwise showing all content'}
+index-IvKmAPmK.js:10 🌆 [Locations] Fetching cities with 3-level hierarchy (City → Area → Sub-Area)...
+index-IvKmAPmK.js:38 [usePushNotifications] useEffect triggered, userId: b2222222...
+index-IvKmAPmK.js:38 [usePushNotifications] Push support check: {supported: true, permission: 'prompt', userId: 'b2222222...'}
+index-IvKmAPmK.js:38 [usePushNotifications] User is authenticated, starting registration
+index-IvKmAPmK.js:38 [usePushNotifications] Attempting push registration for user: b2222222-2222-2222-2222-222222222222
+index-IvKmAPmK.js:244 🔔 [App] Fetching unread count...
+index-IvKmAPmK.js:244 🔔 [App] Setting up real-time subscription for unread count...
+index-IvKmAPmK.js:38 🔔 Setting up real-time subscriptions...
+VM1083:368 native App.removeListener (#111288103)
+index-IvKmAPmK.js:109 📋 [TaskService] Getting active tasks for user: b2222222-2222-2222-2222-222222222222
+index-IvKmAPmK.js:38 [usePushNotifications] Hook called with userId: b2222222...
+index-IvKmAPmK.js:46 🗺️ Header Location Debug: {rawArea: '', rawCity: 'Bangalore', processedArea: '', processedCity: 'Bangalore'}
+index-IvKmAPmK.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM1083:368 native Preferences.get (#111288104)
+VM1083:368 native App.addListener (#111288105)
+index-IvKmAPmK.js:38 [usePushNotifications] Registering for push notifications on native platform
+VM1083:368 native PushNotifications.requestPermissions (#111288106)
+index-IvKmAPmK.js:244 [NewHomeScreen] Loading nearby content with user location: {lat: 12.9716, lon: 77.5946, city: 'Bangalore', area: '', note: 'Filtering by city if location set, otherwise showing all content'}
+index-IvKmAPmK.js:10 🌆 [Locations] Fetching cities with 3-level hierarchy (City → Area → Sub-Area)...
+VM1083:368 native App.removeListener (#111288107)
+VM1083:342 result Preferences.get (#111288104)
+index-IvKmAPmK.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-IvKmAPmK.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM1083:368 native Preferences.get (#111288108)
+VM1083:368 native App.addListener (#111288109)
+VM1083:342 result PushNotifications.requestPermissions (#111288106)
+VM1083:368 native PushNotifications.register (#111288110)
+VM1083:342 result Preferences.get (#111288108)
+index-IvKmAPmK.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-IvKmAPmK.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM1083:368 native Preferences.get (#111288111)
+VM1083:342 result PushNotifications.register (#111288110)
+VM1083:368 native PushNotifications.addListener (#111288112)
+VM1083:368 native PushNotifications.addListener (#111288113)
+VM1083:342 result PushNotifications.addListener (#121840826)
+VM1083:342 result PushNotifications.addListener (#111285773)
+index-IvKmAPmK.js:38 [usePushNotifications] ✅ FCM token received: frTljZaCQK6BHKFHHidQ...
+VM1083:342 result PushNotifications.addListener (#111286736)
+index-IvKmAPmK.js:38 [usePushNotifications] ✅ FCM token received: frTljZaCQK6BHKFHHidQ...
+VM1083:342 result PushNotifications.addListener (#111287038)
+index-IvKmAPmK.js:38 [usePushNotifications] ✅ FCM token received: frTljZaCQK6BHKFHHidQ...
+VM1083:342 result PushNotifications.addListener (#111287413)
+index-IvKmAPmK.js:38 [usePushNotifications] ✅ FCM token received: frTljZaCQK6BHKFHHidQ...
+VM1083:342 result PushNotifications.addListener (#111287804)
+index-IvKmAPmK.js:38 [usePushNotifications] ✅ FCM token received: frTljZaCQK6BHKFHHidQ...
+VM1083:342 result Preferences.get (#111288111)
+index-IvKmAPmK.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found

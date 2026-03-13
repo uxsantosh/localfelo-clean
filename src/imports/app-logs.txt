@@ -1,0 +1,135 @@
+❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:244 🔄 [App] Polling unread count (fallback)...
+index-Dj-ikV-a.js:244 🔔 [App] Fetching unread count...
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567212)
+VM3:342 result Preferences.get (#40567212)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567213)
+VM3:342 result Preferences.get (#40567213)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:244 🔔 [App] Unread count fetched: 0
+index-Dj-ikV-a.js:244 🔄 [App] Polling unread count (fallback)...
+index-Dj-ikV-a.js:244 🔔 [App] Fetching unread count...
+index-Dj-ikV-a.js:109 📋 [TaskService] Getting active tasks for user: 56d9bf39-383a-49cd-a1a3-8593dbcd1f8d
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567214)
+VM3:342 result Preferences.get (#40567214)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567215)
+VM3:342 result Preferences.get (#40567215)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567216)
+VM3:342 result Preferences.get (#40567216)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:109 ✅ [TaskService] Found 0 active tasks
+index-Dj-ikV-a.js:244 📊 [App] Active tasks count: 0
+index-Dj-ikV-a.js:244 🔔 [App] Unread count fetched: 0
+index-Dj-ikV-a.js:244 🔄 [App] Polling unread count (fallback)...
+index-Dj-ikV-a.js:244 🔔 [App] Fetching unread count...
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567217)
+VM3:342 result Preferences.get (#40567217)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567218)
+VM3:342 result Preferences.get (#40567218)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:244 🔔 [App] Unread count fetched: 0
+index-Dj-ikV-a.js:244 🔄 [App] Polling unread count (fallback)...
+index-Dj-ikV-a.js:244 🔔 [App] Fetching unread count...
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567219)
+VM3:342 result Preferences.get (#40567219)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567220)
+VM3:342 result Preferences.get (#40567220)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:244 🔔 [App] Unread count fetched: 0
+index-Dj-ikV-a.js:244 🔄 [App] Polling unread count (fallback)...
+index-Dj-ikV-a.js:244 🔔 [App] Fetching unread count...
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567221)
+VM3:342 result Preferences.get (#40567221)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567222)
+VM3:342 result Preferences.get (#40567222)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:244 🔔 [App] Unread count fetched: 0
+index-Dj-ikV-a.js:109 📋 [TaskService] Getting active tasks for user: 56d9bf39-383a-49cd-a1a3-8593dbcd1f8d
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567223)
+VM3:342 result Preferences.get (#40567223)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:109 ✅ [TaskService] Found 0 active tasks
+index-Dj-ikV-a.js:244 📊 [App] Active tasks count: 0
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567224)
+VM3:342 result Preferences.get (#40567224)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:244 🔄 [App] Polling unread count (fallback)...
+index-Dj-ikV-a.js:244 🔔 [App] Fetching unread count...
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567225)
+VM3:342 result Preferences.get (#40567225)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567226)
+VM3:342 result Preferences.get (#40567226)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:244 🔔 [App] Unread count fetched: 0
+index-Dj-ikV-a.js:244 🔄 [App] Polling unread count (fallback)...
+index-Dj-ikV-a.js:244 🔔 [App] Fetching unread count...
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567227)
+VM3:342 result Preferences.get (#40567227)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567228)
+VM3:342 result Preferences.get (#40567228)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:244 🔔 [App] Unread count fetched: 0
+index-Dj-ikV-a.js:244 🔄 [App] Polling unread count (fallback)...
+index-Dj-ikV-a.js:244 🔔 [App] Fetching unread count...
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567229)
+VM3:342 result Preferences.get (#40567229)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567230)
+VM3:342 result Preferences.get (#40567230)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:244 🔔 [App] Unread count fetched: 0
+index-Dj-ikV-a.js:109 📋 [TaskService] Getting active tasks for user: 56d9bf39-383a-49cd-a1a3-8593dbcd1f8d
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567231)
+VM3:342 result Preferences.get (#40567231)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:109 ✅ [TaskService] Found 0 active tasks
+index-Dj-ikV-a.js:244 📊 [App] Active tasks count: 0
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567232)
+VM3:342 result Preferences.get (#40567232)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:244 🔄 [App] Polling unread count (fallback)...
+index-Dj-ikV-a.js:244 🔔 [App] Fetching unread count...
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567233)
+VM3:342 result Preferences.get (#40567233)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567234)
+VM3:342 result Preferences.get (#40567234)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found
+index-Dj-ikV-a.js:244 🔔 [App] Unread count fetched: 0
+index-Dj-ikV-a.js:244 🔄 [App] Polling unread count (fallback)...
+index-Dj-ikV-a.js:244 🔔 [App] Fetching unread count...
+index-Dj-ikV-a.js:10 🔍 [CapacitorStorage] GET: sb-drofnrntrbedtjtpseve-auth-token
+VM3:368 native Preferences.get (#40567235)
+VM3:342 result Preferences.get (#40567235)
+index-Dj-ikV-a.js:10 ❌ [CapacitorStorage] GET Result: sb-drofnrntrbedtjtpseve-auth-token → Not found

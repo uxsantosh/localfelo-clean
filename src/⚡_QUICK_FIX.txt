@@ -1,0 +1,48 @@
+⚡ QUICK FIX - 3 STEPS
+══════════════════════════════════════════
+
+ERROR:
+"Could not find the table 'public.users'"
+
+FIX:
+──────────────────────────────────────────
+1️⃣ COPY 5 FILES (3 min)
+
+   /services/notifications.ts
+   /screens/AdminScreen.tsx
+   /components/admin/BroadcastTab.tsx
+   /components/EditProfileModal.tsx
+   /screens/WishesScreen.tsx
+
+──────────────────────────────────────────
+2️⃣ RUN SQL (1 min)
+
+   Supabase SQL Editor
+   → Copy from: /FIX_NOTIFICATIONS_RLS.sql
+   → Paste and Run
+
+──────────────────────────────────────────
+3️⃣ CLEAR CACHE (30 sec)
+
+   Ctrl+Shift+R (Windows)
+   Cmd+Shift+R (Mac)
+
+──────────────────────────────────────────
+
+✅ DONE! Test broadcast - works!
+
+══════════════════════════════════════════
+
+WHAT CHANGED:
+• 'users' table → 'profiles' table
+• Users tab activated
+• User selection in broadcast
+• RLS policies fixed
+
+══════════════════════════════════════════
+
+NEED MORE INFO?
+Read: /START_HERE.txt
+or: /README_DEPLOYMENT.md
+
+══════════════════════════════════════════

@@ -1,0 +1,120 @@
+ C:\Users\LAPTOPS24\Downloads\LocalFelo> npm run dev
+
+> LocalFelo (ANDROID)@0.1.0 dev
+> vite
+
+
+  VITE v6.3.5  ready in 948 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+Error: The following dependencies are imported but could not be resolved:
+
+  browser-image-compression (imported by C:/Users/LAPTOPS24/Downloads/LocalFelo/src/components/ImageUploader.tsx)
+  nsfwjs (imported by C:/Users/LAPTOPS24/Downloads/LocalFelo/src/services/nsfwDetection.ts)
+  @tensorflow/tfjs (imported by C:/Users/LAPTOPS24/Downloads/LocalFelo/src/services/nsfwDetection.ts)
+
+Are they installed?
+    at file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:14849:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:46985:28
+11:02:03 pm [vite] (client) Pre-transform error: Failed to resolve import "browser-image-compression" from "src/components/AvatarUploader.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/components/AvatarUploader.tsx:3:29
+  22 |  import { useState, useRef, useEffect } from 'react';
+  23 |  import { Camera, User, AlertCircle } from 'lucide-react';
+  24 |  import imageCompression from 'browser-image-compression';
+     |                                ^
+  25 |  import { detectNSFW, loadNSFWModel } from '../services/nsfwDetection';
+  26 |  export function AvatarUploader({ currentAvatar, onAvatarChange, disabled }) {
+11:02:03 pm [vite] (client) Pre-transform error: Failed to resolve import "browser-image-compression" from "src/components/ImageUploader.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/components/ImageUploader.tsx:3:29
+  22 |  import React, { useRef, useState, useEffect } from 'react';
+  23 |  import { Upload, X, Loader2, AlertCircle } from 'lucide-react';
+  24 |  import imageCompression from 'browser-image-compression';
+     |                                ^
+  25 |  import { detectNSFW, loadNSFWModel } from '../services/nsfwDetection';
+  26 |  export function ImageUploader({ images, onImagesChange, maxImages = 6 }) {
+11:02:03 pm [vite] (client) Pre-transform error: Failed to resolve import "nsfwjs" from "src/services/nsfwDetection.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/services/nsfwDetection.ts:1:24
+  1  |  import * as nsfwjs from 'nsfwjs';
+     |                           ^
+  2  |  import * as tf from '@tensorflow/tfjs';
+  3  |  let model = null;
+11:02:03 pm [vite] (client) Pre-transform error: Failed to resolve import "browser-image-compression" from "src/components/AvatarUploader.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/components/AvatarUploader.tsx:3:29
+  22 |  import { useState, useRef, useEffect } from 'react';
+  23 |  import { Camera, User, AlertCircle } from 'lucide-react';
+  24 |  import imageCompression from 'browser-image-compression';
+     |                                ^
+  25 |  import { detectNSFW, loadNSFWModel } from '../services/nsfwDetection';
+  26 |  export function AvatarUploader({ currentAvatar, onAvatarChange, disabled }) {
+11:02:03 pm [vite] (client) Pre-transform error: Failed to resolve import "browser-image-compression" from "src/components/ImageUploader.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/components/ImageUploader.tsx:3:29
+  22 |  import React, { useRef, useState, useEffect } from 'react';
+  23 |  import { Upload, X, Loader2, AlertCircle } from 'lucide-react';
+  24 |  import imageCompression from 'browser-image-compression';
+     |                                ^
+  25 |  import { detectNSFW, loadNSFWModel } from '../services/nsfwDetection';
+  26 |  export function ImageUploader({ images, onImagesChange, maxImages = 6 }) {
+11:02:03 pm [vite] (client) Pre-transform error: Failed to resolve import "nsfwjs" from "src/services/nsfwDetection.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/services/nsfwDetection.ts:1:24
+  1  |  import * as nsfwjs from 'nsfwjs';
+     |                           ^
+  2  |  import * as tf from '@tensorflow/tfjs';
+  3  |  let model = null;
+11:02:21 pm [vite] Internal server error: Failed to resolve import "browser-image-compression" from "src/components/AvatarUploader.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/components/AvatarUploader.tsx:3:29
+  22 |  import { useState, useRef, useEffect } from 'react';
+  23 |  import { Camera, User, AlertCircle } from 'lucide-react';
+  24 |  import imageCompression from 'browser-image-compression';
+     |                                ^
+  25 |  import { detectNSFW, loadNSFWModel } from '../services/nsfwDetection';
+  26 |  export function AvatarUploader({ currentAvatar, onAvatarChange, disabled }) {
+      at TransformPluginContext._formatLog (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42499:41)
+      at TransformPluginContext.error (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42496:16)
+      at normalizeUrl (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40475:23)
+      at async file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40594:37
+      at async Promise.all (index 5)
+      at async TransformPluginContext.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40521:7)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42294:18)
+      at async loadAndTransform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35735:27)      at async viteTransformMiddleware (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:37250:24)
+11:02:21 pm [vite] Internal server error: Failed to resolve import "browser-image-compression" from "src/components/ImageUploader.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/components/ImageUploader.tsx:3:29
+  22 |  import React, { useRef, useState, useEffect } from 'react';
+  23 |  import { Upload, X, Loader2, AlertCircle } from 'lucide-react';
+  24 |  import imageCompression from 'browser-image-compression';
+     |                                ^
+  25 |  import { detectNSFW, loadNSFWModel } from '../services/nsfwDetection';
+  26 |  export function ImageUploader({ images, onImagesChange, maxImages = 6 }) {
+      at TransformPluginContext._formatLog (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42499:41)
+      at TransformPluginContext.error (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42496:16)
+      at normalizeUrl (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40475:23)
+      at async file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40594:37
+      at async Promise.all (index 5)
+      at async TransformPluginContext.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40521:7)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42294:18)
+      at async loadAndTransform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35735:27)      at async viteTransformMiddleware (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:37250:24)
+11:02:22 pm [vite] (client) Pre-transform error: Failed to resolve import "nsfwjs" from "src/services/nsfwDetection.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/services/nsfwDetection.ts:1:24
+  1  |  import * as nsfwjs from 'nsfwjs';
+     |                           ^
+  2  |  import * as tf from '@tensorflow/tfjs';
+  3  |  let model = null;
+11:02:22 pm [vite] (client) Pre-transform error: Failed to resolve import "nsfwjs" from "src/services/nsfwDetection.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/services/nsfwDetection.ts:1:24
+  1  |  import * as nsfwjs from 'nsfwjs';
+     |                           ^
+  2  |  import * as tf from '@tensorflow/tfjs';
+  3  |  let model = null; (x2)
+
