@@ -1333,6 +1333,10 @@
     min-height: 28px;
   }
 
+  .min-h-\[80px\] {
+    min-height: 80px;
+  }
+
   .min-h-\[140px\] {
     min-height: 140px;
   }

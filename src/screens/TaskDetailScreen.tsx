@@ -1,6 +1,25 @@
+import { useState, useEffect } from 'react';
+import { Header } from '../components/Header';
+import { ReportModal } from '../components/ReportModal';
 import { TaskCompletionModal } from '../components/TaskCompletionModal';
 import { RatingModal } from '../components/RatingModal';
 import { LocalFeloLoader } from '../components/LocalFeloLoader';
+import { 
+  MapPin, 
+  IndianRupee, 
+  Clock, 
+  ExternalLink, 
+  CheckCircle, 
+  Flag, 
+  User,
+  MessageCircle,
+  Edit3,
+  Trash2,
+  Check,
+  ThumbsUp,
+  Navigation,
+  XCircle
+} from 'lucide-react';
 import { getTaskCategories } from '../services/categories';
 import { 
   getTaskById, 
