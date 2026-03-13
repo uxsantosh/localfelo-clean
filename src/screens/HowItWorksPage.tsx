@@ -121,7 +121,7 @@ export function HowItWorksPage({
               </h3>
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="bg-white rounded-xl p-6 border-2 border-gray-200">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-xl text-black mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     1
                   </div>
                   <div className="mb-3">
@@ -134,7 +134,7 @@ export function HowItWorksPage({
                 </div>
 
                 <div className="bg-white rounded-xl p-6 border-2 border-gray-200">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-xl text-black mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     2
                   </div>
                   <div className="mb-3">
@@ -147,7 +147,7 @@ export function HowItWorksPage({
                 </div>
 
                 <div className="bg-white rounded-xl p-6 border-2 border-gray-200">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-xl text-black mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     3
                   </div>
                   <div className="mb-3">
@@ -160,7 +160,7 @@ export function HowItWorksPage({
                 </div>
 
                 <div className="bg-white rounded-xl p-6 border-2 border-gray-200">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-xl text-black mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     4
                   </div>
                   <div className="mb-3">
@@ -277,7 +277,7 @@ export function HowItWorksPage({
               </h3>
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="bg-white rounded-xl p-6 border-2 border-gray-200">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-xl text-black mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     1
                   </div>
                   <div className="mb-3">
@@ -290,7 +290,7 @@ export function HowItWorksPage({
                 </div>
 
                 <div className="bg-white rounded-xl p-6 border-2 border-gray-200">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-xl text-black mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     2
                   </div>
                   <div className="mb-3">
@@ -303,7 +303,7 @@ export function HowItWorksPage({
                 </div>
 
                 <div className="bg-white rounded-xl p-6 border-2 border-gray-200">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-xl text-black mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     3
                   </div>
                   <div className="mb-3">
@@ -316,7 +316,7 @@ export function HowItWorksPage({
                 </div>
 
                 <div className="bg-white rounded-xl p-6 border-2 border-gray-200">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-xl text-black mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     4
                   </div>
                   <div className="mb-3">
@@ -433,7 +433,7 @@ export function HowItWorksPage({
               </h3>
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="bg-white rounded-xl p-6 border-2 border-gray-200">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-xl text-black mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     1
                   </div>
                   <div className="mb-3">
@@ -446,7 +446,7 @@ export function HowItWorksPage({
                 </div>
 
                 <div className="bg-white rounded-xl p-6 border-2 border-gray-200">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-xl text-black mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     2
                   </div>
                   <div className="mb-3">
@@ -459,7 +459,7 @@ export function HowItWorksPage({
                 </div>
 
                 <div className="bg-white rounded-xl p-6 border-2 border-gray-200">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-xl text-black mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     3
                   </div>
                   <div className="mb-3">
@@ -472,7 +472,7 @@ export function HowItWorksPage({
                 </div>
 
                 <div className="bg-white rounded-xl p-6 border-2 border-gray-200">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-xl text-black mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     4
                   </div>
                   <div className="mb-3">
