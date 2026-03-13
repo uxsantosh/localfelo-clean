@@ -36,6 +36,9 @@ export default defineConfig(({ command }) => {
         strict: false,
         allow: ['.'],
       },
+      // Enable history API fallback for client-side routing
+      // This allows direct URLs to work in development
+      historyApiFallback: true,
     },
     resolve: {
       alias: {

@@ -266,65 +266,15 @@ function AppContent() {
   // Simple notifications (replaces toast)
   const simpleNotify = useSimpleNotifications();
 
-  // ✅ INITIALIZE SCREEN FROM URL ON MOUNT
+  // ✅ SYNC SCREEN STATE WITH URL (handles both initial load and URL changes)
   useEffect(() => {
     const path = routerLocation.pathname;
-    console.log('🔗 [App] Initializing from URL:', path);
+    console.log('🔗 [App] URL path:', path);
     
-    // Map URL paths to screens
-    const pathToScreen: Record<string, Screen> = {
-      '/': 'home',
-      '/marketplace': 'marketplace',
-      '/create': 'create',
-      '/profile': 'profile',
-      '/chat': 'chat',
-      '/admin': 'admin',
-      '/admin/categories': 'admin-categories',
-      '/about': 'about',
-      '/how-it-works': 'how-it-works',
-      '/terms': 'terms',
-      '/privacy': 'privacy',
-      '/safety': 'safety',
-      '/contact': 'contact',
-      '/diagnostic': 'diagnostic',
-      '/notifications': 'notifications',
-      '/wishes': 'wishes',
-      '/create-wish': 'create-wish',
-      '/wish-detail': 'wish-detail',
-      '/tasks': 'tasks',
-      '/helper-tasks': 'helper-tasks',
-      '/create-task': 'create-task',
-      '/create-job': 'create-job',
-      '/task-detail': 'task-detail',
-      '/prohibited-items': 'prohibited-items',
-      '/faq': 'faq',
-      '/helper-mode': 'helper-mode',
-      '/helper-prefs': 'helper-prefs',
-    };
-    
-    // Handle dynamic routes (with IDs)
-    if (path.startsWith('/listing/')) {
-      setCurrentScreen('listing');
-    } else if (path.startsWith('/edit-listing/')) {
-      setCurrentScreen('edit');
-    } else if (pathToScreen[path]) {
-      setCurrentScreen(pathToScreen[path]);
-    }
-  }, []); // Only run on mount
-
-  // ✅ SYNC SCREEN STATE WITH URL CHANGES (back/forward buttons)
-  useEffect(() => {
-    const path = routerLocation.pathname;
-    console.log('🔗 [App] URL changed:', path);
-    
-    // Don't override the screen if we just navigated programmatically
-    // (this prevents double-updates)
+    // Update screen based on current URL path
     const newScreen = getScreenFromPath(path);
-    if (newScreen !== currentScreen) {
-      console.log('🔄 [App] Syncing screen to URL:', newScreen);
-      setCurrentScreen(newScreen);
-    }
-  }, [routerLocation.pathname]); // Run whenever URL changes
+    setCurrentScreen(newScreen);
+  }, [routerLocation.pathname]); // Runs on mount and whenever URL changes
 
   // ✅ ANDROID BACK BUTTON HANDLING - Only on native platforms
   useEffect(() => {
