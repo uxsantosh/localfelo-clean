@@ -68,7 +68,7 @@ export function HowItWorksPage({
             onClick={() => setActiveTab('tasks')}
             className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold transition-all ${
               activeTab === 'tasks'
-                ? 'bg-black text-primary shadow-lg'
+                ? 'bg-black text-white shadow-lg'
                 : 'bg-white text-gray-700 border-2 border-gray-200 hover:border-black'
             }`}
           >
@@ -79,7 +79,7 @@ export function HowItWorksPage({
             onClick={() => setActiveTab('wishes')}
             className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold transition-all ${
               activeTab === 'wishes'
-                ? 'bg-black text-primary shadow-lg'
+                ? 'bg-black text-white shadow-lg'
                 : 'bg-white text-gray-700 border-2 border-gray-200 hover:border-black'
             }`}
           >
@@ -90,7 +90,7 @@ export function HowItWorksPage({
             onClick={() => setActiveTab('marketplace')}
             className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold transition-all ${
               activeTab === 'marketplace'
-                ? 'bg-black text-primary shadow-lg'
+                ? 'bg-black text-white shadow-lg'
                 : 'bg-white text-gray-700 border-2 border-gray-200 hover:border-black'
             }`}
           >
@@ -105,7 +105,7 @@ export function HowItWorksPage({
             {/* Header */}
             <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8 text-center">
               <div className="inline-block p-4 bg-black rounded-2xl mb-4">
-                <Briefcase className="w-12 h-12 text-primary" />
+                <Briefcase className="w-12 h-12 text-white" />
               </div>
               <h2 className="text-3xl font-bold text-black mb-3">Tasks</h2>
               <p className="text-lg text-gray-700 max-w-2xl mx-auto">
@@ -181,7 +181,7 @@ export function HowItWorksPage({
               </h3>
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="bg-white rounded-xl p-6 border-2 border-primary/30">
-                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-primary mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     1
                   </div>
                   <div className="mb-3">
@@ -194,7 +194,7 @@ export function HowItWorksPage({
                 </div>
 
                 <div className="bg-white rounded-xl p-6 border-2 border-primary/30">
-                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-primary mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     2
                   </div>
                   <div className="mb-3">
@@ -207,7 +207,7 @@ export function HowItWorksPage({
                 </div>
 
                 <div className="bg-white rounded-xl p-6 border-2 border-primary/30">
-                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-primary mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     3
                   </div>
                   <div className="mb-3">
@@ -220,7 +220,7 @@ export function HowItWorksPage({
                 </div>
 
                 <div className="bg-white rounded-xl p-6 border-2 border-primary/30">
-                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-primary mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     4
                   </div>
                   <div className="mb-3">
@@ -239,16 +239,16 @@ export function HowItWorksPage({
               <h3 className="text-xl font-bold mb-4">💡 Good to Know</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong className="text-primary">100% Commission-Free:</strong> Helpers keep every rupee they earn-no platform fees</span>
+                  <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                  <span><strong className="text-white">100% Commission-Free:</strong> Helpers keep every rupee they earn-no platform fees</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong className="text-primary">Direct Payment:</strong> You handle payments directly with each other-LocalFelo doesn't process money</span>
+                  <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                  <span><strong className="text-white">Direct Payment:</strong> You handle payments directly with each other-LocalFelo doesn't process money</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong className="text-primary">Rate & Build Trust:</strong> Both parties rate each other to build community reputation</span>
+                  <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                  <span><strong className="text-white">Rate & Build Trust:</strong> Both parties rate each other to build community reputation</span>
                 </li>
               </ul>
             </div>
@@ -261,7 +261,7 @@ export function HowItWorksPage({
             {/* Header */}
             <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 text-center">
               <div className="inline-block p-4 bg-black rounded-2xl mb-4">
-                <Sparkles className="w-12 h-12 text-primary" />
+                <Sparkles className="w-12 h-12 text-white" />
               </div>
               <h2 className="text-3xl font-bold text-black mb-3">Wishes</h2>
               <p className="text-lg text-gray-700 max-w-2xl mx-auto">
@@ -337,7 +337,7 @@ export function HowItWorksPage({
               </h3>
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="bg-white rounded-xl p-6 border-2 border-primary/30">
-                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-primary mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     1
                   </div>
                   <div className="mb-3">
@@ -350,7 +350,7 @@ export function HowItWorksPage({
                 </div>
 
                 <div className="bg-white rounded-xl p-6 border-2 border-primary/30">
-                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-primary mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     2
                   </div>
                   <div className="mb-3">
@@ -363,7 +363,7 @@ export function HowItWorksPage({
                 </div>
 
                 <div className="bg-white rounded-xl p-6 border-2 border-primary/30">
-                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-primary mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     3
                   </div>
                   <div className="mb-3">
@@ -376,7 +376,7 @@ export function HowItWorksPage({
                 </div>
 
                 <div className="bg-white rounded-xl p-6 border-2 border-primary/30">
-                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-primary mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     4
                   </div>
                   <div className="mb-3">
@@ -395,16 +395,16 @@ export function HowItWorksPage({
               <h3 className="text-xl font-bold mb-4">💡 Good to Know</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong className="text-primary">Reverse Marketplace:</strong> Instead of searching for products, sellers find you</span>
+                  <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                  <span><strong className="text-white">Reverse Marketplace:</strong> Instead of searching for products, sellers find you</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong className="text-primary">Zero Listing Fees:</strong> Post unlimited wishes-completely free</span>
+                  <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                  <span><strong className="text-white">Zero Listing Fees:</strong> Post unlimited wishes-completely free</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong className="text-primary">Local First:</strong> Connect with sellers in your area for quick, easy exchanges</span>
+                  <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                  <span><strong className="text-white">Local First:</strong> Connect with sellers in your area for quick, easy exchanges</span>
                 </li>
               </ul>
             </div>
@@ -417,7 +417,7 @@ export function HowItWorksPage({
             {/* Header */}
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 text-center">
               <div className="inline-block p-4 bg-black rounded-2xl mb-4">
-                <ShoppingBag className="w-12 h-12 text-primary" />
+                <ShoppingBag className="w-12 h-12 text-white" />
               </div>
               <h2 className="text-3xl font-bold text-black mb-3">Buy & Sell</h2>
               <p className="text-lg text-gray-700 max-w-2xl mx-auto">
@@ -493,7 +493,7 @@ export function HowItWorksPage({
               </h3>
               <div className="grid md:grid-cols-4 gap-6">
                 <div className="bg-white rounded-xl p-6 border-2 border-primary/30">
-                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-primary mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     1
                   </div>
                   <div className="mb-3">
@@ -506,7 +506,7 @@ export function HowItWorksPage({
                 </div>
 
                 <div className="bg-white rounded-xl p-6 border-2 border-primary/30">
-                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-primary mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     2
                   </div>
                   <div className="mb-3">
@@ -519,7 +519,7 @@ export function HowItWorksPage({
                 </div>
 
                 <div className="bg-white rounded-xl p-6 border-2 border-primary/30">
-                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-primary mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     3
                   </div>
                   <div className="mb-3">
@@ -532,7 +532,7 @@ export function HowItWorksPage({
                 </div>
 
                 <div className="bg-white rounded-xl p-6 border-2 border-primary/30">
-                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-primary mb-4">
+                  <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center font-bold text-xl text-white mb-4">
                     4
                   </div>
                   <div className="mb-3">
@@ -551,16 +551,16 @@ export function HowItWorksPage({
               <h3 className="text-xl font-bold mb-4">💡 Good to Know</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong className="text-primary">Unlimited Listings:</strong> Sell as many items as you want-no listing fees or commissions</span>
+                  <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                  <span><strong className="text-white">Unlimited Listings:</strong> Sell as many items as you want-no listing fees or commissions</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong className="text-primary">Local Deals:</strong> Buy from people nearby-see items before purchasing</span>
+                  <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                  <span><strong className="text-white">Local Deals:</strong> Buy from people nearby-see items before purchasing</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span><strong className="text-primary">Safe Transactions:</strong> Always meet in public places and verify items before paying</span>
+                  <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                  <span><strong className="text-white">Safe Transactions:</strong> Always meet in public places and verify items before paying</span>
                 </li>
               </ul>
             </div>
