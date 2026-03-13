@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { MapPin, X, Maximize2, Minimize2 } from 'lucide-react';
+import { Maximize2, Minimize2, X, MapPin } from 'lucide-react';
+import { LocalFeloLoader } from './LocalFeloLoader';
 
 interface MapMarker {
   id: string;
@@ -286,10 +287,7 @@ export function MapView({
       {/* Loading Overlay */}
       {isLoading && (
         <div className="absolute inset-0 bg-white/80 flex items-center justify-center z-50">
-          <div className="flex flex-col items-center gap-3">
-            <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin" />
-            <p className="text-muted text-sm">Loading map...</p>
-          </div>
+          <LocalFeloLoader size="md" text="Loading map..." />
         </div>
       )}
 

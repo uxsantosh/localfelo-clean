@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from '../components/Header';
-import { Mail, Instagram, Facebook, Linkedin } from 'lucide-react';
+import { Mail, MessageCircle } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 interface ContactPageProps {
@@ -46,7 +46,7 @@ export function ContactPage({ onBack, onNavigate, isLoggedIn = false, isAdmin = 
           <div>
             <h2 className="text-heading mb-2">Get in Touch</h2>
             <p className="text-body">
-              Have questions, feedback, or need help? We'd love to hear from you!
+              We'd love to hear from you! Whether you're an investor, partner, or have general inquiries, reach out to us:
             </p>
           </div>
 
@@ -64,68 +64,27 @@ export function ContactPage({ onBack, onNavigate, isLoggedIn = false, isAdmin = 
             </div>
           </a>
 
-          {/* Instagram */}
+          {/* WhatsApp */}
           <a
-            href="https://instagram.com/localfelo"
+            href="https://wa.me/919187608287"
             target="_blank"
             rel="noopener noreferrer"
             className="card flex items-center gap-4 hover:bg-background transition-all no-underline"
           >
             <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
-              <Instagram className="w-6 h-6 text-primary" />
+              <MessageCircle className="w-6 h-6 text-primary" />
             </div>
             <div>
-              <h4 className="text-heading m-0 mb-1">Instagram</h4>
-              <p className="text-body text-sm m-0">@localfelo</p>
+              <h4 className="text-heading m-0 mb-1">WhatsApp</h4>
+              <p className="text-body text-sm m-0">+91-9187608287</p>
             </div>
           </a>
-
-          {/* Facebook */}
-          <a
-            href="https://facebook.com/localfelo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card flex items-center gap-4 hover:bg-background transition-all no-underline"
-          >
-            <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
-              <Facebook className="w-6 h-6 text-primary" />
-            </div>
-            <div>
-              <h4 className="text-heading m-0 mb-1">Facebook</h4>
-              <p className="text-body text-sm m-0">@localfelo</p>
-            </div>
-          </a>
-
-          {/* LinkedIn */}
-          <a
-            href="https://linkedin.com/company/localfelo"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card flex items-center gap-4 hover:bg-background transition-all no-underline"
-          >
-            <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
-              <Linkedin className="w-6 h-6 text-primary" />
-            </div>
-            <div>
-              <h4 className="text-heading m-0 mb-1">LinkedIn</h4>
-              <p className="text-body text-sm m-0">LocalFelo</p>
-            </div>
-          </a>
-
-          {/* Business Hours */}
-          <div className="p-4 bg-input rounded-lg">
-            <h4 className="text-heading mb-2">Support Hours</h4>
-            <p className="text-body text-sm m-0">
-              Monday - Saturday: 9:00 AM - 6:00 PM IST<br />
-              Sunday: Closed
-            </p>
-          </div>
 
           {/* Note */}
           <div className="p-4 bg-primary/10 border border-primary/20 rounded-lg">
             <p className="text-body text-sm m-0">
               We typically respond within 24-48 hours. For urgent issues, please reach out 
-              via email with "URGENT" in the subject line.
+              via WhatsApp or email with "URGENT" in the subject line.
             </p>
           </div>
         </div>

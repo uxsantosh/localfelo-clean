@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { MapPin, Clock, IndianRupee, MessageCircle, Edit3, Trash2, ExternalLink } from 'lucide-react';
 import { Header } from '../components/Header';
 import { getCurrentUserSync } from '../services/auth';
-import { SkeletonLoader } from '../components/SkeletonLoader';
+import { LocalFeloLoader } from '../components/LocalFeloLoader';
 import { Wish } from '../types';
 import { toast } from 'sonner';
 import { getProfileById } from '../services/profile';
@@ -234,7 +234,7 @@ export function WishDetailScreen({
           onNotificationClick={onNotificationClick}
         />
         <div className="page-container py-4">
-          <SkeletonLoader count={1} />
+          <LocalFeloLoader size="lg" text="Loading wish..." />
         </div>
       </div>
     );

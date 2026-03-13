@@ -1,382 +1,506 @@
-// BANGALORE-FIRST TASK CATEGORIES - 40+ Categories
-// Prioritized for young professionals, IT workers, bachelors in Bangalore
+// UPDATED TASK CATEGORIES - 22 Main Categories
+// Based on comprehensive service categories for hyperlocal marketplace
 
 export interface TaskCategoryData {
-  id: string; // NEW: Category ID (slug format)
+  id: string; // Category ID (slug format)
   name: string;
   emoji: string;
   description: string;
+  subcategories: string[];
   keywords: string[];
-  priority?: number; // 1 = Launch priority for Bangalore
+  priority?: number; // 1 = High priority
 }
 
 export const TASK_CATEGORIES: Record<string, TaskCategoryData> = {
-  // ===== BANGALORE LAUNCH PRIORITIES (Top 15) =====
-  
+  'bring-something': {
+    id: 'bring-something',
+    name: 'Bring Something',
+    emoji: '🎒',
+    description: 'Fetch or bring an item from somewhere',
+    priority: 1,
+    subcategories: [
+      'Medicine from pharmacy',
+      'Gas cylinder',
+      'Water cans',
+      'Laptop / charger',
+      'Documents / files',
+      'Office supplies',
+      'Keys / wallet',
+      'Clothes / shoes',
+      'Baby essentials',
+      'Hardware items',
+      'Tools from shop',
+      'Parcel from shop',
+      'Collect parcel from security',
+      'Pick up from friend / family',
+      'Pick up from office',
+      'Bring forgotten item from home',
+      'Bring item from apartment gate',
+      'Emergency item pickup',
+      'Other (not listed)',
+    ],
+    keywords: ['bring', 'fetch', 'get', 'pick up', 'collect', 'medicine', 'gas cylinder', 'water', 'laptop', 'charger', 'documents', 'keys', 'wallet', 'clothes', 'parcel', 'forgotten', 'emergency'],
+  },
+  'ride-transport': {
+    id: 'ride-transport',
+    name: 'Ride / Transport',
+    emoji: '🚗',
+    description: 'Short rides or driving help',
+    priority: 1,
+    subcategories: [
+      'Bike ride',
+      'Car ride',
+      'Office drop',
+      'Office pickup',
+      'Airport drop',
+      'Airport pickup',
+      'Railway station drop',
+      'Railway station pickup',
+      'School drop',
+      'School pickup',
+      'Late night ride',
+      'Emergency ride',
+      'Outstation ride',
+      'Driver for few hours',
+      'Ride for errands',
+      'Other (not listed)',
+    ],
+    keywords: ['ride', 'transport', 'drop', 'pickup', 'bike', 'car', 'office', 'airport', 'station', 'school', 'late night', 'emergency', 'outstation', 'driver', 'lift'],
+  },
+  'repair': {
+    id: 'repair',
+    name: 'Repair',
+    emoji: '🔧',
+    description: 'Fix or repair something',
+    priority: 1,
+    subcategories: [
+      'Fan repair',
+      'Switch repair',
+      'Electrical wiring repair',
+      'Plumbing repair',
+      'Tap repair',
+      'Drain blockage',
+      'Laptop repair',
+      'Mobile repair',
+      'Printer repair',
+      'AC repair',
+      'Fridge repair',
+      'Washing machine repair',
+      'Microwave repair',
+      'Water purifier repair',
+      'Mixer repair',
+      'Grinder repair',
+      'TV repair',
+      'Furniture repair',
+      'Door repair',
+      'Window repair',
+      'Lock repair',
+      'Other (not listed)',
+    ],
+    keywords: ['repair', 'fix', 'broken', 'fan', 'switch', 'electrical', 'plumbing', 'tap', 'drain', 'laptop', 'mobile', 'phone', 'printer', 'ac', 'fridge', 'washing machine', 'microwave', 'purifier', 'mixer', 'tv', 'furniture', 'door', 'window', 'lock'],
+  },
   'delivery': {
     id: 'delivery',
     name: 'Delivery',
     emoji: '🚚',
-    description: 'Pick up, deliver, bring something from A to B',
+    description: 'Deliver items from A to B',
     priority: 1,
-    keywords: ['delivery', 'deliver', 'pickup', 'pick up', 'bring', 'get', 'fetch', 'collect', 'courier', 'parcel', 'package', 'send', 'take', 'drop off'],
-  },
-  'food-delivery': {
-    id: 'food-delivery',
-    name: 'Bring Food',
-    emoji: '🍱',
-    description: 'Bring food from home to office, tiffin delivery',
-    priority: 1,
-    // 🚨 CRITICAL: VERY SPECIFIC - only when bringing/delivering food FROM place TO place
-    keywords: ['bring food', 'tiffin', 'dabba', 'home food to office', 'office lunch delivery', 'bring from home', 'tiffin service', 'lunch box', 'bring my lunch', 'get food from', 'fetch food'],
-  },
-  'luggage-help': {
-    id: 'luggage-help',
-    name: 'Luggage Help',
-    emoji: '🧳',
-    description: 'Carry luggage, bags, heavy items, loading help',
-    priority: 1,
-    keywords: ['luggage', 'bag', 'bags', 'carry', 'suitcase', 'heavy', 'load', 'unload', 'airport', 'railway', 'metro', 'station', 'travel'],
-  },
-  'drop-pickup': {
-    id: 'drop-pickup',
-    name: 'Drop Me / Pick Me',
-    emoji: '🚗',
-    description: 'Drop to office, pick from station, short rides',
-    priority: 1,
-    keywords: ['drop', 'pickup', 'pick me', 'drop me', 'ride', 'lift', 'carpool', 'office', 'station', 'airport', 'metro', 'bus stop', 'take me'],
-  },
-  'tech-help': {
-    id: 'tech-help',
-    name: 'Tech Help',
-    emoji: '💻',
-    description: 'Computer, laptop, mobile, software, coding help',
-    priority: 1,
-    keywords: ['computer', 'laptop', 'mobile', 'phone', 'tech', 'software', 'hardware', 'coding', 'programming', 'code', 'bug', 'repair', 'install', 'setup', 'wifi', 'internet'],
-  },
-  'partner-needed': {
-    id: 'partner-needed',
-    name: 'Partner Needed',
-    emoji: '🤝',
-    description: 'Gym buddy, sports partner, work partner, study mate',
-    priority: 1,
-    keywords: ['partner', 'buddy', 'mate', 'companion', 'friend', 'gym partner', 'workout partner', 'badminton partner', 'tennis partner', 'football', 'cricket', 'study partner', 'work partner', 'co-founder', 'teammate'],
-  },
-  'mentorship': {
-    id: 'mentorship',
-    name: 'Mentorship',
-    emoji: '🎯',
-    description: 'Career guidance, startup advice, skill mentoring',
-    priority: 1,
-    keywords: ['mentor', 'mentorship', 'guidance', 'advice', 'career', 'startup', 'business', 'coach', 'coaching', 'consultation', 'help with', 'learn from'],
-  },
-  'errands': {
-    id: 'errands',
-    name: 'Errands',
-    emoji: '🏃',
-    description: 'Queue standing, document work, bank, post office',
-    priority: 1,
-    keywords: ['errand', 'queue', 'standing', 'waiting', 'line', 'document', 'submission', 'collection', 'bank', 'post office', 'government', 'aadhar', 'passport', 'visa'],
+    subcategories: [
+      'Parcel delivery',
+      'Document delivery',
+      'Medicine delivery',
+      'Courier pickup',
+      'Gift delivery',
+      'Office file delivery',
+      'Shop pickup delivery',
+      'Package delivery',
+      'Same day delivery',
+      'Express delivery',
+      'Station pickup delivery',
+      'Apartment gate pickup delivery',
+      'Other (not listed)',
+    ],
+    keywords: ['delivery', 'deliver', 'parcel', 'document', 'medicine', 'courier', 'gift', 'office file', 'package', 'same day', 'express', 'pickup'],
   },
   'cleaning': {
     id: 'cleaning',
     name: 'Cleaning',
     emoji: '🧹',
-    description: 'House cleaning, room cleaning, deep cleaning',
+    description: 'Cleaning homes, offices, or items',
     priority: 1,
-    keywords: ['clean', 'cleaning', 'sanitize', 'wash', 'mop', 'sweep', 'vacuum', 'dust', 'bathroom', 'kitchen', 'room', 'house', 'deep clean'],
+    subcategories: [
+      'House cleaning',
+      'Room cleaning',
+      'Kitchen cleaning',
+      'Bathroom cleaning',
+      'Deep cleaning',
+      'Balcony cleaning',
+      'Window cleaning',
+      'Office cleaning',
+      'Car cleaning',
+      'Sofa cleaning',
+      'Mattress cleaning',
+      'Move-out cleaning',
+      'Floor cleaning',
+      'Dusting help',
+      'Post-party cleaning',
+      'Other (not listed)',
+    ],
+    keywords: ['cleaning', 'clean', 'house', 'room', 'kitchen', 'bathroom', 'deep clean', 'balcony', 'window', 'office', 'car', 'sofa', 'mattress', 'floor', 'dust', 'party'],
   },
   'cooking': {
     id: 'cooking',
     name: 'Cooking',
     emoji: '🍳',
-    description: 'Home cooking, chef for party, meal prep',
+    description: 'Cooking help or chefs',
     priority: 1,
-    // 🚨 CRITICAL: Include ALL cooking-related keywords including dishes
-    keywords: ['cook', 'cooking', 'chef', 'prepare food', 'meal prep', 'recipe', 'cuisine', 'party cooking', 'bulk cooking', 'catering', 'biryani', 'curry', 'dish', 'kitchen', 'bake', 'baking', 'prepare meal', 'food preparation', 'cooking help', 'need cook', 'hire cook'],
-  },
-  'laundry': {
-    id: 'laundry',
-    name: 'Laundry',
-    emoji: '🧺',
-    description: 'Washing, ironing, dry cleaning pickup',
-    priority: 1,
-    keywords: ['laundry', 'wash', 'washing', 'iron', 'ironing', 'press', 'dry clean', 'clothes', 'stain'],
-  },
-  'grocery-shopping': {
-    id: 'grocery-shopping',
-    name: 'Grocery Shopping',
-    emoji: '🛒',
-    description: 'Buy groceries, shopping help, market trip',
-    priority: 1,
-    keywords: ['grocery', 'groceries', 'shopping', 'market', 'supermarket', 'vegetables', 'fruits', 'buy', 'purchase', 'big bazaar', 'reliance', 'dmart'],
-  },
-  'pet-care': {
-    id: 'pet-care',
-    name: 'Pet Care',
-    emoji: '🐕',
-    description: 'Dog walking, pet sitting, feeding, grooming',
-    priority: 1,
-    keywords: ['pet', 'dog', 'cat', 'puppy', 'pet sitting', 'dog walking', 'pet care', 'feeding', 'grooming', 'veterinary', 'vet'],
-  },
-  'fitness-partner': {
-    id: 'fitness-partner',
-    name: 'Fitness Partner',
-    emoji: '🏋️',
-    description: 'Gym buddy, running partner, yoga companion',
-    priority: 1,
-    keywords: ['gym', 'fitness', 'workout', 'exercise', 'running', 'jogging', 'yoga', 'gym partner', 'running partner', 'cycling', 'trainer'],
+    subcategories: [
+      'Daily home cooking',
+      'Chef for party',
+      'Meal preparation',
+      'Vegetarian cooking',
+      'Non-veg cooking',
+      'Diet cooking',
+      'Baby food preparation',
+      'Festival cooking',
+      'Breakfast cooking',
+      'Lunch cooking',
+      'Dinner cooking',
+      'Cooking assistant',
+      'Cooking help for events',
+      'Other (not listed)',
+    ],
+    keywords: ['cooking', 'cook', 'chef', 'meal prep', 'vegetarian', 'non-veg', 'diet', 'baby food', 'festival', 'breakfast', 'lunch', 'dinner', 'assistant', 'party', 'biryani', 'curry', 'food preparation'],
   },
   'moving-packing': {
     id: 'moving-packing',
     name: 'Moving & Packing',
     emoji: '📦',
-    description: 'House shifting, office moving, packers help',
+    description: 'Moving homes or heavy items',
     priority: 1,
-    keywords: ['moving', 'shifting', 'packing', 'packers', 'movers', 'relocation', 'transport', 'furniture', 'shift'],
+    subcategories: [
+      'House shifting',
+      'Office shifting',
+      'Furniture moving',
+      'Packing help',
+      'Unpacking help',
+      'Loading help',
+      'Unloading help',
+      'Heavy item lifting',
+      'Appliance moving',
+      'Bed shifting',
+      'Cupboard shifting',
+      'Local shifting help',
+      'Moving boxes help',
+      'Truck loading help',
+      'Other (not listed)',
+    ],
+    keywords: ['moving', 'packing', 'shifting', 'house', 'office', 'furniture', 'pack', 'unpack', 'loading', 'unloading', 'heavy', 'appliance', 'bed', 'cupboard', 'boxes', 'truck'],
   },
-
-  // ===== HOME SERVICES =====
-  'plumbing': {
-    id: 'plumbing',
-    name: 'Plumbing',
-    emoji: '🚰',
-    description: 'Tap repairs, pipe leaks, drainage issues',
-    keywords: ['plumber', 'plumbing', 'tap', 'leak', 'pipe', 'drain', 'water', 'flush', 'bathroom', 'sink', 'clog', 'geyser'],
-  },
-  'electrical': {
-    id: 'electrical',
-    name: 'Electrical',
-    emoji: '⚡',
-    description: 'Wiring, switches, fan repair, inverter',
-    keywords: ['electrician', 'electrical', 'wiring', 'switch', 'fan', 'light', 'bulb', 'power', 'inverter', 'mcb', 'socket'],
-  },
-  'carpentry': {
-    id: 'carpentry',
-    name: 'Carpentry',
-    emoji: '🪚',
-    description: 'Furniture repair, woodwork, doors, windows',
-    keywords: ['carpenter', 'carpentry', 'wood', 'furniture', 'door', 'window', 'shelf', 'cabinet', 'repair', 'hinge', 'lock'],
-  },
-  'painting': {
-    id: 'painting',
-    name: 'Painting',
-    emoji: '🎨',
-    description: 'Wall painting, room painting, touch-ups',
-    keywords: ['paint', 'painting', 'wall', 'color', 'room', 'whitewash', 'texture', 'putty'],
-  },
-  'ac-repair': {
-    id: 'ac-repair',
-    name: 'AC & Appliance Repair',
-    emoji: '❄️',
-    description: 'AC service, fridge, washing machine repair',
-    keywords: ['ac', 'air conditioner', 'fridge', 'refrigerator', 'washing machine', 'microwave', 'oven', 'service', 'repair', 'gas', 'appliance'],
-  },
-  'installation': {
-    id: 'installation',
-    name: 'Installation',
-    emoji: '🔨',
-    description: 'Furniture assembly, TV mount, curtain rods',
-    keywords: ['install', 'installation', 'assemble', 'assembly', 'furniture', 'tv', 'mount', 'shelf', 'curtain', 'setup'],
-  },
-
-  // ===== PERSONAL CARE & WELLNESS =====
-  'salon-home': {
-    id: 'salon-home',
-    name: 'Salon at Home',
-    emoji: '💇',
-    description: 'Haircut, styling, grooming at home',
-    keywords: ['haircut', 'hair', 'salon', 'barber', 'styling', 'shave', 'beard', 'trim', 'grooming'],
-  },
-  'beauty-makeup': {
-    id: 'beauty-makeup',
-    name: 'Beauty & Makeup',
-    emoji: '💄',
-    description: 'Makeup, facial, bridal, beauty services',
-    keywords: ['makeup', 'beauty', 'facial', 'bridal', 'wedding', 'cosmetics', 'makeover', 'mehndi', 'henna'],
-  },
-  'spa-massage': {
-    id: 'spa-massage',
-    name: 'Spa & Massage',
-    emoji: '💆',
-    description: 'Massage, spa, wellness treatments',
-    keywords: ['spa', 'massage', 'therapy', 'wellness', 'relaxation', 'body massage', 'aromatherapy'],
-  },
-
-  // ===== HEALTH & CARE =====
-  'nursing-care': {
-    id: 'nursing-care',
-    name: 'Nursing & Healthcare',
-    emoji: '⚕️',
-    description: 'Nurse, patient care, injections, medical help',
-    keywords: ['nurse', 'nursing', 'healthcare', 'patient', 'injection', 'dressing', 'medical', 'caretaker', 'physiotherapy'],
-  },
-  'elderly-care': {
-    id: 'elderly-care',
-    name: 'Elderly Care',
-    emoji: '👴',
-    description: 'Senior care, companionship, assistance',
-    keywords: ['elderly', 'senior', 'old age', 'caretaker', 'companion', 'assistance', 'grandparent'],
-  },
-  'babysitting': {
-    id: 'babysitting',
-    name: 'Babysitting',
-    emoji: '👶',
-    description: 'Childcare, babysitting, nanny services',
-    keywords: ['babysit', 'babysitting', 'nanny', 'childcare', 'baby', 'toddler', 'infant', 'daycare', 'child'],
-  },
-
-  // ===== EDUCATION & LEARNING =====
-  'tutoring': {
-    id: 'tutoring',
-    name: 'Tutoring',
+  'teaching-learning': {
+    id: 'teaching-learning',
+    name: 'Teaching & Learning',
     emoji: '📚',
-    description: 'Subject tutoring, exam prep, homework help',
-    keywords: ['tutor', 'tutoring', 'teaching', 'study', 'homework', 'exam', 'preparation', 'coaching', 'subject', 'maths', 'science', 'english'],
+    description: 'Learning skills or tutoring',
+    subcategories: [
+      'Math tutoring',
+      'Science tutoring',
+      'Physics tutoring',
+      'Chemistry tutoring',
+      'Biology tutoring',
+      'Coding lessons',
+      'Spoken English',
+      'IELTS coaching',
+      'Language learning',
+      'Public speaking training',
+      'Excel training',
+      'Guitar lessons',
+      'Piano lessons',
+      'Dance lessons',
+      'Singing lessons',
+      'Competitive exam preparation',
+      'Other (not listed)',
+    ],
+    keywords: ['teaching', 'learning', 'tutoring', 'tutor', 'math', 'science', 'physics', 'chemistry', 'biology', 'coding', 'english', 'ielts', 'language', 'speaking', 'excel', 'guitar', 'piano', 'dance', 'singing', 'exam'],
   },
-  'language-learning': {
-    id: 'language-learning',
-    name: 'Language Learning',
-    emoji: '🗣️',
-    description: 'English speaking, IELTS, foreign languages',
-    keywords: ['language', 'english', 'speaking', 'conversation', 'ielts', 'toefl', 'foreign language', 'fluency'],
+  'photography-videography': {
+    id: 'photography-videography',
+    name: 'Photography & Videography',
+    emoji: '📷',
+    description: 'Creative visual services',
+    subcategories: [
+      'Event photography',
+      'Wedding photography',
+      'Portrait photography',
+      'Product photography',
+      'Real estate photography',
+      'Drone photography',
+      'Event videography',
+      'Wedding videography',
+      'Corporate video shoot',
+      'YouTube video shoot',
+      'Social media reel shoot',
+      'Video editing',
+      'Photo editing',
+      'Fashion photography',
+      'Food photography',
+      'Other (not listed)',
+    ],
+    keywords: ['photography', 'videography', 'photo', 'video', 'event', 'wedding', 'portrait', 'product', 'real estate', 'drone', 'corporate', 'youtube', 'reel', 'editing', 'fashion', 'food', 'camera', 'shoot'],
   },
-  'skill-training': {
-    id: 'skill-training',
-    name: 'Skill Training',
-    emoji: '🎓',
-    description: 'Excel, coding, professional skills',
-    keywords: ['skill', 'training', 'course', 'excel', 'powerpoint', 'certification', 'workshop', 'learning'],
-  },
-  'music-dance': {
-    id: 'music-dance',
-    name: 'Music & Dance',
-    emoji: '🎵',
-    description: 'Music lessons, dance classes, instruments',
-    keywords: ['music', 'dance', 'singing', 'guitar', 'piano', 'tabla', 'classical', 'instrument'],
-  },
-
-  // ===== TECHNOLOGY & CREATIVE =====
-  'web-development': {
-    id: 'web-development',
-    name: 'Web Development',
-    emoji: '🌐',
-    description: 'Website, app development, coding projects',
-    keywords: ['website', 'web', 'app', 'development', 'coding', 'programming', 'developer', 'html', 'css', 'javascript', 'react', 'flutter'],
-  },
-  'graphic-design': {
-    id: 'graphic-design',
-    name: 'Graphic Design',
-    emoji: '🖌️',
-    description: 'Logo, poster, video editing, design work',
-    keywords: ['graphic', 'design', 'logo', 'poster', 'banner', 'photoshop', 'illustrator', 'video editing', 'canva'],
-  },
-  'digital-marketing': {
-    id: 'digital-marketing',
-    name: 'Digital Marketing',
-    emoji: '📱',
-    description: 'Social media, ads, SEO, content creation',
-    keywords: ['digital marketing', 'social media', 'seo', 'ads', 'facebook', 'instagram', 'google ads', 'content', 'marketing'],
-  },
-
-  // ===== PROFESSIONAL SERVICES =====
-  'legal-advice': {
-    id: 'legal-advice',
-    name: 'Legal Advice',
-    emoji: '⚖️',
-    description: 'Lawyer, legal consultation, documentation',
-    keywords: ['lawyer', 'legal', 'advocate', 'court', 'case', 'documentation', 'consultation', 'agreement', 'contract'],
-  },
-  'accounting': {
-    id: 'accounting',
+  'accounting-tax': {
+    id: 'accounting-tax',
     name: 'Accounting & Tax',
     emoji: '📊',
-    description: 'CA, GST, income tax, accounting help',
-    keywords: ['ca', 'accountant', 'accounting', 'tax', 'gst', 'income tax', 'filing', 'audit', 'tally'],
+    description: 'Financial and compliance help',
+    subcategories: [
+      'Income tax filing',
+      'GST filing',
+      'Bookkeeping',
+      'Financial statements',
+      'Startup accounting',
+      'Payroll management',
+      'Business registration',
+      'Tax consultation',
+      'Audit help',
+      'Investment advice',
+      'Company compliance',
+      'TDS filing',
+      'Tax planning',
+      'CA consultation',
+      'Other (not listed)',
+    ],
+    keywords: ['accounting', 'tax', 'income tax', 'gst', 'bookkeeping', 'financial', 'startup', 'payroll', 'business', 'audit', 'investment', 'compliance', 'tds', 'ca', 'chartered accountant'],
   },
-  'career-counseling': {
-    id: 'career-counseling',
-    name: 'Career Counseling',
-    emoji: '💼',
-    description: 'Resume, interview prep, job guidance',
-    keywords: ['career', 'counseling', 'guidance', 'resume', 'cv', 'interview', 'job', 'placement'],
+  'medical-help': {
+    id: 'medical-help',
+    name: 'Medical Help',
+    emoji: '⚕️',
+    description: 'Healthcare assistance',
+    subcategories: [
+      'Nurse assistance',
+      'Patient care',
+      'Home nurse',
+      'Post surgery care',
+      'Physiotherapy help',
+      'Hospital visit support',
+      'Medical attendant',
+      'Injection help',
+      'Doctor appointment assistance',
+      'Health monitoring',
+      'Medicine assistance',
+      'Medical equipment setup',
+      'Medical transport help',
+      'Emergency medical help',
+      'Other (not listed)',
+    ],
+    keywords: ['medical', 'nurse', 'patient care', 'home nurse', 'surgery', 'physiotherapy', 'hospital', 'attendant', 'injection', 'doctor', 'health', 'medicine', 'equipment', 'emergency', 'healthcare'],
   },
-
-  // ===== EVENTS & ENTERTAINMENT =====
-  'photography': {
-    id: 'photography',
-    name: 'Photography',
-    emoji: '📷',
-    description: 'Event, wedding, portrait photography',
-    keywords: ['photo', 'photography', 'photographer', 'camera', 'shoot', 'wedding', 'event', 'portrait', 'candid'],
+  'tech-help': {
+    id: 'tech-help',
+    name: 'Tech Help',
+    emoji: '💻',
+    description: 'Help with devices and internet',
+    priority: 1,
+    subcategories: [
+      'Laptop repair',
+      'Computer repair',
+      'WiFi setup',
+      'Router setup',
+      'Printer setup',
+      'Smart TV setup',
+      'Software installation',
+      'Data recovery',
+      'Virus removal',
+      'Phone data transfer',
+      'Email setup',
+      'Computer upgrade',
+      'Internet troubleshooting',
+      'Device setup',
+      'Cloud storage setup',
+      'Other (not listed)',
+    ],
+    keywords: ['tech', 'laptop', 'computer', 'wifi', 'router', 'printer', 'smart tv', 'software', 'data recovery', 'virus', 'phone', 'email', 'upgrade', 'internet', 'device', 'cloud', 'technology'],
   },
-  'videography': {
-    id: 'videography',
-    name: 'Videography',
-    emoji: '🎥',
-    description: 'Video shoot, editing, cinematography',
-    keywords: ['video', 'videography', 'cinematography', 'shoot', 'editing', 'film', 'drone'],
+  'pet-care': {
+    id: 'pet-care',
+    name: 'Pet Care',
+    emoji: '🐕',
+    description: 'Help with pets',
+    priority: 1,
+    subcategories: [
+      'Dog walking',
+      'Pet sitting',
+      'Pet feeding',
+      'Pet grooming',
+      'Vet visit help',
+      'Pet bathing',
+      'Pet training help',
+      'Pet transport',
+      'Pet boarding help',
+      'Other (not listed)',
+    ],
+    keywords: ['pet', 'dog', 'cat', 'walking', 'sitting', 'feeding', 'grooming', 'vet', 'bathing', 'training', 'transport', 'boarding', 'puppy', 'kitten'],
   },
-  'event-planning': {
-    id: 'event-planning',
-    name: 'Event Planning',
-    emoji: '🎉',
-    description: 'Party, wedding planning, coordination',
-    keywords: ['event', 'party', 'planning', 'decoration', 'birthday', 'wedding', 'celebration', 'organizer'],
+  'laundry': {
+    id: 'laundry',
+    name: 'Laundry',
+    emoji: '🧺',
+    description: 'Clothes washing and ironing',
+    priority: 1,
+    subcategories: [
+      'Clothes washing',
+      'Clothes ironing',
+      'Dry cleaning pickup',
+      'Laundry folding',
+      'Steam ironing',
+      'Blanket washing',
+      'Curtain washing',
+      'Laundry pickup and drop',
+      'Other (not listed)',
+    ],
+    keywords: ['laundry', 'washing', 'ironing', 'clothes', 'dry cleaning', 'folding', 'steam', 'blanket', 'curtain', 'pickup', 'press'],
   },
-
-  // ===== HOME & LIFESTYLE =====
-  'gardening': {
-    id: 'gardening',
-    name: 'Gardening',
-    emoji: '🪴',
-    description: 'Gardening, plant care, landscaping',
-    keywords: ['garden', 'gardening', 'plant', 'lawn', 'landscape', 'watering', 'trimming', 'terrace garden'],
-  },
-  'pest-control': {
-    id: 'pest-control',
-    name: 'Pest Control',
-    emoji: '🦟',
-    description: 'Pest control, fumigation, termite treatment',
-    keywords: ['pest', 'cockroach', 'rat', 'termite', 'fumigation', 'spray', 'mosquito'],
-  },
-  'interior-design': {
-    id: 'interior-design',
-    name: 'Interior Design',
+  'home-services': {
+    id: 'home-services',
+    name: 'Home Services',
     emoji: '🏠',
-    description: 'Interior design, home decor, renovation',
-    keywords: ['interior', 'design', 'renovation', 'modular kitchen', 'false ceiling', 'home decor'],
+    description: 'General home maintenance',
+    subcategories: [
+      'Painting',
+      'Electrical installation',
+      'Furniture assembly',
+      'Curtain rod installation',
+      'TV wall mount',
+      'Gardening help',
+      'Pest control',
+      'Interior design consultation',
+      'Home maintenance',
+      'Other (not listed)',
+    ],
+    keywords: ['home services', 'painting', 'electrical', 'furniture assembly', 'curtain', 'tv mount', 'gardening', 'pest control', 'interior', 'maintenance', 'installation'],
   },
-
-  // ===== SPECIALIZED SERVICES =====
-  'astrology': {
-    id: 'astrology',
-    name: 'Astrology & Vastu',
-    emoji: '🔮',
-    description: 'Astrology, horoscope, vastu consultation',
-    keywords: ['astrology', 'astrologer', 'horoscope', 'kundli', 'vastu', 'numerology', 'palmistry'],
+  'beauty-wellness': {
+    id: 'beauty-wellness',
+    name: 'Beauty & Wellness',
+    emoji: '💄',
+    description: 'Personal grooming and relaxation',
+    subcategories: [
+      'Haircut',
+      'Hair styling',
+      'Hair coloring',
+      'Beard trimming',
+      'Bridal makeup',
+      'Party makeup',
+      'Facial',
+      'Threading',
+      'Spa therapy',
+      'Body massage',
+      'Head massage',
+      'Skin care',
+      'Other (not listed)',
+    ],
+    keywords: ['beauty', 'wellness', 'haircut', 'hair styling', 'coloring', 'beard', 'makeup', 'bridal', 'facial', 'threading', 'spa', 'massage', 'skin care', 'salon', 'grooming'],
   },
-  'religious-services': {
-    id: 'religious-services',
-    name: 'Religious Services',
-    emoji: '🙏',
-    description: 'Pandit, puja, religious ceremonies',
-    keywords: ['pandit', 'priest', 'puja', 'pooja', 'ceremony', 'havan', 'religious', 'ritual'],
+  'event-help': {
+    id: 'event-help',
+    name: 'Event Help',
+    emoji: '🎉',
+    description: 'Event organization support',
+    subcategories: [
+      'Party planning',
+      'Wedding planning',
+      'Decoration help',
+      'Event coordination',
+      'Catering support',
+      'DJ setup help',
+      'Event photography coordination',
+      'Venue setup help',
+      'Other (not listed)',
+    ],
+    keywords: ['event', 'party', 'wedding', 'planning', 'decoration', 'coordination', 'catering', 'dj', 'venue', 'birthday', 'celebration'],
   },
-  'locksmith': {
-    id: 'locksmith',
-    name: 'Locksmith',
-    emoji: '🔑',
-    description: 'Lock repair, emergency unlock, key duplicate',
-    keywords: ['locksmith', 'lock', 'key', 'unlock', 'duplicate', 'repair', 'emergency', 'door'],
+  'professional-help': {
+    id: 'professional-help',
+    name: 'Professional Help',
+    emoji: '💼',
+    description: 'Consulting and expert help',
+    subcategories: [
+      'Legal advice',
+      'Startup consulting',
+      'Business consulting',
+      'Career counseling',
+      'Resume building',
+      'Interview preparation',
+      'Marketing consulting',
+      'Financial planning',
+      'Freelancing advice',
+      'Other (not listed)',
+    ],
+    keywords: ['professional', 'legal', 'startup', 'business', 'career', 'counseling', 'resume', 'interview', 'marketing', 'financial planning', 'consulting', 'advice', 'freelance'],
   },
-
-  // ===== CATCH-ALL =====
+  'vehicle-help': {
+    id: 'vehicle-help',
+    name: 'Vehicle Help',
+    emoji: '🚙',
+    description: 'Help related to vehicles',
+    subcategories: [
+      'Bike repair',
+      'Car repair',
+      'Flat tyre help',
+      'Fuel emergency help',
+      'Vehicle washing',
+      'Car jump start',
+      'Battery replacement help',
+      'Vehicle pickup or drop',
+      'Other (not listed)',
+    ],
+    keywords: ['vehicle', 'bike', 'car', 'repair', 'tyre', 'flat', 'fuel', 'washing', 'jump start', 'battery', 'pickup', 'motorcycle', 'automobile'],
+  },
+  'document-help': {
+    id: 'document-help',
+    name: 'Document Help',
+    emoji: '📄',
+    description: 'Government and paperwork assistance',
+    subcategories: [
+      'Aadhaar update help',
+      'PAN card help',
+      'Passport help',
+      'Driving license help',
+      'Government form filling',
+      'Online application help',
+      'Certificate applications',
+      'Document submission help',
+      'Other (not listed)',
+    ],
+    keywords: ['document', 'aadhaar', 'pan', 'passport', 'license', 'driving', 'government', 'form', 'application', 'certificate', 'submission', 'paperwork'],
+  },
+  'partner-needed': {
+    id: 'partner-needed',
+    name: 'Partner Needed',
+    emoji: '🤝',
+    description: 'Someone to accompany or assist',
+    priority: 1,
+    subcategories: [
+      'Gym partner',
+      'Running partner',
+      'Cycling partner',
+      'Study partner',
+      'Travel partner',
+      'Shopping partner',
+      'Event companion',
+      'Conference companion',
+      'Business discussion partner',
+      'Other (not listed)',
+    ],
+    keywords: ['partner', 'companion', 'buddy', 'gym', 'running', 'cycling', 'study', 'travel', 'shopping', 'event', 'conference', 'business', 'workout', 'exercise'],
+  },
   'other': {
     id: 'other',
     name: 'Other',
     emoji: '✨',
-    description: 'Other tasks not listed above',
+    description: 'For anything not listed',
+    subcategories: [],
     keywords: ['other', 'miscellaneous', 'help', 'assistance', 'general', 'anything'],
   },
 };
@@ -388,40 +512,37 @@ export const TASK_CATEGORIES: Record<string, TaskCategoryData> = {
 export function categorizeTask(title: string): string {
   const lowerTitle = title.toLowerCase().trim();
   
-  // 🚨 CRITICAL: Require minimum length for accurate detection
-  // Don't detect on vague phrases like "need help"
-  if (lowerTitle.length < 12) {
-    return 'other'; // Wait for more context
+  // Require minimum length for accurate detection
+  if (lowerTitle.length < 10) {
+    return 'other';
   }
   
-  // 🚨 CRITICAL: Count words - need at least 4 words for context
+  // Count words - need at least 3 words for context
   const wordCount = lowerTitle.split(/\s+/).filter(w => w.length > 0).length;
-  if (wordCount < 4) {
-    return 'other'; // Wait for more details
+  if (wordCount < 3) {
+    return 'other';
   }
 
   let bestMatch = { categoryId: 'other', score: 0, keywordLength: 0 };
   
-  // 🚨 CRITICAL: Set minimum threshold - only detect if score is high enough
-  const MINIMUM_CONFIDENCE_SCORE = 5; // Require at least one exact keyword match
+  // Set minimum threshold
+  const MINIMUM_CONFIDENCE_SCORE = 5;
 
   for (const [categoryKey, categoryData] of Object.entries(TASK_CATEGORIES)) {
     let score = 0;
     let longestKeywordMatch = 0;
 
-    // Boost priority categories for Bangalore launch
-    const priorityBoost = categoryData.priority === 1 ? 1 : 0;
+    // Boost priority categories
+    const priorityBoost = categoryData.priority === 1 ? 2 : 0;
 
     // Check each keyword
     for (const keyword of categoryData.keywords) {
       // Exact word boundary match (highest score)
       const regex = new RegExp(`\\b${keyword}\\b`, 'i');
       if (regex.test(lowerTitle)) {
-        // 🚨 CRITICAL FIX: Longer keywords = higher score
         const keywordScore = 5 + priorityBoost + Math.floor(keyword.length / 2);
         score += keywordScore;
         
-        // Track longest keyword for tie-breaking
         if (keyword.length > longestKeywordMatch) {
           longestKeywordMatch = keyword.length;
         }
@@ -441,12 +562,12 @@ export function categorizeTask(title: string): string {
     }
   }
 
-  // 🚨 CRITICAL: Only return category if confidence is high enough
+  // Only return category if confidence is high enough
   if (bestMatch.score < MINIMUM_CONFIDENCE_SCORE) {
-    return 'other'; // Not confident enough
+    return 'other';
   }
 
-  return bestMatch.categoryId; // ✅ NOW RETURNS ID, NOT NAME
+  return bestMatch.categoryId;
 }
 
 /**
@@ -465,27 +586,28 @@ export function getCategoryEmoji(categoryIdOrName: string): string {
 /**
  * Get all categories as array (priority categories first)
  */
-export function getAllTaskCategories(): Array<{ id: string; name: string; emoji: string; description: string; priority?: number }> {
+export function getAllTaskCategories(): Array<{ id: string; name: string; emoji: string; description: string; subcategories: string[]; priority?: number }> {
   return Object.values(TASK_CATEGORIES)
     .map(cat => ({
       id: cat.id,
       name: cat.name,
       emoji: cat.emoji,
       description: cat.description,
+      subcategories: cat.subcategories,
       priority: cat.priority,
     }))
     .sort((a, b) => {
       // Priority categories first
       if (a.priority && !b.priority) return -1;
       if (!a.priority && b.priority) return 1;
-      return 0;
+      return a.name.localeCompare(b.name);
     });
 }
 
 /**
- * Get priority categories for Bangalore launch
+ * Get priority categories
  */
-export function getPriorityCategories(): Array<{ id: string; name: string; emoji: string; description: string }> {
+export function getPriorityCategories(): Array<{ id: string; name: string; emoji: string; description: string; subcategories: string[] }> {
   return Object.values(TASK_CATEGORIES)
     .filter(cat => cat.priority === 1)
     .map(cat => ({
@@ -493,6 +615,7 @@ export function getPriorityCategories(): Array<{ id: string; name: string; emoji
       name: cat.name,
       emoji: cat.emoji,
       description: cat.description,
+      subcategories: cat.subcategories,
     }));
 }
 
@@ -516,4 +639,12 @@ export function getCategoryByName(name: string): TaskCategoryData | undefined {
 export function getCategoryIdFromName(name: string): string {
   const category = Object.values(TASK_CATEGORIES).find(c => c.name === name);
   return category?.id || 'other';
+}
+
+/**
+ * Get subcategories for a category
+ */
+export function getSubcategories(categoryId: string): string[] {
+  const category = TASK_CATEGORIES[categoryId];
+  return category?.subcategories || [];
 }

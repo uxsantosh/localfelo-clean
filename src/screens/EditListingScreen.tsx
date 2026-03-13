@@ -559,7 +559,7 @@ export function EditListingScreen({
             };
             await updateLocation(locationData);
             setShowLocationSelector(false);
-            toast.success('Location updated! 📍');
+            toast.success('Location updated!');
           }}
           onClose={() => setShowLocationSelector(false)}
           currentLocation={globalLocation && globalLocation.latitude ? {

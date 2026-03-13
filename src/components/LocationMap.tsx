@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Loader2 } from 'lucide-react';
+import { LocalFeloLoader } from './LocalFeloLoader';
 import { reverseGeocode } from '../services/geocoding';
 
 interface LocationMapProps {
@@ -196,19 +196,16 @@ export function LocationMap({
       {/* Loading Overlay */}
       {isLoading && (
         <div className="absolute inset-0 bg-white/90 flex items-center justify-center z-50">
-          <div className="flex flex-col items-center gap-3">
-            <Loader2 className="w-10 h-10 text-[#CDFF00] animate-spin" />
-            <p className="text-[14px] text-gray-600" style={{ fontWeight: '600' }}>
-              Loading map...
-            </p>
-          </div>
+          <LocalFeloLoader size="md" text="Loading map..." />
         </div>
       )}
 
       {/* Updating Address Indicator */}
       {isUpdatingAddress && (
         <div className="absolute top-4 left-1/2 -translate-x-1/2 z-50 bg-white px-4 py-2 shadow-lg flex items-center gap-2" style={{ borderRadius: '20px' }}>
-          <Loader2 className="w-4 h-4 text-[#CDFF00] animate-spin" />
+          <div className="scale-50">
+            <LocalFeloLoader size="sm" text="" />
+          </div>
           <span className="text-[13px] text-gray-700" style={{ fontWeight: '600' }}>
             Getting address...
           </span>

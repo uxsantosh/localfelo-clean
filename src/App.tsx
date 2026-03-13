@@ -38,14 +38,15 @@ import { EditListingScreen } from './screens/EditListingScreen';
 import { ChatScreen } from './screens/ChatScreen';
 import { AdminScreen } from './screens/AdminScreen';
 import { AdminCategoryManagementScreen } from './screens/AdminCategoryManagementScreen';
-import { AboutPage } from './screens/AboutPage';
+import { AboutLocalFeloPage } from './screens/AboutLocalFeloPage';
+import { HowItWorksPage } from './screens/HowItWorksPage';
 import { TermsPage } from './screens/TermsPage';
 import { PrivacyPage } from './screens/PrivacyPage';
 import { SafetyPage } from './screens/SafetyPage';
-import { ContactPage } from './screens/ContactPage';
 import { DiagnosticScreen } from './screens/DiagnosticScreen';
 import { NotificationsScreen } from './screens/NotificationsScreen';
 import { ProhibitedItemsPage } from './screens/ProhibitedItemsPage';
+import { FAQPage } from './screens/FAQPage';
 // NEW MVP FEATURES
 import { WishesScreen } from './screens/WishesScreen';
 import { CreateWishScreen } from './screens/CreateWishScreen';
@@ -86,6 +87,7 @@ type Screen =
   | 'admin'
   | 'admin-categories'
   | 'about'
+  | 'how-it-works'
   | 'terms'
   | 'privacy'
   | 'safety'
@@ -103,7 +105,8 @@ type Screen =
   | 'helper-ready-mode'
   | 'helper-preferences'
   | 'prohibited'
-  | 'browse';
+  | 'browse'
+  | 'faq';
 
 function getScreenFromPath(path: string): Screen {
   if (path === '/') return 'home'; // ✅ FIX: Show NewHomeScreen as default
@@ -115,7 +118,9 @@ function getScreenFromPath(path: string): Screen {
     '/profile': 'profile',
     '/chat': 'chat',
     '/admin': 'admin',
+    '/admin/categories': 'admin-categories',
     '/about': 'about',
+    '/how-it-works': 'how-it-works',
     '/terms': 'terms',
     '/privacy': 'privacy',
     '/safety': 'safety',
@@ -126,9 +131,15 @@ function getScreenFromPath(path: string): Screen {
     '/create-wish': 'create-wish',
     '/wish-detail': 'wish-detail',
     '/tasks': 'tasks',
+    '/helper-tasks': 'helper-tasks',
     '/create-task': 'create-task',
+    '/create-job': 'create-job',
     '/task-detail': 'task-detail',
+    '/helper-ready-mode': 'helper-ready-mode',
+    '/helper-preferences': 'helper-preferences',
     '/prohibited': 'prohibited',
+    '/browse': 'browse',
+    '/faq': 'faq',
   };
   return screenMap[path] || 'home'; // ✅ FIX: Default to home
 }
@@ -304,12 +315,13 @@ export default function App() {
       'chat': 'Messages | LocalFelo',
       'notifications': 'Notifications | LocalFelo',
       'admin': 'Admin Panel | LocalFelo',
-      'about': 'About Us | LocalFelo',
+      'about': 'LocalFelo – Find Local Help Across India | Founded by Santosh Kumar K',
       'terms': 'Terms of Service | LocalFelo',
       'privacy': 'Privacy Policy | LocalFelo',
       'safety': 'Safety Guidelines | LocalFelo',
       'contact': 'Contact Us | LocalFelo',
       'prohibited': 'Prohibited Items | LocalFelo',
+      'faq': 'Frequently Asked Questions | LocalFelo Help Center',
       'listing': 'View Item | LocalFelo',
       'task-detail': 'Task Details | LocalFelo',
       'wish-detail': 'Wish Details | LocalFelo',
@@ -1363,7 +1375,9 @@ export default function App() {
         'profile': '/profile',
         'chat': '/chat',
         'admin': '/admin',
+        'admin-categories': '/admin/categories',
         'about': '/about',
+        'how-it-works': '/how-it-works',
         'terms': '/terms',
         'privacy': '/privacy',
         'safety': '/safety',
@@ -1376,14 +1390,27 @@ export default function App() {
         'create-wish': '/create-wish',
         'wish-detail': '/wish-detail',
         'tasks': '/tasks',
+        'helper-tasks': '/helper-tasks',
         'create-task': '/create-task',
+        'create-job': '/create-job',
         'task-detail': '/task-detail',
+        'helper-ready-mode': '/helper-ready-mode',
+        'helper-preferences': '/helper-preferences',
+        'prohibited': '/prohibited',
+        'browse': '/browse',
+        'faq': '/faq',
       };
       window.history.pushState({ screen }, '', pathMap[screen] || '/');
     }
     
     // Reset scroll to top when navigating to any screen
     window.scrollTo(0, 0);
+    
+    // Special handling for contact - show modal instead of navigating
+    if (screen === 'contact') {
+      setShowContactModal(true);
+      return;
+    }
     
     setCurrentScreen(screen);
   };
@@ -1820,7 +1847,26 @@ export default function App() {
         ) : null;
 
       case 'about':
-        return <AboutPage onBack={() => navigateToScreen('home')} />;
+        return (
+          <AboutLocalFeloPage 
+            onBack={() => navigateToScreen('home')} 
+            onNavigate={navigateToScreen}
+            isLoggedIn={!!user}
+            isAdmin={isAdmin}
+            userDisplayName={user?.name}
+          />
+        );
+
+      case 'how-it-works':
+        return (
+          <HowItWorksPage 
+            onBack={() => navigateToScreen('home')} 
+            onNavigate={navigateToScreen}
+            isLoggedIn={!!user}
+            isAdmin={isAdmin}
+            userDisplayName={user?.name}
+          />
+        );
 
       case 'terms':
         return <TermsPage onBack={() => navigateToScreen('home')} />;
@@ -1834,8 +1880,16 @@ export default function App() {
       case 'prohibited':
         return <ProhibitedItemsPage onBack={() => navigateToScreen('home')} />;
 
-      case 'contact':
-        return <ContactPage onBack={() => navigateToScreen('home')} />;
+      case 'faq':
+        return (
+          <FAQPage 
+            onBack={() => navigateToScreen('home')} 
+            onNavigate={navigateToScreen}
+            isLoggedIn={!!user}
+            isAdmin={isAdmin}
+            userDisplayName={user?.name}
+          />
+        );
 
       case 'diagnostic':
         return (

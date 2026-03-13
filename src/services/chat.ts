@@ -423,59 +423,64 @@ export async function sendMessage(
       return { message: null, error: insertError.message };
     }
 
-    // Update conversation with last message
-    console.log('📝 Updating conversation with last message...');
-    const { error: updateError } = await supabase
-      .from('conversations')
-      .update({
-        last_message: trimmedContent,
-        last_message_at: new Date().toISOString(),
-        updated_at: new Date().toISOString(),
-      })
-      .eq('id', conversationId);
+    console.log('✅ Message sent - returning immediately');
 
-    if (updateError) {
-      console.error('❌ Failed to update conversation:', updateError);
-      // Don't return error here - message was sent successfully, just conversation update failed
-    } else {
-      console.log('✅ Conversation updated with last message');
-    }
-
-    // Send notification (don't wait for it)
-    try {
-      const { data: conv } = await supabase
+    // Update conversation with last message (non-blocking - run in background)
+    (async () => {
+      console.log('📝 Updating conversation with last message in background...');
+      const { error: updateError } = await supabase
         .from('conversations')
-        .select('buyer_id, seller_id, listing_title')
-        .eq('id', conversationId)
-        .single();
+        .update({
+          last_message: trimmedContent,
+          last_message_at: new Date().toISOString(),
+          updated_at: new Date().toISOString(),
+        })
+        .eq('id', conversationId);
 
-      if (conv) {
-        const recipientId = conv.buyer_id === userId ? conv.seller_id : conv.buyer_id;
-        const { sendChatMessageNotification } = await import('./notifications');
-        await sendChatMessageNotification(
-          recipientId,
-          userId,
-          currentUser.name,
-          conversationId,
-          conv.listing_title || 'Conversation',
-          trimmedContent
-        );
-        
-        // 🔔 Send push notification for chat message (non-blocking)
-        const { notifyChatMessage } = await import('./pushNotificationDispatcher');
-        notifyChatMessage({
-          recipientId,
-          conversationId,
-          senderName: currentUser.name,
-          messagePreview: trimmedContent.substring(0, 100), // First 100 chars
-          senderId: userId,
-        }).catch(err => console.warn('[ChatService] Push notification failed:', err));
+      if (updateError) {
+        console.error('❌ Failed to update conversation:', updateError);
+      } else {
+        console.log('✅ Conversation updated with last message');
       }
-    } catch (notifError) {
-      console.warn('⚠️ Notification failed:', notifError);
-    }
+    })();
 
-    console.log('✅ Message sent');
+    // Send notification in background (non-blocking - don't await!)
+    (async () => {
+      try {
+        const { data: conv } = await supabase
+          .from('conversations')
+          .select('buyer_id, seller_id, listing_title')
+          .eq('id', conversationId)
+          .single();
+
+        if (conv) {
+          const recipientId = conv.buyer_id === userId ? conv.seller_id : conv.buyer_id;
+          const { sendChatMessageNotification } = await import('./notifications');
+          await sendChatMessageNotification(
+            recipientId,
+            userId,
+            currentUser.name,
+            conversationId,
+            conv.listing_title || 'Conversation',
+            trimmedContent
+          );
+          
+          // 🔔 Send push notification for chat message (non-blocking)
+          const { notifyChatMessage } = await import('./pushNotificationDispatcher');
+          notifyChatMessage({
+            recipientId,
+            conversationId,
+            senderName: currentUser.name,
+            messagePreview: trimmedContent.substring(0, 100), // First 100 chars
+            senderId: userId,
+          }).catch(err => console.warn('[ChatService] Push notification failed:', err));
+        }
+      } catch (notifError) {
+        console.warn('⚠️ Notification failed:', notifError);
+      }
+    })();
+
+    // Return immediately without waiting for notifications
     return { message: newMessage, error: null };
   } catch (error: any) {
     console.error('❌ Exception in sendMessage:', error);

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { Search, X, ShoppingBag, Heart, Briefcase, Sparkles, Package } from 'lucide-react';
 import { Modal } from './Modal';
-import { Sparkles, X, Search, TrendingUp, Heart, Briefcase, Package } from 'lucide-react';
+import { LocalFeloLoader } from './LocalFeloLoader';
 import { Listing, Wish, Task } from '../types';
 import { getListings } from '../services/listings';
 import { getWishes } from '../services/wishes';
@@ -152,9 +153,8 @@ export function GlobalSearchModal({ isOpen, onClose, onNavigate, userCoordinates
         {/* Results */}
         <div className="max-h-[60vh] overflow-y-auto">
           {loading ? (
-            <div className="text-center py-8 text-gray-500">
-              <div className="animate-spin w-8 h-8 border-2 border-[#CDFF00] border-t-transparent rounded-full mx-auto mb-2"></div>
-              Searching...
+            <div className="flex justify-center py-8">
+              <LocalFeloLoader size="md" text="Searching..." />
             </div>
           ) : searchQuery.trim() === '' ? (
             <div className="text-center py-12 text-gray-500">

@@ -97,15 +97,93 @@ export function TermsPage({ onBack, onNavigate, isLoggedIn = false, isAdmin = fa
             <li>• Complete agreed transactions honestly</li>
             <li>• Behave respectfully in all interactions</li>
           </ul>
-          <p className="text-body">
-            <strong>For Tasks & Wishes:</strong>
+          
+          <p className="text-body mt-4">
+            <strong>For Task Creators (People Requesting Help):</strong>
           </p>
-          <ul className="space-y-2 text-body">
-            <li>• All payments and work are handled directly between users</li>
-            <li>• LocalFelo is NOT involved in task completion or payment disputes</li>
-            <li>• Users must discuss and agree on terms before starting work</li>
-            <li>• Report any issues or disputes through the platform</li>
+          <ul className="space-y-2 text-body mb-3">
+            <li>• Clearly describe the task, requirements, and expectations in your post</li>
+            <li>• Agree on payment terms, amounts, and timelines with helpers BEFORE work begins</li>
+            <li>• Make payment to helpers directly after task completion as agreed</li>
+            <li>• Rate and review helpers honestly based on their work</li>
+            <li>• Treat helpers with respect and professionalism</li>
+            <li>• LocalFelo is NOT responsible for task quality, completion, or any disputes</li>
           </ul>
+          
+          <p className="text-body mt-4">
+            <strong>For Helpers (People Offering Services):</strong>
+          </p>
+          <ul className="space-y-2 text-body mb-3">
+            <li>• Only accept tasks you are qualified and able to complete</li>
+            <li>• Discuss and confirm payment amount, method, and timing BEFORE starting work</li>
+            <li>• Complete tasks professionally and as described</li>
+            <li>• Communicate clearly with task creators throughout the process</li>
+            <li>• Get payment confirmation in writing or via chat before starting significant work</li>
+            <li>• You accept tasks at your own risk - LocalFelo does NOT guarantee payment</li>
+            <li>• LocalFelo is NOT involved in payment collection or disputes</li>
+          </ul>
+
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 my-4">
+            <p className="text-body mb-2">
+              <strong>⚠️ CRITICAL: Payment & Task Completion</strong>
+            </p>
+            <ul className="space-y-2 text-body">
+              <li>• <strong>ALL payments are handled DIRECTLY between task creators and helpers</strong></li>
+              <li>• LocalFelo does NOT process, hold, or guarantee any payments</li>
+              <li>• LocalFelo does NOT verify helper qualifications or task creator legitimacy</li>
+              <li>• LocalFelo is NOT responsible for incomplete work, non-payment, or any disputes</li>
+              <li>• Users MUST discuss and confirm all terms before work begins</li>
+              <li>• Use the chat feature to document agreements in writing</li>
+            </ul>
+          </div>
+
+          <h3 className="text-heading">5A. Tasks: How It Works</h3>
+          <p className="text-body mb-3">
+            LocalFelo's <strong>Tasks</strong> feature connects people who need help (Task Creators) with people who can help (Helpers). Here's how it works:
+          </p>
+          
+          <p className="text-body">
+            <strong>Step 1: Task Creator Posts a Task</strong>
+          </p>
+          <ul className="space-y-2 text-body mb-3">
+            <li>• Describe what help you need clearly and in detail</li>
+            <li>• Mention your budget or expected payment range</li>
+            <li>• Add your location so nearby helpers can find you</li>
+            <li>• Wait for helpers to message you with offers</li>
+          </ul>
+
+          <p className="text-body">
+            <strong>Step 2: Helpers View and Respond to Tasks</strong>
+          </p>
+          <ul className="space-y-2 text-body mb-3">
+            <li>• Browse tasks posted near your location</li>
+            <li>• Chat with task creators to discuss details, pricing, and timeline</li>
+            <li>• Confirm all terms BEFORE agreeing to help</li>
+            <li>• Complete the task as agreed</li>
+          </ul>
+
+          <p className="text-body">
+            <strong>Step 3: Work Completion and Payment</strong>
+          </p>
+          <ul className="space-y-2 text-body mb-3">
+            <li>• Helper completes the task as discussed</li>
+            <li>• Task creator verifies the work is done satisfactorily</li>
+            <li>• Task creator pays helper directly (cash, UPI, bank transfer, etc.)</li>
+            <li>• Both parties rate each other (5-star system)</li>
+          </ul>
+
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 my-4">
+            <p className="text-body">
+              <strong>💡 Important Reminders:</strong>
+            </p>
+            <ul className="space-y-2 text-body mt-2">
+              <li>• LocalFelo only provides the platform to connect - we are NOT involved in the actual work or payment</li>
+              <li>• Always meet in safe, public places when possible</li>
+              <li>• For home services, inform family/friends and ensure someone is present</li>
+              <li>• Trust the rating system - check helper/creator ratings before agreeing</li>
+              <li>• Report suspicious behavior or scams immediately</li>
+            </ul>
+          </div>
 
           <h3 className="text-heading">6. Safety & Security</h3>
           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
@@ -160,7 +238,7 @@ export function TermsPage({ onBack, onNavigate, isLoggedIn = false, isAdmin = fa
 
           <h3 className="text-heading">10. Contact Us</h3>
           <p className="text-body">
-            For questions about these Terms, contact us at: <strong className="text-primary">support@localfelo.com</strong>
+            For questions about these Terms, contact us at: <strong className="text-black">support@localfelo.com</strong>
           </p>
 
           <div className="border-t border-gray-200 pt-4 mt-6">

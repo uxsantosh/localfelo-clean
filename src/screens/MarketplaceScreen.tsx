@@ -429,9 +429,7 @@ export function MarketplaceScreen({
 
         {/* Listings Grid */}
         {loading ? (
-          <div className="listing-grid">
-            <SkeletonLoader count={6} />
-          </div>
+          <SkeletonLoader count={6} />
         ) : filteredListings.length === 0 ? (
           <EmptyState
             type={hasActiveFilters ? 'no-results' : 'no-listings'}

@@ -60,11 +60,11 @@ export function TaskCard({ task, onClick, onChatClick }: TaskCardProps) {
     <div 
       className="bg-white border border-gray-200 p-4 cursor-pointer hover:border-black hover:shadow-sm transition-all flex flex-col"
       onClick={onClick}
-      style={{ height: '172px', borderRadius: '8px' }}
+      style={{ height: '190px', borderRadius: '8px' }}
     >
-      {/* Header - Title + Status Badge - FIXED HEIGHT for 2 lines */}
-      <div className="flex items-start justify-between gap-3 mb-3" style={{ height: '40px' }}>
-        <h3 className="font-bold text-gray-900 text-base flex-1 line-clamp-2" style={{ lineHeight: '1.25' }}>
+      {/* Header - Title + Status Badge - FIXED HEIGHT for 2 lines with proper spacing */}
+      <div className="flex items-start justify-between gap-3 mb-3" style={{ minHeight: '48px' }}>
+        <h3 className="font-bold text-gray-900 text-base flex-1 line-clamp-2 leading-snug">
           {task.title}
         </h3>
         <span className={`px-2 py-0.5 rounded text-[9px] font-bold uppercase shrink-0 h-fit ${getStatusClass(task.status)}`}>

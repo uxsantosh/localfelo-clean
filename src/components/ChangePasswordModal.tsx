@@ -45,7 +45,7 @@ export function ChangePasswordModal({
 
       if (error) throw error;
 
-      toast.success('Password changed successfully!'); 
+      // Don't show toast here - let the parent component handle it to avoid duplicates
       
       // Clear form
       setCurrentPassword('');

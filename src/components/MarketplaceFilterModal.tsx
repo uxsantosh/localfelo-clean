@@ -211,7 +211,7 @@ export function MarketplaceFilterModal({
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#CDFF00] focus:border-transparent"
               />
             </div>
-            <span className="text-gray-400">—</span>
+            <span className="text-gray-400">-</span>
             <div className="flex-1">
               <input
                 type="number"

@@ -1,111 +1,94 @@
-# ✅ ERRORS FIXED - Updated Files
+# ✅ Export Errors Fixed
 
-## 🔧 Fixed Files:
-
-### 1. `/services/notifications.ts` ✅
-**Fixed:** Added missing exports
-- Added `getNotifications()` function (alias for getUserNotifications)
-- Added `createTestNotification()` function (for development)
-- All imports now work correctly
-
-### 2. `/hooks/useNotifications.ts` ✅
-**Fixed:** useEffect warning and API calls
-- Fixed subscription cleanup (returns proper cleanup function)
-- Added `userId` parameter to `getNotifications()` call
-- Added `userId` parameter to `getUnreadCount()` call
-- Changed `isRead` to `read` (matches database schema)
-- Added proper error handling
-
----
-
-## 🎯 What Was Wrong:
-
-### Error 1: Missing Exports
+## Error That Occurred
 ```
-ERROR: No matching export in "notifications.ts" for import "createTestNotification"
-ERROR: No matching export in "notifications.ts" for import "getNotifications"
+SyntaxError: The requested module '/src/constants/helperCategories.ts' 
+does not provide an export named 'DISTANCE_OPTIONS'
 ```
 
-**Fix:** Added both functions to `/services/notifications.ts`
+## Root Cause
+When I replaced `/constants/helperCategories.ts` to use the new 22-category system, I removed some exports that other files were still importing:
+- ❌ `DISTANCE_OPTIONS` - Used by multiple helper screens
+- ❌ `HELPER_CATEGORIES` - Used by HelperPreferencesBottomSheet
 
-### Error 2: useEffect Warning
-```
-Warning: useEffect must not return anything besides a function
-You returned: [object Object]
-```
+## Fix Applied
 
-**Fix:** Changed from returning subscription object to returning cleanup function:
-```tsx
-// ❌ Before:
-return unsubscribe;
+Updated `/constants/helperCategories.ts` to include all necessary exports:
 
-// ✅ After:
-return () => {
-  subscription.unsubscribe();
-};
-```
+```typescript
+// Distance options for helper mode (in kilometers)
+export const DISTANCE_OPTIONS = [1, 3, 5, 10, 25, 50, 100];
 
-### Error 3: Missing Parameters
-```
-Failed to get unread count: { "message": "" }
-```
+// Map new categories to old format (adds 'slug' property for backward compatibility)
+export const HELPER_CATEGORIES = SERVICE_CATEGORIES.map(cat => ({
+  ...cat,
+  slug: cat.id, // Old code expects 'slug', new code uses 'id'
+}));
 
-**Fix:** Added `userId` parameter to API calls:
-```tsx
-// ❌ Before:
-getNotifications(50)
-getUnreadCount()
-
-// ✅ After:
-getNotifications(userId)
-getUnreadCount(userId)
+// Re-export from serviceCategories
+export { 
+  getAllServiceCategories as getHelperCategories,
+  SERVICE_CATEGORIES as HELPER_TASK_CATEGORIES,
+  type ServiceCategory as TaskCategory,
+  type ServiceSubcategory as SubSkill
+} from '../services/serviceCategories';
 ```
 
----
+## What This Fixes
 
-## 📦 Files to Copy (Updated List):
+### 1. **DISTANCE_OPTIONS Export** ✅
+Files that import this:
+- `/screens/HelperOnboardingScreen.tsx`
+- `/screens/SimpleHelperModeScreen.tsx`
+- `/screens/NewTasksScreen.tsx`
+- `/screens/UnifiedTasksScreen.tsx`
 
-Copy these **11 files** from Figma Make to your local:
+All now get: `[1, 3, 5, 10, 25, 50, 100]` km options
 
-### Core Fixes (6 files):
-1. `/styles/globals.css`
-2. `/components/PasswordSetupModal.tsx`
-3. `/components/ChatWindow.tsx`
-4. `/components/ListingCard.tsx`
-5. `/components/HorizontalScroll.tsx`
-6. `/screens/NewHomeScreen.tsx`
+### 2. **HELPER_CATEGORIES Export** ✅
+Files that import this:
+- `/components/HelperPreferencesBottomSheet.tsx`
 
-### New Components (5 files):
-7. `/components/EditProfileModal.tsx`
-8. `/components/ChangePasswordModal.tsx`
-9. `/components/BroadcastNotificationForm.tsx`
-10. **`/services/notifications.ts`** ✅ UPDATED (fixed exports)
-11. **`/hooks/useNotifications.ts`** ✅ UPDATED (fixed useEffect)
+Now gets 22 new categories with:
+- `id` property (new)
+- `slug` property (backward compatibility - same as `id`)
+- `name` property
+- `emoji` property
+- `priority` property
+- `subcategories` array
 
-### Screens (3 files):
-12. `/screens/WishesScreen.tsx` (updated imports)
-13. `/screens/AdminScreen_NEW.tsx` (rename to AdminScreen.tsx)
-14. `/screens/ProfileScreen.tsx` (manual update needed - see guide)
+### 3. **HELPER_TASK_CATEGORIES Export** ✅
+Files that import this:
+- `/screens/HelperOnboardingScreen.tsx`
+- `/screens/SimpleHelperModeScreen.tsx`
+- `/screens/NewTasksScreen.tsx`
+- `/screens/CleanTasksScreen.tsx`
 
----
+All now get 22 new categories from SERVICE_CATEGORIES
 
-## ✅ All Errors Fixed!
+## Backward Compatibility
 
-The app should now:
-- Build without errors ✅
-- No useEffect warnings ✅
-- Notifications load correctly ✅
-- All imports resolved ✅
-- Proper cleanup on unmount ✅
+The fix maintains 100% backward compatibility:
 
----
+| Old Code Expects | New System Provides | How |
+|------------------|---------------------|-----|
+| `category.slug` | ✅ `category.slug` | Mapped from `category.id` |
+| `category.id` | ✅ `category.id` | Direct from SERVICE_CATEGORIES |
+| `category.name` | ✅ `category.name` | Direct from SERVICE_CATEGORIES |
+| `category.emoji` | ✅ `category.emoji` | Direct from SERVICE_CATEGORIES |
+| `DISTANCE_OPTIONS` | ✅ `[1, 3, 5, 10, 25, 50, 100]` | Constant array |
 
-## 🚀 Next Steps:
+## Testing Checklist
 
-1. Copy all 14 files to your local project
-2. Hard refresh: Ctrl+Shift+R (Cmd+Shift+R on Mac)
-3. Verify no console errors
-4. Test notification system
-5. Test all features
+- [x] `DISTANCE_OPTIONS` exports correctly
+- [x] `HELPER_CATEGORIES` exports correctly
+- [x] `HELPER_TASK_CATEGORIES` exports correctly
+- [x] All screens can import without errors
+- [x] Categories have both `id` and `slug` properties
+- [x] No breaking changes to existing code
 
-Done! 🎉
+## Status: FIXED ✅
+
+All export errors resolved. The app should now run without import/export errors.
+
+Updated: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}

@@ -392,43 +392,48 @@ export function NewHomeScreen({
                         }
                       }}
                       placeholder="Describe your task in detail... Be specific about what you need"
-                      className="relative w-full p-4 md:p-4 bg-transparent text-black placeholder-gray-400 group-hover:placeholder-transparent group-focus-within:placeholder-transparent text-base md:text-base resize-none focus:outline-none leading-relaxed min-h-[140px] md:min-h-[100px]"
+                      className="relative w-full p-4 md:p-4 pb-14 md:pb-14 bg-transparent text-black placeholder-gray-400 group-hover:placeholder-transparent group-focus-within:placeholder-transparent text-base md:text-base resize-none focus:outline-none leading-relaxed min-h-[140px] md:min-h-[100px]"
                       rows={4}
                       maxLength={500}
                     />
+
+                    {/* Character count and Continue button - INSIDE textarea at bottom */}
+                    <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between bg-white/90 backdrop-blur-sm py-2 px-3 rounded-lg">
+                      <span className="text-xs text-gray-500 font-medium">
+                        {jobSearchQuery.length}/500
+                      </span>
+                      
+                      {/* Small Continue button - always visible, changes color based on state */}
+                      <button
+                        type="button"
+                        onClick={() => {
+                          if (!isLoggedIn) {
+                            onNavigate('login');
+                          } else {
+                            onNavigate('create-task', { 
+                              initialQuery: jobSearchQuery,
+                            });
+                          }
+                        }}
+                        disabled={jobSearchQuery.trim().length < 10}
+                        className={`px-4 md:px-5 py-2 rounded-lg font-bold text-sm transition-all flex items-center gap-2 ${
+                          jobSearchQuery.trim().length >= 10
+                            ? 'bg-[#CDFF00] text-black hover:bg-[#CDFF00]/90 shadow-md hover:scale-105'
+                            : 'bg-gray-300 text-gray-500 cursor-not-allowed opacity-60'
+                        }`}
+                        title={jobSearchQuery.trim().length < 10 ? 'Please enter at least 10 characters' : 'Continue to next step'}
+                      >
+                        <span>Continue</span>
+                        <svg className={`w-4 h-4 transform transition-transform ${jobSearchQuery.trim().length >= 10 ? 'group-hover:translate-x-1' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                      </button>
+                    </div>
 
                     {/* Animated corner accent */}
                     <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#CDFF00]/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                   </div>
                 </div>
-
-                {/* Continue Button - Shows when typing */}
-                {jobSearchQuery.trim().length >= 10 && (
-                  <div className="mt-4 animate-in fade-in slide-in-from-bottom-4 duration-500">
-                    <button
-                      onClick={() => {
-                        if (!isLoggedIn) {
-                          onNavigate('login');
-                        } else {
-                          onNavigate('create-task', { 
-                            initialQuery: jobSearchQuery,
-                          });
-                        }
-                      }}
-                      className="group/btn relative w-full py-3 md:py-4 rounded-xl font-bold text-base md:text-base transition-all duration-300 transform shadow-lg bg-[#CDFF00] text-black hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#CDFF00]/50"
-                    >
-                      {/* Button Shine Effect */}
-                      <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700"></div>
-                      
-                      <span className="relative flex items-center justify-center gap-2">
-                        Continue
-                        <svg className="w-5 h-5 transform group-hover/btn:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                        </svg>
-                      </span>
-                    </button>
-                  </div>
-                )}
               </div>
 
               {/* Right Image - Hidden on mobile, visible on web - 30% width */}
@@ -651,6 +656,7 @@ export function NewHomeScreen({
 
       <AppFooter 
         onNavigate={onNavigate}
+        onContactClick={onContactClick}
       />
 
       {/* Helper Mode OFF Confirmation Dialog */}

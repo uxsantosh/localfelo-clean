@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Navigation, Search, X, Loader2 } from 'lucide-react';
+import { Navigation, Search, X } from 'lucide-react';
+import { LocalFeloLoader } from './LocalFeloLoader';
 import { detectUserLocation, GeocodedAddress, searchLocations, SearchResult } from '../services/geocoding';
 import { LocationMap } from './LocationMap';
 
@@ -211,7 +212,7 @@ export function LocationSelector({
                 }}
               />
               {isSearching && (
-                <Loader2 className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 animate-spin" />
+                <LocalFeloLoader className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 animate-spin" />
               )}
             </div>
 
@@ -266,7 +267,7 @@ export function LocationSelector({
           >
             {isDetecting ? (
               <>
-                <Loader2 className="w-5 h-5 animate-spin" />
+                <LocalFeloLoader className="w-5 h-5 animate-spin" />
               </>
             ) : (
               <>

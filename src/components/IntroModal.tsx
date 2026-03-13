@@ -82,9 +82,9 @@ export function IntroModal({ onComplete, onSkip }: IntroModalProps) {
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/70 p-2 sm:p-3">
-      <div className="w-full max-w-md bg-white overflow-hidden flex flex-col" style={{ borderRadius: '20px', height: '95vh', maxHeight: '700px' }}>
+      <div className="w-full max-w-md bg-white overflow-hidden flex flex-col" style={{ borderRadius: '20px', height: '88vh', maxHeight: '650px' }}>
         {/* Logo - Compact */}
-        <div className="text-center pt-4 pb-3 px-4 bg-white flex-shrink-0">
+        <div className="text-center pt-5 pb-4 px-4 bg-white flex-shrink-0">
           <svg width="140" height="24" viewBox="0 0 1299 207" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto">
             <path d="M118.027 109.199L191.251 179.81L165.568 206.443L92.6514 136.129L26.9277 205.877L0 180.503L83.1953 92.2139H13.4639V55.2139H168.899L118.027 109.199ZM210.86 94.4766L185.385 121.311L148.632 86.417L174.106 59.583L210.86 94.4766ZM185.964 0C199.495 0 210.464 10.969 210.464 24.5C210.464 38.031 199.495 49 185.964 49C172.433 49 161.464 38.031 161.464 24.5C161.464 10.969 172.433 0 185.964 0Z" fill="black"/>
             <path d="M278.838 171.202H327.456L321.462 204.28H229.11L256.86 47.77H300.372L278.838 171.202Z" fill="black"/>
@@ -99,79 +99,128 @@ export function IntroModal({ onComplete, onSkip }: IntroModalProps) {
           </svg>
         </div>
 
-        {/* Content Area - Compact */}
-        <div className="flex-1 overflow-y-auto px-4 sm:px-5 scrollbar-hide">
-          <div className="h-full flex flex-col py-1">
-            {/* Icon - Smaller */}
-            <div className="flex justify-center mb-3">
+        {/* Content Area - Improved spacing */}
+        <div className="flex-1 overflow-y-auto px-5 sm:px-6 scrollbar-hide">
+          <div className="h-full flex flex-col py-2">
+            {/* Icon - With subtle bounce animation */}
+            <div className="flex justify-center mb-5">
               <motion.div
                 key={currentScreen}
-                initial={{ scale: 0.8, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.2 }}
+                initial={{ scale: 0.5, opacity: 0, y: -20 }}
+                animate={{ scale: 1, opacity: 1, y: 0 }}
+                transition={{ 
+                  type: "spring",
+                  stiffness: 260,
+                  damping: 20
+                }}
                 className="relative"
               >
-                <div 
-                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center bg-black shadow-sm"
+                <motion.div 
+                  className="w-16 h-16 sm:w-18 sm:h-18 rounded-2xl flex items-center justify-center bg-black shadow-lg"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  <IconComponent 
-                    className="w-6 h-6 sm:w-7 sm:h-7 text-white"
-                    strokeWidth={2.5}
-                  />
-                </div>
+                  <motion.div
+                    animate={{ 
+                      scale: [1, 1.1, 1],
+                      rotate: [0, 5, -5, 0]
+                    }}
+                    transition={{ 
+                      duration: 2,
+                      repeat: Infinity,
+                      repeatDelay: 1
+                    }}
+                  >
+                    <IconComponent 
+                      className="w-8 h-8 sm:w-9 sm:h-9 text-white"
+                      strokeWidth={2.5}
+                    />
+                  </motion.div>
+                </motion.div>
               </motion.div>
             </div>
 
-            {/* Headline - Smaller font */}
+            {/* Headline - Better spacing */}
             <motion.div
               key={`title-${currentScreen}`}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.2 }}
-              className="text-center mb-4 px-1"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
+              className="text-center mb-6 px-2"
             >
-              <h2 className="text-black text-[17px] sm:text-[19px] font-black leading-tight">{screen.headline}</h2>
+              <h2 className="text-black text-[18px] sm:text-[20px] font-black leading-tight">{screen.headline}</h2>
             </motion.div>
 
-            {/* Steps - More compact */}
+            {/* Steps - Better spacing and animations */}
             <motion.div
               key={`steps-${currentScreen}`}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.2 }}
-              className="space-y-0 pb-2"
+              transition={{ duration: 0.3, delay: 0.2 }}
+              className="space-y-1 pb-3"
             >
               {screen.steps.map((step, index) => {
                 const StepIcon = step.icon;
                 const isLast = index === screen.steps.length - 1;
                 
                 return (
-                  <div key={index}>
-                    <div className="flex items-start gap-2.5 sm:gap-3 py-1.5">
-                      {/* Icon - Smaller */}
-                      <div 
-                        className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-[#CDFF00]"
+                  <motion.div 
+                    key={index}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ 
+                      duration: 0.3, 
+                      delay: 0.3 + (index * 0.1) 
+                    }}
+                  >
+                    <div className="flex items-start gap-3 sm:gap-3.5 py-2">
+                      {/* Icon - With pulse animation */}
+                      <motion.div 
+                        className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center flex-shrink-0 bg-[#CDFF00]"
+                        whileHover={{ scale: 1.1, rotate: 5 }}
+                        whileTap={{ scale: 0.9 }}
                       >
-                        <StepIcon 
-                          className="w-4.5 h-4.5 sm:w-5 sm:h-5 text-black"
-                          strokeWidth={2.5}
-                        />
-                      </div>
+                        <motion.div
+                          animate={{ 
+                            scale: [1, 1.15, 1],
+                          }}
+                          transition={{ 
+                            duration: 1.5,
+                            repeat: Infinity,
+                            repeatDelay: 2,
+                            delay: index * 0.2
+                          }}
+                        >
+                          <StepIcon 
+                            className="w-5 h-5 sm:w-5.5 sm:h-5.5 text-black"
+                            strokeWidth={2.5}
+                          />
+                        </motion.div>
+                      </motion.div>
                       
-                      {/* Text - Smaller fonts */}
-                      <div className="flex-1 pt-0">
-                        <p className="text-black text-[13px] sm:text-[14px] font-bold leading-tight mb-0.5">{step.text}</p>
-                        <p className="text-gray-500 text-[12px] sm:text-[13px] leading-snug font-medium">{step.subtext}</p>
+                      {/* Text - Better spacing */}
+                      <div className="flex-1 pt-0.5">
+                        <p className="text-black text-[14px] sm:text-[15px] font-bold leading-tight mb-1">{step.text}</p>
+                        <p className="text-gray-500 text-[12.5px] sm:text-[13.5px] leading-relaxed font-medium">{step.subtext}</p>
                       </div>
                     </div>
 
-                    {/* Arrow - Smaller */}
+                    {/* Arrow - With gentle bounce */}
                     {!isLast && (
-                      <div className="flex justify-center py-1">
-                        <ArrowDown className="w-3.5 h-3.5 text-gray-300" strokeWidth={2.5} />
+                      <div className="flex justify-center py-1.5">
+                        <motion.div
+                          animate={{ y: [0, 3, 0] }}
+                          transition={{ 
+                            duration: 1.5,
+                            repeat: Infinity,
+                            ease: "easeInOut"
+                          }}
+                        >
+                          <ArrowDown className="w-4 h-4 text-gray-300" strokeWidth={2.5} />
+                        </motion.div>
                       </div>
                     )}
-                  </div>
+                  </motion.div>
                 );
               })}
             </motion.div>

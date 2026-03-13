@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
-import { Power, MapPin, ChevronDown, ChevronUp, Plus, X, Check, Search } from 'lucide-react';
+import { Power, MapPin, ChevronDown, ChevronUp, Plus, X, Check, Search, List, Map } from 'lucide-react';
 import { HELPER_TASK_CATEGORIES } from '../constants/helperCategories';
 import { supabase } from '../lib/supabaseClient';
 import { toast } from 'sonner';
 import { calculateDistance } from '../utils/distance';
 import { Header } from '../components/Header';
+import { MapView } from '../components/MapView';
 
 interface Task {
   id: string;
@@ -88,6 +89,7 @@ export function CleanTasksScreen({
   const [maxDistance, setMaxDistance] = useState<number>(10);
   const [expandedCategories, setExpandedCategories] = useState<string[]>([]);
   const [categorySearchQuery, setCategorySearchQuery] = useState('');
+  const [viewMode, setViewMode] = useState<'list' | 'map'>('list');
 
   // Intersection observer for infinite scroll
   const observerTarget = useRef<HTMLDivElement>(null);
@@ -587,80 +589,71 @@ export function CleanTasksScreen({
             )}
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
-            {tasks.map((task) => {
-              const categories = HELPER_TASK_CATEGORIES.filter(cat =>
-                task.detected_categories?.includes(cat.id)
-              );
+          <>
+            {viewMode === 'list' && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                {tasks.map((task) => {
+                  const categories = HELPER_TASK_CATEGORIES.filter(cat =>
+                    task.detected_categories?.includes(cat.id)
+                  );
 
-              return (
-                <div
-                  key={task.id}
-                  onClick={() => handleTaskClick(task)}
-                  className="bg-white rounded-2xl p-4 md:p-4 border-2 border-gray-200 hover:border-[#CDFF00] hover:shadow-lg transition-all cursor-pointer"
-                >
-                  {/* Header */}
-                  <div className="flex items-start justify-between mb-2">
-                    <div className="flex flex-wrap gap-1.5 flex-1">
-                      {categories.length > 0 ? (
-                        categories.map(cat => (
-                          <span
-                            key={cat.id}
-                            className="inline-flex items-center gap-1.5 px-2 py-0.5 bg-gray-100 rounded-lg text-xs font-medium text-gray-700"
-                          >
-                            <span className="text-sm">{cat.emoji}</span>
-                            <span className="hidden sm:inline">{cat.name}</span>
-                          </span>
-                        ))
-                      ) : (
-                        <span className="text-xs text-gray-400 italic">General Task</span>
-                      )}
-                    </div>
-                    <span className="px-2 py-0.5 bg-green-100 text-green-700 text-xs font-bold rounded-lg flex-shrink-0 ml-2">
-                      OPEN
-                    </span>
-                  </div>
+                  return (
+                    <div
+                      key={task.id}
+                      onClick={() => handleTaskClick(task)}
+                      className="bg-white rounded-2xl p-4 md:p-4 border-2 border-gray-200 hover:border-[#CDFF00] hover:shadow-lg transition-all cursor-pointer"
+                    >
+                      {/* Title */}
+                      <h3 className="font-bold text-black text-base md:text-lg mb-2.5 leading-snug">
+                        {task.title}
+                      </h3>
 
-                  {/* Title */}
-                  <h3 className="font-bold text-black text-base md:text-lg mb-1.5 leading-tight">
-                    {task.title}
-                  </h3>
+                      {/* Description - 2 lines max with ellipsis and proper spacing */}
+                      <p className="text-gray-600 text-sm mb-4 leading-relaxed line-clamp-2" style={{ minHeight: '2.5rem' }}>
+                        {task.description}
+                      </p>
 
-                  {/* Description */}
-                  <p className="text-gray-600 text-sm mb-3 leading-relaxed line-clamp-2">
-                    {task.description}
-                  </p>
-
-                  {/* Footer */}
-                  <div className="flex items-center justify-between pt-2.5 border-t border-gray-100">
-                    <div className="text-xl md:text-2xl font-bold text-black">₹{task.price}</div>
-                    {task.distance !== undefined && (
-                      <div className="flex items-center gap-1.5 text-gray-600">
-                        <MapPin className="w-4 h-4" />
-                        <span className="text-sm font-medium">
-                          {task.distance < 1
-                            ? `${Math.round(task.distance * 1000)}m away`
-                            : `${task.distance.toFixed(1)}km away`}
-                        </span>
+                      {/* Footer */}
+                      <div className="flex items-center justify-between pt-2 border-t border-gray-100">
+                        <div className="text-xl md:text-2xl font-bold text-black">₹{task.price}</div>
+                        {task.distance !== undefined && (
+                          <div className="flex items-center gap-1.5 text-gray-600">
+                            <MapPin className="w-4 h-4" />
+                            <span className="text-sm font-medium">
+                              {task.distance < 1
+                                ? `${Math.round(task.distance * 1000)}m away`
+                                : `${task.distance.toFixed(1)}km away`}
+                            </span>
+                          </div>
+                        )}
                       </div>
-                    )}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        )}
-
-        {/* Infinite Scroll Observer Target & Loading More Indicator */}
-        {hasMore && !loading && (
-          <div ref={observerTarget} className="py-8 text-center">
-            {loadingMore && (
-              <div className="flex flex-col items-center justify-center gap-3">
-                <div className="animate-spin rounded-full h-10 w-10 border-4 border-gray-200 border-t-[#CDFF00]"></div>
-                <p className="text-sm font-medium text-gray-600">Loading more tasks...</p>
+                    </div>
+                  );
+                })}
               </div>
             )}
-          </div>
+            {viewMode === 'map' && (
+              <div className="bg-white rounded-xl border border-gray-200 overflow-hidden relative z-0" style={{ height: '500px' }}>
+                <MapView
+                  markers={tasks
+                    .filter(task => task.latitude && task.longitude)
+                    .map(task => ({
+                      id: task.id,
+                      latitude: task.latitude,
+                      longitude: task.longitude,
+                      title: task.title,
+                      price: task.price,
+                      type: 'task' as const,
+                      status: task.status,
+                    }))}
+                  onMarkerClick={(id) => {
+                    onNavigate('task-detail', { taskId: id });
+                  }}
+                  userLocation={userCoordinates}
+                />
+              </div>
+            )}
+          </>
         )}
       </div>
 
@@ -677,6 +670,34 @@ export function CleanTasksScreen({
       >
         <Plus className="w-8 h-8 text-black" strokeWidth={3} />
       </button>
+
+      {/* Floating View Mode Toggle - Rapido Style */}
+      {tasks.length > 0 && (
+        <div className="fixed right-6 bottom-44 z-40 flex flex-col gap-2 shadow-2xl rounded-[4px] overflow-hidden">
+          <button
+            onClick={() => setViewMode('list')}
+            className={`w-12 h-12 flex items-center justify-center transition-all ${
+              viewMode === 'list'
+                ? 'bg-black text-white'
+                : 'bg-white text-foreground border-b border-border'
+            }`}
+            title="List View"
+          >
+            <List className="w-5 h-5" />
+          </button>
+          <button
+            onClick={() => setViewMode('map')}
+            className={`w-12 h-12 flex items-center justify-center transition-all ${
+              viewMode === 'map'
+                ? 'bg-black text-white'
+                : 'bg-white text-foreground'
+            }`}
+            title="Map View"
+          >
+            <Map className="w-5 h-5" />
+          </button>
+        </div>
+      )}
 
       {/* Category Modal */}
       {showCategoryModal && (

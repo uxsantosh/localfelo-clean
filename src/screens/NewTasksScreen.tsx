@@ -1,7 +1,11 @@
+import React, { useState, useEffect } from 'react';
 import { HELPER_TASK_CATEGORIES, DISTANCE_OPTIONS } from '../constants/helperCategories';
 import { supabase } from '../lib/supabaseClient';
 import { toast } from 'sonner';
 import { calculateDistance } from '../utils/distance';
+import { SkeletonLoader } from '../components/SkeletonLoader';
+import { MapView } from '../components/MapView';
+import { ArrowLeft, Power, PowerOff, Sparkles, ChevronDown, MapPin, X, Check, List, Map } from 'lucide-react';
 
 interface Task {
   id: string;
@@ -51,6 +55,7 @@ export function NewTasksScreen({
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [maxDistance, setMaxDistance] = useState<number>(10);
   const [sortBy, setSortBy] = useState<'distance' | 'newest' | 'price'>('distance');
+  const [viewMode, setViewMode] = useState<'list' | 'map'>('list');
 
   // Load helper preferences on mount
   useEffect(() => {
@@ -328,10 +333,7 @@ export function NewTasksScreen({
       {/* Tasks List */}
       <div className="max-w-2xl mx-auto px-4 py-4 space-y-3 pb-20">
         {loading ? (
-          <div className="bg-white rounded-xl p-8 text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#CDFF00] mx-auto mb-4"></div>
-            <p className="text-gray-600">Loading tasks...</p>
-          </div>
+          <SkeletonLoader count={4} />
         ) : tasks.length === 0 ? (
           <div className="bg-white rounded-xl p-8 text-center">
             <div className="text-6xl mb-4">📋</div>
@@ -343,71 +345,102 @@ export function NewTasksScreen({
             </p>
           </div>
         ) : (
-          tasks.map((task) => {
-            const categories = HELPER_TASK_CATEGORIES.filter(cat =>
-              task.detected_categories?.includes(cat.id)
-            );
+          <>
+            {viewMode === 'list' && (
+              tasks.map((task) => {
+                const categories = HELPER_TASK_CATEGORIES.filter(cat =>
+                  task.detected_categories?.includes(cat.id)
+                );
 
-            return (
-              <div
-                key={task.id}
-                onClick={() => onTaskClick(task.id)}
-                className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-[#CDFF00] transition-all cursor-pointer"
-              >
-                {/* Categories Tags */}
-                {categories.length > 0 && (
-                  <div className="flex flex-wrap gap-2 mb-3">
-                    {categories.map(cat => (
-                      <span
-                        key={cat.id}
-                        className="inline-flex items-center gap-1 px-2 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-700"
-                      >
-                        <span>{cat.emoji}</span>
-                        <span>{cat.name}</span>
-                      </span>
-                    ))}
-                  </div>
-                )}
+                return (
+                  <div
+                    key={task.id}
+                    onClick={() => onTaskClick(task.id)}
+                    className="bg-white rounded-xl p-4 border-2 border-gray-200 hover:border-[#CDFF00] transition-all cursor-pointer"
+                  >
+                    {/* Title */}
+                    <h3 className="font-bold text-black text-lg mb-2.5 leading-snug">{task.title}</h3>
+                    
+                    {/* Description - 2 lines max with ellipsis and proper spacing */}
+                    <p className="text-gray-600 text-sm mb-4 line-clamp-2 leading-relaxed" style={{ minHeight: '2.5rem' }}>
+                      {task.description}
+                    </p>
 
-                {/* Title & Description */}
-                <h3 className="font-bold text-black text-lg mb-2">{task.title}</h3>
-                <p className="text-gray-600 text-sm mb-3 line-clamp-2">
-                  {task.description}
-                </p>
-
-                {/* Footer */}
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    {/* Price */}
-                    <div className="flex items-center gap-1">
-                      <span className="text-2xl font-bold text-black">
+                    {/* Footer */}
+                    <div className="flex items-center justify-between">
+                      {/* Price */}
+                      <div className="text-2xl font-bold text-black">
                         ₹{task.price}
-                      </span>
-                    </div>
-
-                    {/* Distance */}
-                    {task.distance !== undefined && (
-                      <div className="flex items-center gap-1 text-gray-600">
-                        <MapPin className="w-4 h-4" />
-                        <span className="text-sm font-medium">
-                          {task.distance < 1
-                            ? `${Math.round(task.distance * 1000)}m`
-                            : `${task.distance.toFixed(1)}km`}
-                        </span>
                       </div>
-                    )}
-                  </div>
 
-                  {/* Status */}
-                  <div className="px-3 py-1 bg-[#CDFF00] text-black text-xs font-bold rounded-full">
-                    OPEN
+                      {/* Distance */}
+                      {task.distance !== undefined && (
+                        <div className="flex items-center gap-1 text-gray-600">
+                          <MapPin className="w-4 h-4" />
+                          <span className="text-sm font-medium">
+                            {task.distance < 1
+                              ? `${Math.round(task.distance * 1000)}m away`
+                              : `${task.distance.toFixed(1)}km away`}
+                          </span>
+                        </div>
+                      )}
+                    </div>
                   </div>
-                </div>
+                );
+              })
+            )}
+            {viewMode === 'map' && (
+              <div className="bg-white rounded-xl border border-gray-200 overflow-hidden relative z-0" style={{ height: '500px' }}>
+                <MapView
+                  markers={tasks
+                    .filter(task => task.latitude && task.longitude)
+                    .map(task => ({
+                      id: task.id,
+                      latitude: task.latitude,
+                      longitude: task.longitude,
+                      title: task.title,
+                      price: task.price,
+                      type: 'task' as const,
+                      status: task.status,
+                    }))}
+                  onMarkerClick={(id) => {
+                    onTaskClick(id);
+                  }}
+                  userLocation={userCoordinates}
+                />
               </div>
-            );
-          })
+            )}
+          </>
         )}
       </div>
+
+      {/* Floating View Mode Toggle - Rapido Style */}
+      {tasks.length > 0 && (
+        <div className="fixed right-4 bottom-24 sm:bottom-6 z-40 flex flex-col gap-2 shadow-2xl rounded-[4px] overflow-hidden">
+          <button
+            onClick={() => setViewMode('list')}
+            className={`w-12 h-12 flex items-center justify-center transition-all ${
+              viewMode === 'list'
+                ? 'bg-black text-white'
+                : 'bg-white text-foreground border-b border-border'
+            }`}
+            title="List View"
+          >
+            <List className="w-5 h-5" />
+          </button>
+          <button
+            onClick={() => setViewMode('map')}
+            className={`w-12 h-12 flex items-center justify-center transition-all ${
+              viewMode === 'map'
+                ? 'bg-black text-white'
+                : 'bg-white text-foreground'
+            }`}
+            title="Map View"
+          >
+            <Map className="w-5 h-5" />
+          </button>
+        </div>
+      )}
 
       {/* Helper Settings Modal */}
       {showHelperSettings && (

@@ -1,25 +1,6 @@
-import { useState, useEffect } from 'react';
-import { 
-  MapPin, 
-  IndianRupee, 
-  Clock, 
-  ExternalLink, 
-  MessageCircle, 
-  ThumbsUp, 
-  CheckCircle, 
-  Flag, 
-  User, 
-  Edit3, 
-  Trash2, 
-  Check, 
-  Navigation, 
-  XCircle 
-} from 'lucide-react';
-import { Header } from '../components/Header';
-import { ReportModal } from '../components/ReportModal';
 import { TaskCompletionModal } from '../components/TaskCompletionModal';
 import { RatingModal } from '../components/RatingModal';
-import { SkeletonLoader } from '../components/SkeletonLoader';
+import { LocalFeloLoader } from '../components/LocalFeloLoader';
 import { getTaskCategories } from '../services/categories';
 import { 
   getTaskById, 
@@ -321,7 +302,7 @@ export function TaskDetailScreen({ taskId, onNavigate, onBack, isLoggedIn, onLog
       setShowCompletionModal(false);
       
       if (updatedTask.status === 'completed') {
-        toast.success('🎉 Task completed!');
+        toast.success('Task completed!');
         
         // Check if user needs to rate the other party
         const otherUserId = isCreator ? updatedTask.acceptedBy : updatedTask.userId;
@@ -341,7 +322,7 @@ export function TaskDetailScreen({ taskId, onNavigate, onBack, isLoggedIn, onLog
           }
         }
       } else {
-        toast.success('✅ Completion confirmed. Waiting for other party.');
+        toast.success('Completion confirmed. Waiting for other party.');
       }
     } catch (error) {
       console.error('Completion error:', error);
@@ -433,7 +414,7 @@ export function TaskDetailScreen({ taskId, onNavigate, onBack, isLoggedIn, onLog
         comment
       );
       
-      toast.success('⭐ Rating submitted successfully!');
+      toast.success('Rating submitted successfully!');
       setRatingModalOpen(false);
     } catch (error) {
       console.error('Failed to submit rating:', error);
@@ -504,7 +485,7 @@ export function TaskDetailScreen({ taskId, onNavigate, onBack, isLoggedIn, onLog
           onNotificationClick={onNotificationClick}
         />
         <div className="page-container py-8">
-          <SkeletonLoader count={6} />
+          <LocalFeloLoader size="lg" text="Loading task..." />
         </div>
       </div>
     );
@@ -543,12 +524,17 @@ export function TaskDetailScreen({ taskId, onNavigate, onBack, isLoggedIn, onLog
   });
 
   // ==================== DETERMINE BUTTON SET ====================
-  let buttonSet: 'creator-open' | 'creator-accepted' | 'helper-open' | 'helper-accepted' | 'completed' | 'unavailable' | null = null;
+  let buttonSet: 'creator-open' | 'creator-accepted' | 'helper-open' | 'helper-accepted' | 'completed' | 'unavailable' | 'login-required' | null = null;
 
   if (isCompleted || isClosed) {
     buttonSet = 'completed'; // Read-only
   } else if (!isLoggedIn) {
-    buttonSet = null; // No buttons for logged-out users
+    // Show login button for open tasks
+    if (task?.status === 'open') {
+      buttonSet = 'login-required'; // Login to Accept
+    } else {
+      buttonSet = null; // No buttons for closed/accepted tasks
+    }
   } else if (isCreator) {
     // CREATOR FLOW
     if (isOpen) {
@@ -890,6 +876,20 @@ export function TaskDetailScreen({ taskId, onNavigate, onBack, isLoggedIn, onLog
                 Cancel
               </button>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* 5. LOGIN REQUIRED: Login to Accept (for non-logged-in users viewing open tasks) */}
+      {buttonSet === 'login-required' && (
+        <div className="fixed bottom-16 md:bottom-4 left-0 right-0 bg-white border-t border-border shadow-lg p-4 z-50">
+          <div className="max-w-4xl mx-auto">
+            <button
+              onClick={onLoginRequired}
+              className="w-full px-6 py-4 bg-black text-white rounded-xl font-semibold hover:bg-gray-800 transition-colors text-base"
+            >
+              Login to Accept
+            </button>
           </div>
         </div>
       )}

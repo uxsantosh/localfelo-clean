@@ -114,12 +114,34 @@ export function ListingDetailScreen({
 
         <div className="listing-detail-layout">
           {/* Left Column: Image Carousel */}
-          <div className="w-full overflow-hidden">
+          <div className="w-full overflow-hidden space-y-6">
             <ImageCarousel
               images={listing.images}
               categoryEmoji={listing.categoryEmoji}
               title={listing.title}
             />
+
+            {/* Chat Button - Desktop Only (below image carousel) */}
+            {!isOwnListing && sellerProfileExists && !profileCheckLoading && (
+              <div className="hidden lg:block">
+                {isLoggedIn ? (
+                  <button
+                    onClick={handleChatClick}
+                    className="w-full px-6 py-3.5 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors flex items-center justify-center gap-2"
+                  >
+                    <MessageCircle className="w-5 h-5 text-white" />
+                    Chat
+                  </button>
+                ) : (
+                  <button
+                    onClick={onLoginRequired}
+                    className="w-full px-6 py-3.5 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors"
+                  >
+                    Login to Chat
+                  </button>
+                )}
+              </div>
+            )}
           </div>
 
           {/* Right Column: Listing Details */}
@@ -251,30 +273,6 @@ export function ListingDetailScreen({
       {!isOwnListing && sellerProfileExists && !profileCheckLoading && (
         <div className="fixed lg:hidden bottom-0 left-0 right-0 bg-white border-t border-border p-3 safe-bottom z-40">
           <div className="max-w-lg mx-auto">
-            {isLoggedIn ? (
-              <button
-                onClick={handleChatClick}
-                className="w-full px-6 py-3.5 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors flex items-center justify-center gap-2"
-              >
-                <MessageCircle className="w-5 h-5 text-white" />
-                Chat
-              </button>
-            ) : (
-              <button
-                onClick={onLoginRequired}
-                className="w-full px-6 py-3.5 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors"
-              >
-                Login to Chat
-              </button>
-            )}
-          </div>
-        </div>
-      )}
-
-      {/* NON-OWNER: Chat button only (Desktop) */}
-      {!isOwnListing && sellerProfileExists && !profileCheckLoading && (
-        <div className="hidden lg:block page-container">
-          <div className="max-w-2xl">
             {isLoggedIn ? (
               <button
                 onClick={handleChatClick}

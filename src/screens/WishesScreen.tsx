@@ -517,9 +517,7 @@ export function WishesScreen({
 
         {/* Wishes Grid/List/Map */}
         {loading ? (
-          <div className="grid grid-cols-1 gap-3">
-            <SkeletonLoader count={6} />
-          </div>
+          <SkeletonLoader count={6} />
         ) : wishes.length === 0 ? (
           <EmptyState
             icon={Sparkles}

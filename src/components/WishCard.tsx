@@ -47,15 +47,15 @@ export function WishCard({ wish, onClick, onChatClick }: WishCardProps) {
     <div 
       className="bg-white border border-gray-200 p-4 cursor-pointer hover:border-black hover:shadow-sm transition-all flex flex-col"
       onClick={onClick}
-      style={{ minHeight: '160px', borderRadius: '8px' }}
+      style={{ minHeight: '180px', borderRadius: '8px' }}
     >
-      {/* Header - Title + Urgency Badge */}
-      <div className="flex items-start justify-between gap-3 mb-2">
-        <h3 className="font-bold text-gray-900 text-base leading-tight flex-1 line-clamp-2">
+      {/* Header - Title + Urgency Badge - 2 lines with proper spacing */}
+      <div className="flex items-start justify-between gap-3 mb-3" style={{ minHeight: '48px' }}>
+        <h3 className="font-bold text-gray-900 text-base leading-snug flex-1 line-clamp-2">
           {wish.title}
         </h3>
         {wish.urgency && (
-          <span className={`px-2 py-0.5 rounded text-[9px] font-bold uppercase shrink-0 ${getUrgencyBadgeClass(wish.urgency)}`}>
+          <span className={`px-2 py-0.5 rounded text-[9px] font-bold uppercase shrink-0 h-fit ${getUrgencyBadgeClass(wish.urgency)}`}>
             {getUrgencyLabel(wish.urgency)}
           </span>
         )}

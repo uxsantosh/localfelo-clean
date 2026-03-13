@@ -1,9 +1,10 @@
 import React from 'react';
+import { LocalFeloLoader } from './LocalFeloLoader';
 
 export function LoadingSpinner() {
   return (
     <div className="flex items-center justify-center p-8">
-      <div className="w-8 h-8 border-4 border-input border-t-primary rounded-full animate-spin" />
+      <LocalFeloLoader size="md" text="Loading..." />
     </div>
   );
 }

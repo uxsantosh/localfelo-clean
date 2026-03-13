@@ -176,11 +176,11 @@ export function CreateWishScreen({
     
     if (suggestedCat && !selectedCategory) {
       setSelectedCategory(String(suggestedCat));
-      toast.success('✨ Category suggested!');
+      toast.success('Category suggested!');
     }
     if (suggestedBudget && !budget) {
       setBudget(suggestedBudget);
-      toast.success('✨ Budget suggested!');
+      toast.success('Budget suggested!');
     }
   };
 

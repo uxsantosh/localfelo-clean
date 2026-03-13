@@ -49,8 +49,11 @@ export function PrivacyPage({ onBack, onNavigate, isLoggedIn = false, isAdmin = 
           <p className="text-body">We collect the following information:</p>
           <ul className="space-y-2 text-body">
             <li>• <strong>Account Information:</strong> Name and phone number (verified via OTP)</li>
-            <li>• <strong>Listing Information:</strong> Product details, images, pricing, and location you provide</li>
-            <li>• <strong>Contact Information:</strong> Phone numbers and WhatsApp numbers for buyer-seller communication</li>
+            <li>• <strong>Listing Information:</strong> Product details, images, pricing, and location you provide for Buy&Sell and Wishes</li>
+            <li>• <strong>Task Information:</strong> Task descriptions, budget, location, and service details for Tasks feature</li>
+            <li>• <strong>Contact Information:</strong> Phone numbers and WhatsApp numbers for user communication</li>
+            <li>• <strong>Chat Messages:</strong> Communications between users for coordinating transactions and tasks</li>
+            <li>• <strong>Ratings & Reviews:</strong> 5-star ratings and feedback provided by users for task creators and helpers</li>
             <li>• <strong>Usage Data:</strong> How you interact with our platform</li>
           </ul>
 
@@ -58,16 +61,21 @@ export function PrivacyPage({ onBack, onNavigate, isLoggedIn = false, isAdmin = 
           <p className="text-body">Your information is used to:</p>
           <ul className="space-y-2 text-body">
             <li>• Create and manage your account</li>
-            <li>• Display your listings to potential buyers</li>
-            <li>• Enable communication between buyers and sellers</li>
+            <li>• Display your listings, wishes, and tasks to relevant users</li>
+            <li>• Enable communication between buyers, sellers, task creators, and helpers</li>
+            <li>• Show ratings and reviews to help users make informed decisions</li>
             <li>• Improve our platform and user experience</li>
             <li>• Prevent fraud and enforce our terms</li>
           </ul>
 
           <h3 className="text-heading">3. Information Sharing</h3>
           <p className="text-body">
-            <strong>Public Information:</strong> When you create a listing, your name, phone number, and listing details 
-            are visible to all users browsing LocalFelo.
+            <strong>Public Information:</strong> When you create a listing, wish, or task, your name, phone number, 
+            location, and post details are visible to relevant users browsing LocalFelo.
+          </p>
+          <p className="text-body mt-2">
+            <strong>For Tasks:</strong> When you post a task or accept a task as a helper, your profile information, 
+            ratings, and chat messages with the other party are visible to facilitate coordination.
           </p>
           <p className="text-body mt-2">
             <strong>We do NOT:</strong>
@@ -75,7 +83,21 @@ export function PrivacyPage({ onBack, onNavigate, isLoggedIn = false, isAdmin = 
           <ul className="space-y-2 text-body">
             <li>• Sell your personal information to third parties</li>
             <li>• Process payments or store financial information (we're a mediator-only platform)</li>
+            <li>• Share payment details between task creators and helpers (all payments are handled directly between users)</li>
           </ul>
+
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 my-4">
+            <p className="text-body mb-2">
+              <strong>🔒 Task Creator & Helper Privacy</strong>
+            </p>
+            <ul className="space-y-2 text-body">
+              <li>• Your task posts and offers are public and visible to nearby users</li>
+              <li>• Your name, ratings, and contact info are visible to users you interact with</li>
+              <li>• Chat messages are private between you and the other party only</li>
+              <li>• We do NOT share your payment method or financial details with anyone</li>
+              <li>• Ratings and reviews you receive may be publicly visible on your profile</li>
+            </ul>
+          </div>
 
           <h3 className="text-heading">4. Data Security</h3>
           <p className="text-body">
@@ -111,7 +133,7 @@ export function PrivacyPage({ onBack, onNavigate, isLoggedIn = false, isAdmin = 
 
           <h3 className="text-heading">9. Contact Us</h3>
           <p className="text-body">
-            If you have questions about this Privacy Policy, please contact us at: <strong className="text-primary">support@localfelo.com</strong>
+            If you have questions about this Privacy Policy, please contact us at: <strong className="text-black">support@localfelo.com</strong>
           </p>
 
           <div className="border-t border-gray-200 pt-4 mt-6">

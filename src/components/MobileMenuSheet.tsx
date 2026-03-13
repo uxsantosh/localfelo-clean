@@ -251,7 +251,22 @@ export function MobileMenuSheet({
         </div>
 
         {/* Footer */}
-        <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-gray-200 bg-gray-50">
+        <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-gray-200 bg-gray-50 space-y-2">
+          <div className="flex items-center justify-center gap-3">
+            <button
+              onClick={() => handleNavigate('about')}
+              className="text-xs text-body hover:text-primary transition-colors underline"
+            >
+              About LocalFelo
+            </button>
+            <span className="text-xs text-muted">•</span>
+            <button
+              onClick={() => handleNavigate('faq')}
+              className="text-xs text-body hover:text-primary transition-colors underline"
+            >
+              FAQs
+            </button>
+          </div>
           <p className="text-xs text-center text-body">
             LocalFelo v1.0
           </p>

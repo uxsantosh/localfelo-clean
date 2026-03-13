@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Upload, X, Loader2, AlertCircle } from 'lucide-react';
+import { Upload, X, AlertCircle } from 'lucide-react';
+import { LocalFeloLoader } from './LocalFeloLoader';
 import { compressImageToBase64 } from '../services/imageCompression';
 import { detectNSFW, loadNSFWModel } from '../services/nsfwDetection';
 
@@ -125,7 +126,9 @@ export function ImageUploader({ images, onImagesChange, maxImages = 6 }: ImageUp
       {/* Processing Indicator - Simple */}
       {processing && (
         <div className="bg-[#CDFF00] border-2 border-black p-3 rounded-lg flex items-center gap-3">
-          <Loader2 className="w-5 h-5 animate-spin text-black" />
+          <div className="scale-75">
+            <LocalFeloLoader size="sm" text="" />
+          </div>
           <p className="text-sm font-bold text-black">Uploading photos...</p>
         </div>
       )}
@@ -162,7 +165,9 @@ export function ImageUploader({ images, onImagesChange, maxImages = 6 }: ImageUp
             className="aspect-square bg-input border-2 border-dashed border-border rounded-lg flex flex-col items-center justify-center gap-2 hover:bg-background transition-all active:scale-98 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {processing ? (
-              <Loader2 className="w-6 h-6 text-muted animate-spin" />
+              <div className="scale-75">
+                <LocalFeloLoader size="sm" text="" />
+              </div>
             ) : (
               <Upload className="w-6 h-6 text-muted" />
             )}

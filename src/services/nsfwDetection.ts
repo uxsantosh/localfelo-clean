@@ -230,13 +230,5 @@ export async function detectNSFWBatch(
   return results;
 }
 
-// Log warning about content moderation
-console.warn(`
-⚠️ CONTENT MODERATION NOTICE:
-This app uses basic client-side content filtering.
-For production use, implement:
-1. Server-side AI content moderation (Google Vision API, AWS Rekognition)
-2. Manual review queue
-3. User reporting system
-4. Age verification
-`);
+// Note: For production use, implement server-side AI content moderation
+// (Google Vision API, AWS Rekognition), manual review queue, user reporting system, and age verification

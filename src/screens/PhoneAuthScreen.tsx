@@ -6,7 +6,7 @@
 // =====================================================
 
 import React, { useState } from 'react';
-import { Phone, Lock, Eye, EyeOff, ArrowRight, User, CheckCircle2, Loader2 } from 'lucide-react';
+import { Phone, Lock, Eye, EyeOff, ArrowRight, User, CheckCircle2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Header } from '../components/Header';
 import { ConfettiCelebration } from '../components/ConfettiCelebration';
@@ -22,6 +22,7 @@ import { hashPassword, verifyPassword } from '../utils/passwordHash';
 import logoSvg from '../assets/logo.svg';
 import { AvatarUploader } from '../components/AvatarUploader'; // ✅ ADD: Avatar upload during signup
 import { uploadAvatar } from '../services/avatarUpload'; // ✅ ADD: Avatar upload service
+import { LocalFeloLoader } from '../components/LocalFeloLoader'; // ✅ ADD: Branded loader
 
 interface PhoneAuthScreenProps {
   onSuccess: (user: any) => void;
@@ -80,63 +81,27 @@ export function PhoneAuthScreen({ onSuccess, onClose }: PhoneAuthScreenProps) {
       console.log('  With +91:', dbPhone);
       console.log('  Without +91:', formatted.clean);
 
-      // ✅ FIX: Check ALL possible phone number formats
-      // Try multiple queries to handle different phone storage formats
-      let profile = null;
-      let profileError = null;
-
-      // Strategy: Try all possible phone formats in the database
+      // ✅ OPTIMIZED: Single query with OR conditions instead of 6 sequential queries
       const phoneVariants = [
         dbPhone,           // +919876543210
         cleanPhone,        // 9876543210
         `91${cleanPhone}`, // 919876543210
       ];
 
-      console.log('🔍 Will search for phone in these formats:', phoneVariants);
+      console.log('🔍 Searching for phone in these formats:', phoneVariants);
 
-      // Try 'phone' column with all variants
-      for (const phoneVariant of phoneVariants) {
-        console.log(`🔍 Trying phone column with: "${phoneVariant}"`);
-        const { data, error } = await supabase
-          .from('profiles')
-          .select('*')
-          .eq('phone', phoneVariant)
-          .maybeSingle();
-        
-        console.log(`   📊 Query result: data=${data ? 'FOUND' : 'NULL'}, error=${error ? error.message : 'none'}`);
-        if (data) {
-          console.log(`   📋 Found profile:`, JSON.stringify(data, null, 2));
-        }
-        
-        if (data) {
-          profile = data;
-          console.log(`✅ FOUND user by phone column with format: "${phoneVariant}"`);
-          break;
-        }
-      }
+      // Single optimized query checking all formats at once
+      const { data: profiles, error: queryError } = await supabase
+        .from('profiles')
+        .select('*')
+        .or(`phone.in.(${phoneVariants.join(',')}),phone_number.in.(${phoneVariants.join(',')})`)
+        .limit(1);
 
-      // If not found, try 'phone_number' column with all variants
-      if (!profile) {
-        console.log('⚠️ Not found in phone column, trying phone_number column...');
-        for (const phoneVariant of phoneVariants) {
-          console.log(`🔍 Trying phone_number column with: "${phoneVariant}"`);
-          const { data, error } = await supabase
-            .from('profiles')
-            .select('*')
-            .eq('phone_number', phoneVariant)
-            .maybeSingle();
-          
-          console.log(`   📊 Query result: data=${data ? 'FOUND' : 'NULL'}, error=${error ? error.message : 'none'}`);
-          if (data) {
-            console.log(`   📋 Found profile:`, JSON.stringify(data, null, 2));
-          }
-          
-          if (data) {
-            profile = data;
-            console.log(`✅ FOUND user by phone_number column with format: "${phoneVariant}"`);
-            break;
-          }
-        }
+      const profile = profiles?.[0] || null;
+      
+      console.log(`📊 Query result: data=${profile ? 'FOUND' : 'NULL'}, error=${queryError ? queryError.message : 'none'}`);
+      if (profile) {
+        console.log(`📋 Found profile:`, JSON.stringify(profile, null, 2));
       }
 
       // ✅ ENHANCED DEBUG LOGGING
@@ -745,7 +710,9 @@ export function PhoneAuthScreen({ onSuccess, onClose }: PhoneAuthScreenProps) {
                   className="auth-button w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {loading ? (
-                    <Loader2 className="auth-icon animate-spin mx-auto" />
+                    <div className="flex items-center justify-center">
+                      <LocalFeloLoader size="sm" text="" />
+                    </div>
                   ) : (
                     <span className="flex items-center justify-center gap-2">
                       Continue <ArrowRight className="auth-icon" />
@@ -809,7 +776,9 @@ export function PhoneAuthScreen({ onSuccess, onClose }: PhoneAuthScreenProps) {
                   className="auth-button w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {loading ? (
-                    <Loader2 className="auth-icon animate-spin mx-auto" />
+                    <div className="flex items-center justify-center">
+                      <LocalFeloLoader size="sm" text="" />
+                    </div>
                   ) : (
                     'Login'
                   )}
@@ -918,15 +887,6 @@ export function PhoneAuthScreen({ onSuccess, onClose }: PhoneAuthScreenProps) {
                   </div>
                 </div>
 
-                {/* Avatar Upload */}
-                <div>
-                  <AvatarUploader
-                    onFileChange={setAvatarFile}
-                    onUrlChange={setAvatarUrl}
-                    currentUrl={avatarUrl}
-                  />
-                </div>
-
                 {error && (
                   <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-sm">
                     {error}
@@ -939,7 +899,9 @@ export function PhoneAuthScreen({ onSuccess, onClose }: PhoneAuthScreenProps) {
                   className="auth-button w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {loading ? (
-                    <Loader2 className="auth-icon animate-spin mx-auto" />
+                    <div className="flex items-center justify-center">
+                      <LocalFeloLoader size="sm" text="" />
+                    </div>
                   ) : (
                     'Create Account'
                   )}
@@ -1025,7 +987,7 @@ export function PhoneAuthScreen({ onSuccess, onClose }: PhoneAuthScreenProps) {
                   className="auth-button w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {loading ? (
-                    <Loader2 className="auth-icon animate-spin mx-auto" />
+                    <LocalFeloLoader className="auth-icon animate-spin mx-auto" />
                   ) : (
                     'Reset Password'
                   )}

@@ -110,7 +110,7 @@ export function EditProfileModal({
       // Dispatch event to notify App.tsx to reload user
       window.dispatchEvent(new CustomEvent('userProfileUpdated'));
 
-      toast.success('Profile updated successfully!');
+      // Don't show toast here - let the parent component handle it to avoid duplicates
       onSuccess();
       onClose();
     } catch (error: any) {

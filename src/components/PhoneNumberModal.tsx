@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal } from './Modal';
 import { InputField } from './InputField';
-import { Loader2 } from 'lucide-react';
+import { LocalFeloLoader } from './LocalFeloLoader';
 
 interface PhoneNumberModalProps {
   isOpen: boolean;
@@ -119,7 +119,7 @@ export function PhoneNumberModal({ isOpen, onClose, onSubmit, userName }: PhoneN
           >
             {isSubmitting ? (
               <span className="flex items-center justify-center gap-2">
-                <Loader2 className="w-4 h-4 animate-spin" />
+                <LocalFeloLoader className="w-4 h-4 animate-spin" />
                 Saving...
               </span>
             ) : (

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Search, X, MapPin, Loader2 } from 'lucide-react';
+import { Search, X, MapPin } from 'lucide-react';
+import { LocalFeloLoader } from './LocalFeloLoader';
 import { searchLocations, SearchResult } from '../services/geocoding';
 
 interface LocationSearchProps {
@@ -112,7 +113,7 @@ export function LocationSearch({ onSelect, placeholder = 'Search for area, stree
 
         {isSearching && (
           <div className="absolute right-3 top-1/2 -translate-y-1/2">
-            <Loader2 className="w-5 h-5 text-[#CDFF00] animate-spin" />
+            <LocalFeloLoader className="w-5 h-5 text-[#CDFF00] animate-spin" />
           </div>
         )}
       </div>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ArrowLeft, Bell, MapPin, IndianRupee, CheckCircle2, Sparkles, Plus, X, ChevronDown, ChevronUp } from 'lucide-react';
+import { CategorySelector } from '../components/CategorySelector';
 import { getAllServiceCategories, getSubcategoriesByCategoryId, getCategoryEmojiById, getCategoryNameById } from '../services/serviceCategories';
 import { getHelperPreferences, saveHelperPreferences, HelperPreferences } from '../services/helperPreferences';
 import { getHelperCustomSkills, addCustomSkill, removeCustomSkill, getSkillSuggestions } from '../services/customSkills';
@@ -22,6 +23,7 @@ export function HelperPreferencesScreen({
   // Preferences state
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]); // Category IDs
   const [selectedSubcategories, setSelectedSubcategories] = useState<string[]>([]); // Subcategory IDs
+  const [showCategorySelector, setShowCategorySelector] = useState(false);
   const [expandedCategory, setExpandedCategory] = useState<string | null>(null); // For expanding subcategories
   const [customSkills, setCustomSkills] = useState<string[]>([]);
   const [customSkillInput, setCustomSkillInput] = useState('');

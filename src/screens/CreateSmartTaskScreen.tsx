@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ArrowLeft, MapPin, IndianRupee, Phone, ChevronRight, Tag, X, Search } from 'lucide-react';
+import { ArrowLeft, MapPin, IndianRupee, Phone, ChevronRight, Tag, X, Search, ArrowRight } from 'lucide-react';
 import { getAllServiceCategories, getSubcategoriesByCategoryId, getCategoryEmojiById, getCategoryNameById, getSubcategoryName } from '../services/serviceCategories';
 import { notifyMatchingHelpers } from '../services/helperPreferences';
 import { supabase } from '../lib/supabaseClient';
@@ -299,7 +299,7 @@ export function CreateSmartTaskScreen({
 
       <div className="px-4 py-6 max-w-2xl mx-auto">
         {step === 1 && (
-          <div className="space-y-6">
+          <div className="space-y-4">
             <div>
               <h2 className="text-xl font-bold mb-1 leading-tight">What do you need help with?</h2>
               <p className="text-gray-600 text-sm leading-snug">
@@ -312,19 +312,38 @@ export function CreateSmartTaskScreen({
                 value={taskInput}
                 onChange={(e) => handleTaskInputChange(e.target.value)}
                 placeholder="E.g., Need help with luggage from bus stop, Bring food from home to office, Looking for a plumber to fix leaking tap..."
-                className="w-full p-4 border border-gray-300 rounded-lg resize-none focus:ring-2 focus:ring-[#CDFF00] focus:border-transparent"
+                className="w-full p-4 pb-14 border-2 border-gray-300 rounded-xl resize-none focus:ring-2 focus:ring-[#CDFF00] focus:border-[#CDFF00] text-base"
                 rows={6}
                 maxLength={500}
                 autoFocus
               />
 
-              <div className="absolute bottom-2 right-2 text-xs text-gray-400">
-                {taskInput.length}/500
+              {/* Character count and Continue button - INSIDE textarea at bottom */}
+              <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between bg-white/80 backdrop-blur-sm py-2 px-2 rounded-lg">
+                <span className="text-xs text-gray-500 font-medium">
+                  {taskInput.length}/500
+                </span>
+                
+                {/* Small Continue button - always visible, changes color based on state */}
+                <button
+                  type="button"
+                  onClick={handleContinueFromStep1}
+                  disabled={taskInput.trim().length < 10}
+                  className={`px-5 py-2 rounded-lg font-bold text-sm transition-all flex items-center gap-2 ${
+                    taskInput.trim().length >= 10
+                      ? 'bg-[#CDFF00] text-black hover:bg-[#CDFF00]/90 shadow-md'
+                      : 'bg-gray-300 text-gray-500 cursor-not-allowed opacity-60'
+                  }`}
+                  title={taskInput.trim().length < 10 ? 'Please enter at least 10 characters' : 'Continue to next step'}
+                >
+                  <span>Continue</span>
+                  <ArrowRight className="w-4 h-4" />
+                </button>
               </div>
             </div>
 
             {contentErrors.length > 0 && (
-              <div className="text-sm text-red-500 mt-2">
+              <div className="text-sm text-red-500">
                 {contentErrors.map((error, index) => (
                   <p key={index}>{error}</p>
                 ))}
@@ -332,26 +351,11 @@ export function CreateSmartTaskScreen({
             )}
 
             {contentWarnings.length > 0 && (
-              <div className="text-sm text-orange-500 mt-2">
+              <div className="text-sm text-orange-500">
                 {contentWarnings.map((warning, index) => (
                   <p key={index}>{warning}</p>
                 ))}
               </div>
-            )}
-
-            <button
-              onClick={handleContinueFromStep1}
-              disabled={taskInput.trim().length < 10}
-              className="w-full bg-[#CDFF00] text-black py-4 rounded-lg font-bold hover:bg-[#CDFF00]/90 disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2"
-            >
-              Continue
-              <ChevronRight className="w-5 h-5" />
-            </button>
-
-            {taskInput.trim().length < 10 && taskInput.trim().length > 0 && (
-              <p className="text-xs text-gray-500 text-center">
-                Please provide more details (at least 10 characters)
-              </p>
             )}
           </div>
         )}
@@ -400,7 +404,7 @@ export function CreateSmartTaskScreen({
                 placeholder="Search categories..."
                 value={categorySearchQuery}
                 onChange={(e) => setCategorySearchQuery(e.target.value)}
-                className="w-full pl-10 pr-10 py-3 border-2 border-gray-200 rounded-lg focus:border-[#CDFF00] focus:ring-2 focus:ring-[#CDFF00]/20 outline-none text-black placeholder-gray-400"
+                className="w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:border-[#CDFF00] focus:ring-2 focus:ring-[#CDFF00]/20 outline-none text-black placeholder-gray-400"
               />
               {categorySearchQuery && (
                 <button
@@ -412,7 +416,7 @@ export function CreateSmartTaskScreen({
               )}
             </div>
 
-            <div className="space-y-3 max-h-[60vh] overflow-y-auto">
+            <div className="space-y-2 max-h-[60vh] overflow-y-auto">
               {allServiceCategories.filter(cat => {
                 if (!categorySearchQuery) return true;
                 const query = categorySearchQuery.toLowerCase().trim();
@@ -438,34 +442,34 @@ export function CreateSmartTaskScreen({
                 const subcategories = getSubcategoriesByCategoryId(cat.id);
                 
                 return (
-                  <div key={cat.id} className="border-2 border-gray-200 rounded-lg overflow-hidden">
-                    {/* Category Header */}
+                  <div key={cat.id} className="border border-gray-200 rounded-lg overflow-hidden">
+                    {/* Category Header - Yellow background when selected */}
                     <button
                       onClick={() => handleCategorySelected(cat.id)}
                       className={`w-full p-4 text-left transition-all flex items-center justify-between ${
                         isSelected
-                          ? 'bg-[#CDFF00]/10 border-[#CDFF00]'
+                          ? 'bg-[#CDFF00]'
                           : 'bg-white hover:bg-gray-50'
                       }`}
                     >
                       <div className="flex items-center gap-3">
                         <span className="text-2xl">{cat.emoji}</span>
-                        <span className="font-semibold">{cat.name}</span>
+                        <span className="font-bold text-black">{cat.name}</span>
                       </div>
-                      <ChevronRight className={`w-5 h-5 transition-transform ${isExpanded ? 'rotate-90' : ''}`} />
+                      <ChevronRight className={`w-5 h-5 text-black transition-transform ${isExpanded ? 'rotate-90' : ''}`} />
                     </button>
 
-                    {/* Subcategories (expandable) */}
+                    {/* Subcategories (expandable) - White background */}
                     {isExpanded && (
-                      <div className="border-t border-gray-200 bg-gray-50 p-3 space-y-2">
+                      <div className="border-t border-gray-200 bg-white">
                         {subcategories.map((sub) => (
                           <button
                             key={sub.id}
                             onClick={() => handleSubcategorySelected(sub.id)}
-                            className={`w-full p-3 rounded-lg text-left transition-all ${
+                            className={`w-full px-6 py-3 text-left transition-all border-b border-gray-100 last:border-b-0 ${
                               selectedSubcategoryId === sub.id
-                                ? 'bg-[#CDFF00] text-black font-semibold'
-                                : 'bg-white hover:bg-gray-100'
+                                ? 'bg-gray-100 text-black font-semibold'
+                                : 'bg-white hover:bg-gray-50 text-gray-700'
                             }`}
                           >
                             {sub.name}

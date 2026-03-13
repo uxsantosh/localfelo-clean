@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, ShoppingBag, Sparkles, Briefcase, MapPin, Instagram, Facebook, Linkedin, Mail } from 'lucide-react';
+import { Heart, ShoppingBag, Sparkles, Briefcase, MapPin, Instagram, Facebook, Linkedin, Mail, Lightbulb, FileText, Shield, Ban, Info } from 'lucide-react';
 import logoSvg from '../assets/logo.svg';
 
 interface AppFooterProps {
@@ -83,7 +83,7 @@ export function AppFooter({ onNavigate, onContactClick, socialLinks }: AppFooter
           <div className="absolute bottom-5 right-20 w-1.5 h-1.5 bg-[#CDFF00] rounded-full animate-ping" style={{ animationDuration: '4s' }}></div>
           
           {/* Sparkle Stars */}
-          <Sparkles className="absolute top-8 left-1/3 w-6 h-6 text-[#CDFF00] opacity-60 animate-pulse" style={{ animationDuration: '2.2s' }} />
+          
           <Sparkles className="absolute bottom-8 right-1/4 w-5 h-5 text-[#CDFF00] opacity-50 animate-ping" style={{ animationDuration: '3.2s' }} />
           <Sparkles className="absolute top-1/2 left-16 w-4 h-4 text-[#CDFF00] opacity-40 animate-pulse" style={{ animationDuration: '2.8s' }} />
           <Sparkles className="absolute top-12 right-1/2 w-5 h-5 text-white opacity-30 animate-ping" style={{ animationDuration: '3.8s' }} />
@@ -96,12 +96,10 @@ export function AppFooter({ onNavigate, onContactClick, socialLinks }: AppFooter
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <div className="mb-2">
             <p className="text-[#CDFF00] font-bold text-2xl bg-gradient-to-r from-[#CDFF00] via-white to-[#CDFF00] bg-clip-text text-transparent">
-              🇮🇳 India's First Wish-Based Hyperlocal Platform
+              India's First Wish-Based Hyperlocal Platform
             </p>
           </div>
-          <p className="text-white text-base font-medium">
-            Connecting local communities for tasks, wishes, and marketplace — <span className="text-[#CDFF00] font-bold">100% free</span>, <span className="text-[#CDFF00] font-bold">zero commission</span>
-          </p>
+          <p className="text-white text-base font-medium">Connecting local communities for tasks, wishes, and marketplace</p>
         </div>
       </div>
 
@@ -116,12 +114,11 @@ export function AppFooter({ onNavigate, onContactClick, socialLinks }: AppFooter
               alt="LocalFelo - India's Hyperlocal Marketplace Platform" 
               className="h-10 mb-4" 
             />
-            <h2 className="text-lg font-bold text-black mb-3">Connect Locally. Deal Directly.</h2>
+            <h2 className="text-lg font-bold text-black mb-3">Empowering People Through Local Connections</h2>
             <p className="text-sm text-gray-700 leading-relaxed mb-4">
-              LocalFelo connects you with people in your neighborhood for buying, selling, tasks, and wishes. 
-              Chat directly, meet locally, deal safely. <strong className="text-black">Zero fees. Zero middleman.</strong>
-              <br />
-              We only connect people - you handle payments and delivery directly.
+              LocalFelo is a hyperlocal platform built to empower people across India by connecting individuals who need help with those who can offer it. From everyday tasks and local assistance to skilled services, mentorship, and community collaboration, LocalFelo enables people to support each other within their neighborhoods and cities.
+              <br /><br />
+              By making it easier for people to connect locally, LocalFelo aims to strengthen communities, create opportunities, and unlock the power of people helping people.
             </p>
             
             {/* Social Links */}
@@ -197,9 +194,10 @@ export function AppFooter({ onNavigate, onContactClick, socialLinks }: AppFooter
               </li>
               <li>
                 <button
-                  onClick={() => onNavigate('about')}
-                  className="text-sm text-gray-700 hover:text-black font-medium transition-colors"
+                  onClick={() => onNavigate('how-it-works')}
+                  className="text-sm text-gray-700 hover:text-black font-medium transition-colors flex items-center gap-2"
                 >
+                  <Lightbulb className="w-4 h-4" />
                   How It Works
                 </button>
               </li>
@@ -215,8 +213,9 @@ export function AppFooter({ onNavigate, onContactClick, socialLinks }: AppFooter
               <li>
                 <button
                   onClick={() => onNavigate('about')}
-                  className="text-sm text-gray-700 hover:text-black font-medium transition-colors"
+                  className="text-sm text-gray-700 hover:text-black font-medium transition-colors flex items-center gap-2"
                 >
+                  <Info className="w-4 h-4" />
                   About LocalFelo
                 </button>
               </li>
@@ -232,32 +231,36 @@ export function AppFooter({ onNavigate, onContactClick, socialLinks }: AppFooter
               <li>
                 <button
                   onClick={() => onNavigate('terms')}
-                  className="text-sm text-gray-700 hover:text-black font-medium transition-colors"
+                  className="text-sm text-gray-700 hover:text-black font-medium transition-colors flex items-center gap-2"
                 >
+                  <FileText className="w-4 h-4" />
                   Terms of Service
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => onNavigate('privacy')}
-                  className="text-sm text-gray-700 hover:text-black font-medium transition-colors"
+                  className="text-sm text-gray-700 hover:text-black font-medium transition-colors flex items-center gap-2"
                 >
+                  <Shield className="w-4 h-4" />
                   Privacy Policy
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => onNavigate('safety')}
-                  className="text-sm text-gray-700 hover:text-black font-medium transition-colors"
+                  className="text-sm text-gray-700 hover:text-black font-medium transition-colors flex items-center gap-2"
                 >
+                  <Shield className="w-4 h-4" />
                   Safety Guidelines
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => onNavigate('prohibited')}
-                  className="text-sm text-gray-700 hover:text-black font-medium transition-colors"
+                  className="text-sm text-gray-700 hover:text-black font-medium transition-colors flex items-center gap-2"
                 >
+                  <Ban className="w-4 h-4" />
                   Prohibited Items
                 </button>
               </li>
@@ -304,7 +307,6 @@ export function AppFooter({ onNavigate, onContactClick, socialLinks }: AppFooter
                 <span>Made with</span>
                 <Heart className="w-4 h-4 text-red-500 fill-red-500" />
                 <span>for local communities</span>
-                <span className="text-xl">🇮🇳</span>
               </div>
             </div>
           </div>

@@ -47,7 +47,13 @@ export function Footer({ onNavigate, onContactClick, appDownloadUrl, appDownload
             <div className="flex items-center gap-4">
               <p>© 2024 LocalFelo. All rights reserved.</p>
               <button
-                onClick={onContactClick}
+                onClick={() => {
+                  if (onContactClick) {
+                    onContactClick();
+                  } else {
+                    onNavigate('contact');
+                  }
+                }}
                 className="flex items-center gap-1.5 text-body hover:text-primary transition-colors"
               >
                 <Mail className="w-4 h-4" />
