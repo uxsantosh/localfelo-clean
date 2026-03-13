@@ -95,7 +95,7 @@ export function HowItWorksPage({
             }`}
           >
             <ShoppingBag className="w-5 h-5" />
-            Buy & Sell
+            Marketplace (Buy & Sell)
           </button>
         </div>
 
@@ -125,7 +125,7 @@ export function HowItWorksPage({
                     1
                   </div>
                   <div className="mb-3">
-                    <Plus className="w-8 h-8 text-gray-400 mb-2" />
+                    <Plus className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Post Your Task</h4>
                   <p className="text-sm text-gray-700">
@@ -138,7 +138,7 @@ export function HowItWorksPage({
                     2
                   </div>
                   <div className="mb-3">
-                    <Search className="w-8 h-8 text-gray-400 mb-2" />
+                    <Search className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Helpers Find You</h4>
                   <p className="text-sm text-gray-700">
@@ -151,7 +151,7 @@ export function HowItWorksPage({
                     3
                   </div>
                   <div className="mb-3">
-                    <MessageCircle className="w-8 h-8 text-gray-400 mb-2" />
+                    <MessageCircle className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Chat & Coordinate</h4>
                   <p className="text-sm text-gray-700">
@@ -164,7 +164,7 @@ export function HowItWorksPage({
                     4
                   </div>
                   <div className="mb-3">
-                    <CheckCircle className="w-8 h-8 text-gray-400 mb-2" />
+                    <CheckCircle className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Task Complete</h4>
                   <p className="text-sm text-gray-700">
@@ -185,7 +185,7 @@ export function HowItWorksPage({
                     1
                   </div>
                   <div className="mb-3">
-                    <Briefcase className="w-8 h-8 text-gray-400 mb-2" />
+                    <Briefcase className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Activate Helper Mode</h4>
                   <p className="text-sm text-gray-700">
@@ -198,7 +198,7 @@ export function HowItWorksPage({
                     2
                   </div>
                   <div className="mb-3">
-                    <MapPin className="w-8 h-8 text-gray-400 mb-2" />
+                    <MapPin className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Browse Nearby Tasks</h4>
                   <p className="text-sm text-gray-700">
@@ -211,7 +211,7 @@ export function HowItWorksPage({
                     3
                   </div>
                   <div className="mb-3">
-                    <MessageCircle className="w-8 h-8 text-gray-400 mb-2" />
+                    <MessageCircle className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Connect & Accept</h4>
                   <p className="text-sm text-gray-700">
@@ -224,7 +224,7 @@ export function HowItWorksPage({
                     4
                   </div>
                   <div className="mb-3">
-                    <IndianRupee className="w-8 h-8 text-gray-400 mb-2" />
+                    <IndianRupee className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Complete & Earn</h4>
                   <p className="text-sm text-gray-700">
@@ -281,7 +281,7 @@ export function HowItWorksPage({
                     1
                   </div>
                   <div className="mb-3">
-                    <Sparkles className="w-8 h-8 text-gray-400 mb-2" />
+                    <Sparkles className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Post Your Wish</h4>
                   <p className="text-sm text-gray-700">
@@ -294,7 +294,7 @@ export function HowItWorksPage({
                     2
                   </div>
                   <div className="mb-3">
-                    <Search className="w-8 h-8 text-gray-400 mb-2" />
+                    <Search className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Sellers Find You</h4>
                   <p className="text-sm text-gray-700">
@@ -307,7 +307,7 @@ export function HowItWorksPage({
                     3
                   </div>
                   <div className="mb-3">
-                    <MessageCircle className="w-8 h-8 text-gray-400 mb-2" />
+                    <MessageCircle className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Compare Offers</h4>
                   <p className="text-sm text-gray-700">
@@ -320,7 +320,7 @@ export function HowItWorksPage({
                     4
                   </div>
                   <div className="mb-3">
-                    <CheckCircle className="w-8 h-8 text-gray-400 mb-2" />
+                    <CheckCircle className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Meet & Buy</h4>
                   <p className="text-sm text-gray-700">
@@ -341,7 +341,7 @@ export function HowItWorksPage({
                     1
                   </div>
                   <div className="mb-3">
-                    <Search className="w-8 h-8 text-gray-400 mb-2" />
+                    <Search className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Browse Wishes</h4>
                   <p className="text-sm text-gray-700">
@@ -354,7 +354,7 @@ export function HowItWorksPage({
                     2
                   </div>
                   <div className="mb-3">
-                    <MessageCircle className="w-8 h-8 text-gray-400 mb-2" />
+                    <MessageCircle className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Contact Buyers</h4>
                   <p className="text-sm text-gray-700">
@@ -367,7 +367,7 @@ export function HowItWorksPage({
                     3
                   </div>
                   <div className="mb-3">
-                    <IndianRupee className="w-8 h-8 text-gray-400 mb-2" />
+                    <IndianRupee className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Negotiate & Agree</h4>
                   <p className="text-sm text-gray-700">
@@ -380,7 +380,7 @@ export function HowItWorksPage({
                     4
                   </div>
                   <div className="mb-3">
-                    <CheckCircle className="w-8 h-8 text-gray-400 mb-2" />
+                    <CheckCircle className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Sell & Earn</h4>
                   <p className="text-sm text-gray-700">
@@ -437,7 +437,7 @@ export function HowItWorksPage({
                     1
                   </div>
                   <div className="mb-3">
-                    <Plus className="w-8 h-8 text-gray-400 mb-2" />
+                    <Plus className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Create Listing</h4>
                   <p className="text-sm text-gray-700">
@@ -450,7 +450,7 @@ export function HowItWorksPage({
                     2
                   </div>
                   <div className="mb-3">
-                    <Search className="w-8 h-8 text-gray-400 mb-2" />
+                    <Search className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Buyers Find You</h4>
                   <p className="text-sm text-gray-700">
@@ -463,7 +463,7 @@ export function HowItWorksPage({
                     3
                   </div>
                   <div className="mb-3">
-                    <MessageCircle className="w-8 h-8 text-gray-400 mb-2" />
+                    <MessageCircle className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Chat with Buyers</h4>
                   <p className="text-sm text-gray-700">
@@ -476,7 +476,7 @@ export function HowItWorksPage({
                     4
                   </div>
                   <div className="mb-3">
-                    <CheckCircle className="w-8 h-8 text-gray-400 mb-2" />
+                    <CheckCircle className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Sell & Get Paid</h4>
                   <p className="text-sm text-gray-700">
@@ -497,7 +497,7 @@ export function HowItWorksPage({
                     1
                   </div>
                   <div className="mb-3">
-                    <Search className="w-8 h-8 text-gray-400 mb-2" />
+                    <Search className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Browse Listings</h4>
                   <p className="text-sm text-gray-700">
@@ -510,7 +510,7 @@ export function HowItWorksPage({
                     2
                   </div>
                   <div className="mb-3">
-                    <MessageCircle className="w-8 h-8 text-gray-400 mb-2" />
+                    <MessageCircle className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Contact Seller</h4>
                   <p className="text-sm text-gray-700">
@@ -523,7 +523,7 @@ export function HowItWorksPage({
                     3
                   </div>
                   <div className="mb-3">
-                    <MapPin className="w-8 h-8 text-gray-400 mb-2" />
+                    <MapPin className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Arrange Meetup</h4>
                   <p className="text-sm text-gray-700">
@@ -536,7 +536,7 @@ export function HowItWorksPage({
                     4
                   </div>
                   <div className="mb-3">
-                    <CheckCircle className="w-8 h-8 text-gray-400 mb-2" />
+                    <CheckCircle className="w-8 h-8 text-white mb-2" />
                   </div>
                   <h4 className="font-bold text-black mb-2">Buy & Rate</h4>
                   <p className="text-sm text-gray-700">

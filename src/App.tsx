@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { useLocation as useRouterLocation, useNavigate, BrowserRouter } from 'react-router';
 import { Info, FileText, Phone, Shield as ShieldIcon } from 'lucide-react';
 import { Toaster } from 'sonner';
 
@@ -144,12 +145,16 @@ function getScreenFromPath(path: string): Screen {
   return screenMap[path] || 'home'; // ✅ FIX: Default to home
 }
 
-export default function App() {
+function AppContent() {
   // 🔍 TEST LOG - Verify console is working
   console.log('🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀');
   
   // ✅ Prevent concurrent auth initialization
   const authInitializedRef = useRef(false);
+  
+  // Get current route information
+  const routerLocation = useRouterLocation();
+  const navigate = useNavigate();
   
   const [currentScreen, setCurrentScreen] = useState<Screen>('home');
   const [user, setUser] = useState<User | null>(null);
@@ -260,6 +265,66 @@ export default function App() {
 
   // Simple notifications (replaces toast)
   const simpleNotify = useSimpleNotifications();
+
+  // ✅ INITIALIZE SCREEN FROM URL ON MOUNT
+  useEffect(() => {
+    const path = routerLocation.pathname;
+    console.log('🔗 [App] Initializing from URL:', path);
+    
+    // Map URL paths to screens
+    const pathToScreen: Record<string, Screen> = {
+      '/': 'home',
+      '/marketplace': 'marketplace',
+      '/create': 'create',
+      '/profile': 'profile',
+      '/chat': 'chat',
+      '/admin': 'admin',
+      '/admin/categories': 'admin-categories',
+      '/about': 'about',
+      '/how-it-works': 'how-it-works',
+      '/terms': 'terms',
+      '/privacy': 'privacy',
+      '/safety': 'safety',
+      '/contact': 'contact',
+      '/diagnostic': 'diagnostic',
+      '/notifications': 'notifications',
+      '/wishes': 'wishes',
+      '/create-wish': 'create-wish',
+      '/wish-detail': 'wish-detail',
+      '/tasks': 'tasks',
+      '/helper-tasks': 'helper-tasks',
+      '/create-task': 'create-task',
+      '/create-job': 'create-job',
+      '/task-detail': 'task-detail',
+      '/prohibited-items': 'prohibited-items',
+      '/faq': 'faq',
+      '/helper-mode': 'helper-mode',
+      '/helper-prefs': 'helper-prefs',
+    };
+    
+    // Handle dynamic routes (with IDs)
+    if (path.startsWith('/listing/')) {
+      setCurrentScreen('listing');
+    } else if (path.startsWith('/edit-listing/')) {
+      setCurrentScreen('edit');
+    } else if (pathToScreen[path]) {
+      setCurrentScreen(pathToScreen[path]);
+    }
+  }, []); // Only run on mount
+
+  // ✅ SYNC SCREEN STATE WITH URL CHANGES (back/forward buttons)
+  useEffect(() => {
+    const path = routerLocation.pathname;
+    console.log('🔗 [App] URL changed:', path);
+    
+    // Don't override the screen if we just navigated programmatically
+    // (this prevents double-updates)
+    const newScreen = getScreenFromPath(path);
+    if (newScreen !== currentScreen) {
+      console.log('🔄 [App] Syncing screen to URL:', newScreen);
+      setCurrentScreen(newScreen);
+    }
+  }, [routerLocation.pathname]); // Run whenever URL changes
 
   // ✅ ANDROID BACK BUTTON HANDLING - Only on native platforms
   useEffect(() => {
@@ -1348,7 +1413,7 @@ export default function App() {
         return;
       }
       setSelectedListing(listing);
-      window.history.pushState({ screen, listingId: listing.id }, '', `/listing/${listing.id}`);
+      navigate(`/listing/${listing.id}`, { state: { screen, listingId: listing.id } });
     } else if (screen === 'edit' && listing) {
       // ✅ Validate listing ID before creating URL
       if (!listing.id || listing.id === 'undefined' || listing.id === 'null' || listing.id === '' || typeof listing.id !== 'string') {
@@ -1357,16 +1422,16 @@ export default function App() {
         return;
       }
       setSelectedListing(listing);
-      window.history.pushState({ screen, listingId: listing.id }, '', `/edit-listing/${listing.id}`);
+      navigate(`/edit-listing/${listing.id}`, { state: { screen, listingId: listing.id } });
     } else if (screen === 'wish-detail') {
       // Store wish ID in history state for back button navigation
-      window.history.pushState({ screen, wishId: selectedWishId }, '', '/wish-detail');
+      navigate('/wish-detail', { state: { screen, wishId: selectedWishId } });
     } else if (screen === 'task-detail') {
       // Store task ID in history state for back button navigation
-      window.history.pushState({ screen, taskId: selectedTaskId }, '', '/task-detail');
+      navigate('/task-detail', { state: { screen, taskId: selectedTaskId } });
     } else if (screen === 'chat') {
       // Store conversation ID in history state for back button navigation
-      window.history.pushState({ screen, conversationId: chatConversationId }, '', '/chat');
+      navigate('/chat', { state: { screen, conversationId: chatConversationId } });
     } else {
       const pathMap: Record<Screen, string> = {
         'home': '/',
@@ -1400,7 +1465,7 @@ export default function App() {
         'browse': '/browse',
         'faq': '/faq',
       };
-      window.history.pushState({ screen }, '', pathMap[screen] || '/');
+      navigate(pathMap[screen] || '/', { state: { screen } });
     }
     
     // Reset scroll to top when navigating to any screen
@@ -2668,6 +2733,15 @@ export default function App() {
       <UpdateNotification />
 
     </div>
+  );
+}
+
+// Wrapper component that provides Router context
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
+    </BrowserRouter>
   );
 }
 
