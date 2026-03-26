@@ -132,7 +132,8 @@ export function ShopsScreen({
       {/* ✅ Full-width banner with consistent inner padding matching Header */}
       <div className="sticky top-14 sm:top-[5.5rem] z-10 bg-gradient-to-br from-[#CDFF00] via-[#B8E600] to-[#A3CC00] shadow-lg border-b-2 border-black/10">
         <div className="max-w-[1400px] mx-auto px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12 py-4 sm:py-5">
-          <div className="flex items-center justify-between gap-3 sm:gap-4">
+          {/* Mobile: Stack layout | Desktop: Horizontal layout */}
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
             <div className="flex-1">
               <h2 className="text-base sm:text-lg font-bold text-black mb-0.5">
                 Discover nearby shops & products
