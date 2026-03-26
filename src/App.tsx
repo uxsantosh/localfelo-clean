@@ -121,6 +121,7 @@ type Screen =
   | 'helper-ready-mode'
   | 'helper-preferences'
   | 'prohibited'
+  | 'prohibited-items'
   | 'browse'
   | 'faq'
   | 'professionals'
@@ -1719,6 +1720,7 @@ function AppContent() {
       'helper-ready-mode': '/helper-ready-mode',
       'helper-preferences': '/helper-preferences',
       'prohibited': '/prohibited',
+      'prohibited-items': '/prohibited',
       'browse': '/browse',
       'faq': '/faq',
       'professionals': '/professionals',
@@ -2200,6 +2202,7 @@ function AppContent() {
         return <SafetyPage onBack={() => navigateToScreen('home')} />;
 
       case 'prohibited':
+      case 'prohibited-items':
         return <ProhibitedItemsPage onBack={() => navigateToScreen('home')} />;
 
       case 'faq':

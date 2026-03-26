@@ -193,7 +193,7 @@ export function AboutLocalFeloPage({
                   <h3 className="text-xl font-bold text-black">Platform Only</h3>
                 </div>
                 <p className="text-gray-700">
-                  We don't handle payments, delivery, or transactions. We just connect people. This means no commission, no fees, and complete freedom.
+                  We don't handle payments, delivery, or transactions. We just connect people. Simple, direct, and transparent.
                 </p>
               </div>
 
@@ -226,10 +226,10 @@ export function AboutLocalFeloPage({
                   <div className="p-2 bg-[#CDFF00] rounded-lg">
                     <Target className="w-6 h-6 text-black" />
                   </div>
-                  <h3 className="text-xl font-bold text-black">Zero Commission</h3>
+                  <h3 className="text-xl font-bold text-black">Zero Commission Model</h3>
                 </div>
                 <p className="text-gray-700">
-                  Sell for ₹10,000? Keep ₹10,000. Earn ₹500 from a task? Keep all ₹500. We don't take a cut. Ever.
+                  We're built on connecting people, not taking cuts. Direct peer-to-peer transactions keep your earnings in your pocket.
                 </p>
               </div>
             </div>
@@ -245,8 +245,8 @@ export function AboutLocalFeloPage({
 
           {/* Founder Section */}
           <section className="max-w-4xl mx-auto bg-white rounded-2xl p-12 border-2 border-gray-200">
-            <h2 className="text-3xl font-bold text-black mb-8 text-center">Meet the Founder</h2>
-            <div className="flex flex-col md:flex-row items-center gap-8">
+            <h2 className="text-3xl font-bold text-black mb-8">Meet the Founder</h2>
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
               <img 
                 src={founderImage} 
                 alt="Santosh Kumar K - Founder of LocalFelo" 

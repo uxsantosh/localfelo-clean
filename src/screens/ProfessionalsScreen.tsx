@@ -215,7 +215,7 @@ export function ProfessionalsScreen({
           </h2>
           <p className="text-sm text-black mb-4 max-w-2xl">
             Register your profile and get discovered by thousands of potential customers in your area. 
-            Completely free, no commission, no middleman.
+            Connect directly with clients, set your own rates.
           </p>
           <button
             onClick={handleRegisterClick}

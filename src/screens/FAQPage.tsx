@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Header } from '../components/Header';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 interface FAQPageProps {
   onBack: () => void;
-  onNavigate?: (screen: any) => void;
+  onNavigate?: (screen: 'home' | 'marketplace' | 'wishes' | 'tasks' | 'create' | 'profile' | 'admin' | 'listing' | 'edit' | 'chat' | 'about' | 'safety' | 'terms' | 'privacy' | 'contact' | 'diagnostic' | 'create-wish' | 'create-task') => void;
   isLoggedIn?: boolean;
   isAdmin?: boolean;
   userDisplayName?: string;
@@ -22,47 +22,26 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
     <div className="border border-border rounded-lg overflow-hidden">
       <button
         onClick={onToggle}
-        className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition-colors"
+        className="w-full px-4 py-3 flex items-center justify-between bg-card hover:bg-muted transition-colors text-left"
       >
-        <h3 className="font-bold text-black pr-4">{question}</h3>
+        <span className="font-semibold text-black">{question}</span>
         {isOpen ? (
-          <ChevronUp className="w-5 h-5 text-primary flex-shrink-0" />
+          <ChevronUp className="w-5 h-5 text-primary flex-shrink-0 ml-2" />
         ) : (
-          <ChevronDown className="w-5 h-5 text-body flex-shrink-0" />
+          <ChevronDown className="w-5 h-5 text-muted flex-shrink-0 ml-2" />
         )}
       </button>
       {isOpen && (
-        <div className="px-4 pb-4 text-body">
-          {typeof answer === 'string' ? <p>{answer}</p> : answer}
+        <div className="px-4 py-3 bg-card border-t border-border">
+          <div className="text-body">{answer}</div>
         </div>
       )}
     </div>
   );
 }
 
-export function FAQPage({ 
-  onBack, 
-  onNavigate, 
-  isLoggedIn = false, 
-  isAdmin = false, 
-  userDisplayName 
-}: FAQPageProps): JSX.Element {
-  const [openIndex, setOpenIndex] = React.useState<number | null>(null);
-
-  // Set meta description for SEO
-  React.useEffect(() => {
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Frequently Asked Questions about LocalFelo - India\'s hyperlocal marketplace platform. Learn how to buy, sell, post wishes, find tasks, stay safe, and connect with your local community.');
-    }
-    
-    // Cleanup on unmount - restore default description
-    return () => {
-      if (metaDescription) {
-        metaDescription.setAttribute('content', 'LocalFelo is India\'s leading hyperlocal marketplace platform. Buy & sell locally, post wishes for products you need, and find nearby tasks & services. Connect with your local community for marketplace deals, gigs, and help. Safe, direct peer-to-peer transactions.');
-      }
-    };
-  }, []);
+export function FAQPage({ onBack, onNavigate, isLoggedIn = false, isAdmin = false, userDisplayName }: FAQPageProps): JSX.Element {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const handleToggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -74,243 +53,184 @@ export function FAQPage({
       questions: [
         {
           question: "What is LocalFelo?",
-          answer: "LocalFelo is India's hyperlocal marketplace platform that connects people within local communities. You can buy and sell products, post wishes for items you're looking for, and find or offer help with everyday tasks - all within your community. Our PRIORITY feature is Tasks, where people earn money by helping others."
+          answer: "LocalFelo is India's hyperlocal marketplace platform that connects people in the same city for buying, selling, finding help, and discovering local services. Our platform includes five core modules: Buy & Sell (Marketplace), Wishes (request items/services), Tasks (find helpers/gigs), Professionals (skilled service providers), and Shops (local businesses)."
         },
         {
-          question: "How do I sign up for LocalFelo?",
-          answer: "Simply download the LocalFelo app or visit our website, enter your phone number, and verify it with the OTP we send you. Once verified, you can set up your profile and start using all features immediately."
+          question: "How do I create an account?",
+          answer: "Creating an account is simple! Just enter your mobile number, verify it with an OTP, and complete your basic profile. Your phone number serves as your unique identifier and helps build trust in the community."
         },
         {
           question: "Is LocalFelo free to use?",
-          answer: "Yes! LocalFelo is completely free to use. There are no listing fees, no commission on sales, and no subscription charges. You can post unlimited ads, wishes, and tasks at no cost. Helpers earn 100% of what they charge - we take NO commission."
+          answer: "Yes! LocalFelo is completely free for users to browse, post listings, wishes, and tasks, and contact others. We don't handle payments or charge any transaction fees - all deals happen directly between users."
         },
         {
           question: "Which cities does LocalFelo operate in?",
-          answer: "LocalFelo operates across India in major cities and towns. You can select your city and area when you sign up. We're constantly expanding to new locations based on user demand."
+          answer: "LocalFelo is available across India! We currently support major cities and are rapidly expanding. Set your city and area in your profile to see relevant local listings, wishes, tasks, and services near you."
         }
       ]
     },
     {
-      category: "⭐ TASKS - Earn Money by Helping (PRIORITY)",
+      category: "Buy & Sell (Marketplace)",
       questions: [
         {
-          question: "What are Tasks on LocalFelo and how can I earn money?",
-          answer: (
-            <div className="space-y-3">
-              <p><strong>Tasks is LocalFelo's PRIORITY feature</strong> that connects people who need help (Task Creators) with people who can help (Helpers).</p>
-              <p><strong className="text-primary">💰 Earn Money as a Helper:</strong></p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>Browse tasks posted by people in your area</li>
-                <li>Set your own rates - YOU decide how much to charge</li>
-                <li>Choose tasks that fit your skills and schedule</li>
-                <li>Get paid directly by task creators (cash, UPI, bank transfer)</li>
-                <li>Build your reputation with 5-star ratings</li>
-                <li>LocalFelo takes ZERO commission - keep 100% of your earnings</li>
-              </ul>
-              <p className="mt-2"><strong className="text-primary">📝 Post Tasks as a Creator:</strong></p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>Need help with something? Post a task!</li>
-                <li>Nearby helpers will offer to help</li>
-                <li>Choose your helper based on ratings and price</li>
-                <li>Pay directly after work is done</li>
-              </ul>
-            </div>
-          )
-        },
-        {
-          question: "How do I become a Helper and start earning?",
-          answer: (
-            <div className="space-y-2">
-              <p><strong>Step 1:</strong> Enable 'Helper Mode' in your profile settings</p>
-              <p><strong>Step 2:</strong> Set your preferences for what types of tasks you want to help with (delivery, repairs, tutoring, photography, etc.)</p>
-              <p><strong>Step 3:</strong> Browse available tasks in your area on the Tasks tab</p>
-              <p><strong>Step 4:</strong> Chat with task creators, discuss details and pricing</p>
-              <p><strong>Step 5:</strong> Complete the task and get paid directly</p>
-              <p><strong>Step 6:</strong> Get rated and build your reputation to get more tasks</p>
-              <p className="mt-2 text-primary font-semibold">💡 Pro Tip: Complete tasks professionally and earn great ratings to get hired more often!</p>
-            </div>
-          )
-        },
-        {
-          question: "How do I post a Task as a Creator?",
-          answer: (
-            <div className="space-y-2">
-              <p><strong>Step 1:</strong> Click on the 'Tasks' tab and select 'Post Task'</p>
-              <p><strong>Step 2:</strong> Choose the task category (delivery, repair, tutoring, etc.)</p>
-              <p><strong>Step 3:</strong> Write a clear description of what help you need</p>
-              <p><strong>Step 4:</strong> Set your budget or expected payment range</p>
-              <p><strong>Step 5:</strong> Add your location so nearby helpers can find you</p>
-              <p><strong>Step 6:</strong> Publish! Helpers will message you with offers</p>
-              <p><strong>Step 7:</strong> Review helper profiles, ratings, and offers</p>
-              <p><strong>Step 8:</strong> Choose a helper and confirm all details via chat</p>
-              <p><strong>Step 9:</strong> After task completion, pay directly and rate the helper</p>
-            </div>
-          )
-        },
-        {
-          question: "How does payment work for Tasks? Does LocalFelo handle payments?",
-          answer: (
-            <div className="space-y-2">
-              <p><strong className="text-black">CRITICAL: LocalFelo does NOT handle any payments!</strong></p>
-              <p><strong>How Payment Works:</strong></p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li><strong>Before work starts:</strong> Task Creator and Helper discuss and agree on the payment amount via chat</li>
-                <li><strong>During work:</strong> Helper completes the task as agreed</li>
-                <li><strong>After completion:</strong> Task Creator pays Helper directly (cash, UPI, Google Pay, PhonePe, bank transfer, etc.)</li>
-                <li><strong>Both parties rate each other:</strong> This builds trust in the community</li>
-              </ul>
-              <p className="mt-2 bg-yellow-50 border border-yellow-200 rounded p-2">
-                <strong>⚠️ Important:</strong> LocalFelo is NOT involved in payment collection or disputes. Always confirm payment terms BEFORE starting work. Document agreements in chat.
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "What types of tasks can I post or help with?",
-          answer: (
-            <div className="space-y-2">
-              <p><strong>Popular Task Categories:</strong></p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li><strong>Delivery & Pickup:</strong> Local delivery, package pickup, bring items from home/office</li>
-                <li><strong>Home Services:</strong> Cleaning, cooking assistance, moving help</li>
-                <li><strong>Repairs:</strong> Electrical, plumbing, appliance repair, device repair</li>
-                <li><strong>Tech Help:</strong> Computer setup, software installation, internet troubleshooting</li>
-                <li><strong>Tutoring & Teaching:</strong> Academic subjects, language learning, skill training</li>
-                <li><strong>Photography & Videography:</strong> Event photography, product shoots</li>
-                <li><strong>Mentorship:</strong> Career guidance, software development, design, startup mentoring</li>
-                <li><strong>Ride & Transport:</strong> Short-distance travel assistance</li>
-                <li><strong>Any other local help!</strong></li>
-              </ul>
-            </div>
-          )
-        },
-        {
-          question: "Does LocalFelo verify Helpers? How do I know they're trustworthy?",
-          answer: (
-            <div className="space-y-2">
-              <p><strong>LocalFelo does NOT verify helper qualifications or identities.</strong> We use a community-driven trust system:</p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li><strong>5-Star Rating System:</strong> Both task creators and helpers rate each other after every task</li>
-                <li><strong>Public Reviews:</strong> Read what others have said about a helper</li>
-                <li><strong>Task History:</strong> See how many tasks a helper has completed</li>
-                <li><strong>Phone Verification:</strong> All users must verify their phone number</li>
-              </ul>
-              <p className="mt-2 bg-blue-50 border border-blue-200 rounded p-2">
-                <strong>💡 Safety Tips:</strong> Always check ratings before hiring. Meet in public places when possible. For home services, inform family/friends. Trust your instincts!
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "What if a Helper doesn't complete the task or a Creator doesn't pay?",
-          answer: (
-            <div className="space-y-2">
-              <p><strong className="text-black">LocalFelo is NOT responsible for task completion or payment disputes.</strong></p>
-              <p><strong>To protect yourself:</strong></p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li><strong>BEFORE work starts:</strong> Confirm ALL details in chat - payment amount, work scope, timeline</li>
-                <li><strong>Document everything:</strong> Use LocalFelo chat to keep written records</li>
-                <li><strong>Start small:</strong> For first-time collaborations, start with smaller tasks</li>
-                <li><strong>Check ratings:</strong> Work with people who have good ratings</li>
-                <li><strong>Trust your gut:</strong> If something feels wrong, don't proceed</li>
-              </ul>
-              <p className="mt-2"><strong>If issues occur:</strong></p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>Report the user through the app</li>
-                <li>Leave an honest rating to warn others</li>
-                <li>LocalFelo will investigate serious reports and may ban bad actors</li>
-                <li>For legal disputes, users must resolve directly - we are only a connector platform</li>
-              </ul>
-            </div>
-          )
-        },
-        {
-          question: "How much can I earn as a Helper on LocalFelo?",
-          answer: (
-            <div className="space-y-2">
-              <p><strong className="text-primary">You set your own rates and keep 100% of what you earn!</strong></p>
-              <p>Your earnings depend on:</p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li><strong>Your skills:</strong> Specialized skills (repairs, tutoring, photography) can command higher rates</li>
-                <li><strong>Task complexity:</strong> Simple delivery vs. complex repairs</li>
-                <li><strong>Your availability:</strong> More time = more tasks = more earnings</li>
-                <li><strong>Your ratings:</strong> Higher ratings = more bookings = more money</li>
-                <li><strong>Your location:</strong> Busy areas may have more tasks</li>
-              </ul>
-              <p className="mt-2 bg-primary/10 border border-primary/30 rounded p-2">
-                <strong>💰 Examples:</strong> Helpers charge ₹100-500 for simple delivery tasks, ₹500-2000+ for tutoring sessions, ₹1000-5000+ for photography, ₹500-3000+ for repairs. YOU decide your rates!
-              </p>
-              <p className="mt-2 font-semibold">🚀 LocalFelo takes ZERO commission - every rupee you earn is yours!</p>
-            </div>
-          )
-        }
-      ]
-    },
-    {
-      category: "Buy & Sell Marketplace",
-      questions: [
-        {
-          question: "How do I post an item for sale?",
-          answer: "Click on the 'Sell' button, select the appropriate category, upload photos of your item, add a title and description, set your price, and publish. Your listing will be visible to people in your local area immediately."
+          question: "How do I list an item for sale?",
+          answer: "Go to the Marketplace section, tap the '+' button, select a category, upload clear photos, add a title, description, and price, and publish your listing. Make sure to provide accurate details and honest condition descriptions."
         },
         {
           question: "How do buyers contact me?",
-          answer: "Interested buyers can chat with you directly through LocalFelo's built-in chat feature. You'll receive notifications when someone messages you about your listing."
+          answer: "Interested buyers can message you directly through LocalFelo's built-in chat feature. You'll receive notifications when someone messages you about your listing. All communication happens on the platform for safety."
         },
         {
-          question: "Does LocalFelo handle payments?",
-          answer: "No. LocalFelo is a mediator-only platform. We connect buyers and sellers, but all payment transactions happen directly between you and the other party. This keeps the platform free and simple."
-        },
-        {
-          question: "Does LocalFelo provide delivery services?",
-          answer: "No. LocalFelo does not provide delivery services. Buyers and sellers arrange their own meetup locations and delivery methods. We recommend meeting in safe, public places."
+          question: "Can I edit or delete my listing?",
+          answer: "Yes! Go to your Profile, find 'My Listings', and you can edit details, update photos, mark as sold, or delete the listing anytime."
         },
         {
           question: "What items are prohibited on LocalFelo?",
-          answer: (
-            <div className="space-y-2">
-              <p>LocalFelo prohibits certain items to ensure user safety and legal compliance:</p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>Weapons, explosives, and ammunition</li>
-                <li>Illegal drugs and drug paraphernalia</li>
-                <li>Adult content and services</li>
-                <li>Stolen or counterfeit goods</li>
-                <li>Live animals (pets adoption may be allowed in specific categories)</li>
-                <li>Tobacco and alcohol products</li>
-              </ul>
-              <p className="mt-2">
-                View our complete{' '}
-                <button 
-                  onClick={() => onNavigate?.('prohibited')}
-                  className="text-primary hover:underline font-semibold"
-                >
-                  Prohibited Items list
-                </button>
-                {' '}for more details.
-              </p>
-            </div>
-          )
-        },
-        {
-          question: "Can I edit or delete my listing after posting?",
-          answer: "Yes! You can edit your listing anytime to update the price, description, or photos. You can also mark items as sold or delete listings completely from your profile."
+          answer: "LocalFelo prohibits illegal items, weapons, drugs, counterfeit goods, adult content, live animals, and other restricted categories. View our complete Prohibited Items page for the full list and guidelines."
         }
       ]
     },
     {
-      category: "Wishes Feature",
+      category: "Wishes",
       questions: [
         {
           question: "What are Wishes?",
-          answer: "Wishes is a unique feature that lets you post what you're looking for instead of browsing listings. If you need a specific item or service, create a wish and people in your area who have it can contact you directly."
-        },
-        {
-          question: "How do I post a Wish?",
-          answer: "Go to the Wishes section, click 'Post Wish', describe what you're looking for, set your budget (optional), and publish. People who can fulfill your wish will reach out to you via chat."
+          answer: "Wishes let you post what you're looking for instead of browsing endless listings. Describe the product or service you need, set your budget (optional), and people who can fulfill your wish will reach out to you via chat."
         },
         {
           question: "Are Wishes only for buying items?",
           answer: "No! You can post wishes for products you want to buy, services you need, or even things you're looking to rent or borrow. It's a flexible way to express what you need help with."
+        },
+        {
+          question: "How do I create a Wish?",
+          answer: "Go to the Wishes section, tap '+' button, add a clear title describing what you want, provide detailed description, select category, set your budget (optional), choose your location, and publish. The more specific you are, the better responses you'll get."
+        },
+        {
+          question: "Do I have to set a budget for my Wish?",
+          answer: "No, budget is optional! You can leave it blank if you want to receive offers with different price points, or you can set a specific budget to filter responses within your price range."
+        },
+        {
+          question: "How will people contact me about my Wish?",
+          answer: "Users who can fulfill your wish will message you directly through the LocalFelo chat system. You'll receive notifications for each response, and you can review their profile and ratings before deciding."
+        },
+        {
+          question: "Can I edit or delete my Wish after posting?",
+          answer: "Yes! Go to your Profile, find 'My Wishes', and you can edit details, update descriptions, or delete your wish anytime. Once you've found what you're looking for, you can mark it as fulfilled or delete it."
+        }
+      ]
+    },
+    {
+      category: "Tasks",
+      questions: [
+        {
+          question: "What are Tasks on LocalFelo?",
+          answer: "Tasks are jobs or gigs you need help with - like home repairs, delivery, moving, tutoring, cleaning, and more. Post a task with details and budget, and helpers in your area will apply to complete it for you."
+        },
+        {
+          question: "How do I post a Task?",
+          answer: "Go to the Tasks section, tap 'Post Task', select a category, provide a clear title and detailed description, set your budget, add location, specify when you need it done, and publish. Helpers will apply by messaging you."
+        },
+        {
+          question: "How do I become a Helper and find Tasks?",
+          answer: "Switch to 'Helper Tasks' tab in the Tasks section to browse available tasks in your area. Filter by category, budget, and distance. When you find a suitable task, message the poster to discuss details and offer your services."
+        },
+        {
+          question: "What's the difference between Helper Mode and regular browsing?",
+          answer: "Helper Mode is a quick-access feature that lets active helpers get notified of nearby tasks matching their skills. Set your preferences once, and you'll see relevant task opportunities without manually searching."
+        },
+        {
+          question: "How does payment work for Tasks?",
+          answer: "LocalFelo does NOT handle payments. Task posters and helpers agree on the payment method and amount directly. We recommend discussing all payment details before starting work and paying only after the task is completed satisfactorily."
+        },
+        {
+          question: "Can I cancel a Task after posting?",
+          answer: "Yes! Go to your Profile, find 'My Tasks', and you can edit, pause, or delete your task anytime. If helpers have already applied, it's courteous to inform them about the cancellation via chat."
+        },
+        {
+          question: "What types of Tasks are allowed?",
+          answer: "Most legal service tasks are allowed: home repairs, cleaning, tutoring, delivery, moving, gardening, pet care, event help, and more. Tasks involving illegal activities, adult services, or anything violating our terms are strictly prohibited."
+        },
+        {
+          question: "How do I rate a Helper after task completion?",
+          answer: "After your task is completed, go to your task history, find the completed task, and you'll see an option to rate the helper. Provide a star rating and written review to help other users make informed decisions."
+        }
+      ]
+    },
+    {
+      category: "Professionals",
+      questions: [
+        {
+          question: "What is the Professionals module?",
+          answer: "The Professionals module is LocalFelo's directory of verified skilled service providers - plumbers, electricians, carpenters, tutors, photographers, designers, and more. Each professional has a detailed profile with their skills, experience, rates, and customer reviews."
+        },
+        {
+          question: "How is Professionals different from Tasks?",
+          answer: "Tasks are one-time gigs posted by users looking for help. Professionals are established service providers with profiles showcasing their expertise, portfolio, certifications, and consistent availability. Use Tasks for quick help, and Professionals for reliable, skilled services."
+        },
+        {
+          question: "How do I find a Professional?",
+          answer: "Go to the Professionals section, browse by category (e.g., Home Services, Education, Creative Services), filter by your location and budget, view profiles, check ratings and reviews, and contact them directly via chat to discuss your requirements."
+        },
+        {
+          question: "How do I register as a Professional?",
+          answer: "Go to Professionals section, tap 'Become a Professional', choose your service category and role (e.g., Plumber, Tutor, Photographer), provide your business details, upload portfolio/certificates, set your rates and availability, and submit for verification."
+        },
+        {
+          question: "Is there a verification process for Professionals?",
+          answer: "Yes! LocalFelo reviews all professional registrations to ensure quality. We verify phone numbers, check submitted documents, and may request additional information. Verified professionals get a badge on their profile, building trust with potential clients."
+        },
+        {
+          question: "Can I have multiple professional profiles?",
+          answer: "No, each user can register only ONE professional profile. However, you can add multiple skills/services under that single profile. For example, a handyman can list both plumbing and electrical services."
+        },
+        {
+          question: "How do clients contact me as a Professional?",
+          answer: "Clients viewing your professional profile can message you directly through LocalFelo chat. You'll receive notifications for inquiries, and you can discuss project details, pricing, and availability before accepting a job."
+        },
+        {
+          question: "Do I have to pay to register as a Professional?",
+          answer: "No! Professional registration on LocalFelo is completely FREE. We don't charge listing fees, commission, or subscription. You keep 100% of what you earn from your services."
+        }
+      ]
+    },
+    {
+      category: "Shops",
+      questions: [
+        {
+          question: "What is the Shops module?",
+          answer: "Shops is LocalFelo's local business directory where small businesses, retailers, restaurants, salons, gyms, and services can create a dedicated storefront. It's like having your own mini-website within LocalFelo to showcase products, services, and connect with local customers."
+        },
+        {
+          question: "How is Shops different from Marketplace listings?",
+          answer: "Marketplace is for individual sellers posting one-time items. Shops are for established businesses with ongoing inventory and services. Shops have dedicated pages with business info, multiple products/services, operating hours, location, and customer reviews."
+        },
+        {
+          question: "How do I register my Shop on LocalFelo?",
+          answer: "Go to Shops section, tap 'Register Shop', provide business details (name, category, description), add your business address and operating hours, upload logo and shop photos, and submit. After admin verification, your shop goes live."
+        },
+        {
+          question: "What types of businesses can register as Shops?",
+          answer: "Almost any local business: retail stores, restaurants, cafes, salons, gyms, repair shops, pharmacies, bookstores, bakeries, boutiques, and service businesses. Businesses must have a physical location or provide local services."
+        },
+        {
+          question: "Can I add products and services to my Shop?",
+          answer: "Yes! Once your shop is approved, you can add unlimited products/services with photos, descriptions, and prices. Customers browsing your shop can see your offerings and contact you via chat to place orders or inquire."
+        },
+        {
+          question: "How do customers find my Shop?",
+          answer: "Customers can discover your shop by browsing the Shops section by category and location, searching by keywords, or viewing featured shops. Having a complete profile with good photos, detailed descriptions, and positive reviews increases visibility."
+        },
+        {
+          question: "Does LocalFelo handle online orders or payments for Shops?",
+          answer: "No. LocalFelo is a discovery and connection platform only. Customers contact shop owners via chat, and all transactions (orders, payments, delivery) are handled directly between the business and customer. We don't process payments or deliveries."
+        },
+        {
+          question: "Is there a fee to register my Shop?",
+          answer: "No! Shop registration on LocalFelo is completely FREE. There are no listing fees, monthly subscriptions, or transaction commissions. It's our way of supporting local businesses and helping them connect with nearby customers."
+        },
+        {
+          question: "Can I edit my Shop details after registration?",
+          answer: "Yes! Shop owners can edit business details, update operating hours, add/remove products, upload new photos, and manage their shop profile anytime from the 'My Shop' section in their profile."
         }
       ]
     },

@@ -102,9 +102,9 @@ export function Header({
         {showGlobalLocation && (
           <button
             onClick={onLocationClick}
-            className="flex items-center gap-1.5 px-2.5 py-1.5 hover:bg-gray-100 rounded transition-all min-w-0 max-w-[160px] sm:max-w-[220px]"
+            className="flex items-center gap-1.5 px-2.5 py-2 hover:bg-gray-100 rounded transition-all min-w-0 max-w-[160px] sm:max-w-[220px]"
           >
-            <MapPin className="w-4 h-4 text-black flex-shrink-0" style={{ position: 'relative', zIndex: 1 }} />
+            <MapPin className="w-4 h-4 text-black flex-shrink-0" />
             <span className="text-sm text-black truncate font-medium">
               {(() => {
                 // Filter out "Unknown" values and empty strings
