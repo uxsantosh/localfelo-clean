@@ -1,0 +1,80 @@
+═══════════════════════════════════════════════════════════
+  🚨 FIX: Area coordinates columns not yet added
+═══════════════════════════════════════════════════════════
+
+WHAT TO DO NOW:
+1. Open Supabase → SQL Editor → New Query
+2. Copy ENTIRE contents of: /COMPREHENSIVE_LOCATION_SETUP.sql
+3. Paste into SQL Editor
+4. Click RUN
+5. Refresh your app
+6. Done! ✅
+
+═══════════════════════════════════════════════════════════
+  📋 STEP-BY-STEP (2 MINUTES)
+═══════════════════════════════════════════════════════════
+
+STEP 1: Open Supabase SQL Editor
+   ✓ Go to: https://supabase.com
+   ✓ Open your OldCycle project
+   ✓ Click "SQL Editor" (left sidebar)
+   ✓ Click "New query" button
+
+STEP 2: Copy the SQL migration file
+   ✓ Open file: /COMPREHENSIVE_LOCATION_SETUP.sql
+   ✓ Select all: Ctrl+A (or Cmd+A on Mac)
+   ✓ Copy: Ctrl+C (or Cmd+C on Mac)
+
+STEP 3: Paste and run
+   ✓ Paste into Supabase: Ctrl+V (or Cmd+V on Mac)
+   ✓ Click the green "RUN" button
+   ✓ Wait ~10 seconds
+   ✓ Should see: "Success. No rows returned"
+
+STEP 4: Verify it worked (optional)
+   ✓ In SQL Editor, run this query:
+   
+   SELECT COUNT(*) FROM areas WHERE latitude IS NOT NULL;
+   
+   ✓ Should show: ~500 rows
+
+STEP 5: Refresh your app
+   ✓ Go back to OldCycle app
+   ✓ Hard refresh: Ctrl+Shift+R (or Cmd+Shift+R on Mac)
+   ✓ Warning should disappear ✅
+   ✓ Distances should show: "📍 2.3 km away"
+
+═══════════════════════════════════════════════════════════
+  ✅ AFTER RUNNING SQL, YOU'LL HAVE:
+═══════════════════════════════════════════════════════════
+
+✓ 500+ areas with accurate coordinates
+✓ BTM Stage 1, BTM Stage 2, and ALL major areas
+✓ No more console warnings
+✓ Accurate distance calculations
+✓ Professional location experience
+
+═══════════════════════════════════════════════════════════
+  ❓ TROUBLESHOOTING
+═══════════════════════════════════════════════════════════
+
+Q: Still seeing the warning?
+A: Hard refresh your browser (Ctrl+Shift+R)
+
+Q: SQL shows errors?
+A: Check you're logged into Supabase as project owner
+
+Q: "relation 'areas' already exists" error?
+A: That's OK! Script continues and adds coordinates
+
+Q: Need more help?
+A: See /RUN_THIS_NOW.md for detailed guide
+
+═══════════════════════════════════════════════════════════
+
+⏱️  TIME REQUIRED: 2 minutes
+🔧  TOOLS NEEDED: Supabase access
+📄  FILE TO RUN: /COMPREHENSIVE_LOCATION_SETUP.sql
+🎯  RESULT: Accurate distances on all cards
+
+═══════════════════════════════════════════════════════════

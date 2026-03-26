@@ -1,0 +1,321 @@
+areas, 351 sub-areas
+ ✅ [Locations] Loaded 7 cities with 3-level location hierarchy
+ [NewHomeScreen] 📍 Passing user coordinates to wishes: Object
+ ✅ [getWishes] Fetched 2 wishes from database
+ ✅ DISTANCE CALCULATED for wish "Looking for iPhone 14": 7.3 km
+ ✅ DISTANCE CALCULATED for wish "Looking for a gaming laptop": 0.3 km
+ [NewHomeScreen] Loaded wishes from ALL cities (sorted by distance): 2
+ 📋 [TaskService] getTasks called with filters: Object
+ 🌍 [TaskService] Showing ALL tasks from EVERYWHERE (sorted by distance)
+ ✅ [TaskService] Found 8 tasks (page 1, total 8)
+ ✅ DISTANCE CALCULATED for task "guitar trainer": 0.1 km
+ ✅ DISTANCE CALCULATED for task "gfhgf hfhf hfhf": 0.1 km
+ ✅ DISTANCE CALCULATED for task "wall painting": 0.0 km
+ ✅ DISTANCE CALCULATED for task "design a logo": 0.2 km
+ ✅ DISTANCE CALCULATED for task "need a guitar trainer": 0.2 km
+ ✅ DISTANCE CALCULATED for task "need help with collecting package.": 0.3 km
+ ✅ DISTANCE CALCULATED for task "Need help with luggage from bus stop": 0.0 km
+ ✅ DISTANCE CALCULATED for task "Need to shift luggage": 0.0 km
+  [TaskService] Tasks sorted by distance
+ [NewHomeScreen] Loaded tasks from ALL cities (sorted by distance): 8
+ [Service] getListings called with filters: Object
+ [Service] 🔍 DEBUGGING: Starting getListings function
+ 🔍 [getListings] Current user: ID: undefined
+ 🔍 [getListings] includeOwn flag: false
+ 🔍 [getListings] Pagination: page 1 limit 10
+ 🔍 [getListings] Base query created
+ 🌍 [getListings] Showing ALL listings from EVERYWHERE (sorted by distance)
+ ✅ [Service] Guest user - showing ALL listings (no owner filter)
+ ✅ [getListings] Fetched 4 listings from database
+ ✅ [Listings] Sorted 4 listings by distance
+ 📍 [Listings] Nearest: 2 BHK Flat for Rent – Spacious & Well Ventilated at 4.2 km
+ [NewHomeScreen] Loaded deals: 4
+ [NewHomeScreen] Navigation: tasks undefined
+ 📍 [navigateToScreen] CALLED with screen="tasks", taskId=undefined, wishId=undefined
+ 🧭 [navigate] Call #1: /tasks State: Object
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #13
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: tasks → activeTab: tasks
+ 🔴 [BottomNavigation Component] Received currentScreen: tasks
+ 🔄 Loading all tasks from database...
+ 🔍 Applying filters... Object
+   ✅ Distance filter (10km): 0 → 0 tasks
+ ✅ Final filtered tasks: 0
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #14
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: tasks → activeTab: tasks
+ 🌐 Web platform - skipping back button handler
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #15
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: tasks → activeTab: tasks
+ 🔴 [BottomNavigation Component] Received currentScreen: tasks
+ 🔍 Applying filters... Object
+   ✅ Distance filter (10km): 0 → 0 tasks
+ ✅ Final filtered tasks: 0
+ 🔗 [useEffect-URL] URL path changed to: /tasks
+    Setting currentScreen: tasks → tasks
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #16
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: tasks → activeTab: tasks
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #17
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: tasks → activeTab: tasks
+ 🔴 [BottomNavigation Component] Received currentScreen: tasks
+ 🔍 Applying filters... Object
+   ✅ Distance filter (10km): 0 → 0 tasks
+ ✅ Final filtered tasks: 0
+ ✅ Loaded 8 tasks from database
+ 📋 Sample task: Object
+ 🔍 Applying filters... Object
+   ✅ Distance filter (10km): 8 → 8 tasks
+ ✅ Final filtered tasks: 8
+ 📍 [navigateToScreen] CALLED with screen="task-detail", taskId=1f7df783-d2b6-44f6-8801-11b4efe48395, wishId=undefined
+ 🔍 [navigateToScreen] Navigating to task-detail with ID: 1f7df783-d2b6-44f6-8801-11b4efe48395
+ 🧭 [navigate] Call #2: /task-detail State: Object
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #18
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: task-detail → activeTab: tasks
+ 🔴 [BottomNavigation Component] Received currentScreen: tasks
+ 🔄 [TaskDetail] Loading task data...
+ 📋 [TaskService] getTaskById: 1f7df783-d2b6-44f6-8801-11b4efe48395
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #19
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: task-detail → activeTab: tasks
+ 🌐 Web platform - skipping back button handler
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #20
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: task-detail → activeTab: tasks
+ 🔴 [BottomNavigation Component] Received currentScreen: tasks
+ 🔗 [useEffect-URL] URL path changed to: /task-detail
+    Setting currentScreen: task-detail → task-detail
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #21
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: task-detail → activeTab: tasks
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #22
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: task-detail → activeTab: tasks
+ 🔴 [BottomNavigation Component] Received currentScreen: tasks
+ ✅ [TaskService] Task found: guitar trainer
+ 📍 [TaskService] Task distance: 0.13 km
+ 📍 [TaskService] Location data: Object
+ ✅ [TaskDetail] Task loaded: Object
+ 🎯 [TaskDetail] BUTTON RENDERING LOGIC: Object
+ 🔘 [TaskDetail] Selected button set: login-required
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #23
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: task-detail → activeTab: tasks
+ 🎯 [TaskDetail] BUTTON RENDERING LOGIC: Object
+ 🔘 [TaskDetail] Selected button set: login-required
+ 🔴 [BottomNavigation Component] Received currentScreen: tasks
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #24
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: task-detail → activeTab: tasks
+ 🎯 [TaskDetail] BUTTON RENDERING LOGIC: Object
+ 🔘 [TaskDetail] Selected button set: login-required
+ 🔴 [BottomNavigation Component] Received currentScreen: tasks
+ 🔗 [useEffect-URL] URL path changed to: /tasks
+    Setting currentScreen: task-detail → tasks
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #25
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: tasks → activeTab: tasks
+ 🔴 [BottomNavigation Component] Received currentScreen: tasks
+ 🔄 Loading all tasks from database...
+ 🔍 Applying filters... Object
+   ✅ Distance filter (10km): 0 → 0 tasks
+ ✅ Final filtered tasks: 0
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #26
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: tasks → activeTab: tasks
+ 🌐 Web platform - skipping back button handler
+ ✅ Loaded 8 tasks from database
+ 📋 Sample task: Object
+ 🔍 Applying filters... Object
+   ✅ Distance filter (10km): 8 → 8 tasks
+ ✅ Final filtered tasks: 8
+ 📍 [navigateToScreen] CALLED with screen="wishes", taskId=undefined, wishId=undefined
+ 🧭 [navigate] Call #3: /wishes State: Object
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #27
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: wishes → activeTab: wishes
+ 🔴 [BottomNavigation Component] Received currentScreen: wishes
+ 🔍 [WishesScreen] Loading wishes from ALL cities with filters: Object
+ ✅ [WishesScreen] User coordinates AVAILABLE: Object
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #28
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: wishes → activeTab: wishes
+ 🌐 Web platform - skipping back button handler
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #29
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: wishes → activeTab: wishes
+ 🔴 [BottomNavigation Component] Received currentScreen: wishes
+ 🔍 [WishesScreen] Loading wishes from ALL cities with filters: Object
+ ✅ [WishesScreen] User coordinates AVAILABLE: Object
+ 🔗 [useEffect-URL] URL path changed to: /wishes
+    Setting currentScreen: wishes → wishes
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #30
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: wishes → activeTab: wishes
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #31
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: wishes → activeTab: wishes
+ 🔴 [BottomNavigation Component] Received currentScreen: wishes
+ 🔍 [WishesScreen] Loading wishes from ALL cities with filters: Object
+ ✅ [WishesScreen] User coordinates AVAILABLE: Object
+ ✅ [getWishes] Fetched 2 wishes from database
+ ✅ DISTANCE CALCULATED for wish "Looking for iPhone 14": 7.3 km
+ ✅ DISTANCE CALCULATED for wish "Looking for a gaming laptop": 0.3 km
+ [WishCard] "Looking for a gaming laptop" - distance: 0.32026476689921496 lat: 12.9690772 lon: 77.59317398
+ [WishCard] "Looking for iPhone 14" - distance: 7.291425138065949 lat: 12.90904019 lon: 77.61476239
+ ✅ [getWishes] Fetched 2 wishes from database
+ ✅ DISTANCE CALCULATED for wish "Looking for iPhone 14": 7.3 km
+ ✅ DISTANCE CALCULATED for wish "Looking for a gaming laptop": 0.3 km
+ [WishCard] "Looking for a gaming laptop" - distance: 0.32026476689921496 lat: 12.9690772 lon: 77.59317398
+ [WishCard] "Looking for iPhone 14" - distance: 7.291425138065949 lat: 12.90904019 lon: 77.61476239
+ ✅ [getWishes] Fetched 2 wishes from database
+ ✅ DISTANCE CALCULATED for wish "Looking for iPhone 14": 7.3 km
+ ✅ DISTANCE CALCULATED for wish "Looking for a gaming laptop": 0.3 km
+ [WishCard] "Looking for a gaming laptop" - distance: 0.32026476689921496 lat: 12.9690772 lon: 77.59317398
+ [WishCard] "Looking for iPhone 14" - distance: 7.291425138065949 lat: 12.90904019 lon: 77.61476239
+ 📍 [navigateToScreen] CALLED with screen="wish-detail", taskId=undefined, wishId=c6c578a7-ce51-494b-8e9a-a3bbc9f48a2d
+ 🔍 [navigateToScreen] Navigating to wish-detail with ID: c6c578a7-ce51-494b-8e9a-a3bbc9f48a2d
+ 🧭 [navigate] Call #4: /wish-detail State: Object
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #32
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: wish-detail → activeTab: wishes
+ 🎯 [WishDetail] Button Logic: Object
+ 🔴 [BottomNavigation Component] Received currentScreen: wishes
+ 🔄 [WishDetail] Loading wish data...
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #33
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: wish-detail → activeTab: wishes
+ 🌐 Web platform - skipping back button handler
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #34
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: wish-detail → activeTab: wishes
+ 🎯 [WishDetail] Button Logic: Object
+ 🔴 [BottomNavigation Component] Received currentScreen: wishes
+ 🔗 [useEffect-URL] URL path changed to: /wish-detail
+    Setting currentScreen: wish-detail → wish-detail
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #35
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: wish-detail → activeTab: wishes
+ 🎯 [WishDetail] Button Logic: Object
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #36
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: wish-detail → activeTab: wishes
+ 🎯 [WishDetail] Button Logic: Object
+ 🔴 [BottomNavigation Component] Received currentScreen: wishes
+ 📍 [WishService] Wish distance: 0.32 km
+ ✅ [WishDetail] Wish loaded: Object
+ 🎯 [WishDetail] Button Logic: Object
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #37
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: wish-detail → activeTab: wishes
+ 🎯 [WishDetail] Button Logic: Object
+ 🔴 [BottomNavigation Component] Received currentScreen: wishes
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #38
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: wish-detail → activeTab: wishes
+ 🎯 [WishDetail] Button Logic: Object
+ 🔴 [BottomNavigation Component] Received currentScreen: wishes
+ 🔗 [useEffect-URL] URL path changed to: /wishes
+    Setting currentScreen: wish-detail → wishes
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #39
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: wishes → activeTab: wishes
+ 🔴 [BottomNavigation Component] Received currentScreen: wishes
+ 🔍 [WishesScreen] Loading wishes from ALL cities with filters: Object
+ ✅ [WishesScreen] User coordinates AVAILABLE: Object
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🎨 [AppContent] Render #40
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+ [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+ 🔵 [BottomNav] currentScreen: wishes → activeTab: wishes
+ 🌐 Web platform - skipping back button handler
+ ✅ [getWishes] Fetched 2 wishes from database
+ ✅ DISTANCE CALCULATED for wish "Looking for iPhone 14": 7.3 km
+ ✅ DISTANCE CALCULATED for wish "Looking for a gaming laptop": 0.3 km
+ [WishCard] "Looking for a gaming laptop" - distance: 0.32026476689921496 lat: 12.9690772 lon: 77.59317398
+ [WishCard] "Looking for iPhone 14" - distance: 7.291425138065949 lat: 12.90904019 lon: 77.61476239

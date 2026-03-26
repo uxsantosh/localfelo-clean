@@ -1,0 +1,122 @@
+[
+  {
+    "column_name": "id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "owner_token",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "owner_name",
+    "data_type": "character varying",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "owner_phone",
+    "data_type": "character varying",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "title",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "description",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "price",
+    "data_type": "numeric",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "category_slug",
+    "data_type": "character varying",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "area_slug",
+    "data_type": "character varying",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "city",
+    "data_type": "character varying",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "condition",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "whatsapp_enabled",
+    "data_type": "boolean",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "whatsapp_number",
+    "data_type": "character varying",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "is_active",
+    "data_type": "boolean",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "views_count",
+    "data_type": "integer",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "updated_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "is_hidden",
+    "data_type": "boolean",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "admin_notes",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "latitude",
+    "data_type": "numeric",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "longitude",
+    "data_type": "numeric",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "sub_area_id",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "address",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "user_id",
+    "data_type": "uuid",
+    "is_nullable": "YES"
+  }
+]

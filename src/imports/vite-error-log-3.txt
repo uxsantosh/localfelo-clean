@@ -1,0 +1,59 @@
+C:\Users\LAPTOPS24\Downloads\LocalFelo> Remove-Item -Recurse -Force node_modules
+PS C:\Users\LAPTOPS24\Downloads\LocalFelo> Remove-Item -Force package-lock.json
+PS C:\Users\LAPTOPS24\Downloads\LocalFelo> npm install
+
+added 348 packages, and audited 349 packages in 3m
+
+  run `npm fund` for details
+
+1 moderate severity vulnerability
+
+To address all issues, run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+PS C:\Users\LAPTOPS24\Downloads\LocalFelo> npm run dev
+
+> LocalFelo (ANDROID)@0.1.0 dev
+> vite
+
+
+  VITE v6.3.5  ready in 1803 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+7:17:11 pm [vite] Pre-transform error: Failed to resolve import "../App.tsx" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/main.tsx:2:16
+  1  |  import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
+  2  |  import ReactDOM from 'react-dom/client';
+  3  |  import App from '../App.tsx';
+     |                   ^
+  4  |  import { ErrorBoundary } from './components/ErrorBoundary';
+  5  |  import '@/styles/globals.css';
+7:17:13 pm [vite] Internal server error: Failed to resolve import "../App.tsx" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/main.tsx:2:16
+  1  |  import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
+  2  |  import ReactDOM from 'react-dom/client';
+  3  |  import App from '../App.tsx';
+     |                   ^
+  4  |  import { ErrorBoundary } from './components/ErrorBoundary';
+  5  |  import '@/styles/globals.css';
+      at TransformPluginContext._formatLog (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42499:41)
+      at TransformPluginContext.error (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42496:16)
+      at normalizeUrl (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40475:23)
+      at async file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40594:37
+      at async Promise.all (index 2)
+      at async TransformPluginContext.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40521:7)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42294:18)
+      at async loadAndTransform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35735:27)7:17:13 pm [vite] Pre-transform error: Failed to resolve import "../App.tsx" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/main.tsx:2:16
+  1  |  import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
+  2  |  import ReactDOM from 'react-dom/client';
+  3  |  import App from '../App.tsx';
+     |                   ^
+  4  |  import { ErrorBoundary } from './components/ErrorBoundary';
+  5  |  import '@/styles/globals.css';

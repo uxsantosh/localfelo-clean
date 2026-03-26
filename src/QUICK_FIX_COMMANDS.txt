@@ -1,0 +1,22 @@
+=====================================
+QUICK FIX - Run These Commands
+=====================================
+
+Stop the server (Ctrl + C), then run:
+
+Windows:
+--------
+rmdir /s /q node_modules .vite dist && del package-lock.json && npm install && npm run dev
+
+
+Mac/Linux:
+----------
+rm -rf node_modules .vite dist package-lock.json && npm install && npm run dev
+
+
+Or use the batch file:
+----------------------
+WINDOWS_FIX.bat
+
+
+That's it! ✅

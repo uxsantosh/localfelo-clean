@@ -1,0 +1,56 @@
+ C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)> npm install
+
+added 1 package, and audited 328 packages in 8s
+26 packages are looking for funding
+3 vulnerabilities (1 moderate, 2 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+PS C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)> Remove-Item -Path "node_modules\.vite" -Recurse -Force -ErrorAction SilentlyContinue
+PS C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)> Remove-Item -Path "node_modules\.vite-temp" -Recurse 
+-Force -ErrorAction SilentlyContinue
+PS C:\Users\LAPTOPS24\Downloads\LocalFelo (ANDROID)> npm run dev
+
+> localfelo@1.0.0 dev
+> vite
+
+(!) Experimental optimizeDeps.disabled and deps pre-bundling during build were removed in Vite 5.1.
+    Setting it to false now has no effect.
+    Please remove optimizeDeps.disabled from your config.
+
+
+  VITE v6.3.5  ready in 1257 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+9:31:27 pm [vite] (client) warning: Duplicate key "technicl" in object literal
+53 |    'cookin': 'cooking',
+54 |    'technicl': 'technical',
+55 |    'technicl': 'technical',
+   |    ^
+56 |    'tecnical': 'technical',
+57 |    'oficce': 'office',
+
+  Plugin: vite:esbuild
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/services/contentModeration.ts
+9:31:30 pm [vite] (client) ✨ new dependencies optimized: sonner, motion/react, @supabase/supabase-js, @cap
+acitor/geolocation
+9:31:30 pm [vite] (client) ✨ optimized dependencies changed. reloading
+9:31:34 pm [vite] (client) warning: Duplicate key "technicl" in object literal
+53 |    'cookin': 'cooking',
+54 |    'technicl': 'technical',
+55 |    'technicl': 'technical',
+   |    ^
+56 |    'tecnical': 'technical',
+57 |    'oficce': 'office',
+
+  Plugin: vite:esbuild
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/services/contentModeration.ts
+
+

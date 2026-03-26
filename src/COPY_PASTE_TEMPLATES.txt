@@ -1,0 +1,289 @@
+============================================================
+WHATSAPP TEMPLATES - COPY AND PASTE
+Use these exact templates when creating in Interakt/Aisensy
+============================================================
+
+IMPORTANT NOTES:
+- Template names have NO "localfelo_" prefix
+- Variables use {{customer_name}} format, NOT {{1}} format
+- NO emojis anywhere
+- Use "Rs" not "₹" symbol
+- These match your code EXACTLY
+
+============================================================
+TEMPLATE 1: OTP VERIFICATION
+============================================================
+
+Template Name:
+otp_verification
+
+Category:
+AUTHENTICATION
+
+Language:
+English
+
+Body (copy exactly):
+Hi {{customer_name}}, your LocalFelo verification code is {{otp_code}}. This code is valid for 10 minutes. Do not share this code with anyone.
+
+Footer (optional):
+LocalFelo
+
+Variables to define:
+1. customer_name (TEXT)
+2. otp_code (TEXT)
+
+Buttons:
+None
+
+
+============================================================
+TEMPLATE 2: TASK REQUEST
+============================================================
+
+Template Name:
+task_request
+
+Category:
+MARKETING
+
+Language:
+English
+
+Body (copy exactly):
+Hi {{helper_name}}, you have received a new task request for {{task_title}} in {{location}}. Budget: Rs {{budget}}. Check details in the app.
+
+Footer (optional):
+LocalFelo
+
+Variables to define:
+1. helper_name (TEXT)
+2. task_title (TEXT)
+3. location (TEXT)
+4. budget (TEXT)
+5. task_id (TEXT)
+
+Buttons:
+Type: URL
+Text: View Task
+URL: https://localfelo.com/tasks/{{task_id}}
+
+
+============================================================
+TEMPLATE 3: TASK ACCEPTED
+============================================================
+
+Template Name:
+task_accepted
+
+Category:
+MARKETING
+
+Language:
+English
+
+Body (copy exactly):
+Good news {{customer_name}}, {{helper_name}} has accepted your task request for {{task_title}}. You can now chat with them to coordinate the details.
+
+Footer (optional):
+LocalFelo
+
+Variables to define:
+1. customer_name (TEXT)
+2. helper_name (TEXT)
+3. task_title (TEXT)
+4. conversation_id (TEXT)
+
+Buttons:
+Type: URL
+Text: Open Chat
+URL: https://localfelo.com/chat/{{conversation_id}}
+
+
+============================================================
+TEMPLATE 4: TASK COMPLETED
+============================================================
+
+Template Name:
+task_completed
+
+Category:
+MARKETING
+
+Language:
+English
+
+Body (copy exactly):
+Hi {{customer_name}}, {{helper_name}} has marked your task {{task_title}} as completed. Please review and confirm completion in the app.
+
+Footer (optional):
+LocalFelo
+
+Variables to define:
+1. customer_name (TEXT)
+2. helper_name (TEXT)
+3. task_title (TEXT)
+4. task_id (TEXT)
+
+Buttons:
+Type: URL
+Text: Review Task
+URL: https://localfelo.com/tasks/{{task_id}}
+
+
+============================================================
+TEMPLATE 5: LISTING INTEREST
+============================================================
+
+Template Name:
+listing_interest
+
+Category:
+MARKETING
+
+Language:
+English
+
+Body (copy exactly):
+Hi {{seller_name}}, {{buyer_name}} has sent you a message about your listing {{listing_title}}. Check your messages to respond.
+
+Footer (optional):
+LocalFelo
+
+Variables to define:
+1. seller_name (TEXT)
+2. buyer_name (TEXT)
+3. listing_title (TEXT)
+4. conversation_id (TEXT)
+
+Buttons:
+Type: URL
+Text: View Message
+URL: https://localfelo.com/chat/{{conversation_id}}
+
+
+============================================================
+TEMPLATE 6: WISH RESPONSE
+============================================================
+
+Template Name:
+wish_response
+
+Category:
+MARKETING
+
+Language:
+English
+
+Body (copy exactly):
+Hi {{customer_name}}, {{seller_name}} has responded to your wish for {{wish_title}}. View their message in the app.
+
+Footer (optional):
+LocalFelo
+
+Variables to define:
+1. customer_name (TEXT)
+2. seller_name (TEXT)
+3. wish_title (TEXT)
+4. conversation_id (TEXT)
+
+Buttons:
+Type: URL
+Text: View Message
+URL: https://localfelo.com/chat/{{conversation_id}}
+
+
+============================================================
+TEMPLATE 7: UNREAD REMINDER
+============================================================
+
+Template Name:
+unread_reminder
+
+Category:
+MARKETING
+
+Language:
+English
+
+Body (copy exactly):
+Hi {{customer_name}}, you have {{unread_count}} unread messages from {{sender_name}} on LocalFelo. Check your inbox to stay updated.
+
+Footer (optional):
+LocalFelo
+
+Variables to define:
+1. customer_name (TEXT)
+2. unread_count (TEXT)
+3. sender_name (TEXT)
+
+Buttons:
+Type: URL
+Text: View Messages
+URL: https://localfelo.com/chat
+
+
+============================================================
+VERIFICATION CHECKLIST
+============================================================
+
+Before submitting each template:
+
+[ ] Template name is EXACT (e.g., "otp_verification" not "localfelo_otp_verification")
+[ ] NO emojis anywhere in body, footer, or buttons
+[ ] Using "Rs" not "₹" symbol
+[ ] All variables defined with exact names (customer_name not customer-name)
+[ ] Variables use {{name}} format not {{1}} format
+[ ] Category selected correctly (AUTHENTICATION or MARKETING)
+[ ] Language is English
+[ ] No spelling/grammar errors
+[ ] Footer is "LocalFelo" (optional but recommended)
+[ ] Buttons configured correctly (URL type, with variables)
+
+============================================================
+IMPORTANT REMINDERS
+============================================================
+
+1. Replace "localfelo.com" with your actual domain if different
+
+2. Template names MUST match code:
+   - otp_verification (NOT localfelo_otp_verification)
+   - task_accepted (NOT task-accepted or taskAccepted)
+
+3. Variable names MUST match code exactly:
+   - customer_name (NOT customerName or customer-name)
+   - otp_code (NOT otpCode or otp-code)
+
+4. All variables are TEXT type (even numbers like unread_count)
+
+5. Meta approval takes 1-24 hours per template
+
+6. Start with Template 1 (OTP) first - it's simplest
+
+============================================================
+AFTER APPROVAL
+============================================================
+
+Once all 7 templates are approved:
+
+1. NO CODE CHANGES NEEDED
+   - Your code already matches these templates perfectly
+   - Variables already in correct format
+
+2. Test in Admin Dashboard
+   - Go to Admin → WhatsApp Test tab
+   - Test each notification type
+   - Verify delivery to your phone
+
+3. Go live!
+   - All triggers are ready
+   - Database migrations ready
+   - Edge function ready
+
+============================================================
+
+TOTAL: 7 TEMPLATES
+
+Ready to copy and paste into Interakt/Aisensy template creator!
+
+============================================================

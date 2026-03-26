@@ -1,0 +1,187 @@
+🔍 ===== USER CHECK RESULTS =====
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 Profile found? YES
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 Profile ID: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 Profile phone: 9063205739
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 Password hash exists? YES
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 Password hash value: "dd18758293896f4beb91..." (64 chars)
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 Password hash type: string
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 Password hash truthiness: true
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 ==============================
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ Returning user - showing password screen (NO OTP sent)
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📋 Profile data: {
+  "id": "d7f66c14-94af-41f4-8317-b6422c96a5ab",
+  "display_name": "Santosh K",
+  "phone": "9063205739",
+  "whatsapp_enabled": false,
+  "whatsapp_number": null,
+  "client_token": "token_1773822442200_qqhcmgeffuj",
+  "created_at": "2026-03-06T13:13:31.332+00:00",
+  "name": "Santosh K",
+  "owner_token": "token_1773822442200_fq4l0ygwaov",
+  "updated_at": "2026-03-22T19:12:25.565064+00:00",
+  "auth_user_id": null,
+  "email": "9063205739@localfelo.app",
+  "is_admin": true,
+  "is_active": true,
+  "whatsapp_name": null,
+  "whatsapp": null,
+  "whatsapp_same": true,
+  "city_id": null,
+  "area_id": null,
+  "reliability_score": 100,
+  "is_verified": false,
+  "is_trusted": false,
+  "badge_notes": null,
+  "total_tasks_completed": 0,
+  "total_wishes_granted": 0,
+  "total_ratings_received": 0,
+  "average_rating": 0,
+  "is_blocked": false,
+  "is_suspended": false,
+  "suspension_reason": null,
+  "suspension_expires_at": null,
+  "blocked_by": null,
+  "blocked_at": null,
+  "task_rating_avg": 0,
+  "task_rating_count": 0,
+  "city": "Bengaluru",
+  "area": "Bengaluru",
+  "street": null,
+  "latitude": 12.909630812643297,
+  "longitude": 77.61307597160341,
+  "location_updated_at": "2026-03-22T19:12:25.379+00:00",
+  "mobile": null,
+  "helper_preferences": [],
+  "password_hash": "dd18758293896f4beb918fef0ed7c4a43b382c92e1a937e315361cdd7d73c412",
+  "password_hint": null,
+  "phone_number": null,
+  "sub_area_id": null,
+  "sub_area": null,
+  "notification_preferences": {
+    "task_updates": true,
+    "chat_messages": true,
+    "wish_responses": true,
+    "marketplace_messages": true,
+    "system_announcements": true
+  },
+  "avatar_url": "https://drofnrntrbedtjtpseve.supabase.co/storage/v1/object/public/user-uploads/avatars/d7f66c14-94af-41f4-8317-b6422c96a5ab-1773337734286.jpeg",
+  "fcm_token": null,
+  "fcm_token_updated_at": null,
+  "helper_available": false,
+  "helper_available_since": null,
+  "gender": "male",
+  "helper_rating_avg": 0,
+  "helper_rating_count": 0,
+  "task_owner_rating_avg": 0,
+  "task_owner_rating_count": 0,
+  "role": "admin"
+}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔐 [Login] Password entered: "Santosh@6000" (length: 12)
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔐 [Login] Password trimmed: "Santosh@6000" (length: 12)
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔐 [Login] Stored hash from DB: dd18758293896f4beb918fef0ed7c4a43b382c92e1a937e315361cdd7d73c412
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔐 [Login] Stored hash length: 64
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔐 [Login] Hash from entered password: dd18758293896f4beb918fef0ed7c4a43b382c92e1a937e315361cdd7d73c412
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔐 [Login] Hashes match? ✅ YES
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔐 [Login] Password verification result: VALID ✅
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔐 [Password Login] Creating Supabase session for returning user...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [LOGIN DEBUG] existingProfile from database: {id: 'd7f66c14-94af-41f4-8317-b6422c96a5ab', display_name: 'Santosh K', phone: '9063205739', whatsapp_enabled: false, whatsapp_number: null, …}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [LOGIN DEBUG] avatar_url from DB: https://drofnrntrbedtjtpseve.supabase.co/storage/v1/object/public/user-uploads/avatars/d7f66c14-94af-41f4-8317-b6422c96a5ab-1773337734286.jpeg
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [LOGIN DEBUG] gender from DB: male
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [LOGIN DEBUG] user object to be stored: {id: 'd7f66c14-94af-41f4-8317-b6422c96a5ab', name: 'Santosh K', phone: '9063205739', email: '9063205739@localfelo.app', whatsappSame: true, …}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🎉 [App] PhoneAuthScreen onSuccess called with user: {id: 'd7f66c14-94af-41f4-8317-b6422c96a5ab', name: 'Santosh K', phone: '9063205739', email: '9063205739@localfelo.app', whatsappSame: true, …}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90    User ID: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90    User name: Santosh K
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90    Client token: Present
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔐 [App] handleLogin called with clientToken: token_1773822442200_...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔐 Logging in with client token...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ User logged in successfully with client token
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [App] Login successful: Santosh K
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍🔍🔍 [App] About to call setUser with: {id: 'd7f66c14-94af-41f4-8317-b6422c96a5ab', name: 'Santosh K', phone: '9063205739', clientToken: 'Present'}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍🔍🔍 [App] setUser called - user state should update on next render
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📍 [useLocation] Found localStorage fallback: {cityId: 'bangalore', city: 'Bangalore', areaId: null, area: "St. Joseph's Indian High School, Vittal Mallya Road", latitude: 12.970612275948115, …}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [usePushNotifications] useEffect triggered, userId: d7f66c14...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [usePushNotifications] Push support check: {supported: false, permission: 'denied', userId: 'd7f66c14...'}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [usePushNotifications] Push not supported on this platform
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍🔍🔍 [App] USER STATE CHANGED:
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90    user: {id: 'd7f66c14-94af-41f4-8317-b6422c96a5ab', name: 'Santosh K', phone: '9063205739', clientToken: 'Present'}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90    pushStatus: idle
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 Setting up real-time subscriptions...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍🔍🔍 [App] USER STATE CHANGED:
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90    user: {id: 'd7f66c14-94af-41f4-8317-b6422c96a5ab', name: 'Santosh K', phone: '9063205739', clientToken: 'Present'}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90    pushStatus: not-supported
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [App] User location SET: {city: 'Bangalore', area: "St. Joseph's Indian High School, Vittal Mallya Road", lat: '12.9706', lon: '77.5947'}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🎯 [App] Distances will now be calculated for all items!
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [App] Location modal already shown before - not showing again
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 👑 Admin user logged in
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [App] handleLogin complete, user state should be updated
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ Real-time subscriptions active
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [useLocation] Loaded location from database: {cityId: null, city: 'Bengaluru', areaId: '', area: 'Bengaluru', subAreaId: undefined, …}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [App] User location SET: {city: 'Bengaluru', area: 'Bengaluru', lat: '12.9096', lon: '77.6131'}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🎯 [App] Distances will now be calculated for all items!
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [App] Location modal already shown before - not showing again
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+supabaseClient.ts:74  GET https://drofnrntrbedtjtpseve.supabase.co/rest/v1/helper_preferences?select=*&user_id=eq.d7f66c14-94af-41f4-8317-b6422c96a5ab 406 (Not Acceptable)
+fetch @ supabaseClient.ts:74
+(anonymous) @ @supabase_supabase-js.js?v=c7b9f540:15166
+(anonymous) @ @supabase_supabase-js.js?v=c7b9f540:15181
+await in (anonymous)
+then @ @supabase_supabase-js.js?v=c7b9f540:329Understand this error
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📊 [App] Active tasks count: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📡 [App] Helper status: Unavailable
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📊 [App] Active tasks count: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📊 [App] Active tasks count: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📊 [App] Active tasks count: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0

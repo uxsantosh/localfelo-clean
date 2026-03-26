@@ -1,0 +1,266 @@
+[
+  {
+    "table_name": "activity_logs",
+    "column_count": 6
+  },
+  {
+    "table_name": "advertiser_campaigns",
+    "column_count": 15
+  },
+  {
+    "table_name": "ai_models",
+    "column_count": 22
+  },
+  {
+    "table_name": "area_distances",
+    "column_count": 6
+  },
+  {
+    "table_name": "areas",
+    "column_count": 7
+  },
+  {
+    "table_name": "areas-import",
+    "column_count": 2
+  },
+  {
+    "table_name": "categories",
+    "column_count": 7
+  },
+  {
+    "table_name": "categories_backup_2026",
+    "column_count": 7
+  },
+  {
+    "table_name": "category_demand_stats",
+    "column_count": 19
+  },
+  {
+    "table_name": "cities",
+    "column_count": 3
+  },
+  {
+    "table_name": "conversations",
+    "column_count": 19
+  },
+  {
+    "table_name": "device_tokens",
+    "column_count": 9
+  },
+  {
+    "table_name": "fraud_signals",
+    "column_count": 10
+  },
+  {
+    "table_name": "helper_custom_skills",
+    "column_count": 4
+  },
+  {
+    "table_name": "helper_preferences",
+    "column_count": 23
+  },
+  {
+    "table_name": "job_popularity_tracking",
+    "column_count": 5
+  },
+  {
+    "table_name": "job_suggestions",
+    "column_count": 11
+  },
+  {
+    "table_name": "listing_images",
+    "column_count": 5
+  },
+  {
+    "table_name": "listings",
+    "column_count": 24
+  },
+  {
+    "table_name": "location_heatmap_data",
+    "column_count": 14
+  },
+  {
+    "table_name": "messages",
+    "column_count": 21
+  },
+  {
+    "table_name": "notification_logs",
+    "column_count": 11
+  },
+  {
+    "table_name": "notifications",
+    "column_count": 18
+  },
+  {
+    "table_name": "official_task_categories",
+    "column_count": 8
+  },
+  {
+    "table_name": "otp_verifications",
+    "column_count": 10
+  },
+  {
+    "table_name": "product_categories",
+    "column_count": 9
+  },
+  {
+    "table_name": "professional_categories_images",
+    "column_count": 5
+  },
+  {
+    "table_name": "professional_images",
+    "column_count": 5
+  },
+  {
+    "table_name": "professional_services",
+    "column_count": 5
+  },
+  {
+    "table_name": "professional_verification_documents",
+    "column_count": 12
+  },
+  {
+    "table_name": "professionals",
+    "column_count": 26
+  },
+  {
+    "table_name": "professionals_backup_2026",
+    "column_count": 26
+  },
+  {
+    "table_name": "profiles",
+    "column_count": 60
+  },
+  {
+    "table_name": "profiles_backup_orphaned",
+    "column_count": 49
+  },
+  {
+    "table_name": "provider_metrics",
+    "column_count": 18
+  },
+  {
+    "table_name": "ratings",
+    "column_count": 8
+  },
+  {
+    "table_name": "referrals",
+    "column_count": 9
+  },
+  {
+    "table_name": "reports",
+    "column_count": 8
+  },
+  {
+    "table_name": "role_subcategories",
+    "column_count": 5
+  },
+  {
+    "table_name": "roles",
+    "column_count": 7
+  },
+  {
+    "table_name": "search_logs",
+    "column_count": 10
+  },
+  {
+    "table_name": "service_categories",
+    "column_count": 6
+  },
+  {
+    "table_name": "shop_categories",
+    "column_count": 5
+  },
+  {
+    "table_name": "shop_products",
+    "column_count": 9
+  },
+  {
+    "table_name": "shops",
+    "column_count": 12
+  },
+  {
+    "table_name": "site_settings",
+    "column_count": 22
+  },
+  {
+    "table_name": "skill_promotion_requests",
+    "column_count": 9
+  },
+  {
+    "table_name": "skill_training_data",
+    "column_count": 8
+  },
+  {
+    "table_name": "sms_notifications",
+    "column_count": 9
+  },
+  {
+    "table_name": "spatial_ref_sys",
+    "column_count": 5
+  },
+  {
+    "table_name": "sub_areas",
+    "column_count": 8
+  },
+  {
+    "table_name": "task_analytics",
+    "column_count": 15
+  },
+  {
+    "table_name": "task_categories_reference",
+    "column_count": 5
+  },
+  {
+    "table_name": "task_classifications",
+    "column_count": 7
+  },
+  {
+    "table_name": "task_negotiations",
+    "column_count": 10
+  },
+  {
+    "table_name": "task_ratings",
+    "column_count": 7
+  },
+  {
+    "table_name": "task_wish_reports",
+    "column_count": 12
+  },
+  {
+    "table_name": "tasks",
+    "column_count": 42
+  },
+  {
+    "table_name": "tasks_backup_2026",
+    "column_count": 38
+  },
+  {
+    "table_name": "user_activity_events",
+    "column_count": 8
+  },
+  {
+    "table_name": "user_activity_logs",
+    "column_count": 6
+  },
+  {
+    "table_name": "user_sessions",
+    "column_count": 15
+  },
+  {
+    "table_name": "whatsapp_notifications",
+    "column_count": 10
+  },
+  {
+    "table_name": "whatsapp_reminder_log",
+    "column_count": 6
+  },
+  {
+    "table_name": "wishes",
+    "column_count": 34
+  },
+  {
+    "table_name": "wishes_backup_2026",
+    "column_count": 30
+  }
+]

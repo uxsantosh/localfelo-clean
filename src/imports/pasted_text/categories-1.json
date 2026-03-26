@@ -1,0 +1,102 @@
+[
+  {
+    "section": "8️⃣ SAMPLE CATEGORIES",
+    "id": 101,
+    "name": "Mobile Phones",
+    "slug": "mobile-phones",
+    "emoji": "📱",
+    "icon": null,
+    "type": "listing",
+    "sort_order": 1
+  },
+  {
+    "section": "8️⃣ SAMPLE CATEGORIES",
+    "id": 102,
+    "name": "Laptops & Computers",
+    "slug": "laptops-computers",
+    "emoji": "💻",
+    "icon": null,
+    "type": "listing",
+    "sort_order": 2
+  },
+  {
+    "section": "8️⃣ SAMPLE CATEGORIES",
+    "id": 103,
+    "name": "Electronics & Appliances",
+    "slug": "electronics-appliances",
+    "emoji": "📺",
+    "icon": null,
+    "type": "listing",
+    "sort_order": 3
+  },
+  {
+    "section": "8️⃣ SAMPLE CATEGORIES",
+    "id": 104,
+    "name": "Furniture",
+    "slug": "furniture",
+    "emoji": "🛋️",
+    "icon": null,
+    "type": "listing",
+    "sort_order": 4
+  },
+  {
+    "section": "8️⃣ SAMPLE CATEGORIES",
+    "id": 105,
+    "name": "Home Appliances",
+    "slug": "home-appliances",
+    "emoji": "🏠",
+    "icon": null,
+    "type": "listing",
+    "sort_order": 5
+  },
+  {
+    "section": "8️⃣ SAMPLE CATEGORIES",
+    "id": 106,
+    "name": "Tools & Equipment",
+    "slug": "tools-equipment",
+    "emoji": "🔧",
+    "icon": null,
+    "type": "listing",
+    "sort_order": 6
+  },
+  {
+    "section": "8️⃣ SAMPLE CATEGORIES",
+    "id": 107,
+    "name": "Bikes & Scooters",
+    "slug": "bikes-scooters",
+    "emoji": "🏍️",
+    "icon": null,
+    "type": "listing",
+    "sort_order": 7
+  },
+  {
+    "section": "8️⃣ SAMPLE CATEGORIES",
+    "id": 108,
+    "name": "Cars",
+    "slug": "cars",
+    "emoji": "🚗",
+    "icon": null,
+    "type": "listing",
+    "sort_order": 8
+  },
+  {
+    "section": "8️⃣ SAMPLE CATEGORIES",
+    "id": 109,
+    "name": "Real Estate - Rent",
+    "slug": "real-estate-rent",
+    "emoji": "🏘️",
+    "icon": null,
+    "type": "listing",
+    "sort_order": 9
+  },
+  {
+    "section": "8️⃣ SAMPLE CATEGORIES",
+    "id": 110,
+    "name": "Real Estate - Sale",
+    "slug": "real-estate-sale",
+    "emoji": "🏡",
+    "icon": null,
+    "type": "listing",
+    "sort_order": 10
+  }
+]

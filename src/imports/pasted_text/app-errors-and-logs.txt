@@ -1,0 +1,65 @@
+ [TaskService] Tasks sorted by distance
+NewHomeScreen.tsx:171 [NewHomeScreen] Loaded tasks from ALL cities (sorted by distance): 9
+listings.js:228 [Service] getListings called with filters: Object
+listings.js:229 [Service] 🔍 DEBUGGING: Starting getListings function
+listings.js:238 🔍 [getListings] Current user: ID: undefined
+listings.js:239 🔍 [getListings] includeOwn flag: false
+listings.js:240 🔍 [getListings] Pagination: page 1 limit 10
+listings.js:338 ✅ [getListings] Fetched 4 listings from database
+listings.js:280 🔍 [getListings] Base query created
+listings.js:281 🌍 [getListings] Showing ALL listings from EVERYWHERE (sorted by distance)
+listings.js:294 ✅ [Service] Guest user - showing ALL listings (no owner filter)
+listings.js:398 ✅ [Listings] Sorted 4 listings by distance
+listings.js:400 📍 [Listings] Nearest: 2 BHK Flat for Rent – Spacious & Well Ventilated at 14.4 km
+NewHomeScreen.tsx:189 [NewHomeScreen] Loaded deals: 4
+listings.js:338 ✅ [getListings] Fetched 4 listings from database
+listings.js:398 ✅ [Listings] Sorted 4 listings by distance
+listings.js:400 📍 [Listings] Nearest: 2 BHK Flat for Rent – Spacious & Well Ventilated at 14.4 km
+NewHomeScreen.tsx:189 [NewHomeScreen] Loaded deals: 4
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+App.tsx:1153 🔔 [App] Unread count fetched: 0
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+conversations?select=id&or=%28buyer_id.eq.9e2d9446-a999-4052-9203-d6affc9c29c5%2Cseller_id.eq.9e2d9…:1  Failed to load resource: net::ERR_NAME_NOT_RESOLVEDUnderstand this error
+App.tsx:1153 🔔 [App] Unread count fetched: 0
+@supabase_supabase-js.js?v=8f603d92:2718 WebSocket connection to 'wss://drofnrntrbedtjtpseve.supabase.co/realtime/v1/websocket?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRyb2Zucm50cmJlZHRqdHBzZXZlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM3ODMzMjQsImV4cCI6MjA3OTM1OTMyNH0.HONRnz8phA-6j0hwf6XLhD8aRX4zwQR-2x6pQHcUBAo&eventsPerSecond=10&vsn=2.0.0' failed: 
+createWebSocket @ @supabase_supabase-js.js?v=8f603d92:2718Understand this error
+conversations?select=id&or=%28buyer_id.eq.9e2d9446-a999-4052-9203-d6affc9c29c5%2Cseller_id.eq.9e2d9…:1  Failed to load resource: net::ERR_NAME_NOT_RESOLVEDUnderstand this error
+App.tsx:1153 🔔 [App] Unread count fetched: 0
+tasks.ts:742 📋 [TaskService] Getting active tasks for user: 9e2d9446-a999-4052-9203-d6affc9c29c5
+tasks?select=*&or=%28user_id.eq.9e2d9446-a999-4052-9203-d6affc9c29c5%2Caccepted_by.eq.9e2d9446-a999…:1  Failed to load resource: net::ERR_NAME_NOT_RESOLVEDUnderstand this error
+App.tsx:1190 📊 [App] Active tasks count: 0
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+conversations?select=id&or=%28buyer_id.eq.9e2d9446-a999-4052-9203-d6affc9c29c5%2Cseller_id.eq.9e2d9…:1  Failed to load resource: net::ERR_NAME_NOT_RESOLVEDUnderstand this error
+App.tsx:1153 🔔 [App] Unread count fetched: 0
+@supabase_supabase-js.js?v=8f603d92:2718 WebSocket connection to 'wss://drofnrntrbedtjtpseve.supabase.co/realtime/v1/websocket?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRyb2Zucm50cmJlZHRqdHBzZXZlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM3ODMzMjQsImV4cCI6MjA3OTM1OTMyNH0.HONRnz8phA-6j0hwf6XLhD8aRX4zwQR-2x6pQHcUBAo&eventsPerSecond=10&vsn=2.0.0' failed: 
+createWebSocket @ @supabase_supabase-js.js?v=8f603d92:2718Understand this error
+nsfwDetection.ts:25 ✅ Content moderation system initialized (client-side heuristics)
+drofnrntrbedtjtpseve.supabase.co/storage/v1/object/task-images/temp/9e2d9446-a999-4052-9203-d6affc9c29c5_1773757069272_0.png:1  Failed to load resource: net::ERR_NAME_NOT_RESOLVEDUnderstand this error
+CreateSmartTaskScreen.tsx:195 Upload error: StorageUnknownError: Failed to fetch
+    at handleError (@supabase_supabase-js.js?v=8f603d92:5496:17)
+    at @supabase_supabase-js.js?v=8f603d92:5522:55
+handleImageUpload @ CreateSmartTaskScreen.tsx:195Understand this error
+drofnrntrbedtjtpseve.supabase.co/storage/v1/object/task-images/temp/9e2d9446-a999-4052-9203-d6affc9c29c5_1773757069343_1.png:1  Failed to load resource: net::ERR_NAME_NOT_RESOLVEDUnderstand this error
+CreateSmartTaskScreen.tsx:195 Upload error: StorageUnknownError: Failed to fetch
+    at handleError (@supabase_supabase-js.js?v=8f603d92:5496:17)
+    at @supabase_supabase-js.js?v=8f603d92:5522:55
+handleImageUpload @ CreateSmartTaskScreen.tsx:195Understand this error
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+conversations?select=id&or=%28buyer_id.eq.9e2d9446-a999-4052-9203-d6affc9c29c5%2Cseller_id.eq.9e2d9…:1  Failed to load resource: net::ERR_NAME_NOT_RESOLVEDUnderstand this error
+App.tsx:1153 🔔 [App] Unread count fetched: 0
+@supabase_supabase-js.js?v=8f603d92:2718 WebSocket connection to 'wss://drofnrntrbedtjtpseve.supabase.co/realtime/v1/websocket?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRyb2Zucm50cmJlZHRqdHBzZXZlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM3ODMzMjQsImV4cCI6MjA3OTM1OTMyNH0.HONRnz8phA-6j0hwf6XLhD8aRX4zwQR-2x6pQHcUBAo&eventsPerSecond=10&vsn=2.0.0' failed: 
+createWebSocket @ @supabase_supabase-js.js?v=8f603d92:2718Understand this error
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+tasks.ts:742 📋 [TaskService] Getting active tasks for user: 9e2d9446-a999-4052-9203-d6affc9c29c5
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+tasks.ts:761 ✅ [TaskService] Found 0 active tasks
+App.tsx:1190 📊 [App] Active tasks count: 0
+2App.tsx:1153 🔔 [App] Unread c

@@ -1,0 +1,145 @@
+am [vite] (client) Re-optimizing dependencies because vite config has changed
+
+  VITE v6.3.5  ready in 1091 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+12:14:13 am [vite] Internal server error: Failed to resolve import "@/styles/globals.css" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/main.tsx:4:7
+  3  |  import App from "@/App";
+  4  |  import { ErrorBoundary } from "@/components/ErrorBoundary";
+  5  |  import "@/styles/globals.css";
+     |          ^
+  6  |  console.log("🚀 [Main] App initializing...");
+  7  |  console.log("🔍 [Main] App component:", App);
+      at TransformPluginContext._formatLog (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42499:41)
+      at TransformPluginContext.error (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42496:16)
+      at normalizeUrl (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40475:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      at async file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40594:37
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40521:7)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42294:18)
+      at async loadAndTransform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35735:27)
+12:14:13 am [vite] Pre-transform error: Failed to resolve import "@/styles/globals.css" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/main.tsx:4:7
+  3  |  import App from "@/App";
+  4  |  import { ErrorBoundary } from "@/components/ErrorBoundary";
+  5  |  import "@/styles/globals.css";
+     |          ^
+  6  |  console.log("🚀 [Main] App initializing...");
+  7  |  console.log("🔍 [Main] App component:", App);
+12:14:14 am [vite] Pre-transform error: Failed to resolve import "@/styles/globals.css" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/main.tsx:4:7
+  3  |  import App from "@/App";
+  4  |  import { ErrorBoundary } from "@/components/ErrorBoundary";
+  5  |  import "@/styles/globals.css";
+     |          ^
+  6  |  console.log("🚀 [Main] App initializing...");
+  7  |  console.log("🔍 [Main] App component:", App); (x2)
+12:14:17 am [vite] Pre-transform error: Failed to resolve import "@/styles/globals.css" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/main.tsx:4:7
+  3  |  import App from "@/App";
+  4  |  import { ErrorBoundary } from "@/components/ErrorBoundary";
+  5  |  import "@/styles/globals.css";
+     |          ^
+  6  |  console.log("🚀 [Main] App initializing...");
+  7  |  console.log("🔍 [Main] App component:", App); (x3)
+12:14:20 am [vite] Internal server error: Failed to resolve import "@/styles/globals.css" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/main.tsx:4:7
+  3  |  import App from "@/App";
+  4  |  import { ErrorBoundary } from "@/components/ErrorBoundary";
+  5  |  import "@/styles/globals.css";
+     |          ^
+  6  |  console.log("🚀 [Main] App initializing...");
+  7  |  console.log("🔍 [Main] App component:", App);
+      at TransformPluginContext._formatLog (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42499:41)
+      at TransformPluginContext.error (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42496:16)
+      at normalizeUrl (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40475:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      at async file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40594:37
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40521:7)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42294:18)
+      at async loadAndTransform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35735:27)
+12:14:20 am [vite] Pre-transform error: Failed to resolve import "@/styles/globals.css" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/main.tsx:4:7
+  3  |  import App from "@/App";
+  4  |  import { ErrorBoundary } from "@/components/ErrorBoundary";
+  5  |  import "@/styles/globals.css";
+     |          ^
+  6  |  console.log("🚀 [Main] App initializing...");
+  7  |  console.log("🔍 [Main] App component:", App);
+12:14:20 am [vite] Pre-transform error: Failed to resolve import "@/styles/globals.css" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/main.tsx:4:7
+  3  |  import App from "@/App";
+  4  |  import { ErrorBoundary } from "@/components/ErrorBoundary";
+  5  |  import "@/styles/globals.css";
+     |          ^
+  6  |  console.log("🚀 [Main] App initializing...");
+  7  |  console.log("🔍 [Main] App component:", App); (x2)
+12:14:20 am [vite] Pre-transform error: Failed to resolve import "@/styles/globals.css" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/main.tsx:4:7
+  3  |  import App from "@/App";
+  4  |  import { ErrorBoundary } from "@/components/ErrorBoundary";
+  5  |  import "@/styles/globals.css";
+     |          ^
+  6  |  console.log("🚀 [Main] App initializing...");
+  7  |  console.log("🔍 [Main] App component:", App); (x3)
+12:14:21 am [vite] (client) ✨ new dependencies optimized: react-dom/client, sonner, @supabase/supabase-js,
+ motion/react, @capacitor/geolocation
+12:14:21 am [vite] (client) ✨ optimized dependencies changed. reloading
+12:14:21 am [vite] Pre-transform error: Failed to resolve import "@/styles/globals.css" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/main.tsx:4:7
+  3  |  import App from "@/App";
+  4  |  import { ErrorBoundary } from "@/components/ErrorBoundary";
+  5  |  import "@/styles/globals.css";
+     |          ^
+  6  |  console.log("🚀 [Main] App initializing...");
+  7  |  console.log("🔍 [Main] App component:", App);
+12:14:21 am [vite] Pre-transform error: Failed to resolve import "@/styles/globals.css" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/main.tsx:4:7
+  3  |  import App from "@/App";
+  4  |  import { ErrorBoundary } from "@/components/ErrorBoundary";
+  5  |  import "@/styles/globals.css";
+     |          ^
+  6  |  console.log("🚀 [Main] App initializing...");
+  7  |  console.log("🔍 [Main] App component:", App); (x2)
+12:14:21 am [vite] Internal server error: Failed to resolve import "@/styles/globals.css" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/main.tsx:4:7
+  3  |  import App from "@/App";
+  4  |  import { ErrorBoundary } from "@/components/ErrorBoundary";
+  5  |  import "@/styles/globals.css";
+     |          ^
+  6  |  console.log("🚀 [Main] App initializing...");
+  7  |  console.log("🔍 [Main] App component:", App);
+      at TransformPluginContext._formatLog (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42499:41)
+      at TransformPluginContext.error (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42496:16)
+      at normalizeUrl (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40475:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      at async file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40594:37
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40521:7)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42294:18)
+      at async loadAndTransform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo%20(ANDROID)/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35735:27)
+12:14:24 am [vite] Pre-transform error: Failed to resolve import "@/styles/globals.css" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo (ANDROID)/src/main.tsx:4:7
+  3  |  import App from "@/App";
+  4  |  import { ErrorBoundary } from "@/components/ErrorBoundary";
+  5  |  import "@/styles/globals.css";
+     |          ^
+  6  |  console.log("🚀 [Main] App initializing...");
+  7  |  console.log("🔍 [Main] App component:", App);

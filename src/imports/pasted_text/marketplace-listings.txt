@@ -1,0 +1,49 @@
+lon: 77.6115
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [ListingCard] "Bajaj Pulsar – Well Maintained Bike for Sale" - distance: 11.155666611278445 lat: 12.8732063 lon: 77.61470117
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 ✅ [Listings] Sorted 5 listings by distance
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 📍 [Listings] Nearest: sample listing at 0.0 km
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [ListingCard] "sample listing" - distance: 0 lat: 12.9716 lon: 77.5946
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [ListingCard] "2 BHK Flat for Rent – Spacious & Well Ventilated" - distance: 4.1797854672540335 lat: 12.93819856 lon: 77.57690637
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [ListingCard] "Powermax fitness motorized treadmill for sale" - distance: 5.9388716299393 lat: 12.93088951 lon: 77.63007463
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [ListingCard] "Royal Enfield Bike for Sale – Well Maintained" - distance: 6.554694205950418 lat: 12.915 lon: 77.6115
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [ListingCard] "Bajaj Pulsar – Well Maintained Bike for Sale" - distance: 11.155666611278445 lat: 12.8732063 lon: 77.61470117
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [MarketplaceScreen] 📍 Sorted by distance: (3) [{…}, {…}, {…}]
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [ListingCard] "sample listing" - distance: 0 lat: 12.9716 lon: 77.5946
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [ListingCard] "2 BHK Flat for Rent – Spacious & Well Ventilated" - distance: 4.1797854672540335 lat: 12.93819856 lon: 77.57690637
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [ListingCard] "Powermax fitness motorized treadmill for sale" - distance: 5.9388716299393 lat: 12.93088951 lon: 77.63007463
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [ListingCard] "Royal Enfield Bike for Sale – Well Maintained" - distance: 6.554694205950418 lat: 12.915 lon: 77.6115
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [ListingCard] "Bajaj Pulsar – Well Maintained Bike for Sale" - distance: 11.155666611278445 lat: 12.8732063 lon: 77.61470117
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 📍 [State→URL] Navigate to "listing" undefined
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [ListingCard] "sample listing" - distance: 0 lat: 12.9716 lon: 77.5946
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [ListingCard] "2 BHK Flat for Rent – Spacious & Well Ventilated" - distance: 4.1797854672540335 lat: 12.93819856 lon: 77.57690637
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [ListingCard] "Powermax fitness motorized treadmill for sale" - distance: 5.9388716299393 lat: 12.93088951 lon: 77.63007463
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [ListingCard] "Royal Enfield Bike for Sale – Well Maintained" - distance: 6.554694205950418 lat: 12.915 lon: 77.6115
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [ListingCard] "Bajaj Pulsar – Well Maintained Bike for Sale" - distance: 11.155666611278445 lat: 12.8732063 lon: 77.61470117
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 🌍 [MarketplaceScreen] Showing ALL listings from EVERYWHERE (sorted by distance)
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [MarketplaceScreen] 📍 Passing user coordinates to listings: {lat: 12.9716, lon: 77.5946}
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [MarketplaceScreen] Loading listings with filters: {page: 1, limit: 20, includeOwn: true, userLat: 12.9716, userLon: 77.5946}
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [Service] getListings called with filters: {page: 1, limit: 20, includeOwn: true, userLat: 12.9716, userLon: 77.5946}
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [Service] 🔍 DEBUGGING: Starting getListings function
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [MarketplaceScreen] 📍 Sorted by distance: (3) [{…}, {…}, {…}]
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 📦 [App] Fetching listing from URL: b489dc21-3600-410a-9d2c-d9abcb0a98a6
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 🌐 Web platform - skipping back button handler
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 🔍 [getListings] Current user: ID: undefined
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 🔍 [getListings] includeOwn flag: true
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 🔍 [getListings] Pagination: page 1 limit 20
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 🔍 [getListings] Base query created
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 🌍 [getListings] Showing ALL listings from EVERYWHERE (sorted by distance)
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 🧪 [Service] DEV MODE: Including own listings for testing
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [Service] getListingById called with id: b489dc21-3600-410a-9d2c-d9abcb0a98a6
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 ✅ [getListings] Fetched 5 listings from database
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 ✅ [Listings] Sorted 5 listings by distance
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 📍 [Listings] Nearest: sample listing at 0.0 km
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 📍 [ListingService] Listing distance: 5.94 km
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 ✅ [App] Listing fetched successfully: {id: 'b489dc21-3600-410a-9d2c-d9abcb0a98a6', title: 'Powermax fitness motorized treadmill for sale', description: 'PowerMax Motorized Treadmill – Excellent Condition…tion\nSerious buyers can message for more details.', price: 8999, categoryId: 103, …}
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 🎯 [ListingDetail] Button Logic: {isOwnListing: undefined, sellerProfileExists: true, profileCheckLoading: false, currentUserId: undefined, listingUserId: undefined}
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 🎯 [ListingDetail] Button Logic: {isOwnListing: undefined, sellerProfileExists: false, profileCheckLoading: false, currentUserId: undefined, listingUserId: undefined}
+code_components_preview_iframe-38049e48d7f0a436.min.js.br:90 🌐 Web platform - skipping back button handler

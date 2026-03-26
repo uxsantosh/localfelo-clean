@@ -1,0 +1,109 @@
+🌐 Web platform - skipping back button handler
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎨 [AppContent] Render #42
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 [BottomNav] currentScreen: wishes → activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎨 [AppContent] Render #43
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 [BottomNav] currentScreen: wishes → activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔴 [BottomNavigation Component] Received currentScreen: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [WishesScreen] Loading wishes from ALL cities with filters: {page: 1, limit: 20, note: 'Showing all wishes everywhere, sorted by distance (nearest first)'}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [WishesScreen] User coordinates AVAILABLE: {latitude: 12.9716, longitude: 77.5946}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [getWishes] Fetched 2 wishes from database
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for iPhone 14": 7.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for a gaming laptop": 0.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [WishCard] "Looking for a gaming laptop" - distance: 0.32026476689921496 lat: 12.9690772 lon: 77.59317398
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [WishCard] "Looking for iPhone 14" - distance: 7.291425138065949 lat: 12.90904019 lon: 77.61476239
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [getWishes] Fetched 2 wishes from database
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for iPhone 14": 7.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for a gaming laptop": 0.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [WishCard] "Looking for a gaming laptop" - distance: 0.32026476689921496 lat: 12.9690772 lon: 77.59317398
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [WishCard] "Looking for iPhone 14" - distance: 7.291425138065949 lat: 12.90904019 lon: 77.61476239
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [State→URL] Navigate to "wish-detail" {wishId: 'c6c578a7-ce51-494b-8e9a-a3bbc9f48a2d'}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90    wish-detail: wishId= c6c578a7-ce51-494b-8e9a-a3bbc9f48a2d options= {wishId: 'c6c578a7-ce51-494b-8e9a-a3bbc9f48a2d'} selectedWishId= null
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🧭 [navigate] Call #7: /wish-detail/c6c578a7-ce51-494b-8e9a-a3bbc9f48a2d State: undefined CurrentScreen: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎨 [AppContent] Render #44
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 [BottomNav] currentScreen: wishes → activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [WishCard] "Looking for a gaming laptop" - distance: 0.32026476689921496 lat: 12.9690772 lon: 77.59317398
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [WishCard] "Looking for iPhone 14" - distance: 7.291425138065949 lat: 12.90904019 lon: 77.61476239
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔴 [BottomNavigation Component] Received currentScreen: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [WishesScreen] Loading wishes from ALL cities with filters: {page: 1, limit: 20, note: 'Showing all wishes everywhere, sorted by distance (nearest first)'}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [WishesScreen] User coordinates AVAILABLE: {latitude: 12.9716, longitude: 77.5946}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔗 [URL Sync] Path: /wish-detail/c6c578a7-ce51-494b-8e9a-a3bbc9f48a2d
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎨 [AppContent] Render #45
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 [BottomNav] currentScreen: wish-detail → activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [WishDetail] Button Logic: {currentUserId: undefined, wishUserId: undefined, isCreator: true, isLoggedIn: false}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔴 [BottomNavigation Component] Received currentScreen: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [WishDetail] Loading wish data...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🌐 Web platform - skipping back button handler
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎨 [AppContent] Render #46
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 [BottomNav] currentScreen: wish-detail → activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎨 [AppContent] Render #47
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 [BottomNav] currentScreen: wish-detail → activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [WishDetail] Button Logic: {currentUserId: undefined, wishUserId: undefined, isCreator: true, isLoggedIn: false}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [WishService] Wish distance: 0.32 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [WishDetail] Wish loaded: {id: 'c6c578a7-ce51-494b-8e9a-a3bbc9f48a2d', userId: null, currentUserId: undefined}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔴 [BottomNavigation Component] Received currentScreen: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [WishDetail] Button Logic: {currentUserId: undefined, wishUserId: null, isCreator: false, isLoggedIn: false}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [getWishes] Fetched 2 wishes from database
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for iPhone 14": 7.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for a gaming laptop": 0.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎨 [AppContent] Render #48
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 [BottomNav] currentScreen: wish-detail → activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [WishDetail] Button Logic: {currentUserId: undefined, wishUserId: null, isCreator: false, isLoggedIn: false}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔴 [BottomNavigation Component] Received currentScreen: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎨 [AppContent] Render #49
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 [BottomNav] currentScreen: wish-detail → activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [WishDetail] Button Logic: {currentUserId: undefined, wishUserId: null, isCreator: false, isLoggedIn: false}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔴 [BottomNavigation Component] Received currentScreen: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔗 [URL Sync] Path: /wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎨 [AppContent] Render #50
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 [BottomNav] currentScreen: wishes → activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔴 [BottomNavigation Component] Received currentScreen: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [WishesScreen] Loading wishes from ALL cities with filters: {page: 1, limit: 20, note: 'Showing all wishes everywhere, sorted by distance (nearest first)'}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [WishesScreen] User coordinates AVAILABLE: {latitude: 12.9716, longitude: 77.5946}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎨 [AppContent] Render #51
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 [BottomNav] currentScreen: wishes → activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🌐 Web platform - skipping back button handler
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [getWishes] Fetched 2 wishes from database
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for iPhone 14": 7.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for a gaming laptop": 0.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [WishCard] "Looking for a gaming laptop" - distance: 0.32026476689921496 lat: 12.9690772 lon: 77.59317398
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [WishCard] "Looking for iPhone 14" - distance: 7.291425138065949 lat: 12.90904019 lon: 77.61476239

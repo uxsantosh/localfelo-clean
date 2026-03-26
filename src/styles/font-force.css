@@ -1,0 +1,101 @@
+/* =====================================================
+   CRITICAL FONT ENFORCEMENT - Inter Font Family
+   ===================================================== */
+
+/* Force Inter font on ALL elements with maximum specificity */
+*,
+*::before,
+*::after,
+html,
+body,
+#root,
+div,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button,
+input,
+textarea,
+select,
+option,
+label,
+li,
+ul,
+ol,
+table,
+td,
+th,
+tr,
+section,
+article,
+aside,
+nav,
+header,
+footer,
+main,
+figure,
+figcaption,
+form,
+fieldset,
+legend,
+pre,
+code,
+small,
+strong,
+em,
+b,
+i,
+u,
+mark,
+del,
+ins,
+sub,
+sup,
+blockquote,
+cite,
+q,
+abbr,
+time,
+address {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Override any component library fonts */
+[class*='ui-'],
+[class*='button'],
+[class*='input'],
+[class*='select'],
+[class*='menu'],
+[class*='dialog'],
+[class*='modal'],
+[class*='card'],
+[class*='toast'],
+[class*='sonner'],
+[class*='recharts'],
+[data-sonner-toast],
+[data-sonner-toaster] {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+/* Override inline styles with highest specificity */
+body * {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+/* Ensure Inter loads with font-display swap for performance */
+@font-face {
+  font-family: 'Inter Fallback';
+  src: local('Arial'), local('Helvetica'), local('sans-serif');
+  size-adjust: 107%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}

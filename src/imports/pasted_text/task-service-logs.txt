@@ -1,0 +1,670 @@
+📋 [TaskService] getTasks called with filters: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🌍 [TaskService] Showing ALL tasks from EVERYWHERE (sorted by distance)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [TaskService] Found 7 tasks (page 1, total 7)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [NewHomeScreen] Loaded tasks from ALL cities (sorted by distance): 7
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [Service] getListings called with filters: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [Service] 🔍 DEBUGGING: Starting getListings function
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [getListings] Current user: ID: undefined
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [getListings] includeOwn flag: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [getListings] Pagination: page 1 limit 10
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [getListings] Base query created
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🌍 [getListings] Showing ALL listings from EVERYWHERE (sorted by distance)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [Service] Guest user - showing ALL listings (no owner filter)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [getListings] Fetched 4 listings from database
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [Listings] Sorted 4 listings by distance
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [NewHomeScreen] Loaded deals: 4
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ⏭️ [App] Intro skipped - saving to localStorage
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [App] ✅ Intro complete! Now showing location setup modal
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [App] Location modal already shown before - not showing again
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 7
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 Initializing map at: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 7
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 7 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 [CleanTasksScreen] Sample task data: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [CleanTasksScreen] No filters active - showing ALL tasks in city: 7 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 7 tasks. More pages: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 7 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 [CleanTasksScreen] Sample task data: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [CleanTasksScreen] No filters active - showing ALL tasks in city: 7 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 7 tasks. More pages: true
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 Saving location with: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [useLocation] updateLocation called
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [useLocation] New location: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [useLocation] User ID: null
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [useLocation] Saving to localStorage (guest user)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [useLocation] Guest location saved and version updated: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [useLocation] Location changed (same-tab) - updating location: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [App] User location SET: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [App] Distances will now be calculated for all items!
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [App] Location modal already shown before - not showing again
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [SimpleNotification] Adding notification: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [SimpleNotification] Updated notifications array: Array(1)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [SimpleNotification] Current notifications: Array(1)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+2code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 7
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 7 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 [CleanTasksScreen] Sample task data: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [CleanTasksScreen] No filters active - showing ALL tasks in city: 7 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 7 tasks. More pages: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 7 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 [CleanTasksScreen] Sample task data: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [CleanTasksScreen] No filters active - showing ALL tasks in city: 7 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 7 tasks. More pages: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 LocationMap - Geocoded result: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🗺️ LocationSelector - handleMapChange called: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 7
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [SimpleNotification] Removing notification: azfc25nro
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [SimpleNotification] Current notifications: Array(0)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 7 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 [CleanTasksScreen] Sample task data: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] BEFORE filtering: 7 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ❌ Task "sample task456" categories ["cleaning"] don't match selected ["bring-something"]
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ❌ Task "wall painting" categories ["painting"] don't match selected ["bring-something"]
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ❌ Task "design a logo" categories ["Other"] don't match selected ["bring-something"]
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ⚠️ Task "need a guitar trainer" has no categories - SHOWING it
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ⚠️ Task "need help with collecting package." has no categories - SHOWING it
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ⚠️ Task "Need help with luggage from bus stop" has no categories - SHOWING it
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ⚠️ Task "Need to shift luggage" has no categories - SHOWING it
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by categories: 7 → 4 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by sub-skills: 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 7
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 7 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 [CleanTasksScreen] Sample task data: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] BEFORE filtering: 7 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ❌ Task "sample task456" categories ["cleaning"] don't match selected ["bring-something"]
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ❌ Task "wall painting" categories ["painting"] don't match selected ["bring-something"]
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ❌ Task "design a logo" categories ["Other"] don't match selected ["bring-something"]
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ⚠️ Task "need a guitar trainer" has no categories - SHOWING it
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ⚠️ Task "need help with collecting package." has no categories - SHOWING it
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ⚠️ Task "Need help with luggage from bus stop" has no categories - SHOWING it
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ⚠️ Task "Need to shift luggage" has no categories - SHOWING it
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by categories: 7 → 4 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by sub-skills: 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: true
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 7
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 7 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 [CleanTasksScreen] Sample task data: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] BEFORE filtering: 7 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ❌ Task "sample task456" categories ["cleaning"] don't match selected ["bring-something"]
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ❌ Task "wall painting" categories ["painting"] don't match selected ["bring-something"]
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ❌ Task "design a logo" categories ["Other"] don't match selected ["bring-something"]
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ⚠️ Task "need a guitar trainer" has no categories - SHOWING it
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ⚠️ Task "need help with collecting package." has no categories - SHOWING it
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ⚠️ Task "Need help with luggage from bus stop" has no categories - SHOWING it
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ⚠️ Task "Need to shift luggage" has no categories - SHOWING it
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by categories: 7 → 4 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by sub-skills: 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 Checking phone number in database:
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90   Input: 9063205739
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90   Clean (10-digit): 9063205739
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90   With +91: +919063205739
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90   Without +91: 9063205739
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 Searching for phone in these formats: Array(3)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 Query result: data=FOUND, error=none
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 Found profile: {
+  "id": "d7f66c14-94af-41f4-8317-b6422c96a5ab",
+  "display_name": "Santosh",
+  "phone": "9063205739",
+  "whatsapp_enabled": false,
+  "whatsapp_number": null,
+  "client_token": "token_1772802811332_c30zkjoqqht",
+  "created_at": "2026-03-06T13:13:31.332+00:00",
+  "name": "Santosh",
+  "owner_token": "d7f66c14-94af-41f4-8317-b6422c96a5ab",
+  "updated_at": "2026-03-12T18:18:05.683537+00:00",
+  "auth_user_id": null,
+  "email": "9063205739@localfelo.app",
+  "is_admin": true,
+  "is_active": true,
+  "whatsapp_name": null,
+  "whatsapp": null,
+  "whatsapp_same": true,
+  "city_id": null,
+  "area_id": null,
+  "reliability_score": 100,
+  "is_verified": false,
+  "is_trusted": false,
+  "badge_notes": null,
+  "total_tasks_completed": 0,
+  "total_wishes_granted": 0,
+  "total_ratings_received": 0,
+  "average_rating": 0,
+  "is_blocked": false,
+  "is_suspended": false,
+  "suspension_reason": null,
+  "suspension_expires_at": null,
+  "blocked_by": null,
+  "blocked_at": null,
+  "task_rating_avg": 0,
+  "task_rating_count": 0,
+  "city": null,
+  "area": null,
+  "street": null,
+  "latitude": null,
+  "longitude": null,
+  "location_updated_at": null,
+  "mobile": null,
+  "helper_preferences": [],
+  "password_hash": "84cb4fe51ef74f118284c02383851ae2227f96f276d6339356d2c083c1b917f3",
+  "password_hint": null,
+  "phone_number": null,
+  "sub_area_id": null,
+  "sub_area": null,
+  "notification_preferences": {
+    "task_updates": true,
+    "chat_messages": true,
+    "wish_responses": true,
+    "marketplace_messages": true,
+    "system_announcements": true
+  },
+  "avatar_url": "https://drofnrntrbedtjtpseve.supabase.co/storage/v1/object/public/user-uploads/avatars/d7f66c14-94af-41f4-8317-b6422c96a5ab-1773337734286.jpeg",
+  "fcm_token": null,
+  "fcm_token_updated_at": null,
+  "helper_available": false,
+  "helper_available_since": null,
+  "gender": "male",
+  "helper_rating_avg": 0,
+  "helper_rating_count": 0,
+  "task_owner_rating_avg": 0,
+  "task_owner_rating_count": 0
+}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 ===== USER CHECK RESULTS =====
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 Profile found? YES
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 Profile ID: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 Profile phone: 9063205739
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 Password hash exists? YES
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 Password hash value: "84cb4fe51ef74f118284..." (64 chars)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 Password hash type: string
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 Password hash truthiness: true
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 ==============================
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ Returning user - showing password screen (NO OTP sent)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 Profile data: {
+  "id": "d7f66c14-94af-41f4-8317-b6422c96a5ab",
+  "display_name": "Santosh",
+  "phone": "9063205739",
+  "whatsapp_enabled": false,
+  "whatsapp_number": null,
+  "client_token": "token_1772802811332_c30zkjoqqht",
+  "created_at": "2026-03-06T13:13:31.332+00:00",
+  "name": "Santosh",
+  "owner_token": "d7f66c14-94af-41f4-8317-b6422c96a5ab",
+  "updated_at": "2026-03-12T18:18:05.683537+00:00",
+  "auth_user_id": null,
+  "email": "9063205739@localfelo.app",
+  "is_admin": true,
+  "is_active": true,
+  "whatsapp_name": null,
+  "whatsapp": null,
+  "whatsapp_same": true,
+  "city_id": null,
+  "area_id": null,
+  "reliability_score": 100,
+  "is_verified": false,
+  "is_trusted": false,
+  "badge_notes": null,
+  "total_tasks_completed": 0,
+  "total_wishes_granted": 0,
+  "total_ratings_received": 0,
+  "average_rating": 0,
+  "is_blocked": false,
+  "is_suspended": false,
+  "suspension_reason": null,
+  "suspension_expires_at": null,
+  "blocked_by": null,
+  "blocked_at": null,
+  "task_rating_avg": 0,
+  "task_rating_count": 0,
+  "city": null,
+  "area": null,
+  "street": null,
+  "latitude": null,
+  "longitude": null,
+  "location_updated_at": null,
+  "mobile": null,
+  "helper_preferences": [],
+  "password_hash": "84cb4fe51ef74f118284c02383851ae2227f96f276d6339356d2c083c1b917f3",
+  "password_hint": null,
+  "phone_number": null,
+  "sub_area_id": null,
+  "sub_area": null,
+  "notification_preferences": {
+    "task_updates": true,
+    "chat_messages": true,
+    "wish_responses": true,
+    "marketplace_messages": true,
+    "system_announcements": true
+  },
+  "avatar_url": "https://drofnrntrbedtjtpseve.supabase.co/storage/v1/object/public/user-uploads/avatars/d7f66c14-94af-41f4-8317-b6422c96a5ab-1773337734286.jpeg",
+  "fcm_token": null,
+  "fcm_token_updated_at": null,
+  "helper_available": false,
+  "helper_available_since": null,
+  "gender": "male",
+  "helper_rating_avg": 0,
+  "helper_rating_count": 0,
+  "task_owner_rating_avg": 0,
+  "task_owner_rating_count": 0
+}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔐 [Login] Password entered: "Sun@6000" (length: 8)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔐 [Login] Password trimmed: "Sun@6000" (length: 8)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔐 [Login] Stored hash from DB: 84cb4fe51ef74f118284c02383851ae2227f96f276d6339356d2c083c1b917f3
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔐 [Login] Stored hash length: 64
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔐 [Login] Hash from entered password: 84cb4fe51ef74f118284c02383851ae2227f96f276d6339356d2c083c1b917f3
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔐 [Login] Hashes match? ✅ YES
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔐 [Login] Password verification result: VALID ✅
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔐 [Password Login] Creating Supabase session for returning user...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [LOGIN DEBUG] existingProfile from database: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [LOGIN DEBUG] avatar_url from DB: https://drofnrntrbedtjtpseve.supabase.co/storage/v1/object/public/user-uploads/avatars/d7f66c14-94af-41f4-8317-b6422c96a5ab-1773337734286.jpeg
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [LOGIN DEBUG] gender from DB: male
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [LOGIN DEBUG] user object to be stored: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎉 [App] PhoneAuthScreen onSuccess called with user: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90    User ID: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90    User name: Santosh
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90    Client token: Present
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔐 [App] handleLogin called with clientToken: token_1772802811332_...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔐 Logging in with client token...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ User logged in successfully with client token
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [App] Login successful: Santosh
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍🔍🔍 [App] About to call setUser with: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍🔍🔍 [App] setUser called - user state should update on next render
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [useLocation] Found localStorage fallback: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] useEffect triggered, userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Push support check: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Push not supported on this platform
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍🔍🔍 [App] USER STATE CHANGED:
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90    user: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90    pushStatus: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Setting up real-time subscription for unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 Setting up real-time subscriptions...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: not-supported
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍🔍🔍 [App] USER STATE CHANGED:
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90    user: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90    pushStatus: not-supported
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [App] User location SET: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [App] Distances will now be calculated for all items!
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [App] Location modal already shown before - not showing again
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: not-supported
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 👑 Admin user logged in
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [SimpleNotification] Adding notification: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [App] handleLogin complete, user state should be updated
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: not-supported
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [SimpleNotification] Updated notifications array: Array(1)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [SimpleNotification] Current notifications: Array(1)
+drofnrntrbedtjtpseve.supabase.co/rest/v1/helper_preferences?select=*&user_id=eq.d7f66c14-94af-41f4-8317-b6422c96a5ab:1  Failed to load resource: the server responded with a status of 406 ()Understand this error
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ Real-time subscriptions active
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ℹ️ [useLocation] No location in database
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [useLocation] Using localStorage fallback since database is empty
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: not-supported
+2code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [App] Location modal already shown before - not showing again
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: not-supported
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [App] Active tasks count: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📡 [App] Helper status: Unavailable
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: not-supported
+drofnrntrbedtjtpseve.supabase.co/rest/v1/helper_preferences?select=*&user_id=eq.d7f66c14-94af-41f4-8317-b6422c96a5ab:1  Failed to load resource: the server responded with a status of 406 ()Understand this error
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+2code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] BEFORE filtering: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by categories: 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by sub-skills: 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] BEFORE filtering: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by categories: 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by sub-skills: 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: true
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] BEFORE filtering: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by categories: 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by sub-skills: 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: true
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] BEFORE filtering: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by categories: 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by sub-skills: 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: true
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] BEFORE filtering: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by categories: 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by sub-skills: 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: true
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: not-supported
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+2code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] BEFORE filtering: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by categories: 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by sub-skills: 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [SimpleNotification] Removing notification: mbm4j47g5
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: not-supported
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [SimpleNotification] Current notifications: Array(0)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] BEFORE filtering: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by categories: 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by sub-skills: 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: true
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] BEFORE filtering: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by categories: 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by sub-skills: 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [App] Active tasks count: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: {selectedCategories: Array(0), selectedSubSkills: Array(0), hasActiveFilters: false, processedTasksCount: 0}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [CleanTasksScreen] No filters active - showing ALL tasks in city: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: not-supported
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+3code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: {selectedCategories: Array(0), selectedSubSkills: Array(0), hasActiveFilters: false, processedTasksCount: 0}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [CleanTasksScreen] No filters active - showing ALL tasks in city: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: {selectedCategories: Array(0), selectedSubSkills: Array(0), hasActiveFilters: false, processedTasksCount: 0}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [CleanTasksScreen] No filters active - showing ALL tasks in city: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: true
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: {selectedCategories: Array(0), selectedSubSkills: Array(0), hasActiveFilters: false, processedTasksCount: 0}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [CleanTasksScreen] No filters active - showing ALL tasks in city: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: true
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [App] Active tasks count: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: {selectedCategories: Array(1), selectedSubSkills: Array(19), hasActiveFilters: true, processedTasksCount: 0}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] BEFORE filtering: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by categories: 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by sub-skills: 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [App] Active tasks count: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: {selectedCategories: Array(2), selectedSubSkills: Array(32), hasActiveFilters: true, processedTasksCount: 0}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] BEFORE filtering: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by categories: 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by sub-skills: 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: {selectedCategories: Array(3), selectedSubSkills: Array(54), hasActiveFilters: true, processedTasksCount: 0}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] BEFORE filtering: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by categories: 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by sub-skills: 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: not-supported
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+2code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: {selectedCategories: Array(3), selectedSubSkills: Array(54), hasActiveFilters: true, processedTasksCount: 0}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] BEFORE filtering: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by categories: 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by sub-skills: 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: {selectedCategories: Array(3), selectedSubSkills: Array(54), hasActiveFilters: true, processedTasksCount: 0}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] BEFORE filtering: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by categories: 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by sub-skills: 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: true
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [App] Active tasks count: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: {selectedCategories: Array(2), selectedSubSkills: Array(35), hasActiveFilters: true, processedTasksCount: 0}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] BEFORE filtering: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by categories: 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by sub-skills: 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: {selectedCategories: Array(1), selectedSubSkills: Array(13), hasActiveFilters: true, processedTasksCount: 0}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] BEFORE filtering: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by categories: 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by sub-skills: 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [CleanTasksScreen] Filtered by distance (10km): 0 tasks match
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: {selectedCategories: Array(0), selectedSubSkills: Array(0), hasActiveFilters: false, processedTasksCount: 0}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [CleanTasksScreen] No filters active - showing ALL tasks in city: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: {selectedCategories: Array(0), selectedSubSkills: Array(0), hasActiveFilters: false, processedTasksCount: 0}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [CleanTasksScreen] No filters active - showing ALL tasks in city: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: not-supported
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [CleanTasksScreen] Loading page 1 (50 items per page)
+3code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [CleanTasksScreen] Total tasks in database: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: {selectedCategories: Array(0), selectedSubSkills: Array(0), hasActiveFilters: false, processedTasksCount: 0}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [CleanTasksScreen] No filters active - showing ALL tasks in city: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: {selectedCategories: Array(0), selectedSubSkills: Array(0), hasActiveFilters: false, processedTasksCount: 0}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [CleanTasksScreen] No filters active - showing ALL tasks in city: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: true
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [CleanTasksScreen] Loaded 0 tasks from page 1
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [CleanTasksScreen] Filter state: {selectedCategories: Array(0), selectedSubSkills: Array(0), hasActiveFilters: false, processedTasksCount: 0}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [CleanTasksScreen] No filters active - showing ALL tasks in city: 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📄 [CleanTasksScreen] Page 1 complete. Showing 0 tasks. More pages: true
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [App] Active tasks count: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📊 [App] Active tasks count: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab

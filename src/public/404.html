@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalFelo - Redirecting...</title>
+    <script>
+      // ============================================
+      // SPA Redirect Handler for 404 Pages
+      // ============================================
+      // This script handles 404 errors on static hosting platforms
+      // by redirecting to index.html with the original path preserved
+      
+      (function() {
+        // Get the current path
+        var path = window.location.pathname;
+        var search = window.location.search;
+        var hash = window.location.hash;
+        
+        // Build the redirect URL
+        var redirectUrl = '/' + (search || '') + (hash || '');
+        
+        // Store the original path in sessionStorage
+        // so the app can restore it after redirect
+        try {
+          sessionStorage.setItem('redirectPath', path);
+          sessionStorage.setItem('redirectSearch', search);
+          sessionStorage.setItem('redirectHash', hash);
+        } catch (e) {
+          console.error('Failed to store redirect path:', e);
+        }
+        
+        // Redirect to index.html
+        // The app will read the path from sessionStorage and navigate accordingly
+        window.location.replace(redirectUrl);
+      })();
+    </script>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background: #f5f5f5;
+      }
+      .loader {
+        text-align: center;
+      }
+      .spinner {
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #CDFF00;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 20px;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      h1 {
+        color: #333;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="spinner"></div>
+      <h1>Redirecting to LocalFelo...</h1>
+    </div>
+  </body>
+</html>

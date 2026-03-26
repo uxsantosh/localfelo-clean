@@ -1,0 +1,343 @@
+✅ [Locations] Loaded 7 cities with 3-level location hierarchy
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [NewHomeScreen] 📍 Passing user coordinates to wishes: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [getWishes] Fetched 2 wishes from database
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for iPhone 14": 7.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for a gaming laptop": 0.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [NewHomeScreen] Loaded wishes from ALL cities (sorted by distance): 2
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 [TaskService] getTasks called with filters: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [getWishes] Fetched 2 wishes from database
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for iPhone 14": 7.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for a gaming laptop": 0.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [NewHomeScreen] Loaded wishes from ALL cities (sorted by distance): 2
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 [TaskService] getTasks called with filters: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🌍 [TaskService] Showing ALL tasks from EVERYWHERE (sorted by distance)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [TaskService] Found 8 tasks (page 1, total 8)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for task "guitar trainer": 0.1 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for task "gfhgf hfhf hfhf": 0.1 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for task "wall painting": 0.0 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for task "design a logo": 0.2 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for task "need a guitar trainer": 0.2 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for task "need help with collecting package.": 0.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for task "Need help with luggage from bus stop": 0.0 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for task "Need to shift luggage": 0.0 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90  [TaskService] Tasks sorted by distance
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [NewHomeScreen] Loaded tasks from ALL cities (sorted by distance): 8
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [Service] getListings called with filters: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [Service] 🔍 DEBUGGING: Starting getListings function
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🌍 [TaskService] Showing ALL tasks from EVERYWHERE (sorted by distance)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [getListings] Current user: ID: undefined
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [getListings] includeOwn flag: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [getListings] Pagination: page 1 limit 10
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [TaskService] Found 8 tasks (page 1, total 8)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for task "guitar trainer": 0.1 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for task "gfhgf hfhf hfhf": 0.1 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for task "wall painting": 0.0 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for task "design a logo": 0.2 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for task "need a guitar trainer": 0.2 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for task "need help with collecting package.": 0.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for task "Need help with luggage from bus stop": 0.0 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for task "Need to shift luggage": 0.0 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90  [TaskService] Tasks sorted by distance
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [NewHomeScreen] Loaded tasks from ALL cities (sorted by distance): 8
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [Service] getListings called with filters: Object
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [Service] 🔍 DEBUGGING: Starting getListings function
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [getListings] Base query created
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🌍 [getListings] Showing ALL listings from EVERYWHERE (sorted by distance)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [Service] Guest user - showing ALL listings (no owner filter)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [getListings] Current user: ID: undefined
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [getListings] includeOwn flag: false
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [getListings] Pagination: page 1 limit 10
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [getListings] Fetched 4 listings from database
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [getListings] Base query created
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🌍 [getListings] Showing ALL listings from EVERYWHERE (sorted by distance)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [Service] Guest user - showing ALL listings (no owner filter)
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [getListings] Fetched 4 listings from database
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [Listings] Sorted 4 listings by distance
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [Listings] Nearest: 2 BHK Flat for Rent – Spacious & Well Ventilated at 4.2 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [NewHomeScreen] Loaded deals: 4
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [Listings] Sorted 4 listings by distance
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [Listings] Nearest: 2 BHK Flat for Rent – Spacious & Well Ventilated at 4.2 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [NewHomeScreen] Loaded deals: 4
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [NewHomeScreen] Navigation: tasks undefined
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: tasks activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 Loading all tasks from database...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 Applying filters... {totalTasks: 0, selectedCategories: Array(0), selectedSubSkills: Array(0), maxDistance: 10, hasUserCoordinates: true}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90   ✅ Distance filter (10km): 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ Final filtered tasks: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: tasks activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🌐 Web platform - skipping back button handler
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: tasks activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 Applying filters... {totalTasks: 0, selectedCategories: Array(0), selectedSubSkills: Array(0), maxDistance: 10, hasUserCoordinates: true}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90   ✅ Distance filter (10km): 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ Final filtered tasks: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔗 [App] URL path: /tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: tasks activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔙 Back button pressed - Path: /tasks Screen: tasks State: {url: '/tasks'}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ➡️ Navigating to screen: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: tasks activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 Applying filters... {totalTasks: 0, selectedCategories: Array(0), selectedSubSkills: Array(0), maxDistance: 10, hasUserCoordinates: true}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90   ✅ Distance filter (10km): 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ Final filtered tasks: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: tasks activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ Loaded 8 tasks from database
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 Sample task: {id: '1f7df783-d2b6-44f6-8801-11b4efe48395', title: 'guitar trainer', category_id: 301, detected_category: 'teaching-learning', subcategory: 'guitar'}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 Applying filters... {totalTasks: 8, selectedCategories: Array(0), selectedSubSkills: Array(0), maxDistance: 10, hasUserCoordinates: true}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90   ✅ Distance filter (10km): 8 → 8 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ Final filtered tasks: 8
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: task-detail activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [TaskDetail] Loading task data...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 [TaskService] getTaskById: 1f7df783-d2b6-44f6-8801-11b4efe48395
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: task-detail activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🌐 Web platform - skipping back button handler
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: task-detail activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔙 Back button pressed - Path: /task-detail Screen: task-detail State: {url: '/task-detail'}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ➡️ Navigating to screen: task-detail
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: task-detail activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: task-detail activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔗 [App] URL path: /task-detail
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: task-detail activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [TaskService] Task found: guitar trainer
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [TaskService] Task distance: 0.13 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [TaskService] Location data: {cityId: 'bangalore', cityName: 'Bangalore', areaId: 'bangalore-koramangala-3rd-block', areaName: 'Koramangala 3rd Block', rawCityId: 'bangalore', …}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [TaskDetail] Task loaded: {id: '1f7df783-d2b6-44f6-8801-11b4efe48395', status: 'open', userId: 'd7f66c14-94af-41f4-8317-b6422c96a5ab', acceptedBy: null, helperId: null, …}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [TaskDetail] BUTTON RENDERING LOGIC: {taskId: '1f7df783-d2b6-44f6-8801-11b4efe48395', taskStatus: 'open', currentUserRawId: undefined, currentUserResolvedUUID: null, taskUserId: 'd7f66c14-94af-41f4-8317-b6422c96a5ab', …}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔘 [TaskDetail] Selected button set: login-required
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔙 Back button pressed - Path: /task-detail Screen: task-detail State: {usr: {…}, key: '6ccz64d7', idx: NaN}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ➡️ Navigating to screen: task-detail
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: task-detail activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [TaskDetail] BUTTON RENDERING LOGIC: {taskId: '1f7df783-d2b6-44f6-8801-11b4efe48395', taskStatus: 'open', currentUserRawId: undefined, currentUserResolvedUUID: null, taskUserId: 'd7f66c14-94af-41f4-8317-b6422c96a5ab', …}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔘 [TaskDetail] Selected button set: login-required
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: task-detail activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔙 Back button pressed - Path: /tasks Screen: tasks State: {url: '/tasks'}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ➡️ Navigating to screen: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: tasks activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 Loading all tasks from database...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 Applying filters... {totalTasks: 0, selectedCategories: Array(0), selectedSubSkills: Array(0), maxDistance: 10, hasUserCoordinates: true}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90   ✅ Distance filter (10km): 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ Final filtered tasks: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: tasks activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🌐 Web platform - skipping back button handler
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: tasks activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 Applying filters... {totalTasks: 0, selectedCategories: Array(0), selectedSubSkills: Array(0), maxDistance: 10, hasUserCoordinates: true}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90   ✅ Distance filter (10km): 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ Final filtered tasks: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔗 [App] URL path: /tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: tasks activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ Loaded 8 tasks from database
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 Sample task: {id: '1f7df783-d2b6-44f6-8801-11b4efe48395', title: 'guitar trainer', category_id: 301, detected_category: 'teaching-learning', subcategory: 'guitar'}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 Applying filters... {totalTasks: 8, selectedCategories: Array(0), selectedSubSkills: Array(0), maxDistance: 10, hasUserCoordinates: true}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90   ✅ Distance filter (10km): 8 → 8 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ Final filtered tasks: 8
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: wishes activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [WishesScreen] Loading wishes from ALL cities with filters: {page: 1, limit: 20, note: 'Showing all wishes everywhere, sorted by distance (nearest first)'}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [WishesScreen] User coordinates AVAILABLE: {latitude: 12.9716, longitude: 77.5946}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: wishes activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🌐 Web platform - skipping back button handler
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: wishes activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔙 Back button pressed - Path: /wishes Screen: wishes State: {url: '/wishes'}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ➡️ Navigating to screen: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: wishes activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: wishes activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [WishesScreen] Loading wishes from ALL cities with filters: {page: 1, limit: 20, note: 'Showing all wishes everywhere, sorted by distance (nearest first)'}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [WishesScreen] User coordinates AVAILABLE: {latitude: 12.9716, longitude: 77.5946}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔗 [App] URL path: /wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: wishes activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [getWishes] Fetched 2 wishes from database
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for iPhone 14": 7.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for a gaming laptop": 0.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [WishCard] "Looking for a gaming laptop" - distance: 0.32026476689921496 lat: 12.9690772 lon: 77.59317398
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [WishCard] "Looking for iPhone 14" - distance: 7.291425138065949 lat: 12.90904019 lon: 77.61476239
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [getWishes] Fetched 2 wishes from database
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for iPhone 14": 7.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for a gaming laptop": 0.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [WishCard] "Looking for a gaming laptop" - distance: 0.32026476689921496 lat: 12.9690772 lon: 77.59317398
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [WishCard] "Looking for iPhone 14" - distance: 7.291425138065949 lat: 12.90904019 lon: 77.61476239
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: wish-detail activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [WishDetail] Button Logic: {currentUserId: undefined, wishUserId: undefined, isCreator: true, isLoggedIn: false}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 [WishDetail] Loading wish data...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: wish-detail activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🌐 Web platform - skipping back button handler
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: wish-detail activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [WishDetail] Button Logic: {currentUserId: undefined, wishUserId: undefined, isCreator: true, isLoggedIn: false}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔗 [App] URL path: /wish-detail
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: wish-detail activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [WishDetail] Button Logic: {currentUserId: undefined, wishUserId: undefined, isCreator: true, isLoggedIn: false}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔙 Back button pressed - Path: /wish-detail Screen: wish-detail State: {url: '/wish-detail'}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ➡️ Navigating to screen: wish-detail
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: wish-detail activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [WishDetail] Button Logic: {currentUserId: undefined, wishUserId: undefined, isCreator: true, isLoggedIn: false}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📍 [WishService] Wish distance: 0.32 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [WishDetail] Wish loaded: {id: 'c6c578a7-ce51-494b-8e9a-a3bbc9f48a2d', userId: null, currentUserId: undefined}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: wish-detail activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [WishDetail] Button Logic: {currentUserId: undefined, wishUserId: null, isCreator: false, isLoggedIn: false}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔙 Back button pressed - Path: /wish-detail Screen: wish-detail State: {usr: {…}, key: '7vc9r7u7', idx: NaN}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ➡️ Navigating to screen: wish-detail
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: wish-detail activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [WishDetail] Button Logic: {currentUserId: undefined, wishUserId: null, isCreator: false, isLoggedIn: false}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: wish-detail activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔙 Back button pressed - Path: /wishes Screen: wishes State: {url: '/wishes'}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ➡️ Navigating to screen: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: wishes activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [WishesScreen] Loading wishes from ALL cities with filters: {page: 1, limit: 20, note: 'Showing all wishes everywhere, sorted by distance (nearest first)'}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [WishesScreen] User coordinates AVAILABLE: {latitude: 12.9716, longitude: 77.5946}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: wishes activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🌐 Web platform - skipping back button handler
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: wishes activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 [WishesScreen] Loading wishes from ALL cities with filters: {page: 1, limit: 20, note: 'Showing all wishes everywhere, sorted by distance (nearest first)'}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [WishesScreen] User coordinates AVAILABLE: {latitude: 12.9716, longitude: 77.5946}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔗 [App] URL path: /wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 BottomNav - currentScreen: wishes activeTab: wishes
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [getWishes] Fetched 2 wishes from database
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for iPhone 14": 7.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for a gaming laptop": 0.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [WishCard] "Looking for a gaming laptop" - distance: 0.32026476689921496 lat: 12.9690772 lon: 77.59317398
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [WishCard] "Looking for iPhone 14" - distance: 7.291425138065949 lat: 12.90904019 lon: 77.61476239
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ [getWishes] Fetched 2 wishes from database
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for iPhone 14": 7.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for a gaming laptop": 0.3 km
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [WishCard] "Looking for a gaming laptop" - distance: 0.32026476689921496 lat: 12.9690772 lon: 77.59317398
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [WishCard] "Looking for iPhone 14" - distance: 7.291425138065949 lat: 12.90904019 lon: 77.61476239

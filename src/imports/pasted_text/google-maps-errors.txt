@@ -1,0 +1,76 @@
+✅ Google Maps fully loaded and ready
+googleMaps.ts:207 ❌ Google Places search error: TypeError: Cannot read properties of undefined (reading 'AutocompleteService')
+    at searchGooglePlaces (googleMaps.ts:130:37)
+    at async searchLocations (geocoding.ts:214:29)
+    at async LocationSelector.tsx:147:25
+searchGooglePlaces @ googleMaps.ts:207
+geocoding.ts:220 ⚠️ [SearchLocations] Google Places failed, falling back to Geoapify: TypeError: Cannot read properties of undefined (reading 'AutocompleteService')
+    at searchGooglePlaces (googleMaps.ts:130:37)
+    at async searchLocations (geocoding.ts:214:29)
+    at async LocationSelector.tsx:147:25
+searchLocations @ geocoding.ts:220
+geocoding.ts:225 🗺️ [SearchLocations] Using Geoapify (fallback)
+geocoding.ts:233 🔍 Searching for: apsara
+geocoding.ts:255 ✅ Found 8 results
+geocoding.ts:212 🗺️ [SearchLocations] Using Google Places (primary)
+googleMaps.ts:22 ✅ Google Maps already loaded (cached)
+places.js:43 As of March 1st, 2025, google.maps.places.AutocompleteService is not available to new customers. Please use google.maps.places.AutocompleteSuggestion instead. At this time, google.maps.places.AutocompleteService is not scheduled to be discontinued, but google.maps.places.AutocompleteSuggestion is recommended over google.maps.places.AutocompleteService. While google.maps.places.AutocompleteService will continue to receive bug fixes for any major regressions, existing bugs in google.maps.places.AutocompleteService will not be addressed. At least 12 months notice will be given before support is discontinued. Please see https://developers.google.com/maps/legacy for additional details and https://developers.google.com/maps/documentation/javascript/places-migration-overview for the migration guide.
+ED @ places.js:43
+geocoding.ts:212 🗺️ [SearchLocations] Using Google Places (primary)
+googleMaps.ts:22 ✅ Google Maps already loaded (cached)
+places.js:43 As of March 1st, 2025, google.maps.places.AutocompleteService is not available to new customers. Please use google.maps.places.AutocompleteSuggestion instead. At this time, google.maps.places.AutocompleteService is not scheduled to be discontinued, but google.maps.places.AutocompleteSuggestion is recommended over google.maps.places.AutocompleteService. While google.maps.places.AutocompleteService will continue to receive bug fixes for any major regressions, existing bugs in google.maps.places.AutocompleteService will not be addressed. At least 12 months notice will be given before support is discontinued. Please see https://developers.google.com/maps/legacy for additional details and https://developers.google.com/maps/documentation/javascript/places-migration-overview for the migration guide.
+ED @ places.js:43
+2geocoding.ts:216 ✅ [SearchLocations] Google Places succeeded: 5 results
+geocoding.ts:212 🗺️ [SearchLocations] Using Google Places (primary)
+googleMaps.ts:22 ✅ Google Maps already loaded (cached)
+places.js:43 As of March 1st, 2025, google.maps.places.AutocompleteService is not available to new customers. Please use google.maps.places.AutocompleteSuggestion instead. At this time, google.maps.places.AutocompleteService is not scheduled to be discontinued, but google.maps.places.AutocompleteSuggestion is recommended over google.maps.places.AutocompleteService. While google.maps.places.AutocompleteService will continue to receive bug fixes for any major regressions, existing bugs in google.maps.places.AutocompleteService will not be addressed. At least 12 months notice will be given before support is discontinued. Please see https://developers.google.com/maps/legacy for additional details and https://developers.google.com/maps/documentation/javascript/places-migration-overview for the migration guide.
+ED @ places.js:43
+geocoding.ts:225 🗺️ [SearchLocations] Using Geoapify (fallback)
+geocoding.ts:233 🔍 Searching for: apsara  and a
+geocoding.ts:255 ✅ Found 8 results
+geocoding.ts:212 🗺️ [SearchLocations] Using Google Places (primary)
+googleMaps.ts:22 ✅ Google Maps already loaded (cached)
+places.js:43 As of March 1st, 2025, google.maps.places.AutocompleteService is not available to new customers. Please use google.maps.places.AutocompleteSuggestion instead. At this time, google.maps.places.AutocompleteService is not scheduled to be discontinued, but google.maps.places.AutocompleteSuggestion is recommended over google.maps.places.AutocompleteService. While google.maps.places.AutocompleteService will continue to receive bug fixes for any major regressions, existing bugs in google.maps.places.AutocompleteService will not be addressed. At least 12 months notice will be given before support is discontinued. Please see https://developers.google.com/maps/legacy for additional details and https://developers.google.com/maps/documentation/javascript/places-migration-overview for the migration guide.
+ED @ places.js:43
+geocoding.ts:225 🗺️ [SearchLocations] Using Geoapify (fallback)
+geocoding.ts:233 🔍 Searching for: apsara  and associa
+geocoding.ts:212 🗺️ [SearchLocations] Using Google Places (primary)
+googleMaps.ts:22 ✅ Google Maps already loaded (cached)
+places.js:43 As of March 1st, 2025, google.maps.places.AutocompleteService is not available to new customers. Please use google.maps.places.AutocompleteSuggestion instead. At this time, google.maps.places.AutocompleteService is not scheduled to be discontinued, but google.maps.places.AutocompleteSuggestion is recommended over google.maps.places.AutocompleteService. While google.maps.places.AutocompleteService will continue to receive bug fixes for any major regressions, existing bugs in google.maps.places.AutocompleteService will not be addressed. At least 12 months notice will be given before support is discontinued. Please see https://developers.google.com/maps/legacy for additional details and https://developers.google.com/maps/documentation/javascript/places-migration-overview for the migration guide.
+ED @ places.js:43
+geocoding.ts:225 🗺️ [SearchLocations] Using Geoapify (fallback)
+geocoding.ts:233 🔍 Searching for: apsara  and associates
+2geocoding.ts:255 ✅ Found 8 results
+geocoding.ts:212 🗺️ [SearchLocations] Using Google Places (primary)
+googleMaps.ts:22 ✅ Google Maps already loaded (cached)
+places.js:43 As of March 1st, 2025, google.maps.places.AutocompleteService is not available to new customers. Please use google.maps.places.AutocompleteSuggestion instead. At this time, google.maps.places.AutocompleteService is not scheduled to be discontinued, but google.maps.places.AutocompleteSuggestion is recommended over google.maps.places.AutocompleteService. While google.maps.places.AutocompleteService will continue to receive bug fixes for any major regressions, existing bugs in google.maps.places.AutocompleteService will not be addressed. At least 12 months notice will be given before support is discontinued. Please see https://developers.google.com/maps/legacy for additional details and https://developers.google.com/maps/documentation/javascript/places-migration-overview for the migration guide.
+ED @ places.js:43
+geocoding.ts:225 🗺️ [SearchLocations] Using Geoapify (fallback)
+geocoding.ts:233 🔍 Searching for: apsara and associates
+geocoding.ts:255 ✅ Found 8 results
+geocoding.ts:212 🗺️ [SearchLocations] Using Google Places (primary)
+googleMaps.ts:22 ✅ Google Maps already loaded (cached)
+places.js:43 As of March 1st, 2025, google.maps.places.AutocompleteService is not available to new customers. Please use google.maps.places.AutocompleteSuggestion instead. At this time, google.maps.places.AutocompleteService is not scheduled to be discontinued, but google.maps.places.AutocompleteSuggestion is recommended over google.maps.places.AutocompleteService. While google.maps.places.AutocompleteService will continue to receive bug fixes for any major regressions, existing bugs in google.maps.places.AutocompleteService will not be addressed. At least 12 months notice will be given before support is discontinued. Please see https://developers.google.com/maps/legacy for additional details and https://developers.google.com/maps/documentation/javascript/places-migration-overview for the migration guide.
+ED @ places.js:43
+geocoding.ts:225 🗺️ [SearchLocations] Using Geoapify (fallback)
+geocoding.ts:233 🔍 Searching for: apsaraand associates
+geocoding.ts:255 ✅ Found 0 results
+geocoding.ts:305 ⚠️ No results found
+geocoding.ts:212 🗺️ [SearchLocations] Using Google Places (primary)
+googleMaps.ts:22 ✅ Google Maps already loaded (cached)
+places.js:43 As of March 1st, 2025, google.maps.places.AutocompleteService is not available to new customers. Please use google.maps.places.AutocompleteSuggestion instead. At this time, google.maps.places.AutocompleteService is not scheduled to be discontinued, but google.maps.places.AutocompleteSuggestion is recommended over google.maps.places.AutocompleteService. While google.maps.places.AutocompleteService will continue to receive bug fixes for any major regressions, existing bugs in google.maps.places.AutocompleteService will not be addressed. At least 12 months notice will be given before support is discontinued. Please see https://developers.google.com/maps/legacy for additional details and https://developers.google.com/maps/documentation/javascript/places-migration-overview for the migration guide.
+ED @ places.js:43
+geocoding.ts:225 🗺️ [SearchLocations] Using Geoapify (fallback)
+geocoding.ts:233 🔍 Searching for: apsaraandassociates
+geocoding.ts:255 ✅ Found 0 results
+geocoding.ts:305 ⚠️ No results found
+geocoding.ts:144 🗺️ [ReverseGeocode] Using Google Maps (primary)
+googleMaps.ts:22 ✅ Google Maps already loaded (cached)
+geocoding.ts:148 ✅ [ReverseGeocode] Google Maps succeeded
+LocationMap.tsx:153 📍 LocationMap - Geocoded result: Object
+LocationSelector.tsx:82 🗺️ LocationSelector - handleMapChange called: Object
+
+(index):1 Tracking Prevention blocked access to storage for https://unpkg.com/leaflet@1.9.4/dist/leaflet.css.
+(index):1 Tracking Prevention blocked access to storage for https://unpkg.com/leaflet@1.9.4/dist/leaflet.css.
+(index):1 Tracking Prevention blocked access to storage for https://unpkg.com/leaflet@1.9.4/dist/leaflet.css.
+(index):1 Tracking Prevention blocked access to storage for https://unpkg.com/leaflet@1.9.4/dist/leaflet.css.

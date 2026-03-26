@@ -1,0 +1,161 @@
+[NewHomeScreen] 📍 Passing user coordinates to wishes: {lat: 12.971922807437455, lon: 77.5966501235962}
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔍 [getWishes] Filtering out current user's own wishes
+ ✅ [getWishes] Fetched 1 wishes from database
+ ✅ DISTANCE CALCULATED for wish "Looking for iPhone 14": 7.3 km
+ [NewHomeScreen] Loaded wishes from ALL cities (sorted by distance): 1
+ 📋 [TaskService] getTasks called with filters: {status: 'open', userLat: 12.971922807437455, userLon: 77.5966501235962}
+ 🔔 [App] Unread count fetched: 0
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: d7f66c14...
+ [usePushNotifications] Hook called with userId: d7f66c14...
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: not-supported
+ 🔔 [App] Cleaning up unread count subscription...
+ 🔍 [ProfileScreen] Initial user.id: d7f66c14-94af-41f4-8317-b6422c96a5ab
+ 🔍 [ProfileScreen] user.clientToken: token_1772802811332_c30zkjoqqht
+ 🎯 [ProfileScreen] Final userId to use: d7f66c14-94af-41f4-8317-b6422c96a5ab
+ 📋 [ProfileScreen] Fetching listings...
+ 🔍 [Service] getMyListings called with clientToken: EXISTS
+ 📞 [Service] Fetching profile for clientToken...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Setting up real-time subscription for unread count...
+ 🔔 Setting up real-time subscriptions...
+ 🌐 Web platform - skipping back button handler
+ 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+ 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: d7f66c14...
+ [usePushNotifications] Hook called with userId: d7f66c14...
+ 🚨🚨🚨 [App] usePushNotifications RETURNED: not-supported
+ 🔍 [TaskService] Filtering out current user's own tasks: d7f66c14-94af-41f4-8317-b6422c96a5ab
+ 🌍 [TaskService] Showing ALL tasks from EVERYWHERE (sorted by distance)
+ ✅ Real-time subscriptions active
+vendor-core-ade2edecaf4781c7.min.js.br:54 Too many elapsed hits of react since last report
+(anonymous) @ vendor-core-ade2edecaf4781c7.min.js.br:54
+t @ figma_app-fb99c62a6754ab3a.min.js.br:41
+eB @ figma_app-fb99c62a6754ab3a.min.js.br:41
+g0 @ 3186-5d955a18ed0f9b29.min.js.br:191
+u @ vendor-core-ade2edecaf4781c7.min.js.br:54
+requestAnimationFrame
+(anonymous) @ vendor-core-ade2edecaf4781c7.min.js.br:63
+gQ @ 3186-5d955a18ed0f9b29.min.js.br:191
+s @ 3186-5d955a18ed0f9b29.min.js.br:393
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:1095
+dispatch @ 3186-5d955a18ed0f9b29.min.js.br:1095
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:802
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+(anonymous) @ figma_app-fb99c62a6754ab3a.min.js.br:232
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:170
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+(anonymous) @ vendor-core-ade2edecaf4781c7.min.js.br:46
+(anonymous) @ 3186-5d955a18ed0f9b29.min.js.br:191
+handlePreviewHistoryChanged @ figma_app-fb99c62a6754ab3a.min.js.br:557
+r @ 3186-5d955a18ed0f9b29.min.js.br:1065
+e.onmessage @ 3186-5d955a18ed0f9b29.min.js.br:1065Understand this warning
+ 🔙 Back button pressed - Path: /profile Screen: profile State: {url: '/profile'}
+ ➡️ Navigating to screen: profile
+ ✅ [TaskService] Found 0 tasks (page 1, total 0)
+  [TaskService] Tasks sorted by distance
+ [NewHomeScreen] Loaded tasks from ALL cities (sorted by distance): 0
+ [Service] getListings called with filters: {limit: 10, userLat: 12.971922807437455, userLon: 77.5966501235962}
+ [Service] 🔍 DEBUGGING: Starting getListings function
+ 🔍 [getListings] Current user: ID: undefined
+ 🔍 [getListings] includeOwn flag: false
+ 🔍 [getListings] Pagination: page 1 limit 10
+ 📊 [Service] Profile query result: {profilesCount: 1, hasError: false, error: null}
+ ✅ [Service] Got profile ID: d7f66c14-94af-41f4-8317-b6422c96a5ab
+ 📞 [Service] Fetching listings for user...
+ 🔔 [App] Unread count fetched: 0
+ 🔍 [getListings] Base query created
+ 🌍 [getListings] Showing ALL listings from EVERYWHERE (sorted by distance)
+ ✅ [Service] Guest user - showing ALL listings (no owner filter)
+ 📊 [Service] Listings query result: {count: 1, hasError: false, error: null}
+ ✅ [Service] Found 1 listing(s)
+ 📞 [Service] Fetching images for each listing...
+ ✅ [getListings] Fetched 5 listings from database
+   ✅ Listing 6e08e002-039e-4142-a1d4-6ac803941669: 1 image(s)
+ ✅ [Service] All listings with images prepared
+ 📋 [ProfileScreen] Got listings: 1
+ 🌟 [ProfileScreen] Got ratings: {helper_rating_avg: 0, helper_rating_count: 0, task_owner_rating_avg: 0, task_owner_rating_count: 0}
+ ✅ [Listings] Sorted 5 listings by distance
+ 📍 [Listings] Nearest: Macbook Pro at 0.2 km
+ [NewHomeScreen] Loaded deals: 5
+ 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+ ✅ [TaskService] Found 0 active tasks
+ 📊 [App] Active tasks count: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ ✅ [TaskService] Found 0 active tasks
+ 📊 [App] Active tasks count: 0
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+ ✅ [TaskService] Found 0 active tasks
+ 📊 [App] Active tasks count: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+ ✅ [TaskService] Found 0 active tasks
+ 📊 [App] Active tasks count: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ ✅ [TaskService] Found 0 active tasks
+ 📊 [App] Active tasks count: 0
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0
+ 🔄 [App] Polling unread count (fallback)...
+ 🔔 [App] Fetching unread count...
+ 🔔 [App] Unread count fetched: 0

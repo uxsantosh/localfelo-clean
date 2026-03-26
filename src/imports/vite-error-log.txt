@@ -1,0 +1,47 @@
+C:\Users\LAPTOPS24\Downloads\LocalFelo> npm run dev
+
+> LocalFelo (ANDROID)@0.1.0 dev
+> vite
+
+
+  VITE v6.3.5  ready in 756 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+6:12:34 pm [vite] Pre-transform error: Failed to resolve import "../App" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/main.tsx:2:16
+  1  |  import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
+  2  |  import ReactDOM from 'react-dom/client';
+  3  |  import App from '../App';
+     |                   ^
+  4  |  import { ErrorBoundary } from '../components/ErrorBoundary';
+  5  |  import '@/styles/globals.css';
+6:12:35 pm [vite] Pre-transform error: Failed to resolve import "../App" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/main.tsx:2:16
+  1  |  import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
+  2  |  import ReactDOM from 'react-dom/client';
+  3  |  import App from '../App';
+     |                   ^
+  4  |  import { ErrorBoundary } from '../components/ErrorBoundary';
+  5  |  import '@/styles/globals.css'; (x2)
+6:12:35 pm [vite] Internal server error: Failed to resolve import "../App" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/main.tsx:2:16
+  1  |  import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";
+  2  |  import ReactDOM from 'react-dom/client';
+  3  |  import App from '../App';
+     |                   ^
+  4  |  import { ErrorBoundary } from '../components/ErrorBoundary';
+  5  |  import '@/styles/globals.css';
+      at TransformPluginContext._formatLog (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42499:41)
+      at TransformPluginContext.error (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42496:16)
+      at normalizeUrl (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40475:23)
+      at async file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40594:37
+      at async Promise.all (index 2)
+      at async TransformPluginContext.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40521:7)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42294:18)
+      at async loadAndTransform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35735:27)      at async viteTransformMiddleware (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:37250:24)
+PS C:\Users\LAPTOPS24\Downloads\LocalFelo> 

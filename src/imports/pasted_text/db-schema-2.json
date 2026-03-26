@@ -1,0 +1,167 @@
+[
+  {
+    "column_name": "id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "title",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "description",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "category_id",
+    "data_type": "integer",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "city_id",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "area_id",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "budget_min",
+    "data_type": "integer",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "budget_max",
+    "data_type": "integer",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "urgency",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "client_token",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "owner_token",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "updated_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "latitude",
+    "data_type": "numeric",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "longitude",
+    "data_type": "numeric",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "user_id",
+    "data_type": "uuid",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "phone",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "whatsapp",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "has_whatsapp",
+    "data_type": "boolean",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "exact_location",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "is_hidden",
+    "data_type": "boolean",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "helper_category",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "intent_type",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "status",
+    "data_type": "character varying",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "accepted_price",
+    "data_type": "numeric",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "accepted_by",
+    "data_type": "uuid",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "accepted_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "category_emoji",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "sub_area_id",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "address",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "role_id",
+    "data_type": "uuid",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "subcategory_ids",
+    "data_type": "ARRAY",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "subcategory_id",
+    "data_type": "text",
+    "is_nullable": "YES"
+  }
+]

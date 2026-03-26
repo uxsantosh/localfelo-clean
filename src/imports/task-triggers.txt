@@ -1,0 +1,56 @@
+[
+  {
+    "trigger_name": "on_task_acceptance_notification",
+    "table_name": "tasks",
+    "function_name": "trigger_task_acceptance_notification",
+    "trigger_definition": "CREATE TRIGGER on_task_acceptance_notification AFTER UPDATE ON public.tasks FOR EACH ROW EXECUTE FUNCTION trigger_task_acceptance_notification()"
+  },
+  {
+    "trigger_name": "task_acceptance_notification_trigger",
+    "table_name": "tasks",
+    "function_name": "trigger_task_acceptance_notification",
+    "trigger_definition": "CREATE TRIGGER task_acceptance_notification_trigger AFTER UPDATE OF status ON public.tasks FOR EACH ROW WHEN (((new.status)::text = 'accepted'::text)) EXECUTE FUNCTION trigger_task_acceptance_notification()"
+  },
+  {
+    "trigger_name": "task_started_notification_trigger",
+    "table_name": "tasks",
+    "function_name": "notify_task_started",
+    "trigger_definition": "CREATE TRIGGER task_started_notification_trigger AFTER UPDATE OF status ON public.tasks FOR EACH ROW WHEN (((new.status)::text = 'in_progress'::text)) EXECUTE FUNCTION notify_task_started()"
+  },
+  {
+    "trigger_name": "tasks_updated_at_trigger",
+    "table_name": "tasks",
+    "function_name": "update_tasks_updated_at",
+    "trigger_definition": "CREATE TRIGGER tasks_updated_at_trigger BEFORE UPDATE ON public.tasks FOR EACH ROW EXECUTE FUNCTION update_tasks_updated_at()"
+  },
+  {
+    "trigger_name": "trigger_auto_complete_task",
+    "table_name": "tasks",
+    "function_name": "auto_complete_task_on_dual_confirmation",
+    "trigger_definition": "CREATE TRIGGER trigger_auto_complete_task BEFORE UPDATE OF creator_completed, helper_completed ON public.tasks FOR EACH ROW WHEN ((((new.creator_completed = true) OR (new.helper_completed = true)) AND ((new.status)::text = ANY ((ARRAY['accepted'::character varying, 'in_progress'::character varying])::text[])))) EXECUTE FUNCTION auto_complete_task_on_dual_confirmation()"
+  },
+  {
+    "trigger_name": "trigger_task_cancelled_notification",
+    "table_name": "tasks",
+    "function_name": "notify_task_cancelled",
+    "trigger_definition": "CREATE TRIGGER trigger_task_cancelled_notification AFTER UPDATE ON public.tasks FOR EACH ROW EXECUTE FUNCTION notify_task_cancelled()"
+  },
+  {
+    "trigger_name": "trigger_task_completed_notification",
+    "table_name": "tasks",
+    "function_name": "notify_task_completed",
+    "trigger_definition": "CREATE TRIGGER trigger_task_completed_notification AFTER UPDATE ON public.tasks FOR EACH ROW EXECUTE FUNCTION notify_task_completed()"
+  },
+  {
+    "trigger_name": "trigger_task_status_sms",
+    "table_name": "tasks",
+    "function_name": "trigger_task_status_sms",
+    "trigger_definition": "CREATE TRIGGER trigger_task_status_sms AFTER UPDATE ON public.tasks FOR EACH ROW EXECUTE FUNCTION trigger_task_status_sms()"
+  },
+  {
+    "trigger_name": "update_tasks_updated_at",
+    "table_name": "tasks",
+    "function_name": "update_updated_at_column",
+    "trigger_definition": "CREATE TRIGGER update_tasks_updated_at BEFORE UPDATE ON public.tasks FOR EACH ROW EXECUTE FUNCTION update_updated_at_column()"
+  }
+]

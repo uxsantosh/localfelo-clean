@@ -1,0 +1,73 @@
+ VITE v6.3.5  ready in 1253 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer) 
+6933|  }
+6934|  @layer utilities;
+6935|  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+   |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+6936|  * {
+6937|    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;      
+12:56:08 am [vite] (client) page reload src/tailwind.config.js
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer) 
+6933|  }
+6934|  @layer utilities;
+6935|  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+   |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+6936|  * {
+6937|    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;      
+1:00:18 am [vite] (client) hmr update /src/screens/TaskDetailScreen.tsx, /src/index.css
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer) 
+6933|  }
+6934|  @layer utilities;
+6935|  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+   |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+6936|  * {
+6937|    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;      
+1:00:35 am [vite] (client) hmr update /src/screens/WishDetailScreen.tsx, /src/index.css
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer) 
+6933|  }
+6934|  @layer utilities;
+6935|  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+   |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+6936|  * {
+6937|    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;      
+1:00:56 am [vite] (client) hmr update /src/screens/ListingDetailScreen.tsx, /src/index.css       
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer) 
+6933|  }
+6934|  @layer utilities;
+6935|  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+   |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+6936|  * {
+6937|    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;      
+1:07:53 am [vite] (client) hmr update /@fs/C:\Users\LAPTOPS24\Downloads\LocalFelo (WEB+ANDROID NEW) LIVE\src\components\ChatWindow.tsx, /src/index.css
+1:07:53 am [vite] (client) hmr update /src/screens/WishDetailScreen.tsx, /src/index.css
+1:07:53 am [vite] (client) hmr update /@fs/C:\Users\LAPTOPS24\Downloads\LocalFelo (WEB+ANDROID NEW) LIVE\src\components\ChatWindow.tsx, /src/index.css
+1:07:53 am [vite] (client) hmr update /src/screens/TaskDetailScreen.tsx, /src/index.css
+1:07:53 am [vite] (client) hmr update /src/screens/ListingDetailScreen.tsx, /src/index.css       
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer) 
+6933|  }
+6934|  @layer utilities;
+6935|  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+   |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+6936|  * {
+6937|    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;      
+1:11:38 am [vite] (client) hmr update /@fs/C:\Users\LAPTOPS24\Downloads\LocalFelo (WEB+ANDROID NEW) LIVE\src\components\ChatWindow.tsx, /src/index.css
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer) 
+6933|  }
+6934|  @layer utilities;
+6935|  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+   |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+6936|  * {
+6937|    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;      
+1:12:21 am [vite] (client) hmr update /@fs/C:\Users\LAPTOPS24\Downloads\LocalFelo (WEB+ANDROID NEW) LIVE\src\components\ChatWindow.tsx, /src/index.css
+[vite:css][postcss] @import must precede all other statements (besides @charset or empty @layer) 
+6933|  }
+6934|  @layer utilities;
+6935|  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+   |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+6936|  * {
+6937|    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;      
+

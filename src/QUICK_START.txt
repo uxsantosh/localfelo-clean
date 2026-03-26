@@ -1,0 +1,57 @@
+═══════════════════════════════════════════════════════════════
+  📦  LocalFelo - QUICK START AFTER DOWNLOAD
+═══════════════════════════════════════════════════════════════
+
+✅ 3 SIMPLE STEPS TO GET RUNNING:
+
+┌─────────────────────────────────────────────────────────────┐
+│  STEP 1: Download & Extract                                 │
+└─────────────────────────────────────────────────────────────┘
+   • Click "Download" button in Figma Make
+   • Extract the ZIP file to your desired location
+   • Open the folder in VS Code
+
+
+┌─────────────────────────────────────────────────────────────┐
+│  STEP 2: Run Restructure Script                             │
+└─────────────────────────────────────────────────────────────┘
+
+   FOR WINDOWS (PowerShell):
+   ┌────────────────────────────────────────┐
+   │  .\restructure-windows.ps1             │
+   └────────────────────────────────────────┘
+
+   If you get "execution policy" error, run this first:
+   ┌────────────────────────────────────────┐
+   │  Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass  │
+   └────────────────────────────────────────┘
+
+   ─────────────────────────────────────────
+
+   FOR MAC/LINUX (Terminal):
+   ┌────────────────────────────────────────┐
+   │  chmod +x restructure-unix.sh          │
+   │  ./restructure-unix.sh                 │
+   └────────────────────────────────────────┘
+
+
+┌─────────────────────────────────────────────────────────────┐
+│  STEP 3: Install & Run                                      │
+└─────────────────────────────────────────────────────────────┘
+   ┌────────────────────────────────────────┐
+   │  npm install                           │
+   │  npm run dev                           │
+   └────────────────────────────────────────┘
+
+
+🎉 DONE! Your app should be running at:
+   👉 http://localhost:5173
+
+
+═══════════════════════════════════════════════════════════════
+
+📚 For detailed instructions, see:
+   • START_HERE_AFTER_DOWNLOAD.md
+   • RESTRUCTURE_GUIDE.md
+
+═══════════════════════════════════════════════════════════════

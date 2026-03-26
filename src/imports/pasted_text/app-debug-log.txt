@@ -1,0 +1,78 @@
+🔔 [App] Unread count fetched: 0
+App.tsx:1183 🔄 [App] Polling unread count (fallback)...
+App.tsx:1168 🔔 [App] Fetching unread count...
+tasks.ts:746 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+tasks.ts:765 ✅ [TaskService] Found 1 active tasks
+App.tsx:1207 📊 [App] Active tasks count: 1
+App.tsx:1170 🔔 [App] Unread count fetched: 0
+App.tsx:1183 🔄 [App] Polling unread count (fallback)...
+App.tsx:1168 🔔 [App] Fetching unread count...
+App.tsx:1170 🔔 [App] Unread count fetched: 0
+geocoding.ts:339 ✅ [getCurrentPosition] Capacitor position obtained: Object
+geocoding.ts:459 ✅ GPS coordinates obtained: Object
+geocoding.ts:468 ⚠️ Low GPS accuracy: 50664m - position might not be precise
+detectUserLocation @ geocoding.ts:468Understand this warning
+geocoding.ts:471 🔄 Getting address for GPS coordinates...
+geocoding.ts:144 🗺️ [ReverseGeocode] Using Google Maps (primary)
+googleMaps.ts:23 ✅ Google Maps already loaded (cached)
+geocoding.ts:148 ✅ [ReverseGeocode] Google Maps succeeded
+geocoding.ts:475 ✅ Location detected successfully: Object
+LocationSelector.tsx:59 🗺️ LocationSelector - Auto-detect successful: Object
+LocationSelector.tsx:60 🎯 [LocationSelector] Setting map to coordinates: Object
+App.tsx:1183 🔄 [App] Polling unread count (fallback)...
+App.tsx:1168 🔔 [App] Fetching unread count...
+App.tsx:1170 🔔 [App] Unread count fetched: 0
+LocationSelector.tsx:55 🔵 [LocationSelector] Starting location detection...
+geocoding.ts:450 📍 Getting GPS coordinates from device...
+geocoding.ts:339 ✅ [getCurrentPosition] Capacitor position obtained: Object
+geocoding.ts:459 ✅ GPS coordinates obtained: Object
+geocoding.ts:468 ⚠️ Low GPS accuracy: 103m - position might not be precise
+detectUserLocation @ geocoding.ts:468Understand this warning
+geocoding.ts:471 🔄 Getting address for GPS coordinates...
+geocoding.ts:144 🗺️ [ReverseGeocode] Using Google Maps (primary)
+googleMaps.ts:23 ✅ Google Maps already loaded (cached)
+geocoding.ts:148 ✅ [ReverseGeocode] Google Maps succeeded
+geocoding.ts:475 ✅ Location detected successfully: Object
+LocationSelector.tsx:59 🗺️ LocationSelector - Auto-detect successful: Object
+LocationSelector.tsx:60 🎯 [LocationSelector] Setting map to coordinates: Object
+App.tsx:1183 🔄 [App] Polling unread count (fallback)...
+App.tsx:1168 🔔 [App] Fetching unread count...
+App.tsx:1170 🔔 [App] Unread count fetched: 0
+tasks.ts:746 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+tasks.ts:765 ✅ [TaskService] Found 1 active tasks
+App.tsx:1207 📊 [App] Active tasks count: 1
+App.tsx:2482 ✅ Using detailed address parts as area: 165, 9th Cross Rd
+App.tsx:2544 📍 Final location data: Object
+App.tsx:2567 📍 [App] About to update global location with: Object
+App.tsx:2568 📍 [App] ✅ CRITICAL DEBUG - AREA VALUE: Object
+App.tsx:2575 📍 [App] ✅ CRITICAL DEBUG - IDs (should be NULL for Google Maps): Object
+useLocation.ts:265 📍 [useLocation] updateLocation called
+useLocation.ts:266 📍 [useLocation] New location: Object
+useLocation.ts:267 📍 [useLocation] User ID: d7f66c14-94af-41f4-8317-b6422c96a5ab
+useLocation.ts:349 📍 [useLocation] Final coordinates (from AREA): Object
+usePushNotifications.ts:86 [usePushNotifications] Hook called with userId: d7f66c14...
+NewHomeScreen.tsx:124 [NewHomeScreen] Loading nearby content with user location: Object
+locations.ts:51 🌆 [Locations] Fetching cities with 3-level hierarchy (City → Area → Sub-Area)...
+App.tsx:462 ✅ [App] Location modal already shown before - not showing again
+usePushNotifications.ts:86 [usePushNotifications] Hook called with userId: d7f66c14...
+useLocation.ts:504 ✅ [useLocation] Location saved to database (3-level)
+useLocation.ts:517 📍 [useLocation] Dispatching locationChanged event with: Object
+useLocation.ts:128 📍 [useLocation] Location changed (same-tab) - updating location: Object
+useLocation.ts:525 ✅ [useLocation] Location state updated
+App.tsx:2581 ✅ [App] Global location updated successfully!
+SimpleNotification.tsx:101 🔔 [SimpleNotification] Adding notification: Object
+usePushNotifications.ts:86 [usePushNotifications] Hook called with userId: d7f66c14...
+SimpleNotification.tsx:104 🔔 [SimpleNotification] Updated notifications array: Array(1)
+chunk-UVXKGGW7.js?v=1dbb3d6d:16718 Uncaught TypeError: mapInstanceRef.current.remove is not a function
+    at cleanupMap (LocationMapNative.tsx:287:32)
+    at LocationMapNative.tsx:42:7
+    at safelyCallDestroy (chunk-UVXKGGW7.js?v=1dbb3d6d:16796:13)
+    at commitHookEffectListUnmount (chunk-UVXKGGW7.js?v=1dbb3d6d:16923:19)
+    at commitPassiveUnmountInsideDeletedTreeOnFiber (chunk-UVXKGGW7.js?v=1dbb3d6d:18333:17)
+    at commitPassiveUnmountEffectsInsideOfDeletedTree_begin (chunk-UVXKGGW7.js?v=1dbb3d6d:18295:13)
+    at commitPassiveUnmountEffects_begin (chunk-UVXKGGW7.js?v=1dbb3d6d:18231:19)
+    at commitPassiveUnmountEffects (chunk-UVXKGGW7.js?v=1dbb3d6d:18219:11)
+    at flushPassiveEffectsImpl (chunk-UVXKGGW7.js?v=1dbb3d6d:19542:11)
+    at flushPassiveEffects (chunk-UVXKGGW7.js?v=1dbb3d6d:19500:22)Understand this error
+NewHomeScreen.tsx:124 [NewHomeScreen] Loading nearby content with user location: Object
+locations.ts:51 🌆 [Locations] Fetching cities with 3-level hierarchy (City → Area → Sub-Area)...

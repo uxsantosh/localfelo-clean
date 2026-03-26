@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LocalStorage Session Debugger</title>
+    <style>
+        body {
+            font-family: monospace;
+            padding: 20px;
+            background: #1a1a1a;
+            color: #0f0;
+        }
+        .key {
+            color: #0ff;
+            font-weight: bold;
+        }
+        .value {
+            color: #ff0;
+            margin-left: 20px;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+        .section {
+            margin: 20px 0;
+            border: 1px solid #333;
+            padding: 10px;
+        }
+        .error {
+            color: #f00;
+        }
+        .success {
+            color: #0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 LocalStorage Session Debugger</h1>
+    
+    <div class="section">
+        <h2>Step 1: Open Browser Console (F12)</h2>
+        <p>Then copy and paste this code into the console:</p>
+    </div>
+    
+    <div class="section">
+        <h2>📋 Debug Code (Copy This):</h2>
+        <pre class="value">
+// Check all localStorage keys
+console.log('='.repeat(50));
+console.log('🔍 LOCALSTORAGE KEYS');
+console.log('='.repeat(50));
+
+for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    console.log(`\n📌 Key: ${key}`);
+    
+    if (key.includes('sb-') || key.includes('auth') || key.includes('supabase')) {
+        const value = localStorage.getItem(key);
+        try {
+            const parsed = JSON.parse(value);
+            console.log('   Value (parsed):', parsed);
+            
+            if (parsed.access_token) {
+                console.log('   ✅ Has access_token:', parsed.access_token.substring(0, 50) + '...');
+            }
+            if (parsed.refresh_token) {
+                console.log('   ✅ Has refresh_token:', parsed.refresh_token.substring(0, 50) + '...');
+            }
+            if (parsed.expires_at) {
+                const expiresAt = new Date(parsed.expires_at * 1000);
+                const now = new Date();
+                const isExpired = expiresAt < now;
+                console.log(`   ${isExpired ? '❌' : '✅'} Expires at:`, expiresAt.toLocaleString());
+                console.log(`   ${isExpired ? '❌ EXPIRED!' : '✅ Still valid'}`);
+            }
+        } catch (e) {
+            console.log('   Value (raw):', value);
+        }
+    }
+}
+
+console.log('\n' + '='.repeat(50));
+console.log('🔐 SUPABASE SESSION CHECK');
+console.log('='.repeat(50));
+
+// Import supabase and check session
+import { supabase } from './lib/supabaseClient.ts';
+
+supabase.auth.getSession().then(({ data, error }) => {
+    console.log('\n📊 Current Session:', {
+        hasSession: !!data.session,
+        user: data.session?.user?.id,
+        expiresAt: data.session?.expires_at ? new Date(data.session.expires_at * 1000).toLocaleString() : 'N/A',
+        error: error
+    });
+    
+    if (!data.session) {
+        console.log('\n❌ NO ACTIVE SESSION!');
+        console.log('   This is why storage uploads fail.');
+        console.log('   Need to login again to create session.');
+    } else {
+        console.log('\n✅ SESSION IS ACTIVE!');
+        console.log('   Storage uploads should work.');
+    }
+});
+
+console.log('\n' + '='.repeat(50));
+        </pre>
+    </div>
+    
+    <div class="section">
+        <h2>What to Look For:</h2>
+        <ul>
+            <li class="success">✅ Key starting with "sb-drofnrntrbedtjtpseve-auth-token"</li>
+            <li class="success">✅ Has "access_token" and "refresh_token"</li>
+            <li class="success">✅ "expires_at" is in the future (not expired)</li>
+            <li class="error">❌ If missing = need to login again</li>
+            <li class="error">❌ If expired = need to refresh or login again</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>If No Session Found:</h2>
+        <p>The phone OTP login didn't create a Supabase auth session.</p>
+        <p>This means the verify-otp edge function isn't returning access_token/refresh_token.</p>
+        <p><strong>Fix:</strong> Logout and login again. Watch console for these logs:</p>
+        <pre class="value">
+🔐 [AuthPhone] About to set session with tokens...
+   Access Token: ✅ Present
+   Refresh Token: ✅ Present
+✅ [AuthPhone] Supabase session set successfully!
+        </pre>
+        <p>If you see "❌ Missing" for tokens, the edge function is broken.</p>
+    </div>
+</body>
+</html>

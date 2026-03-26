@@ -1,0 +1,91 @@
+🔔 [App] Unread count fetched: 0
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+tasks.ts:742 📋 [TaskService] Getting active tasks for user: 9e2d9446-a999-4052-9203-d6affc9c29c5
+tasks.ts:761 ✅ [TaskService] Found 0 active tasks
+App.tsx:1190 📊 [App] Active tasks count: 0
+App.tsx:1153 🔔 [App] Unread count fetched: 0
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+App.tsx:1153 🔔 [App] Unread count fetched: 0
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+App.tsx:1153 🔔 [App] Unread count fetched: 0
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+App.tsx:1153 🔔 [App] Unread count fetched: 0
+tasks.ts:742 📋 [TaskService] Getting active tasks for user: 9e2d9446-a999-4052-9203-d6affc9c29c5
+tasks.ts:761 ✅ [TaskService] Found 0 active tasks
+App.tsx:1190 📊 [App] Active tasks count: 0
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+App.tsx:1153 🔔 [App] Unread count fetched: 0
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+App.tsx:1153 🔔 [App] Unread count fetched: 0
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+App.tsx:1153 🔔 [App] Unread count fetched: 0
+tasks.ts:742 📋 [TaskService] Getting active tasks for user: 9e2d9446-a999-4052-9203-d6affc9c29c5
+tasks.ts:761 ✅ [TaskService] Found 0 active tasks
+App.tsx:1190 📊 [App] Active tasks count: 0
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+App.tsx:1153 🔔 [App] Unread count fetched: 0
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+App.tsx:1153 🔔 [App] Unread count fetched: 0
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+App.tsx:1153 🔔 [App] Unread count fetched: 0
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+tasks.ts:742 📋 [TaskService] Getting active tasks for user: 9e2d9446-a999-4052-9203-d6affc9c29c5
+tasks.ts:761 ✅ [TaskService] Found 0 active tasks
+App.tsx:1190 📊 [App] Active tasks count: 0
+App.tsx:1153 🔔 [App] Unread count fetched: 0
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+App.tsx:1153 🔔 [App] Unread count fetched: 0
+App.tsx:1166 🔄 [App] Polling unread count (fallback)...
+App.tsx:1151 🔔 [App] Fetching unread count...
+App.tsx:1153 🔔 [App] Unread count fetched: 0
+2CategorySelector.tsx:116 Uncaught TypeError: Cannot read properties of undefined (reading 'includes')
+    at CategorySelector.tsx:116:59
+    at Array.map (<anonymous>)
+    at CategorySelector (CategorySelector.tsx:115:31)
+    at renderWithHooks (chunk-UVXKGGW7.js?v=10fd0908:11596:26)
+    at mountIndeterminateComponent (chunk-UVXKGGW7.js?v=10fd0908:14974:21)
+    at beginWork (chunk-UVXKGGW7.js?v=10fd0908:15962:22)
+    at HTMLUnknownElement.callCallback2 (chunk-UVXKGGW7.js?v=10fd0908:3680:22)
+    at Object.invokeGuardedCallbackDev (chunk-UVXKGGW7.js?v=10fd0908:3705:24)
+    at invokeGuardedCallback (chunk-UVXKGGW7.js?v=10fd0908:3739:39)
+    at beginWork$1 (chunk-UVXKGGW7.js?v=10fd0908:19818:15)Understand this error
+chunk-UVXKGGW7.js?v=10fd0908:14080 The above error occurred in the <CategorySelector> component:
+
+    at CategorySelector (http://localhost:3000/src/components/CategorySelector.tsx:22:3)
+    at div
+    at div
+    at div
+    at CreateListingScreen (http://localhost:3000/src/screens/CreateListingScreen.tsx:46:3)
+    at div
+    at AppContent (http://localhost:3000/src/App.tsx:114:30)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router.js?v=10fd0908:7150:13)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router.js?v=10fd0908:10361:3)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+logCapturedError @ chunk-UVXKGGW7.js?v=10fd0908:14080Understand this error
+chunk-UVXKGGW7.js?v=10fd0908:9176 Uncaught TypeError: Cannot read properties of undefined (reading 'includes')
+    at CategorySelector.tsx:116:59
+    at Array.map (<anonymous>)
+    at CategorySelector (CategorySelector.tsx:115:31)
+    at renderWithHooks (chunk-UVXKGGW7.js?v=10fd0908:11596:26)
+    at mountIndeterminateComponent (chunk-UVXKGGW7.js?v=10fd0908:14974:21)
+    at beginWork (chunk-UVXKGGW7.js?v=10fd0908:15962:22)
+    at beginWork$1 (chunk-UVXKGGW7.js?v=10fd0908:19806:22)
+    at performUnitOfWork (chunk-UVXKGGW7.js?v=10fd0908:19251:20)
+    at workLoopSync (chunk-UVXKGGW7.js?v=10fd0908:19190:13)
+    at renderRootSync (chunk-UVXKGGW7.js?v=10fd0908:19169:15)Understand this error
+App.tsx:1172 🔔 [App] Cleaning up unread count subscription...

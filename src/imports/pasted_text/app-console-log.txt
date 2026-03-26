@@ -1,0 +1,45 @@
+🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎨 [AppContent] Render #24
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 [BottomNav] currentScreen: task-detail → activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [TaskDetail] BUTTON RENDERING LOGIC: {taskId: '1f7df783-d2b6-44f6-8801-11b4efe48395', taskStatus: 'open', currentUserRawId: undefined, currentUserResolvedUUID: null, taskUserId: 'd7f66c14-94af-41f4-8317-b6422c96a5ab', …}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔘 [TaskDetail] Selected button set: login-required
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔴 [BottomNavigation Component] Received currentScreen: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎨 [AppContent] Render #25
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 [BottomNav] currentScreen: task-detail → activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎯 [TaskDetail] BUTTON RENDERING LOGIC: {taskId: '1f7df783-d2b6-44f6-8801-11b4efe48395', taskStatus: 'open', currentUserRawId: undefined, currentUserResolvedUUID: null, taskUserId: 'd7f66c14-94af-41f4-8317-b6422c96a5ab', …}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔘 [TaskDetail] Selected button set: login-required
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔴 [BottomNavigation Component] Received currentScreen: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔗 [useEffect-URL] URL path changed to: /tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90    Setting currentScreen: task-detail → tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎨 [AppContent] Render #26
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 [BottomNav] currentScreen: tasks → activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔴 [BottomNavigation Component] Received currentScreen: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔄 Loading all tasks from database...
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 Applying filters... {totalTasks: 0, selectedCategories: Array(0), selectedSubSkills: Array(0), maxDistance: 10, hasUserCoordinates: true}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90   ✅ Distance filter (10km): 0 → 0 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ Final filtered tasks: 0
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔗 [useEffect-URL] URL path changed to: /tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90    Setting currentScreen: tasks → tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🌐 Web platform - skipping back button handler
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚀🚀🚀 APP STARTED - CONSOLE IS WORKING! 🚀🚀🚀
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🎨 [AppContent] Render #27
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] ABOUT TO CALL usePushNotifications with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🚨🚨🚨 [App] usePushNotifications RETURNED: idle
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔵 [BottomNav] currentScreen: tasks → activeTab: tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ Loaded 8 tasks from database
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 📋 Sample task: {id: '1f7df783-d2b6-44f6-8801-11b4efe48395', title: 'guitar trainer', category_id: 301, detected_category: 'teaching-learning', subcategory: 'guitar'}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 🔍 Applying filters... {totalTasks: 8, selectedCategories: Array(0), selectedSubSkills: Array(0), maxDistance: 10, hasUserCoordinates: true}
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90   ✅ Distance filter (10km): 8 → 8 tasks
+code_components_preview_iframe-f4fd20809e153e7b.min.js.br:90 ✅ Final filtered tasks: 8

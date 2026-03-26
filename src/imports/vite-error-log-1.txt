@@ -1,0 +1,74 @@
+C:\Users\LAPTOPS24\Downloads\LocalFelo> npm run dev
+
+> LocalFelo (ANDROID)@0.1.0 dev
+> vite
+
+
+  VITE v6.3.5  ready in 819 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+6:22:07 pm [vite] Pre-transform error: Failed to resolve import "../components/ErrorBoundary" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/main.tsx:3:30
+  2  |  import ReactDOM from 'react-dom/client';
+  3  |  import App from './App';
+  4  |  import { ErrorBoundary } from '../components/ErrorBoundary';
+     |                                 ^
+  5  |  import '@/styles/globals.css';
+  6  |  // Render the app
+6:22:09 pm [vite] Internal server error: Failed to resolve import "../components/ErrorBoundary" from "src/main.tsx". Does the file exist?   
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/main.tsx:3:30
+  2  |  import ReactDOM from 'react-dom/client';
+  3  |  import App from './App';
+  4  |  import { ErrorBoundary } from '../components/ErrorBoundary';
+     |                                 ^
+  5  |  import '@/styles/globals.css';
+  6  |  // Render the app
+      at TransformPluginContext._formatLog (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42499:41)
+      at TransformPluginContext.error (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42496:16)
+      at normalizeUrl (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40475:23)
+      at async file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40594:37
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40521:7)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42294:18)
+      at async loadAndTransform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35735:27)6:22:09 pm [vite] Pre-transform error: Failed to resolve import "../components/ErrorBoundary" from "src/main.tsx". Does the file exist?     
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/main.tsx:3:30
+  2  |  import ReactDOM from 'react-dom/client';
+  3  |  import App from './App';
+  4  |  import { ErrorBoundary } from '../components/ErrorBoundary';
+     |                                 ^
+  5  |  import '@/styles/globals.css';
+  6  |  // Render the app
+6:22:21 pm [vite] (client) ✨ new dependencies optimized: react, lucide-react, sonner, @supabase/supabase-js, @capacitor/core, motion/react, 
+@capacitor/push-notifications, @capacitor/device, @capacitor/preferences, @capacitor/geolocation
+6:22:21 pm [vite] (client) ✨ optimized dependencies changed. reloading
+6:22:21 pm [vite] Pre-transform error: Failed to resolve import "../components/ErrorBoundary" from "src/main.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/main.tsx:3:30
+  2  |  import ReactDOM from 'react-dom/client';
+  3  |  import App from './App';
+  4  |  import { ErrorBoundary } from '../components/ErrorBoundary';
+     |                                 ^
+  5  |  import '@/styles/globals.css';
+  6  |  // Render the app
+6:22:21 pm [vite] Internal server error: Failed to resolve import "../components/ErrorBoundary" from "src/main.tsx". Does the file exist?   
+  Plugin: vite:import-analysis
+  File: C:/Users/LAPTOPS24/Downloads/LocalFelo/src/main.tsx:3:30
+  2  |  import ReactDOM from 'react-dom/client';
+  3  |  import App from './App';
+  4  |  import { ErrorBoundary } from '../components/ErrorBoundary';
+     |                                 ^
+  5  |  import '@/styles/globals.css';
+  6  |  // Render the app
+      at TransformPluginContext._formatLog (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42499:41)
+      at TransformPluginContext.error (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42496:16)
+      at normalizeUrl (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40475:23)
+      at async file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40594:37
+      at async Promise.all (index 3)
+      at async TransformPluginContext.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:40521:7)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:42294:18)
+      at async loadAndTransform (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:35735:27)      at async viteTransformMiddleware (file:///C:/Users/LAPTOPS24/Downloads/LocalFelo/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:37250:24)

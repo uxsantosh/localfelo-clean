@@ -1,0 +1,770 @@
+sql1:
+Error: Failed to run sql query: ERROR: 42883: operator does not exist: text = integer LINE 167: FROM category_id_migration m ^ HINT: No operator matches the given name and argument types. You might need to add explicit type casts.
+
+sql2:
+[
+  {
+    "column_name": "id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "title",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "description",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "price",
+    "data_type": "integer",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "category_id",
+    "data_type": "integer",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "city_id",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "area_id",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "latitude",
+    "data_type": "numeric",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "longitude",
+    "data_type": "numeric",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "is_negotiable",
+    "data_type": "boolean",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "time_window",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "status",
+    "data_type": "character varying",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "client_token",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "owner_token",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "accepted_by",
+    "data_type": "uuid",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "updated_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "accepted_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "completed_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "user_id",
+    "data_type": "uuid",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "phone",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "whatsapp",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "has_whatsapp",
+    "data_type": "boolean",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "exact_location",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "is_hidden",
+    "data_type": "boolean",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "accepted_price",
+    "data_type": "numeric",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "helper_completed",
+    "data_type": "boolean",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "creator_completed",
+    "data_type": "boolean",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "helper_id",
+    "data_type": "uuid",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "sub_area_id",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "address",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "intent",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "effort_level",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "internal_category",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "suggestion_id",
+    "data_type": "uuid",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "detected_category",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "subcategory",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "images",
+    "data_type": "ARRAY",
+    "is_nullable": "YES"
+  }
+]
+
+
+sql3:
+[
+  {
+    "column_name": "id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "user_id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "name",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "title",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "slug",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "category_id",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "subcategory_id",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "description",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "whatsapp",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "profile_image_url",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "city",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "area",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "subarea",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "latitude",
+    "data_type": "numeric",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "longitude",
+    "data_type": "numeric",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "address",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "is_active",
+    "data_type": "boolean",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "updated_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "role_id",
+    "data_type": "uuid",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "subcategory_ids",
+    "data_type": "ARRAY",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "verification_status",
+    "data_type": "character varying",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "verification_message",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "verification_requested_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "verification_completed_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "is_blocked",
+    "data_type": "boolean",
+    "is_nullable": "YES"
+  }
+]
+
+sql4:
+[
+  {
+    "id": 101,
+    "name": "Mobile Phones",
+    "type": "listing",
+    "sort_order": 1
+  },
+  {
+    "id": 102,
+    "name": "Laptops & Computers",
+    "type": "listing",
+    "sort_order": 2
+  },
+  {
+    "id": 103,
+    "name": "Electronics & Appliances",
+    "type": "listing",
+    "sort_order": 3
+  },
+  {
+    "id": 104,
+    "name": "Furniture",
+    "type": "listing",
+    "sort_order": 4
+  },
+  {
+    "id": 105,
+    "name": "Home Appliances",
+    "type": "listing",
+    "sort_order": 5
+  },
+  {
+    "id": 106,
+    "name": "Tools & Equipment",
+    "type": "listing",
+    "sort_order": 6
+  },
+  {
+    "id": 107,
+    "name": "Bikes & Scooters",
+    "type": "listing",
+    "sort_order": 7
+  },
+  {
+    "id": 108,
+    "name": "Cars",
+    "type": "listing",
+    "sort_order": 8
+  },
+  {
+    "id": 109,
+    "name": "Real Estate - Rent",
+    "type": "listing",
+    "sort_order": 9
+  },
+  {
+    "id": 110,
+    "name": "Real Estate - Sale",
+    "type": "listing",
+    "sort_order": 10
+  },
+  {
+    "id": 111,
+    "name": "Home & Living",
+    "type": "listing",
+    "sort_order": 11
+  },
+  {
+    "id": 112,
+    "name": "Kitchen & Dining",
+    "type": "listing",
+    "sort_order": 12
+  },
+  {
+    "id": 113,
+    "name": "Fashion",
+    "type": "listing",
+    "sort_order": 13
+  },
+  {
+    "id": 114,
+    "name": "Books & Sports",
+    "type": "listing",
+    "sort_order": 14
+  },
+  {
+    "id": 115,
+    "name": "Pets",
+    "type": "listing",
+    "sort_order": 15
+  },
+  {
+    "id": 116,
+    "name": "Services",
+    "type": "listing",
+    "sort_order": 16
+  },
+  {
+    "id": 117,
+    "name": "Other Items",
+    "type": "listing",
+    "sort_order": 17
+  },
+  {
+    "id": 301,
+    "name": "Delivery / Pickup",
+    "type": "task",
+    "sort_order": 1
+  },
+  {
+    "id": 302,
+    "name": "Moving / Lifting",
+    "type": "task",
+    "sort_order": 2
+  },
+  {
+    "id": 303,
+    "name": "Repairs & Maintenance",
+    "type": "task",
+    "sort_order": 3
+  },
+  {
+    "id": 304,
+    "name": "Cleaning",
+    "type": "task",
+    "sort_order": 4
+  },
+  {
+    "id": 305,
+    "name": "Tech Help",
+    "type": "task",
+    "sort_order": 5
+  },
+  {
+    "id": 306,
+    "name": "Cooking",
+    "type": "task",
+    "sort_order": 6
+  },
+  {
+    "id": 307,
+    "name": "Office Errands",
+    "type": "task",
+    "sort_order": 7
+  },
+  {
+    "id": 308,
+    "name": "Personal Help",
+    "type": "task",
+    "sort_order": 8
+  },
+  {
+    "id": 309,
+    "name": "Other Task",
+    "type": "task",
+    "sort_order": 9
+  },
+  {
+    "id": 206,
+    "name": "Find Help",
+    "type": "wish",
+    "sort_order": 1
+  },
+  {
+    "id": 209,
+    "name": "Need Tech Help",
+    "type": "wish",
+    "sort_order": 2
+  },
+  {
+    "id": 205,
+    "name": "Find Service",
+    "type": "wish",
+    "sort_order": 3
+  },
+  {
+    "id": 210,
+    "name": "Find Mentor",
+    "type": "wish",
+    "sort_order": 4
+  },
+  {
+    "id": 201,
+    "name": "Want to Buy Something",
+    "type": "wish",
+    "sort_order": 5
+  },
+  {
+    "id": 202,
+    "name": "Rent House",
+    "type": "wish",
+    "sort_order": 6
+  },
+  {
+    "id": 203,
+    "name": "Rent Item",
+    "type": "wish",
+    "sort_order": 7
+  },
+  {
+    "id": 204,
+    "name": "Find Used Item",
+    "type": "wish",
+    "sort_order": 8
+  },
+  {
+    "id": 207,
+    "name": "Find Deal",
+    "type": "wish",
+    "sort_order": 9
+  },
+  {
+    "id": 208,
+    "name": "Other Wish",
+    "type": "wish",
+    "sort_order": 10
+  }
+]
+
+sql5:
+[
+  {
+    "roles_exists": true
+  }
+]
+
+sql6:
+[
+  {
+    "column_name": "id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "name",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "image_url",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "display_order",
+    "data_type": "integer",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "is_active",
+    "data_type": "boolean",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "updated_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  }
+]
+
+sql7:
+
+[
+  {
+    "column_name": "id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "role_id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "category_id",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "subcategory_id",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  }
+]
+
+sql8:
+
+[
+  {
+    "column_name": "id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "user_id",
+    "data_type": "uuid",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "title",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "body",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "notification_type",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "data",
+    "data_type": "jsonb",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "status",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "created_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "sent_at",
+    "data_type": "timestamp with time zone",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "error_message",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "is_read",
+    "data_type": "boolean",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "message",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "type",
+    "data_type": "text",
+    "is_nullable": "NO"
+  },
+  {
+    "column_name": "action_url",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "related_type",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "related_id",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "metadata",
+    "data_type": "jsonb",
+    "is_nullable": "YES"
+  },
+  {
+    "column_name": "action_label",
+    "data_type": "text",
+    "is_nullable": "YES"
+  }
+]
+
+sql9:
+
+[
+  {
+    "id": "0fdabf9a-6084-434b-b139-8e73a15e54b2",
+    "title": "Looking for Electro 35mm Vintage Film Camera, 35 G",
+    "category_id": 201,
+    "user_id": "9e2d9446-a999-4052-9203-d6affc9c29c5",
+    "status": "open",
+    "created_at": "2026-03-21 07:41:31.021851+00"
+  },
+  {
+    "id": "29e4b977-843a-4891-9729-5196a4ff2956",
+    "title": "Looking for a rented apartment",
+    "category_id": 202,
+    "user_id": "9e2d9446-a999-4052-9203-d6affc9c29c5",
+    "status": "open",
+    "created_at": "2026-03-21 07:39:52.40276+00"
+  },
+  {
+    "id": "c3d4fabf-a83e-4295-877e-6b1b01910c6a",
+    "title": "Looking for a gaming console",
+    "category_id": 201,
+    "user_id": "9e2d9446-a999-4052-9203-d6affc9c29c5",
+    "status": "open",
+    "created_at": "2026-03-21 07:38:11.661318+00"
+  },
+  {
+    "id": "c9f1b248-7026-4d10-a287-7cdc86d2fc42",
+    "title": "sample wish1",
+    "category_id": 209,
+    "user_id": "d7f66c14-94af-41f4-8317-b6422c96a5ab",
+    "status": "cancelled",
+    "created_at": "2026-03-18 09:59:31.664329+00"
+  },
+  {
+    "id": "07331a8e-56bc-45c5-952e-5b40a6c7a5d4",
+    "title": "sample",
+    "category_id": 206,
+    "user_id": "d7f66c14-94af-41f4-8317-b6422c96a5ab",
+    "status": "cancelled",
+    "created_at": "2026-03-17 15:34:28.607064+00"
+  }
+]
+
+sql10:
+Error: Failed to run sql query: ERROR: 42703: column "category" does not exist LINE 4: category, ^ HINT: Perhaps you meant to reference the column "tasks.category_id" or the column "tasks.subcategory".

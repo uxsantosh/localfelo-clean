@@ -1,0 +1,100 @@
+⚡ FINAL FILES TO COPY - ALL FIXES INCLUDED
+═══════════════════════════════════════════════════════════
+
+🔴 ERROR YOU'RE SEEING:
+"Could not find the table 'public.users'"
+
+💡 REASON:
+You haven't deployed the updated files yet!
+
+═══════════════════════════════════════════════════════════
+
+📦 COPY THESE 5 FILES:
+═══════════════════════════════════════════════════════════
+
+1. /services/notifications.ts
+   ✅ Line 43: .from('profiles') ← NOT 'users'
+   ✅ Fixed: All broadcast notification issues
+
+2. /screens/AdminScreen.tsx
+   ✅ Users tab: ACTIVATED
+   ✅ Full user management UI
+
+3. /components/admin/BroadcastTab.tsx
+   ✅ Send to all users
+   ✅ Send to selected users (with search)
+
+4. /components/EditProfileModal.tsx
+   ✅ Line 46: .from('profiles') ← NOT 'users'
+   ✅ Fixed: Profile editing
+
+5. /screens/WishesScreen.tsx
+   ✅ My Wishes button in top row
+   ✅ Better layout
+
+═══════════════════════════════════════════════════════════
+
+🗄️ RUN THIS SQL (Supabase SQL Editor):
+═══════════════════════════════════════════════════════════
+
+File: /FIX_NOTIFICATIONS_RLS.sql
+
+This fixes:
+- 406 notification errors
+- RLS policies
+- Broadcast permissions
+
+═══════════════════════════════════════════════════════════
+
+⚡ DEPLOYMENT STEPS:
+═══════════════════════════════════════════════════════════
+
+1. Copy 5 files above → Replace in your deployment
+2. Run SQL in Supabase → Wait for ✅ Success
+3. Clear cache → Ctrl+Shift+R
+4. Test → Everything should work!
+
+═══════════════════════════════════════════════════════════
+
+✅ VERIFICATION:
+═══════════════════════════════════════════════════════════
+
+After deployment, search in your deployed code:
+
+❌ Should find ZERO: .from('users')
+✅ Should find: .from('profiles')
+
+Files to check:
+- /services/notifications.ts
+- /components/EditProfileModal.tsx
+
+═══════════════════════════════════════════════════════════
+
+🎯 WHAT YOU'LL GET:
+═══════════════════════════════════════════════════════════
+
+✅ Broadcast notifications working
+✅ User selection in broadcast
+✅ Users tab active in admin
+✅ No more 'users table' errors
+✅ No more 406 errors
+✅ Profile wishes tab visible
+
+═══════════════════════════════════════════════════════════
+
+🚨 IMPORTANT:
+═══════════════════════════════════════════════════════════
+
+The error "Could not find table 'public.users'" will 
+DISAPPEAR after you deploy these 5 files!
+
+The code is READY. Just copy and deploy!
+
+═══════════════════════════════════════════════════════════
+
+📖 READ MORE:
+/🔴_CRITICAL_DEPLOYMENT_STEPS.md
+
+═══════════════════════════════════════════════════════════
+
+🚀 DEPLOY NOW!

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Supabase Realtime Test</title>
+</head>
+<body>
+  <h1>Supabase Realtime Test</h1>
+  <div id="status">Connecting...</div>
+  <div id="messages"></div>
+  
+  <script type="module">
+    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm'
+    
+    // Get your Supabase URL and anon key from the console
+    const SUPABASE_URL = prompt('Enter your Supabase URL:')
+    const SUPABASE_ANON_KEY = prompt('Enter your Supabase anon key:')
+    
+    const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+    
+    const status = document.getElementById('status')
+    const messagesDiv = document.getElementById('messages')
+    
+    // Subscribe to ALL message inserts (no filter)
+    const channel = supabase
+      .channel('test-all-messages')
+      .on(
+        'postgres_changes',
+        {
+          event: 'INSERT',
+          schema: 'public',
+          table: 'messages'
+        },
+        (payload) => {
+          console.log('✅ REALTIME WORKING! New message:', payload)
+          const msg = document.createElement('div')
+          msg.textContent = `✅ Message received: ${payload.new.content}`
+          msg.style.padding = '10px'
+          msg.style.background = '#d4edda'
+          msg.style.margin = '5px 0'
+          messagesDiv.appendChild(msg)
+        }
+      )
+      .subscribe((status, err) => {
+        console.log('Status:', status, err)
+        document.getElementById('status').textContent = `Status: ${status}`
+        if (err) {
+          document.getElementById('status').textContent += ` - Error: ${err.message}`
+        }
+      })
+    
+    console.log('Listening for messages...')
+  </script>
+</body>
+</html>

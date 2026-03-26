@@ -1,0 +1,195 @@
+📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [NewHomeScreen] Navigation: profile undefined
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📍 [State→URL] Navigate to "profile" undefined
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [NewHomeScreen] Loading nearby content with user location: {lat: 12.909197461936532, lon: 77.61497296892176, city: 'Bengaluru', area: '162, 29th Main Rd', note: 'Filtering by city if location set, otherwise showing all content'}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Cleaning up unread count subscription...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [Service] getMyListings called with clientToken: EXISTS
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📞 [Service] Fetching profile for clientToken...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 Setting up real-time subscriptions...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🌐 Web platform - skipping back button handler
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ Real-time subscriptions active
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📊 [App] Active tasks count: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📊 [Service] Profile query result: {profilesCount: 1, hasError: false, error: null}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [Service] Got profile ID: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📞 [Service] Fetching listings for user...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📊 [Service] Listings query result: {count: 0, hasError: false, error: null}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ⚠️ [Service] No listings found for this user
+2code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [NewHomeScreen] 📍 Passing user coordinates to wishes: {lat: 12.909197461936532, lon: 77.61497296892176}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [getWishes] Filtering out current user's own wishes
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [getWishes] Fetched 4 wishes from database
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for Electro 35mm Vintage Film Camera, 35 G": 861.3 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for a rented apartment": 861.3 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for a gaming console": 861.0 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for iPhone 14": 19.3 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [NewHomeScreen] Loaded wishes from ALL cities (sorted by distance): 4
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📋 [TaskService] getTasks called with filters: {userLat: 12.909197461936532, userLon: 77.61497296892176}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [TaskService] Filtering out current user's own tasks: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🌍 [TaskService] Showing ALL tasks from EVERYWHERE (sorted by distance)
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [TaskService] Found 3 tasks (page 1, total 3)
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for task "help me with carrying sofa from upstairs in my apartment": 861.0 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for task "looking for a guitar trainer": 861.0 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for task "need help with shifting my home": 861.0 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90  [TaskService] Tasks sorted by distance
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [NewHomeScreen] Loaded tasks from ALL cities (sorted by distance): 3
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [Service] getListings called with filters: {limit: 10, userLat: 12.909197461936532, userLon: 77.61497296892176}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [Service] 🔍 DEBUGGING: Starting getListings function
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [getListings] Current user: ID: undefined
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [getListings] includeOwn flag: false
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [getListings] Pagination: page 1 limit 10
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [getListings] Base query created
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🌍 [getListings] Showing ALL listings from EVERYWHERE (sorted by distance)
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [Service] Guest user - showing ALL listings (no owner filter)
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [getListings] Fetched 5 listings from database
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📞 [ListingService] User phone fetched: Available
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+3code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📞 [ListingService] User phone fetched: Available
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 Fetching all professional profiles for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📞 [ListingService] User phone fetched: Available
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [Listings] Sorted 5 listings by distance
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📍 [Listings] Nearest: Royal Enfield Bike for Sale – Well Maintained at 0.7 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [NewHomeScreen] Loaded deals: 5
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ Found 4 professional profiles
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📊 [App] Active tasks count: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [App.tsx] ProfileScreen onNavigate called: {screen: 'edit-professional', data: {…}}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [App.tsx] Navigating to edit professional: suresh-mn1gk5b1
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📍 [State→URL] Navigate to "edit-professional" {slug: 'suresh-mn1gk5b1'}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [Service] getMyListings called with clientToken: EXISTS
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📞 [Service] Fetching profile for clientToken...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Cleaning up unread count subscription...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [NewHomeScreen] Loading nearby content with user location: {lat: 12.909197461936532, lon: 77.61497296892176, city: 'Bengaluru', area: '162, 29th Main Rd', note: 'Filtering by city if location set, otherwise showing all content'}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🏠 Ensuring home screen has proper history state
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 Setting up real-time subscriptions...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [NewHomeScreen] Current user updated: {userId: 'd7f66c14-94af-41f4-8317-b6422c96a5ab', isLoggedIn: true}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🌐 Web platform - skipping back button handler
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ Real-time subscriptions active
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [NewHomeScreen] User logged in, fetching helper status
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [usePushNotifications] Hook called with userId: d7f66c14...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📊 [Service] Profile query result: {profilesCount: 1, hasError: false, error: null}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [Service] Got profile ID: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📞 [Service] Fetching listings for user...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [NewHomeScreen] Loading nearby content with user location: {lat: 12.909197461936532, lon: 77.61497296892176, city: 'Bengaluru', area: '162, 29th Main Rd', note: 'Filtering by city if location set, otherwise showing all content'}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📊 [Service] Listings query result: {count: 0, hasError: false, error: null}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ⚠️ [Service] No listings found for this user
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [NewHomeScreen] 📍 Passing user coordinates to wishes: {lat: 12.909197461936532, lon: 77.61497296892176}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [getWishes] Filtering out current user's own wishes
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [NewHomeScreen] 📍 Passing user coordinates to wishes: {lat: 12.909197461936532, lon: 77.61497296892176}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [getWishes] Fetched 4 wishes from database
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for Electro 35mm Vintage Film Camera, 35 G": 861.3 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for a rented apartment": 861.3 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for a gaming console": 861.0 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for iPhone 14": 19.3 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [NewHomeScreen] Loaded wishes from ALL cities (sorted by distance): 4
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📋 [TaskService] getTasks called with filters: {userLat: 12.909197461936532, userLon: 77.61497296892176}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [getWishes] Filtering out current user's own wishes
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [TaskService] Filtering out current user's own tasks: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🌍 [TaskService] Showing ALL tasks from EVERYWHERE (sorted by distance)
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [getWishes] Fetched 4 wishes from database
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for Electro 35mm Vintage Film Camera, 35 G": 861.3 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for a rented apartment": 861.3 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for a gaming console": 861.0 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for wish "Looking for iPhone 14": 19.3 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [NewHomeScreen] Loaded wishes from ALL cities (sorted by distance): 4
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📋 [TaskService] getTasks called with filters: {userLat: 12.909197461936532, userLon: 77.61497296892176}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [TaskService] Found 3 tasks (page 1, total 3)
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for task "help me with carrying sofa from upstairs in my apartment": 861.0 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for task "looking for a guitar trainer": 861.0 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for task "need help with shifting my home": 861.0 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90  [TaskService] Tasks sorted by distance
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [NewHomeScreen] Loaded tasks from ALL cities (sorted by distance): 3
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [Service] getListings called with filters: {limit: 10, userLat: 12.909197461936532, userLon: 77.61497296892176}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [Service] 🔍 DEBUGGING: Starting getListings function
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [getListings] Current user: ID: undefined
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [getListings] includeOwn flag: false
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [getListings] Pagination: page 1 limit 10
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [TaskService] Filtering out current user's own tasks: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🌍 [TaskService] Showing ALL tasks from EVERYWHERE (sorted by distance)
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [getListings] Base query created
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🌍 [getListings] Showing ALL listings from EVERYWHERE (sorted by distance)
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [Service] Guest user - showing ALL listings (no owner filter)
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [TaskService] Found 3 tasks (page 1, total 3)
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for task "help me with carrying sofa from upstairs in my apartment": 861.0 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for task "looking for a guitar trainer": 861.0 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ DISTANCE CALCULATED for task "need help with shifting my home": 861.0 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90  [TaskService] Tasks sorted by distance
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [NewHomeScreen] Loaded tasks from ALL cities (sorted by distance): 3
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [Service] getListings called with filters: {limit: 10, userLat: 12.909197461936532, userLon: 77.61497296892176}
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [Service] 🔍 DEBUGGING: Starting getListings function
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [getListings] Current user: ID: undefined
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [getListings] includeOwn flag: false
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [getListings] Pagination: page 1 limit 10
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [getListings] Fetched 5 listings from database
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔍 [getListings] Base query created
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🌍 [getListings] Showing ALL listings from EVERYWHERE (sorted by distance)
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [Service] Guest user - showing ALL listings (no owner filter)
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [getListings] Fetched 5 listings from database
+5code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📞 [ListingService] User phone fetched: Available
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [Listings] Sorted 5 listings by distance
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📍 [Listings] Nearest: Royal Enfield Bike for Sale – Well Maintained at 0.7 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [NewHomeScreen] Loaded deals: 5
+5code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📞 [ListingService] User phone fetched: Available
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [Listings] Sorted 5 listings by distance
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📍 [Listings] Nearest: Royal Enfield Bike for Sale – Well Maintained at 0.7 km
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 [NewHomeScreen] Loaded deals: 5
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📊 [App] Active tasks count: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📊 [App] Active tasks count: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📋 [TaskService] Getting active tasks for user: d7f66c14-94af-41f4-8317-b6422c96a5ab
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 ✅ [TaskService] Found 0 active tasks
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 📊 [App] Active tasks count: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔄 [App] Polling unread count (fallback)...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Fetching unread count...
+code_components_preview_iframe-1f2144f4d81fada2.min.js.br:90 🔔 [App] Unread count fetched: 0

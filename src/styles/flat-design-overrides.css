@@ -1,0 +1,301 @@
+/**
+ * FLAT DESIGN OVERRIDES
+ * ====================
+ * This file enforces the flat design system across ALL components.
+ * No rounded corners on inputs, cards, or backgrounds.
+ * No shadows except minimal ones for depth.
+ * Bright green ONLY for accents, borders, backgrounds - NEVER text.
+ */
+
+/* ======================================
+   OVERRIDE ALL ROUNDED CORNERS
+   ====================================== */
+
+/* Force all inputs to be flat */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+textarea,
+select {
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
+/* iOS overrides to prevent default styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+textarea {
+  -webkit-border-radius: 0px !important;
+  border-radius: 0px !important;
+}
+
+/* Remove iOS inner shadow */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+textarea,
+select {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/* Override focused state */
+input:focus,
+textarea:focus,
+select:focus {
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: #CDFF00 !important;
+}
+
+/* Override any rounded utility classes when applied to inputs */
+input.rounded,
+input.rounded-sm,
+input.rounded-md,
+input.rounded-lg,
+input.rounded-xl,
+textarea.rounded,
+textarea.rounded-sm,
+textarea.rounded-md,
+textarea.rounded-lg,
+textarea.rounded-xl,
+select.rounded,
+select.rounded-sm,
+select.rounded-md,
+select.rounded-lg,
+select.rounded-xl {
+  border-radius: 0px !important;
+}
+
+/* ======================================
+   CARDS & CONTAINERS
+   ====================================== */
+
+/* Override all card-like elements */
+[class*="card"],
+[class*="Card"],
+[data-slot="card"],
+[data-slot="dialog-content"],
+[data-slot="alert-dialog-content"],
+[data-slot="drawer-content"] {
+  border-radius: 0px !important;
+  box-shadow: none !important;
+}
+
+/* Override modals/dialogs */
+[role="dialog"],
+[role="alertdialog"] {
+  border-radius: 0px !important;
+  box-shadow: none !important;
+}
+
+/* ======================================
+   BUTTONS (EXCEPT CIRCULAR ONES)
+   ====================================== */
+
+/* Flat buttons - but keep rounded-full for icon buttons */
+button:not(.rounded-full):not([class*="rounded-full"]) {
+  border-radius: 0px !important;
+}
+
+/* Override button UI components */
+[data-slot="button"]:not(.rounded-full):not([class*="rounded-full"]) {
+  border-radius: 0px !important;
+}
+
+/* ======================================
+   DROPDOWN & MENU COMPONENTS
+   ====================================== */
+
+[data-slot*="menu"],
+[data-slot*="dropdown"],
+[data-slot*="popover"],
+[data-slot*="select"],
+[data-slot*="command"] {
+  border-radius: 0px !important;
+  box-shadow: none !important;
+}
+
+/* Menu items */
+[data-slot*="menu-item"],
+[data-slot*="dropdown-item"],
+[data-slot*="select-item"],
+[data-slot*="command-item"] {
+  border-radius: 0px !important;
+}
+
+/* ======================================
+   BADGES & PILLS (KEEP ROUNDED)
+   ====================================== */
+
+/* Category pills should keep rounded-full - that's intentional */
+.category-pill {
+  border-radius: 9999px !important;
+}
+
+/* Badges can have minimal rounding */
+.badge,
+[data-slot="badge"] {
+  border-radius: 4px !important;
+}
+
+/* ======================================
+   REMOVE SHADOWS GLOBALLY
+   ====================================== */
+
+/* Remove all shadows except on specific interactive elements */
+* {
+  box-shadow: none !important;
+}
+
+/* Allow minimal shadows only on hover for interactive elements */
+button:hover:not(:disabled),
+a:hover,
+[role="button"]:hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Primary button gets a subtle shadow */
+.btn-primary {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* ======================================
+   AVATARS (KEEP CIRCULAR)
+   ====================================== */
+
+[data-slot="avatar"],
+[class*="avatar"] {
+  border-radius: 9999px !important;
+}
+
+/* ======================================
+   CHECKBOXES & RADIO BUTTONS
+   ====================================== */
+
+[data-slot="checkbox"] {
+  border-radius: 2px !important;
+}
+
+[type="radio"],
+[data-slot="radio"] {
+  border-radius: 9999px !important;
+}
+
+/* ======================================
+   IMAGE UPLOADER & MEDIA
+   ====================================== */
+
+/* Image containers should be flat */
+.aspect-square:not([class*="avatar"]) {
+  border-radius: 0px !important;
+}
+
+/* ======================================
+   IOS SPECIFIC OVERRIDES
+   ====================================== */
+
+/* Override iOS default input styling */
+@supports (-webkit-touch-callout: none) {
+  input,
+  textarea,
+  select {
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    border-radius: 0px !important;
+  }
+  
+  /* Remove iOS inner shadow on inputs */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="search"],
+  textarea {
+    background-clip: padding-box !important;
+  }
+}
+
+/* ======================================
+   PREVENT ACCIDENTAL GREEN TEXT
+   ====================================== */
+
+/* Never use bright green for text - accessibility rule */
+.text-\\[\\#CDFF00\\],
+.text-\\[\\#cdff00\\],
+[style*="color: #CDFF00"],
+[style*="color: #cdff00"],
+[style*="color:  #CDFF00"],
+[style*="color: rgb(205, 255, 0)"] {
+  color: #000000 !important;
+}
+
+/* Exception: Green text is OK on black backgrounds */
+.bg-black .text-\\[\\#CDFF00\\],
+.bg-black [style*="color: #CDFF00"],
+[class*="bg-black"] .text-\\[\\#CDFF00\\] {
+  color: #CDFF00 !important;
+}
+
+/* ======================================
+   ACCESSIBILITY - FOCUS STATES
+   ====================================== */
+
+/* Flat focus rings - no shadow, just bright green border */
+*:focus-visible {
+  outline: 2px solid #CDFF00 !important;
+  outline-offset: 2px !important;
+  box-shadow: none !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+  border-color: #CDFF00 !important;
+  box-shadow: none !important;
+}
+
+/* ======================================
+   WHITE BACKGROUND ENFORCEMENT
+   ====================================== */
+
+/* Main app background should be white */
+body,
+html,
+#root {
+  background-color: #FFFFFF !important;
+}
+
+/* Cards should be white */
+[data-slot="card"],
+.card,
+[class*="Card"] {
+  background-color: #FFFFFF !important;
+}

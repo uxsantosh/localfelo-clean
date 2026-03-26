@@ -1,0 +1,284 @@
+[
+  {
+    "id": "food-delivery",
+    "name": "Bring Food",
+    "emoji": "🍱",
+    "priority": 1
+  },
+  {
+    "id": "cleaning",
+    "name": "Cleaning",
+    "emoji": "🧹",
+    "priority": 1
+  },
+  {
+    "id": "cooking",
+    "name": "Cooking",
+    "emoji": "🍳",
+    "priority": 1
+  },
+  {
+    "id": "delivery",
+    "name": "Delivery",
+    "emoji": "🚚",
+    "priority": 1
+  },
+  {
+    "id": "drop-pickup",
+    "name": "Drop Me / Pick Me",
+    "emoji": "🚗",
+    "priority": 1
+  },
+  {
+    "id": "errands",
+    "name": "Errands",
+    "emoji": "🏃",
+    "priority": 1
+  },
+  {
+    "id": "fitness-partner",
+    "name": "Fitness Partner",
+    "emoji": "🏋️",
+    "priority": 1
+  },
+  {
+    "id": "grocery-shopping",
+    "name": "Grocery Shopping",
+    "emoji": "🛒",
+    "priority": 1
+  },
+  {
+    "id": "laundry",
+    "name": "Laundry",
+    "emoji": "🧺",
+    "priority": 1
+  },
+  {
+    "id": "luggage-help",
+    "name": "Luggage Help",
+    "emoji": "🧳",
+    "priority": 1
+  },
+  {
+    "id": "mentorship",
+    "name": "Mentorship",
+    "emoji": "🎯",
+    "priority": 1
+  },
+  {
+    "id": "moving-packing",
+    "name": "Moving & Packing",
+    "emoji": "📦",
+    "priority": 1
+  },
+  {
+    "id": "partner-needed",
+    "name": "Partner Needed",
+    "emoji": "🤝",
+    "priority": 1
+  },
+  {
+    "id": "pet-care",
+    "name": "Pet Care",
+    "emoji": "🐕",
+    "priority": 1
+  },
+  {
+    "id": "tech-help",
+    "name": "Tech Help",
+    "emoji": "💻",
+    "priority": 1
+  },
+  {
+    "id": "ac-repair",
+    "name": "AC & Appliance Repair",
+    "emoji": "❄️",
+    "priority": 0
+  },
+  {
+    "id": "accounting",
+    "name": "Accounting & Tax",
+    "emoji": "📊",
+    "priority": 0
+  },
+  {
+    "id": "astrology",
+    "name": "Astrology & Vastu",
+    "emoji": "🔮",
+    "priority": 0
+  },
+  {
+    "id": "babysitting",
+    "name": "Babysitting",
+    "emoji": "👶",
+    "priority": 0
+  },
+  {
+    "id": "beauty-makeup",
+    "name": "Beauty & Makeup",
+    "emoji": "💄",
+    "priority": 0
+  },
+  {
+    "id": "career-counseling",
+    "name": "Career Counseling",
+    "emoji": "💼",
+    "priority": 0
+  },
+  {
+    "id": "carpentry",
+    "name": "Carpentry",
+    "emoji": "🪚",
+    "priority": 0
+  },
+  {
+    "id": "digital-marketing",
+    "name": "Digital Marketing",
+    "emoji": "📱",
+    "priority": 0
+  },
+  {
+    "id": "elderly-care",
+    "name": "Elderly Care",
+    "emoji": "👴",
+    "priority": 0
+  },
+  {
+    "id": "electrical",
+    "name": "Electrical",
+    "emoji": "⚡",
+    "priority": 0
+  },
+  {
+    "id": "event-planning",
+    "name": "Event Planning",
+    "emoji": "🎉",
+    "priority": 0
+  },
+  {
+    "id": "gardening",
+    "name": "Gardening",
+    "emoji": "🪴",
+    "priority": 0
+  },
+  {
+    "id": "graphic-design",
+    "name": "Graphic Design",
+    "emoji": "🖌️",
+    "priority": 0
+  },
+  {
+    "id": "installation",
+    "name": "Installation",
+    "emoji": "🔨",
+    "priority": 0
+  },
+  {
+    "id": "interior-design",
+    "name": "Interior Design",
+    "emoji": "🏠",
+    "priority": 0
+  },
+  {
+    "id": "language-learning",
+    "name": "Language Learning",
+    "emoji": "🗣️",
+    "priority": 0
+  },
+  {
+    "id": "legal-advice",
+    "name": "Legal Advice",
+    "emoji": "⚖️",
+    "priority": 0
+  },
+  {
+    "id": "locksmith",
+    "name": "Locksmith",
+    "emoji": "🔑",
+    "priority": 0
+  },
+  {
+    "id": "music-dance",
+    "name": "Music & Dance",
+    "emoji": "🎵",
+    "priority": 0
+  },
+  {
+    "id": "nursing-care",
+    "name": "Nursing & Healthcare",
+    "emoji": "⚕️",
+    "priority": 0
+  },
+  {
+    "id": "other",
+    "name": "Other",
+    "emoji": "✨",
+    "priority": 0
+  },
+  {
+    "id": "painting",
+    "name": "Painting",
+    "emoji": "🎨",
+    "priority": 0
+  },
+  {
+    "id": "pest-control",
+    "name": "Pest Control",
+    "emoji": "🦟",
+    "priority": 0
+  },
+  {
+    "id": "photography",
+    "name": "Photography",
+    "emoji": "📷",
+    "priority": 0
+  },
+  {
+    "id": "plumbing",
+    "name": "Plumbing",
+    "emoji": "🚰",
+    "priority": 0
+  },
+  {
+    "id": "religious-services",
+    "name": "Religious Services",
+    "emoji": "🙏",
+    "priority": 0
+  },
+  {
+    "id": "salon-home",
+    "name": "Salon at Home",
+    "emoji": "💇",
+    "priority": 0
+  },
+  {
+    "id": "skill-training",
+    "name": "Skill Training",
+    "emoji": "🎓",
+    "priority": 0
+  },
+  {
+    "id": "spa-massage",
+    "name": "Spa & Massage",
+    "emoji": "💆",
+    "priority": 0
+  },
+  {
+    "id": "tutoring",
+    "name": "Tutoring",
+    "emoji": "📚",
+    "priority": 0
+  },
+  {
+    "id": "videography",
+    "name": "Videography",
+    "emoji": "🎥",
+    "priority": 0
+  },
+  {
+    "id": "web-development",
+    "name": "Web Development",
+    "emoji": "🌐",
+    "priority": 0
+  }
+]

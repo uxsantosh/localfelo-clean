@@ -1,0 +1,89 @@
+📍 [State→URL] Navigate to "wishes" undefined
+usePushNotifications.ts:86 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+main.js:422 As of February 21st, 2024, google.maps.Marker is deprecated. Please use google.maps.marker.AdvancedMarkerElement instead. At this time, google.maps.Marker is not scheduled to be discontinued, but google.maps.marker.AdvancedMarkerElement is recommended over google.maps.Marker. While google.maps.Marker will continue to receive bug fixes for any major regressions, existing bugs in google.maps.Marker will not be addressed. At least 12 months notice will be given before support is discontinued. Please see https://developers.google.com/maps/deprecations for additional details and https://developers.google.com/maps/documentation/javascript/advanced-markers/migration for the migration guide.
+Bp @ main.js:422
+_.lt @ main.js:422
+updateGoogleMarkers @ MapView.tsx:288
+updateMarkers @ MapView.tsx:271
+(anonymous) @ MapView.tsx:60
+commitHookEffectListMount @ react-dom.development.js:23189
+commitPassiveMountOnFiber @ react-dom.development.js:24965
+commitPassiveMountEffects_complete @ react-dom.development.js:24930
+commitPassiveMountEffects_begin @ react-dom.development.js:24917
+commitPassiveMountEffects @ react-dom.development.js:24905
+flushPassiveEffectsImpl @ react-dom.development.js:27078
+flushPassiveEffects @ react-dom.development.js:27023
+(anonymous) @ react-dom.development.js:26808
+workLoop @ scheduler.development.js:266
+flushWork @ scheduler.development.js:239
+performWorkUntilDeadline @ scheduler.development.js:533
+CleanTasksScreen.tsx:219 🔍 Applying filters... {totalTasks: 8, selectedCategories: Array(0), selectedSubSkills: Array(0), maxDistance: 10, hasUserCoordinates: true}
+CleanTasksScreen.tsx:299   ✅ Distance filter (10km): 8 → 8 tasks
+CleanTasksScreen.tsx:302 ✅ Final filtered tasks: 8
+usePushNotifications.ts:86 [usePushNotifications] Hook called with userId: NULL/UNDEFINED
+react-dom.development.js:22878 Uncaught TypeError: mapInstanceRef.current.remove is not a function
+    at cleanupMap (MapView.tsx:432:32)
+    at MapView.tsx:54:7
+    at safelyCallDestroy (react-dom.development.js:22971:5)
+    at commitHookEffectListUnmount (react-dom.development.js:23139:11)
+    at commitPassiveUnmountInsideDeletedTreeOnFiber (react-dom.development.js:25137:11)
+    at commitPassiveUnmountEffectsInsideOfDeletedTree_begin (react-dom.development.js:25087:5)
+    at commitPassiveUnmountEffects_begin (react-dom.development.js:24995:11)
+    at commitPassiveUnmountEffects (react-dom.development.js:24980:3)
+    at flushPassiveEffectsImpl (react-dom.development.js:27077:3)
+    at flushPassiveEffects (react-dom.development.js:27023:14)
+cleanupMap @ MapView.tsx:432
+(anonymous) @ MapView.tsx:54
+safelyCallDestroy @ react-dom.development.js:22971
+commitHookEffectListUnmount @ react-dom.development.js:23139
+commitPassiveUnmountInsideDeletedTreeOnFiber @ react-dom.development.js:25137
+commitPassiveUnmountEffectsInsideOfDeletedTree_begin @ react-dom.development.js:25087
+commitPassiveUnmountEffects_begin @ react-dom.development.js:24995
+commitPassiveUnmountEffects @ react-dom.development.js:24980
+flushPassiveEffectsImpl @ react-dom.development.js:27077
+flushPassiveEffects @ react-dom.development.js:27023
+(anonymous) @ react-dom.development.js:26808
+workLoop @ scheduler.development.js:266
+flushWork @ scheduler.development.js:239
+performWorkUntilDeadline @ scheduler.development.js:533
+WishesScreen.tsx:163 🔍 [WishesScreen] Loading wishes from ALL cities with filters: {page: 1, limit: 20, note: 'Showing all wishes everywhere, sorted by distance (nearest first)'}
+WishesScreen.tsx:172 ✅ [WishesScreen] User coordinates AVAILABLE: {latitude: 12.9716, longitude: 77.5946}
+react-dom.development.js:18704 The above error occurred in the <MapView> component:
+
+    at MapView (http://localhost:3000/src/components/MapView.tsx:24:3)
+    at div
+    at div
+    at div
+    at CleanTasksScreen (http://localhost:3000/src/screens/CleanTasksScreen.tsx:29:3)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+logCapturedError @ react-dom.development.js:18704
+update.callback @ react-dom.development.js:18737
+callCallback @ react-dom.development.js:15036
+commitUpdateQueue @ react-dom.development.js:15057
+commitLayoutEffectOnFiber @ react-dom.development.js:23430
+commitLayoutMountEffects_complete @ react-dom.development.js:24727
+commitLayoutEffects_begin @ react-dom.development.js:24713
+commitLayoutEffects @ react-dom.development.js:24651
+commitRootImpl @ react-dom.development.js:26862
+commitRoot @ react-dom.development.js:26721
+performSyncWorkOnRoot @ react-dom.development.js:26156
+flushSyncCallbacks @ react-dom.development.js:12042
+flushPassiveEffectsImpl @ react-dom.development.js:27099
+flushPassiveEffects @ react-dom.development.js:27023
+(anonymous) @ react-dom.development.js:26808
+workLoop @ scheduler.development.js:266
+flushWork @ scheduler.development.js:239
+performWorkUntilDeadline @ scheduler.development.js:533
+react-dom.development.js:12056 Uncaught TypeError: mapInstanceRef.current.remove is not a function
+    at cleanupMap (MapView.tsx:432:32)
+    at MapView.tsx:54:7
+    at safelyCallDestroy (react-dom.development.js:22971:5)
+    at commitHookEffectListUnmount (react-dom.development.js:23139:11)
+    at commitPassiveUnmountInsideDeletedTreeOnFiber (react-dom.development.js:25137:11)
+    at commitPassiveUnmountEffectsInsideOfDeletedTree_begin (react-dom.development.js:25087:5)
+    at commitPassiveUnmountEffects_begin (react-dom.development.js:24995:11)
+    at commitPassiveUnmountEffects (react-dom.development.js:24980:3)
+    at flushPassiveEffectsImpl (react-dom.development.js:27077:3)
+    at flushPassiveEffects (react-dom.development.js:27023:14)

@@ -1,0 +1,56 @@
+========================================
+LocalFelo CSS Import Fix - PowerShell Commands
+========================================
+
+PROBLEM FOUND:
+--------------
+✅ /styles/globals.css EXISTS (MAIN FILE - has Tailwind)
+❌ /src/styles/globals.css EXISTS (DUPLICATE - wrong content)
+❌ /src/index.css EXISTS (unnecessary bridge we created)
+
+The app should use /styles/globals.css (the MAIN one)!
+
+
+COPY-PASTE THESE COMMANDS IN POWERSHELL:
+-----------------------------------------
+
+# 1. Delete duplicate CSS files
+Remove-Item "src/styles/globals.css" -Force -ErrorAction SilentlyContinue
+Remove-Item "src/index.css" -Force -ErrorAction SilentlyContinue
+
+# 2. Check if src/styles is empty, then delete it
+if ((Get-ChildItem "src/styles" -Force -ErrorAction SilentlyContinue).Count -eq 0) {
+    Remove-Item "src/styles" -Force -Recurse -ErrorAction SilentlyContinue
+}
+
+# 3. Clear Vite cache
+Remove-Item ".vite" -Recurse -Force -ErrorAction SilentlyContinue
+
+Write-Host "✅ Duplicates deleted! Now update /src/main.tsx manually"
+
+
+THEN MANUALLY EDIT /src/main.tsx:
+----------------------------------
+Change line 4 FROM:
+    import './index.css';
+
+Change TO:
+    import '../styles/globals.css';
+
+
+THEN RUN:
+---------
+npm run dev
+
+
+========================================
+
+WHY THIS FIX:
+-------------
+• The REAL globals.css is at /styles/globals.css
+• It contains @tailwind directives and all proper styles
+• /src/styles/globals.css was a duplicate with different content
+• /src/index.css was an unnecessary bridge we created
+• /src/main.tsx should directly import from /styles/globals.css
+
+========================================

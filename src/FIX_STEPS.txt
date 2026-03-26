@@ -1,0 +1,34 @@
+🚨 FIX THE "Area coordinates columns not yet added" WARNING
+
+SIMPLE 3-STEP FIX:
+==================
+
+STEP 1: Go to Supabase
+   → Open your Supabase dashboard
+   → Click "SQL Editor" in left sidebar
+   → Click "New Query"
+
+STEP 2: Copy & Paste This File
+   → Open: /COMPREHENSIVE_LOCATION_SETUP.sql
+   → Copy ENTIRE contents (Ctrl+A, Ctrl+C)
+   → Paste into Supabase SQL Editor (Ctrl+V)
+   → Click "RUN" button
+
+STEP 3: Refresh OldCycle App
+   → Go back to your app
+   → Hard refresh (Ctrl+Shift+R)
+   → Warning should be GONE ✅
+
+WHAT THIS DOES:
+- Adds latitude/longitude columns to areas table
+- Adds 500+ areas with accurate coordinates
+- Fixes distance calculations
+
+TIME REQUIRED: 2 minutes
+
+VERIFICATION:
+After running SQL, check console logs for:
+✅ "Using area representative coordinates: 13.0418, 80.2341"
+❌ No more "Area coordinates columns not yet added" warnings
+
+THAT'S IT! 🎉
