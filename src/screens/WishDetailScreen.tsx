@@ -339,7 +339,7 @@ export function WishDetailScreen({
         />
       </div>
 
-      <div className="page-container py-3 space-y-3">
+      <div className="page-container px-3 sm:px-4 md:px-6 lg:px-8 py-6">
         {/* Category Badge */}
         <div className="flex items-center justify-between gap-2">
           <span className="text-2xl">{category?.emoji || '💭'}</span>

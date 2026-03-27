@@ -666,7 +666,7 @@ export function TaskDetailScreen({ taskId, onNavigate, onBack, isLoggedIn, onLog
       />
 
       {/* Main Content - Add extra padding at bottom for fixed buttons */}
-      <div className="page-container pb-32 sm:pb-24">
+      <div className="page-container px-3 sm:px-4 md:px-6 lg:px-8 pb-32 sm:pb-24">
         <div className="space-y-4 py-4">
           {/* Image Carousel - NEW */}
           <ImageCarousel
