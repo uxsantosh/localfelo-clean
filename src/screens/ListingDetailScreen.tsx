@@ -152,7 +152,7 @@ export function ListingDetailScreen({
         <Header title="Listing Details" showBack onBack={onBack} />
       </div>
 
-      <div className="page-container pb-4 lg:pb-8">
+      <div className="page-container px-3 sm:px-4 md:px-6 lg:px-8 pb-4 lg:pb-8">
         {/* Share Button - Floating */}
         <div className="relative">
           <ShareButton
