@@ -1,0 +1,8 @@
+{
+  "name": "LocalFelo",
+  "description": "Hyperlocal task marketplace landing page. Connects nearby people to get help or earn money in their community.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

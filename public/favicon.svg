@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1A1A" />
+      <stop offset="100%" stop-color="#050505" />
+    </linearGradient>
+    <linearGradient id="brand-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5241" />
+      <stop offset="100%" stop-color="#E01B0B" />
+    </linearGradient>
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Premium Squircle canvas with smooth corners and a subtle border stroke -->
+  <rect width="512" height="512" rx="120" fill="url(#bg-grad)" />
+  <rect width="504" height="504" x="4" y="4" rx="116" fill="none" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="2" />
+  
+  <!-- Sleek brand-colored circle inside -->
+  <circle cx="256" cy="256" r="176" fill="url(#brand-grad)" />
+  
+  <!-- Glow/Gloss sheen overlay on top half -->
+  <path d="M80 256C80 158.8 158.8 80 256 80s176 78.8 176 176H80z" fill="url(#glow-grad)" />
+
+  <!-- The stylized "F" symbol mathematically scaled and centered exactly inside the canvas -->
+  <g transform="translate(65, 75) scale(1.15)">
+    <path d="M179.027 163.199L252.251 233.81L226.568 260.443L153.651 190.129L87.9277 259.877L61 234.503L144.195 146.214H74.4639V109.214H229.899L179.027 163.199ZM271.86 148.477L246.385 175.311L209.632 140.417L235.106 113.583L271.86 148.477ZM246.964 54C260.495 54 271.464 64.969 271.464 78.5C271.464 92.031 260.495 103 246.964 103C233.433 103 222.464 92.031 222.464 78.5C222.464 64.969 233.433 54 246.964 54Z" fill="#FFFFFF"/>
+  </g>
+</svg>

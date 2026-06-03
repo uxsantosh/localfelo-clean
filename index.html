@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalFelo - Get Help Nearby or Earn by Helping Others</title>
+    <meta name="description" content="LocalFelo connects people who need help with people ready to help nearby. Post tasks, find local assistance, and earn money in your community." />
+    <meta name="keywords" content="hyperlocal task marketplace, local helpers, find local assistance, earn money locally, nearby daily chores, task marketplace, trusted helpers, grocery delivery, home repair, local community help, LocalFelo" />
+    <meta name="author" content="LocalFelo" />
+    <meta name="theme-color" content="#F03220" />
+
+    <!-- Open Graph (OG) Meta Tags for Facebook, LinkedIn, Discord & WhatsApp -->
+    <meta property="og:title" content="LocalFelo - Get Help Nearby or Earn by Helping Others" />
+    <meta property="og:description" content="Connect with trusted neighbors to get everyday tasks done or offer your skills to earn money locally in your community." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://localfelo.com" />
+    <meta property="og:image" content="/favicon.svg" />
+    <meta property="og:site_name" content="LocalFelo" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="LocalFelo - Get Help Nearby or Earn by Helping Others" />
+    <meta name="twitter:description" content="Connect with trusted neighbors to get everyday tasks done or offer your skills to earn money locally." />
+    <meta name="twitter:image" content="/favicon.svg" />
+
+    <!-- Favicon Configuration -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      (function() {
+        try {
+          var currentFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return currentFetch;
+            },
+            set: function(value) {
+              currentFetch = value;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          try {
+            var currentFetch = window.fetch;
+            Object.defineProperty(Window.prototype, 'fetch', {
+              get: function() {
+                return currentFetch;
+              },
+              set: function(value) {
+                currentFetch = value;
+              },
+              configurable: true,
+              enumerable: true
+            });
+          } catch (err) {
+            console.warn('Sandbox fetch setter adaptation skipped:', err);
+          }
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

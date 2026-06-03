@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-felo-orange: #8D2B00;
+  --color-felo-red: #F03220;
+}
+
+/* Custom background animation keys */
+@keyframes flow-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-bg {
+  background: radial-gradient(circle at 10% 20%, rgba(141, 43, 0, 0.15) 0%, rgba(240, 50, 32, 0.12) 40%, rgba(0, 0, 0, 1) 90%);
+  background-size: 200% 200%;
+  animation: flow-gradient 15s ease infinite;
+}
+
+/* Hide scrollbars globally across the entire website while keeping scroll function intact */
+html, body {
+  -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none !important;  /* Chrome, Safari and Opera */
+}
+
