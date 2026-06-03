@@ -5,6 +5,7 @@ import BackgroundGlow from "./components/BackgroundGlow";
 import Navigation from "./components/Navigation";
 import PhoneMockup from "./components/PhoneMockup";
 import DownloadButtons from "./components/DownloadButtons";
+import ScanQR from "./components/ScanQR";
 import FloatingBanners from "./components/FloatingBanners";
 import HowToGetHelp from "./components/HowToGetHelp";
 import HowToEarnMoney from "./components/HowToEarnMoney";
@@ -106,17 +107,17 @@ export default function App() {
             <FloatingBanners />
 
             {/* Main Hero Container */}
-            <main className="relative max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-10 md:pt-12 md:pb-12 flex flex-col items-center text-center z-10" id="hero-main-content">
+            <main className="relative max-w-6xl mx-auto px-4 sm:px-6 pt-2 pb-6 md:pt-4 md:pb-8 flex flex-col items-center text-center z-10" id="hero-main-content">
             
             {/* Headline Header */}
             <motion.h1
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1, duration: 0.7 }}
-              className="text-4xl sm:text-5xl md:text-6xl font-extrabold font-display tracking-tight text-white max-w-4xl leading-[1.1] mb-6"
+              className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-display tracking-tight text-white max-w-3xl leading-[1.1] mb-3"
               id="hero-headline"
             >
-              Get help nearby. Or help someone <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-200 to-neutral-500 font-extrabold">and earn.</span>
+              Get help nearby.<br />Or help someone <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-200 to-neutral-500 font-extrabold">and earn.</span>
             </motion.h1>
 
             {/* Subheadline Details */}
@@ -124,7 +125,7 @@ export default function App() {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.7 }}
-              className="text-sm sm:text-base text-neutral-500 font-medium max-w-xl leading-relaxed mb-8"
+              className="text-xs sm:text-sm md:text-base text-neutral-400 font-medium max-w-xl leading-relaxed mb-4"
               id="hero-subheadline"
             >
               LocalFelo connects people who need help with people ready to help - all within your local community.
@@ -135,23 +136,26 @@ export default function App() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
-              className="w-full max-w-md mx-auto my-8 md:my-10 relative z-20"
+              className="w-full max-w-[280px] sm:max-w-[310px] mx-auto my-2 md:my-4 relative z-20"
               id="hero-mockup-section"
             >
               {/* Main phone showcase */}
               <PhoneMockup />
             </motion.div>
 
-            {/* Primary Download Badges */}
+            {/* Primary Download Badges - Placed below the mockup */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.7 }}
-              className="w-full relative z-20 mb-16"
+              className="w-full relative z-20 mt-4 mb-2"
               id="hero-download-buttons-wrapper"
             >
               <DownloadButtons />
             </motion.div>
+
+            {/* Scan QR Section */}
+            <ScanQR />
 
             {/* Subtle Scroll Indicator at the bottom of hero section */}
             <motion.div
@@ -159,7 +163,7 @@ export default function App() {
               animate={{ opacity: [0.3, 0.8, 0.3] }}
               transition={{ delay: 0.8, duration: 3, repeat: Infinity, ease: "easeInOut" }}
               onClick={handleScrollClick}
-              className="cursor-pointer group flex flex-col items-center gap-2 pt-6 transition-all duration-300 hover:text-white"
+              className="cursor-pointer group flex flex-col items-center gap-1.5 pt-4 transition-all duration-300 hover:text-white"
               id="scroll-hint-container"
             >
               <span className="text-xs font-bold text-neutral-600 group-hover:text-white tracking-widest uppercase">

@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 export default function DownloadButtons() {
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 py-4 w-full max-w-lg mx-auto" id="download-actions-row">
+    <div className="flex flex-col sm:flex-row items-center justify-center gap-3 py-1 w-full max-w-lg mx-auto" id="download-actions-row">
       {/* App Store Download Button */}
       <motion.a
         href="#download"

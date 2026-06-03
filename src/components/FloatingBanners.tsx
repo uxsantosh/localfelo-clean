@@ -119,7 +119,6 @@ export default function FloatingBanners() {
         <div className="relative">
           <div className="absolute inset-0 bg-[#F03220]/10 blur-md rounded-full" />
           <div className="relative w-11 h-11 rounded-full bg-gradient-to-b from-neutral-900 to-neutral-950 border border-white/20 flex items-center justify-center p-2.5 shadow-xl">
-            <div className="absolute top-0 left-0 right-0 h-[1px] bg-white/10 rounded-full" />
             <FeloSymbol color="white" className="w-6.5 h-6.5" />
           </div>
         </div>
@@ -171,7 +170,6 @@ export default function FloatingBanners() {
         <div className="relative">
           <div className="absolute inset-0 bg-[#F03220]/20 blur-md rounded-full" />
           <div className="relative w-11 h-11 rounded-full bg-gradient-to-b from-[#FF4C3B] to-[#F03220] border border-white/25 flex items-center justify-center p-2.5 shadow-xl">
-            <div className="absolute top-0 left-0 right-0 h-[1px] bg-white/20 rounded-full" />
             <FeloSymbol color="white" className="w-6.5 h-6.5" />
           </div>
         </div>

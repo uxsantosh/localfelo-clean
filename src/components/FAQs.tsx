@@ -103,9 +103,16 @@ export default function FAQs() {
   return (
     <section 
       id="faqs" 
-      className="w-full py-12 md:py-24 bg-black border-t border-neutral-900 relative z-20 font-sans"
+      className="w-full py-12 md:py-24 bg-black border-t border-neutral-900 relative z-20 font-sans overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-10 md:space-y-16">
+      {/* High-fidelity premium background glows for depth */}
+      <div className="absolute top-1/4 left-1/3 -translate-y-1/2 w-[300px] sm:w-[550px] h-[300px] sm:h-[550px] rounded-full bg-[#F03220]/[0.06] blur-[90px] sm:blur-[130px] pointer-events-none z-0" />
+      <div className="absolute bottom-1/4 right-1/3 translate-y-1/2 w-[250px] sm:w-[450px] h-[250px] sm:h-[450px] rounded-full bg-amber-500/[0.03] blur-[80px] sm:blur-[120px] pointer-events-none z-0" />
+      
+      {/* Ultra-subtle secondary central gradient focus */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(240,50,32,0.025)_0%,rgba(0,0,0,0)_65%)] pointer-events-none z-0" />
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-10 md:space-y-16 relative z-10">
         
         {/* Section Title */}
         <div className="text-center space-y-3">
