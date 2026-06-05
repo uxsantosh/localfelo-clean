@@ -66,7 +66,7 @@ export default function HowToEarnMoney() {
   return (
     <section 
       id="how-to-earn-money" 
-      className="w-full py-12 md:py-24 bg-black border-t border-neutral-900 relative overflow-hidden z-20"
+      className="w-full py-12 md:py-24 bg-transparent border-t border-neutral-900 relative overflow-hidden z-20"
     >
       {/* Premium ambient brand glows */}
       <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(240,50,32,0.06)_0%,transparent_75%)] blur-[100px] pointer-events-none z-0" />
@@ -91,7 +91,7 @@ export default function HowToEarnMoney() {
         <div className="md:hidden flex justify-between items-center gap-4 mb-6">
           <button 
             onClick={() => scrollContainer("left")} 
-            className="p-2.5 rounded-full border border-neutral-800 bg-neutral-950/80 text-white active:bg-neutral-900 focus:outline-none"
+            className="p-2.5 rounded-full border border-neutral-800 bg-[#1A1A1A]/80 text-white active:bg-neutral-900 focus:outline-none"
             aria-label="Scroll left"
           >
             <ChevronLeft className="w-4 h-4 text-[#F03220]" />
@@ -99,7 +99,7 @@ export default function HowToEarnMoney() {
           <span className="text-[9px] font-mono font-extrabold tracking-widest text-[#F03220] uppercase">SWIPE TO NAVIGATE</span>
           <button 
             onClick={() => scrollContainer("right")} 
-            className="p-2.5 rounded-full border border-neutral-800 bg-neutral-950/80 text-white active:bg-neutral-900 focus:outline-none"
+            className="p-2.5 rounded-full border border-neutral-800 bg-[#1A1A1A]/80 text-white active:bg-neutral-900 focus:outline-none"
             aria-label="Scroll right"
           >
             <ChevronRight className="w-4 h-4 text-[#F03220]" />
@@ -125,9 +125,9 @@ export default function HowToEarnMoney() {
                 id={`how-earn-step-${idx}`}
               >
                 {/* Visual interface simulation container - CRED premium styling */}
-                <div className={`relative h-44 rounded-2xl bg-[#090909] border transition-all duration-500 overflow-hidden flex flex-col items-center justify-center ${
+                <div className={`relative h-44 rounded-2xl bg-[#161616] border transition-all duration-500 overflow-hidden flex flex-col items-center justify-center ${
                   isCurrent 
-                    ? "border-[#F03220]/40 bg-gradient-to-b from-[#120808] to-black shadow-[0_15px_35px_rgba(240,50,32,0.1)]" 
+                    ? "border-[#F03220]/40 bg-gradient-to-b from-[#120808] to-[#0D0D0D] shadow-[0_15px_35px_rgba(240,50,32,0.1)]" 
                     : "border-neutral-900 group-hover:border-neutral-800"
                 }`}>
                   
@@ -143,7 +143,7 @@ export default function HowToEarnMoney() {
                   {/* Clean Icon Container with Minimal styling */}
                   <div className={`relative z-10 p-5 rounded-full border transition-all duration-500 ${
                     isCurrent 
-                      ? "bg-neutral-950/80 border-[#F03220]/30 scale-110 text-[#F03220] shadow-[0_0_15px_rgba(240,50,32,0.15)]" 
+                      ? "bg-[#1A1A1A]/80 border-[#F03220]/30 scale-110 text-[#F03220] shadow-[0_0_15px_rgba(240,50,32,0.15)]" 
                       : "bg-transparent border-transparent text-neutral-600 group-hover:text-neutral-400 group-hover:scale-105"
                   }`}>
                     <Icon className="w-8 h-8 stroke-[1.5px]" />
@@ -155,7 +155,7 @@ export default function HowToEarnMoney() {
                   </div>
 
                   {/* Bottom Minimal active line indicating system state */}
-                  <div className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-neutral-950">
+                  <div className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-[#1A1A1A]">
                     <motion.div 
                       className="h-full bg-gradient-to-r from-[#F03220] to-red-500"
                       initial={{ width: "0%" }}

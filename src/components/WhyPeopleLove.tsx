@@ -36,13 +36,13 @@ export default function WhyPeopleLove() {
   return (
     <section 
       id="why-us" 
-      className="w-full py-20 border-t border-white/[0.08] bg-black/20 relative z-20"
+      className="w-full py-20 border-t border-white/[0.08] bg-[#0D0D0D]/20 relative z-20"
     >
       <div className="max-w-7xl mx-auto px-6 space-y-16">
         
         {/* Header Block alignment */}
         <div className="text-center space-y-4 max-w-2xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-900 border border-white/5 shadow-inner">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#161616] border border-white/5 shadow-inner">
             <span className="text-[10px] uppercase font-extrabold tracking-widest text-[#F03220]">
               WHY LOCALFELO
             </span>
@@ -64,12 +64,12 @@ export default function WhyPeopleLove() {
                 key={idx}
                 whileHover={{ scale: 1.015 }}
                 transition={{ type: "spring", stiffness: 400, damping: 25 }}
-                className={`p-8 rounded-3xl bg-neutral-900/40 border border-white/5 flex flex-col sm:flex-row gap-6 text-left transition-all duration-300 ${feat.bg}`}
+                className={`p-8 rounded-3xl bg-[#161616]/40 border border-white/5 flex flex-col sm:flex-row gap-6 text-left transition-all duration-300 ${feat.bg}`}
                 id={`feature-card-${idx}`}
               >
                 {/* Icon wrapper inside */}
                 <div className="shrink-0">
-                  <div className={`p-4 rounded-2xl bg-black/40 border border-white/5 inline-flex items-center justify-center ${feat.color}`}>
+                  <div className={`p-4 rounded-2xl bg-[#0D0D0D]/40 border border-white/5 inline-flex items-center justify-center ${feat.color}`}>
                     <Icon className="w-6 h-6 stroke-[2px]" />
                   </div>
                 </div>

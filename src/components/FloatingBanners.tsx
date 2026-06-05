@@ -95,7 +95,7 @@ export default function FloatingBanners() {
             repeat: Infinity,
             ease: "easeInOut"
           }}
-          className="relative bg-gradient-to-br from-neutral-950/95 via-neutral-900/90 to-neutral-950/95 backdrop-blur-md border border-white/20 shadow-[0_16px_40px_rgba(0,0,0,0.7)] flex items-center gap-2.5 px-4 py-2.5 rounded-none whitespace-nowrap overflow-hidden transform-gpu"
+          className="relative bg-gradient-to-br from-[#111111]/95 via-[#161616]/90 to-[#111111]/95 backdrop-blur-md border border-white/20 shadow-[0_16px_40px_rgba(0,0,0,0.7)] flex items-center gap-2.5 px-4 py-2.5 rounded-none whitespace-nowrap overflow-hidden transform-gpu"
           style={{ transformStyle: "preserve-3d", perspective: 800, backfaceVisibility: "hidden", transform: "translate3d(0, 0, 0)" }}
         >
           {/* Glossy Reflection Sheen Overlay */}
@@ -118,7 +118,7 @@ export default function FloatingBanners() {
         {/* Felo Character Symbol (Requester Dark Translucent Theme) */}
         <div className="relative">
           <div className="absolute inset-0 bg-[#F03220]/10 blur-md rounded-full" />
-          <div className="relative w-11 h-11 rounded-full bg-gradient-to-b from-neutral-900 to-neutral-950 border border-white/20 flex items-center justify-center p-2.5 shadow-xl">
+          <div className="relative w-11 h-11 rounded-full bg-gradient-to-b from-[#161616] to-[#111111] border border-white/20 flex items-center justify-center p-2.5 shadow-xl">
             <FeloSymbol color="white" className="w-6.5 h-6.5" />
           </div>
         </div>

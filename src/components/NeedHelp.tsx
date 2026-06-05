@@ -31,13 +31,13 @@ export default function NeedHelp() {
   return (
     <section 
       id="contact-support" 
-      className="w-full py-20 border-t border-white/[0.08] bg-black/40 relative z-20"
+      className="w-full py-20 border-t border-white/[0.08] bg-[#0D0D0D]/40 relative z-20"
     >
       <div className="max-w-5xl mx-auto px-6 space-y-12 text-center">
         
         {/* Support Heading */}
         <div className="space-y-4 max-w-2xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-900 border border-white/5 shadow-inner">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#161616] border border-white/5 shadow-inner">
             <span className="text-[10px] uppercase font-extrabold tracking-widest text-[#F03220]">
               CONTACT SUPPORT
             </span>
@@ -56,10 +56,10 @@ export default function NeedHelp() {
             const Icon = card.icon;
             const content = (
               <div 
-                className={`p-6 rounded-3xl bg-neutral-900/40 border border-white/5 text-center flex flex-col items-center gap-4 transition-all duration-300 hover:border-white/10 ${card.bgClass}`}
+                className={`p-6 rounded-3xl bg-[#161616]/40 border border-white/5 text-center flex flex-col items-center gap-4 transition-all duration-300 hover:border-white/10 ${card.bgClass}`}
                 id={`contact-card-${idx}`}
               >
-                <div className={`p-3 rounded-2xl bg-black/50 border border-white/10 ${card.color}`}>
+                <div className={`p-3 rounded-2xl bg-[#0D0D0D]/50 border border-white/10 ${card.color}`}>
                   <Icon className="w-5 h-5 stroke-[2.5px]" />
                 </div>
                 <div>
@@ -89,7 +89,7 @@ export default function NeedHelp() {
         <div className="pt-4">
           <a 
             href="mailto:support@localfelo.com"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-white text-black font-extrabold text-sm hover:bg-neutral-150 shadow-2xl transition-all duration-300"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-white text-[#0D0D0D] font-extrabold text-sm hover:bg-neutral-150 shadow-2xl transition-all duration-300"
           >
             <span>Contact Support</span>
             <Send className="w-4 h-4 stroke-[2.5px]" />

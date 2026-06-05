@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 export default function BackgroundGlow() {
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden bg-black" id="background-glow-container">
+    <div className="fixed inset-0 -z-10 overflow-hidden bg-[#0D0D0D]" id="background-glow-container">
       {/* Prime fluid flowing canvas gradient */}
       <div 
         className="absolute inset-0 opacity-40 mix-blend-screen mix-blend-color-dodge transition-all duration-1000"

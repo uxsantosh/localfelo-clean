@@ -81,19 +81,19 @@ export default function EarnMoney() {
   return (
     <section 
       id="earning" 
-      className="w-full py-20 border-t border-white/[0.08] bg-black/40 relative z-20"
+      className="w-full py-20 border-t border-white/[0.08] bg-[#0D0D0D]/40 relative z-20"
     >
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         
         {/* Left Column: Flow Journey visualizer container */}
         <div className="lg:col-span-6 w-full space-y-6 order-2 lg:order-1" id="earn-left-col">
           
-          <div className="p-6 sm:p-8 rounded-3xl bg-neutral-900/60 border border-white/5 shadow-2xl relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#8D2B00]/5 to-black/80 -z-10 pointer-events-none" />
+          <div className="p-6 sm:p-8 rounded-3xl bg-[#161616]/60 border border-white/5 shadow-2xl relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-[#8D2B00]/5 to-[#0D0D0D]/80 -z-10 pointer-events-none" />
             
             <div className="space-y-6">
               <div className="flex items-center justify-between">
-                <span className="text-xs text-neutral-400 font-extrabold uppercase tracking-widest block bg-black/40 border border-white/5 px-3.5 py-1 rounded-full">
+                <span className="text-xs text-neutral-400 font-extrabold uppercase tracking-widest block bg-[#0D0D0D]/40 border border-white/5 px-3.5 py-1 rounded-full">
                   Interactive Earning Journey
                 </span>
                 <span className="text-[11px] font-bold text-[#F03220] flex items-center gap-1">
@@ -103,7 +103,7 @@ export default function EarnMoney() {
               </div>
 
               {/* Dynamic Step Visualization Area */}
-              <div className="h-44 rounded-2xl bg-black/50 border border-white/5 p-6 flex flex-col justify-between relative overflow-hidden" id="journey-visualizer-window">
+              <div className="h-44 rounded-2xl bg-[#0D0D0D]/50 border border-white/5 p-6 flex flex-col justify-between relative overflow-hidden" id="journey-visualizer-window">
                 
                 <AnimatePresence mode="wait">
                   <motion.div
@@ -165,7 +165,7 @@ export default function EarnMoney() {
                         className={`w-11 h-11 rounded-full border flex items-center justify-center transition-all duration-300 ${
                           isActive 
                             ? "bg-[#F03220] border-[#F03220] text-white shadow-[0_0_15px_rgba(240,50,32,0.3)] scale-110" 
-                            : "bg-black border-white/5 text-neutral-500 hover:border-white/20 hover:text-white"
+                            : "bg-[#0D0D0D] border-white/5 text-neutral-500 hover:border-white/20 hover:text-white"
                         }`}
                         id={`journey-flow-dot-${index}`}
                       >
@@ -189,10 +189,10 @@ export default function EarnMoney() {
               return (
                 <div 
                   key={idx}
-                  className={`p-4 rounded-2xl bg-neutral-900/30 border border-white/5 transition-all duration-300 ${b.bg}`}
+                  className={`p-4 rounded-2xl bg-[#161616]/30 border border-white/5 transition-all duration-300 ${b.bg}`}
                   id={`highlight-card-${idx}`}
                 >
-                  <div className={`p-2 rounded-xl bg-black/40 border border-white/5 inline-flex mb-2.5 ${b.accent}`}>
+                  <div className={`p-2 rounded-xl bg-[#0D0D0D]/40 border border-white/5 inline-flex mb-2.5 ${b.accent}`}>
                     <CurIcon className="w-4 h-4 stroke-[2.5px]" />
                   </div>
                   <h4 className="text-xs font-extrabold text-white tracking-tight">{b.title}</h4>

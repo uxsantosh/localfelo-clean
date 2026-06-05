@@ -134,7 +134,7 @@ export default function SupportCenter({ onNavigate }: SupportCenterProps) {
       </div>
 
       {/* Direct Info Section */}
-      <div className="p-6 rounded-3xl bg-neutral-900/40 border border-white/5 space-y-2 text-xs text-neutral-400">
+      <div className="p-6 rounded-3xl bg-[#161616]/40 border border-white/5 space-y-2 text-xs text-neutral-400">
         <strong className="text-white block">DISPUTES & ENFORCEABILITY LIMITATION</strong>
         Since agreements regarding chores, timelines, and outcomes occur exclusively between the independent Poster and Helper directly, <strong className="text-white">LocalFelo cannot guarantee resolution of or enforce settlements for private disputes arising from these agreements.</strong> We encourage safe, thoughtful communications to reach collaborative conclusions.
       </div>
@@ -151,10 +151,10 @@ export default function SupportCenter({ onNavigate }: SupportCenterProps) {
             return (
               <div 
                 key={idx}
-                className={`p-6 rounded-3xl bg-neutral-900/40 border border-white/5 space-y-3 transition-colors ${t.bgClass}`}
+                className={`p-6 rounded-3xl bg-[#161616]/40 border border-white/5 space-y-3 transition-colors ${t.bgClass}`}
                 id={`support-topic-card-${idx}`}
               >
-                <div className={`p-2.5 rounded-xl bg-black/50 border border-white/10 inline-flex items-center justify-center ${t.color}`}>
+                <div className={`p-2.5 rounded-xl bg-[#0D0D0D]/50 border border-white/10 inline-flex items-center justify-center ${t.color}`}>
                   <Icon className="w-5 h-5 stroke-[2px]" />
                 </div>
                 <h4 className="text-base font-extrabold text-white tracking-tight">
@@ -180,7 +180,7 @@ export default function SupportCenter({ onNavigate }: SupportCenterProps) {
           return (
             <div 
               key={id}
-              className="border border-white/5 rounded-2xl bg-neutral-900/30 overflow-hidden"
+              className="border border-white/5 rounded-2xl bg-[#161616]/30 overflow-hidden"
             >
               <button
                 type="button"
@@ -209,7 +209,7 @@ export default function SupportCenter({ onNavigate }: SupportCenterProps) {
       </div>
 
       {/* Support Direct Contacts */}
-      <div className="p-8 rounded-3xl bg-neutral-900/60 border border-white/5 flex flex-col sm:flex-row items-center justify-between gap-6" id="support-direct-cta">
+      <div className="p-8 rounded-3xl bg-[#161616]/60 border border-white/5 flex flex-col sm:flex-row items-center justify-between gap-6" id="support-direct-cta">
         <div className="flex items-center gap-4 text-left">
           <div className="p-3.5 rounded-2xl bg-[#F03220]/15 text-[#F03220] border border-[#F03220]/25">
             <Mail className="w-6 h-6 stroke-[2px]" />

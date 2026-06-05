@@ -6,7 +6,7 @@ interface FooterProps {
 
 export default function Footer({ onNavigate }: FooterProps) {
   const productLinks = [
-    { name: "FAQs", hash: "#faqs" },
+    { name: "FAQs", path: "/faqs" },
     { name: "Download App", hash: "#download" }
   ];
 
@@ -23,7 +23,7 @@ export default function Footer({ onNavigate }: FooterProps) {
   return (
     <footer 
       id="site-footer" 
-      className="w-full bg-[#070707] border-t border-white/[0.08] pt-16 pb-8 relative z-20"
+      className="w-full bg-[#0D0D0D] border-t border-white/[0.08] pt-16 pb-8 relative z-20"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-12 border-b border-white/[0.04]">
         
@@ -50,14 +50,18 @@ export default function Footer({ onNavigate }: FooterProps) {
           <h4 className="text-xs font-extrabold uppercase tracking-widest text-[#F03220] font-mono">
             Product
           </h4>
-          <ul className="space-y-2.5 flex flex-col items-center md:items-start lg:items-end">
+          <ul className="space-y-2.5 flex flex-col items-center md:items-start lg:text-right">
             {productLinks.map((lnk) => (
               <li key={lnk.name}>
                 <a
-                  href={`/${lnk.hash}`}
+                  href={lnk.path ? lnk.path : `/${lnk.hash}`}
                   onClick={(e) => {
                     e.preventDefault();
-                    onNavigate("/", lnk.hash);
+                    if (lnk.path) {
+                      onNavigate(lnk.path);
+                    } else {
+                      onNavigate("/", lnk.hash);
+                    }
                   }}
                   className="text-sm text-neutral-400 hover:text-white transition-colors focus:outline-none text-center md:text-left lg:text-right font-medium cursor-pointer"
                 >

@@ -29,7 +29,7 @@ export default function WhyTrustUs() {
   return (
     <section 
       id="why-trust-us" 
-      className="w-full py-12 md:py-24 bg-black border-t border-neutral-900 relative overflow-hidden z-20"
+      className="w-full py-12 md:py-24 bg-transparent border-t border-neutral-900 relative overflow-hidden z-20"
     >
       {/* Premium brand ambient glows */}
       <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(240,50,32,0.06)_0%,transparent_75%)] blur-[100px] pointer-events-none z-0" />
@@ -60,14 +60,14 @@ export default function WhyTrustUs() {
                 key={idx}
                 whileHover={{ y: -4, borderColor: "rgba(240, 50, 32, 0.3)" }}
                 transition={{ duration: 0.2 }}
-                className="p-8 rounded-2xl bg-[#090909] border border-neutral-900 flex flex-col items-center justify-between text-center gap-6 relative overflow-hidden group font-sans"
+                className="p-8 rounded-2xl bg-[#161616] border border-neutral-900 flex flex-col items-center justify-between text-center gap-6 relative overflow-hidden group font-sans"
                 id={`trust-integrity-card-${idx}`}
               >
                 {/* Subtle Radial Center Glow */}
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(240,50,32,0.08)_0%,transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
                 {/* Visual Icon - CRED Style Simple Outline inside brand style active containers */}
-                <div className="p-4 rounded-full border border-neutral-900 bg-neutral-950 text-neutral-500 group-hover:text-[#F03220] group-hover:border-[#F03220]/30 shadow-[0_0_15px_rgba(240,50,32,0.1)] group-hover:bg-neutral-950/80 transition-all duration-500">
+                <div className="p-4 rounded-full border border-neutral-900 bg-[#1A1A1A] text-neutral-500 group-hover:text-[#F03220] group-hover:border-[#F03220]/30 shadow-[0_0_15px_rgba(240,50,32,0.1)] group-hover:bg-[#1A1A1A]/80 transition-all duration-500">
                   <Icon className="w-6 h-6 stroke-[1.5px]" />
                 </div>
 

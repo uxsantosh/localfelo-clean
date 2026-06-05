@@ -36,13 +36,13 @@ export default function TrustSafety() {
   return (
     <section 
       id="trust-and-safety" 
-      className="w-full py-20 border-t border-white/[0.08] bg-black/20 relative z-20"
+      className="w-full py-20 border-t border-white/[0.08] bg-[#0D0D0D]/20 relative z-20"
     >
       <div className="max-w-7xl mx-auto px-6 text-center space-y-16">
         
         {/* Section Header */}
         <div className="space-y-4 max-w-2xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-900 border border-white/5 shadow-inner">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#161616] border border-white/5 shadow-inner">
             <span className="text-[10px] uppercase font-extrabold tracking-widest text-[#F03220]">
               TRUST AT THE CORE
             </span>
@@ -64,11 +64,11 @@ export default function TrustSafety() {
                 key={idx}
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.2 }}
-                className={`p-6 sm:p-8 rounded-3xl bg-neutral-900/40 border border-white/5 text-left flex flex-col justify-between space-y-4 transition-all duration-300 ${card.bg}`}
+                className={`p-6 sm:p-8 rounded-3xl bg-[#161616]/40 border border-white/5 text-left flex flex-col justify-between space-y-4 transition-all duration-300 ${card.bg}`}
                 id={`trust-card-${idx}`}
               >
                 <div className="space-y-4">
-                  <div className={`p-3 rounded-2xl bg-black/50 border border-white/10 inline-flex items-center justify-center ${card.color}`}>
+                  <div className={`p-3 rounded-2xl bg-[#0D0D0D]/50 border border-white/10 inline-flex items-center justify-center ${card.color}`}>
                     <Icon className="w-6 h-6 stroke-[2px]" />
                   </div>
                   <div className="space-y-1.5">

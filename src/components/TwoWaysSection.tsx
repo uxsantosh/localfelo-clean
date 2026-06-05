@@ -19,7 +19,7 @@ export default function TwoWaysSection() {
   return (
     <section 
       id="how-it-benefits" 
-      className="w-full py-20 border-t border-white/[0.08] bg-black/20 relative z-20"
+      className="w-full py-20 border-t border-white/[0.08] bg-[#0D0D0D]/20 relative z-20"
     >
       <div className="max-w-7xl mx-auto px-6 text-center space-y-12">
         
@@ -42,12 +42,12 @@ export default function TwoWaysSection() {
           <motion.div
             whileHover={{ y: -8 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            className="relative flex flex-col justify-between p-8 rounded-3xl bg-neutral-900/60 border border-white/5 shadow-2xl overflow-hidden hover:border-[#F03220]/20 hover:shadow-[0_20px_40px_rgba(240,50,32,0.1)] group text-left transition-all duration-350"
+            className="relative flex flex-col justify-between p-8 rounded-3xl bg-[#161616]/60 border border-white/5 shadow-2xl overflow-hidden hover:border-[#F03220]/20 hover:shadow-[0_20px_40px_rgba(240,50,32,0.1)] group text-left transition-all duration-350"
             id="benefit-card-get-help"
           >
             {/* Top Glow Accent Effect */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-[#F03220]/5 rounded-full filter blur-2xl group-hover:bg-[#F03220]/10 transition-colors pointer-events-none" />
-
+ 
             <div className="space-y-6">
               
               {/* Header Badge */}
@@ -55,7 +55,7 @@ export default function TwoWaysSection() {
                 <div className="p-3 rounded-2xl bg-[#F03220]/10 text-[#F03220] border border-[#F03220]/20">
                   <Zap className="w-6 h-6 stroke-[2px]" />
                 </div>
-                <span className="text-xs text-neutral-500 font-extrabold tracking-widest uppercase bg-black/40 px-3 py-1 rounded-full border border-white/5">
+                <span className="text-xs text-neutral-500 font-extrabold tracking-widest uppercase bg-[#0D0D0D]/40 px-3 py-1 rounded-full border border-white/5">
                   POSTER SIDE
                 </span>
               </div>
@@ -98,7 +98,7 @@ export default function TwoWaysSection() {
             <div className="mt-8 pt-4 border-t border-white/[0.04]">
               <a 
                 href="#download"
-                className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-2xl bg-white text-black font-extrabold text-sm shadow-md hover:bg-neutral-150 transition-colors group/btn"
+                className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-2xl bg-white text-[#0D0D0D] font-extrabold text-sm shadow-md hover:bg-neutral-150 transition-colors group/btn"
               >
                 <span>Create a Task</span>
                 <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
@@ -111,12 +111,12 @@ export default function TwoWaysSection() {
           <motion.div
             whileHover={{ y: -8 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            className="relative flex flex-col justify-between p-8 rounded-3xl bg-neutral-900/60 border border-white/5 shadow-2xl overflow-hidden hover:border-amber-500/20 hover:shadow-[0_20px_40px_rgba(245,158,11,0.08)] group text-left transition-all duration-350"
+            className="relative flex flex-col justify-between p-8 rounded-3xl bg-[#161616]/60 border border-white/5 shadow-2xl overflow-hidden hover:border-amber-500/20 hover:shadow-[0_20px_40px_rgba(245,158,11,0.08)] group text-left transition-all duration-350"
             id="benefit-card-earn-money"
           >
             {/* Top Glow Accent Effect */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 rounded-full filter blur-2xl group-hover:bg-amber-500/10 transition-colors pointer-events-none" />
-
+ 
             <div className="space-y-6">
               
               {/* Header Badge */}
@@ -124,7 +124,7 @@ export default function TwoWaysSection() {
                 <div className="p-3 rounded-2xl bg-amber-500/10 text-amber-500 border border-amber-500/20">
                   <Coins className="w-6 h-6 stroke-[2px]" />
                 </div>
-                <span className="text-xs text-neutral-500 font-extrabold tracking-widest uppercase bg-black/40 px-3 py-1 rounded-full border border-white/5">
+                <span className="text-xs text-neutral-500 font-extrabold tracking-widest uppercase bg-[#0D0D0D]/40 px-3 py-1 rounded-full border border-white/5">
                   HELPER SIDE
                 </span>
               </div>

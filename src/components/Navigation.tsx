@@ -20,8 +20,8 @@ export default function Navigation({ currentPath, onNavigate }: NavigationProps)
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: "FAQs", hash: "#faqs" },
+  const navLinks: { name: string; path?: string; hash?: string }[] = [
+    { name: "FAQs", path: "/faqs" },
     { name: "Contact Us", path: "/contact" }
   ];
 
@@ -29,7 +29,7 @@ export default function Navigation({ currentPath, onNavigate }: NavigationProps)
     <header 
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         isScrolled 
-          ? "bg-black/80 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.8)] border-b border-transparent" 
+          ? "bg-[#0D0D0D]/80 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.8)] border-b border-transparent" 
           : "bg-transparent border-b border-transparent"
       }`} 
       id="site-header"
@@ -90,7 +90,7 @@ export default function Navigation({ currentPath, onNavigate }: NavigationProps)
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[#0A0A0A] border-b border-white/[0.08] overflow-hidden"
+            className="md:hidden bg-[#0D0D0D] border-b border-white/[0.08] overflow-hidden"
             id="mobile-drawer-menu"
           >
             <div className="px-6 pt-2 pb-6 space-y-4 flex flex-col items-start">

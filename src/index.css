@@ -6,8 +6,15 @@
   --font-display: "Inter", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
   
+  --color-black: #0D0D0D;
   --color-felo-orange: #8D2B00;
   --color-felo-red: #F03220;
+
+  --radius-3xl: 12px;
+  --radius-2xl: 8px;
+  --radius-xl: 6px;
+  --radius-lg: 5px;
+  --radius-md: 4px;
 }
 
 /* Custom background animation keys */
@@ -24,7 +31,7 @@
 }
 
 .animated-bg {
-  background: radial-gradient(circle at 10% 20%, rgba(141, 43, 0, 0.15) 0%, rgba(240, 50, 32, 0.12) 40%, rgba(0, 0, 0, 1) 90%);
+  background: radial-gradient(circle at 10% 20%, rgba(141, 43, 0, 0.15) 0%, rgba(240, 50, 32, 0.12) 40%, rgba(13, 13, 13, 1) 90%);
   background-size: 200% 200%;
   animation: flow-gradient 15s ease infinite;
 }

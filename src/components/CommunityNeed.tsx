@@ -5,7 +5,7 @@ export default function CommunityNeed() {
   return (
     <section 
       id="community-need" 
-      className="w-full py-20 border-t border-white/[0.08] bg-black/20 relative z-20 overflow-hidden"
+      className="w-full py-20 border-t border-white/[0.08] bg-[#0D0D0D]/20 relative z-20 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         
@@ -32,7 +32,7 @@ export default function CommunityNeed() {
 
           {/* Bullet specifications blocks */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4" id="community-pro-grid">
-            <div className="space-y-1.5 p-4 rounded-2xl bg-neutral-900/40 border border-white/5">
+            <div className="space-y-1.5 p-4 rounded-2xl bg-[#161616]/40 border border-white/5">
               <div className="w-8 h-8 rounded-xl bg-rose-500/10 text-rose-500 flex items-center justify-center border border-rose-500/20">
                 <Sparkles className="w-4.5 h-4.5" />
               </div>
@@ -40,7 +40,7 @@ export default function CommunityNeed() {
               <p className="text-[11px] text-neutral-400 leading-normal font-medium">Get immediate hand issues fixed quickly by helpers nearby.</p>
             </div>
 
-            <div className="space-y-1.5 p-4 rounded-2xl bg-neutral-900/40 border border-white/5">
+            <div className="space-y-1.5 p-4 rounded-2xl bg-[#161616]/40 border border-white/5">
               <div className="w-8 h-8 rounded-xl bg-amber-500/10 text-amber-500 flex items-center justify-center border border-amber-500/20">
                 <Award className="w-4.5 h-4.5" />
               </div>
@@ -48,7 +48,7 @@ export default function CommunityNeed() {
               <p className="text-[11px] text-neutral-400 leading-normal font-medium">Keep capital inside local zones, supporting neighborhoods.</p>
             </div>
 
-            <div className="space-y-1.5 p-4 rounded-2xl bg-neutral-900/40 border border-white/5">
+            <div className="space-y-1.5 p-4 rounded-2xl bg-[#161616]/40 border border-white/5">
               <div className="w-8 h-8 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center border border-emerald-500/20">
                 <Users className="w-4.5 h-4.5" />
               </div>
@@ -61,7 +61,7 @@ export default function CommunityNeed() {
 
         {/* Right Column: Beautiful Community Map abstract connection graphic */}
         <div className="lg:col-span-6 w-full flex justify-center" id="community-right-col">
-          <div className="relative w-full max-w-md aspect-square rounded-3xl bg-neutral-900/40 border border-white/5 shadow-2xl overflow-hidden p-6 flex flex-col items-center justify-center">
+          <div className="relative w-full max-w-md aspect-square rounded-3xl bg-[#161616]/40 border border-white/5 shadow-2xl overflow-hidden p-6 flex flex-col items-center justify-center">
             
             {/* Top-right low ambient spot gradient */}
             <div className="absolute top-0 right-0 w-36 h-36 bg-emerald-500/5 rounded-full filter blur-2xl pointer-events-none" />
@@ -86,7 +86,7 @@ export default function CommunityNeed() {
               <motion.div 
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-[15%] left-[10%] flex items-center gap-2 p-2.5 rounded-2xl bg-neutral-900 border border-white/10 shadow-lg"
+                className="absolute top-[15%] left-[10%] flex items-center gap-2 p-2.5 rounded-2xl bg-[#161616] border border-white/10 shadow-lg"
               >
                 <div className="w-7 h-7 bg-emerald-500/20 text-emerald-500 rounded-lg flex items-center justify-center text-xs font-extrabold font-mono border border-emerald-500/30">
                   R
@@ -103,7 +103,7 @@ export default function CommunityNeed() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F03220] opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-4 w-4 bg-[#F03220]"></span>
                 </span>
-                <span className="bg-black text-[9px] font-extrabold text-white px-2 py-1 rounded bg-neutral-900 border border-white/10 whitespace-nowrap">
+                <span className="bg-[#0D0D0D] text-[9px] font-extrabold text-white px-2 py-1 rounded bg-neutral-900 border border-white/10 whitespace-nowrap">
                   Marathahalli Hub
                 </span>
               </div>
@@ -112,7 +112,7 @@ export default function CommunityNeed() {
               <motion.div 
                 animate={{ y: [0, 6, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-[12%] right-[8%] flex items-center gap-2 p-2.5 rounded-2xl bg-neutral-900 border border-white/10 shadow-lg"
+                className="absolute top-[12%] right-[8%] flex items-center gap-2 p-2.5 rounded-2xl bg-[#161616] border border-white/10 shadow-lg"
               >
                 <div className="w-7 h-7 bg-rose-500/20 text-rose-500 rounded-lg flex items-center justify-center text-xs font-extrabold font-mono border border-rose-500/30">
                   P
@@ -127,7 +127,7 @@ export default function CommunityNeed() {
               <motion.div 
                 animate={{ y: [0, -5, 0] }}
                 transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute bottom-[20%] right-[10%] flex items-center gap-2 p-2.5 rounded-2xl bg-neutral-900 border border-white/10 shadow-lg"
+                className="absolute bottom-[20%] right-[10%] flex items-center gap-2 p-2.5 rounded-2xl bg-[#161616] border border-white/10 shadow-lg"
               >
                 <div className="w-7 h-7 bg-amber-500/20 text-amber-500 rounded-lg flex items-center justify-center text-xs font-extrabold font-mono border border-amber-500/30">
                   A
@@ -142,7 +142,7 @@ export default function CommunityNeed() {
               <motion.div 
                 animate={{ y: [0, 4, 0] }}
                 transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute bottom-[15%] left-[8%] p-2 rounded-xl bg-neutral-900 border border-white/10 flex items-center gap-1.5"
+                className="absolute bottom-[15%] left-[8%] p-2 rounded-xl bg-[#161616] border border-white/10 flex items-center gap-1.5"
               >
                 <MapPin className="w-3.5 h-3.5 text-emerald-500" />
                 <span className="text-[9px] text-neutral-400 font-bold uppercase font-mono">5Helpers nearby</span>

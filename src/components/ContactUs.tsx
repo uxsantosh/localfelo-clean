@@ -85,7 +85,7 @@ export default function ContactUs({ onNavigate }: ContactUsProps) {
               key={idx}
               whileHover={{ y: -6, borderColor: "rgba(240, 50, 32, 0.35)" }}
               transition={{ duration: 0.2 }}
-              className="relative p-8 rounded-3xl bg-[#090909] border border-neutral-900 group flex flex-col justify-between gap-8 h-full overflow-hidden transition-colors"
+              className="relative p-8 rounded-3xl bg-[#161616] border border-neutral-900 group flex flex-col justify-between gap-8 h-full overflow-hidden transition-colors"
               id={`contact-bento-card-${idx}`}
             >
               {/* Radial subtle ambient backplane glow on hover */}
@@ -99,7 +99,7 @@ export default function ContactUs({ onNavigate }: ContactUsProps) {
               {/* Card Header row */}
               <div className="space-y-4 relative z-10">
                 <div className="flex items-center justify-between">
-                  <div className="p-3 rounded-2xl bg-neutral-950 border border-neutral-900 text-neutral-400 group-hover:text-[#F03220] group-hover:border-[#F03220]/20 shadow-[0_0_15px_rgba(240,50,32,0.05)] transition-all duration-300">
+                  <div className="p-3 rounded-2xl bg-[#1A1A1A] border border-neutral-900 text-neutral-400 group-hover:text-[#F03220] group-hover:border-[#F03220]/20 shadow-[0_0_15px_rgba(240,50,32,0.05)] transition-all duration-300">
                     <Icon className="w-5 h-5 stroke-[1.5px]" />
                   </div>
                   <span className="text-[10px] font-mono font-bold uppercase py-1 px-2.5 rounded-full bg-[#F03220]/5 text-[#F03220]/80 border border-[#F03220]/10 tracking-widest">
@@ -135,7 +135,7 @@ export default function ContactUs({ onNavigate }: ContactUsProps) {
                   className={`inline-flex items-center justify-center gap-1.5 py-1.5 px-3 rounded-xl border font-mono font-bold text-[10px] uppercase tracking-wider transition-all cursor-pointer select-none ${
                     isCopied
                       ? "bg-[#F03220] text-white border-[#F03220]"
-                      : "bg-black/50 text-neutral-400 border-neutral-900 hover:text-white hover:border-neutral-800"
+                      : "bg-[#0D0D0D]/50 text-neutral-400 border-neutral-900 hover:text-white hover:border-neutral-800"
                   }`}
                   aria-label={`Copy ${chn.email} address`}
                 >

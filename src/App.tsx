@@ -13,36 +13,100 @@ import WhyTrustUs from "./components/WhyTrustUs";
 import FAQs from "./components/FAQs";
 import DownloadCTA from "./components/DownloadCTA";
 import SEOContent from "./components/SEOContent";
+import LocationConnectionBg from "./components/LocationConnectionBg";
 
 // Dynamic Sub-Page Imports
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsConditions from "./components/TermsConditions";
 import SupportCenter from "./components/SupportCenter";
 import ContactUs from "./components/ContactUs";
+import FAQsPage from "./components/FAQsPage";
 import Footer from "./components/Footer";
 import PointerRadar from "./components/PointerRadar";
+import { updatePageSEO } from "./utils/seo";
 
 export default function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
   const [hasScrolled, setHasScrolled] = useState(false);
 
-  // Synchronize browser history and Document title
+  // Synchronize dynamic SEO meta-tags and JSON-LD structured data on routing path change
+  useEffect(() => {
+    if (currentPath === "/") {
+      updatePageSEO({
+        title: "LocalFelo - Get Help Nearby or Earn by Helping Others",
+        description: "LocalFelo connects people who need quick community assistance with peer helpers nearby. Create local tasks, earn fair wages, and build neighborly trust.",
+        path: "/",
+        schema: {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "LocalFelo",
+          "url": "https://localfelo.com",
+          "logo": "https://localfelo.com/favicon.svg",
+          "description": "Connecting neighbors to get help nearby or earn locally.",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "support@localfelo.com",
+            "contactType": "customer support"
+          }
+        }
+      });
+    } else if (currentPath === "/privacy-policy") {
+      updatePageSEO({
+        title: "Privacy Policy | Safe & Reliable LocalFelo Matches",
+        description: "Understand how your neighborhood coordinates, Aadhaar identity papers, and transactional parameters are encrypted and safely maintained under the LocalFelo Trust Division.",
+        path: "/privacy-policy",
+        schema: {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Privacy Policy | LocalFelo",
+          "description": "Understand how we protect and process your neighborhood connection records and personal identity documents."
+        }
+      });
+    } else if (currentPath === "/terms-and-conditions") {
+      updatePageSEO({
+        title: "Terms & Conditions | LocalFelo Community Guidelines",
+        description: "Review terms governing secure escrow releases, cancellation limits, neighbor communications, and digital peer task fulfillment rules.",
+        path: "/terms-and-conditions",
+        schema: {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Terms & Conditions | LocalFelo",
+          "description": "Check our fair-use matching terms, cancellation policy parameters, and security releases."
+        }
+      });
+    } else if (currentPath === "/support") {
+      updatePageSEO({
+        title: "Support Center | Always Here to Help Nearby",
+        description: "Get instant assistance, resolve matches, query app issues, and trace missing payouts with the LocalFelo local help response desk.",
+        path: "/support",
+        schema: {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Support Center | LocalFelo",
+          "description": "Access direct guides, open dispute details, and request immediate safety assistance."
+        }
+      });
+    } else if (currentPath === "/contact") {
+      updatePageSEO({
+        title: "Contact Us | Send a Message to LocalFelo Guides",
+        description: "Connect directly with our local safety coordinators and operational guides to voice concerns, request safety assistance, or file matching disputes.",
+        path: "/contact",
+        schema: {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Contact Us | LocalFelo",
+          "description": "Reach out directly to local community coordinators and dispute supervisors."
+        }
+      });
+    }
+    // Notice: /faqs manages its own detailed FAQ schema dynamically inside FAQsPage.tsx
+  }, [currentPath]);
+
+  // Synchronize browser backward and forward history
   useEffect(() => {
     const handlePopState = () => {
       const path = window.location.pathname;
       setCurrentPath(path);
-      
-      if (path === "/privacy-policy") {
-        document.title = "Privacy Policy | LocalFelo";
-      } else if (path === "/terms-and-conditions") {
-        document.title = "Terms & Conditions | LocalFelo";
-      } else if (path === "/support") {
-        document.title = "Support Center | LocalFelo";
-      } else if (path === "/contact") {
-        document.title = "Contact Us | LocalFelo";
-      } else {
-        document.title = "LocalFelo - Get Help Nearby or Earn by Helping Others";
-      }
     };
 
     window.addEventListener("popstate", handlePopState);
@@ -62,19 +126,6 @@ export default function App() {
       }, 100);
     } else {
       window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-
-    // Set page title
-    if (path === "/privacy-policy") {
-      document.title = "Privacy Policy | LocalFelo";
-    } else if (path === "/terms-and-conditions") {
-      document.title = "Terms & Conditions | LocalFelo";
-    } else if (path === "/support") {
-      document.title = "Support Center | LocalFelo";
-    } else if (path === "/contact") {
-      document.title = "Contact Us | LocalFelo";
-    } else {
-      document.title = "LocalFelo - Get Help Nearby or Earn by Helping Others";
     }
   };
 
@@ -181,6 +232,10 @@ export default function App() {
           </main>
         </div>
 
+        {/* Global Location Connection background loop wrapping all subsequent sections */}
+        <div className="relative bg-[#0D0D0D]">
+          <LocationConnectionBg />
+
           {/* SECTION 1 - How to Get Help Visual Timeline */}
           <HowToGetHelp />
 
@@ -191,13 +246,14 @@ export default function App() {
           <WhyTrustUs />
 
           {/* SECTION 4 - FAQs */}
-          <FAQs />
+          <FAQs onNavigate={handleNavigate} />
 
           {/* SECTION 5 - Download App CTA */}
           <DownloadCTA />
 
           {/* Bottom Indexable Directory Map Accent */}
           <SEOContent />
+        </div>
         </>
       ) : currentPath === "/privacy-policy" ? (
         <PrivacyPolicy onNavigate={handleNavigate} />
@@ -207,6 +263,8 @@ export default function App() {
         <SupportCenter onNavigate={handleNavigate} />
       ) : currentPath === "/contact" ? (
         <ContactUs onNavigate={handleNavigate} />
+      ) : currentPath === "/faqs" ? (
+        <FAQsPage onNavigate={handleNavigate} />
       ) : (
         <div className="max-w-md mx-auto py-32 px-6 text-center space-y-6" id="not-found-view">
           <h1 className="text-6xl font-extrabold font-display text-transparent bg-clip-text bg-gradient-to-r from-neutral-300 to-neutral-600">404</h1>

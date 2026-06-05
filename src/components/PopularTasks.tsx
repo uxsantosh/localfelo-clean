@@ -95,13 +95,13 @@ export default function PopularTasks() {
   return (
     <section 
       id="popular-tasks" 
-      className="w-full py-20 border-t border-white/[0.08] bg-black/20 relative z-20"
+      className="w-full py-20 border-t border-white/[0.08] bg-[#0D0D0D]/20 relative z-20"
     >
       <div className="max-w-7xl mx-auto px-6 text-center space-y-16">
         
         {/* Title Block info */}
         <div className="space-y-4 max-w-2xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-neutral-900 border border-white/5 shadow-inner">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#161616] border border-white/5 shadow-inner">
             <span className="text-[10px] uppercase font-extrabold tracking-widest text-[#F03220]">
               POPULAR SOLUTIONS
             </span>
@@ -122,7 +122,7 @@ export default function PopularTasks() {
               <motion.div
                 key={idx}
                 whileHover={{ scale: 1.02, borderColor: cat.color }}
-                className="p-6 rounded-3xl bg-neutral-900/40 border border-white/5 text-left space-y-4 transition-all duration-300 relative overflow-hidden group"
+                className="p-6 rounded-3xl bg-[#161616]/40 border border-white/5 text-left space-y-4 transition-all duration-300 relative overflow-hidden group"
                 id={`task-category-card-${idx}`}
               >
                 {/* Micro accent color blob in background */}

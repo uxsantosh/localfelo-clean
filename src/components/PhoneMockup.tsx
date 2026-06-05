@@ -71,7 +71,7 @@ export default function PhoneMockup() {
         />
 
         {/* Shadow enhancement layers */}
-        <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-4/5 h-6 bg-black/60 rounded-full blur-2xl filter opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 pointer-events-none" />
+        <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-4/5 h-6 bg-[#0D0D0D]/60 rounded-full blur-2xl filter opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 pointer-events-none" />
       </motion.div>
     </div>
   );

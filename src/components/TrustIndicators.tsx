@@ -45,10 +45,10 @@ export default function TrustIndicators() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 * idx, duration: 0.5 }}
               whileHover={{ y: -4, borderColor: "rgba(240, 50, 32, 0.2)" }}
-              className={`flex flex-col items-center justify-center text-center p-5 rounded-2xl border bg-neutral-900/40 backdrop-blur-md transition-all duration-300 ${item.bg}`}
+              className={`flex flex-col items-center justify-center text-center p-5 rounded-2xl border bg-[#161616]/40 backdrop-blur-md transition-all duration-300 ${item.bg}`}
               id={`trust-card-${idx}`}
             >
-              <div className={`p-3 rounded-full bg-black/40 border border-white/5 mb-3 ${item.color}`}>
+              <div className={`p-3 rounded-full bg-[#0D0D0D]/40 border border-white/5 mb-3 ${item.color}`}>
                 <Icon className="w-5 h-5 stroke-[2px]" />
               </div>
               <h4 className="text-sm font-extrabold text-white tracking-tight">{item.title}</h4>

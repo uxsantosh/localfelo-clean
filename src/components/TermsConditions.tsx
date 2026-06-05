@@ -52,7 +52,7 @@ export default function TermsConditions({ onNavigate }: TermsConditionsProps) {
         {/* Clause 1: Platform Role */}
         <div className="space-y-3" id="clause-platform-role">
           <div className="flex items-center gap-3 text-white">
-            <div className="p-2 rounded-xl bg-neutral-900 border border-white/5 text-[#F03220]">
+            <div className="p-2 rounded-xl bg-[#161616] border border-white/5 text-[#F03220]">
               <Hammer className="w-5 h-5 stroke-[1.5px]" />
             </div>
             <h2 className="text-xl font-extrabold tracking-tight">1. Platform Role & Scope</h2>
@@ -79,7 +79,7 @@ export default function TermsConditions({ onNavigate }: TermsConditionsProps) {
         {/* Clause 2: User Responsibility */}
         <div className="space-y-3" id="clause-user-responsibility">
           <div className="flex items-center gap-3 text-white">
-            <div className="p-2 rounded-xl bg-neutral-900 border border-white/5 text-[#F03220]">
+            <div className="p-2 rounded-xl bg-[#161616] border border-white/5 text-[#F03220]">
               <HelpCircle className="w-5 h-5 stroke-[1.5px]" />
             </div>
             <h2 className="text-xl font-extrabold tracking-tight">2. User Responsibility</h2>
@@ -92,7 +92,7 @@ export default function TermsConditions({ onNavigate }: TermsConditionsProps) {
         {/* Clause 3: Independent User Relationship */}
         <div className="space-y-3" id="clause-independent-relationship">
           <div className="flex items-center gap-3 text-white">
-            <div className="p-2 rounded-xl bg-neutral-900 border border-white/5 text-[#F03220]">
+            <div className="p-2 rounded-xl bg-[#161616] border border-white/5 text-[#F03220]">
               <HeartHandshake className="w-5 h-5 stroke-[1.5px]" />
             </div>
             <h2 className="text-xl font-extrabold tracking-tight">3. Independent Relationship</h2>
@@ -105,7 +105,7 @@ export default function TermsConditions({ onNavigate }: TermsConditionsProps) {
         {/* Clause 4: Communication Disclaimer */}
         <div className="space-y-3" id="clause-communication-disclaimer">
           <div className="flex items-center gap-3 text-white">
-            <div className="p-2 rounded-xl bg-neutral-900 border border-white/5 text-[#F03220]">
+            <div className="p-2 rounded-xl bg-[#161616] border border-white/5 text-[#F03220]">
               <MessagesSquare className="w-5 h-5 stroke-[1.5px]" />
             </div>
             <h2 className="text-xl font-extrabold tracking-tight">4. Communication Disclaimer</h2>
@@ -118,7 +118,7 @@ export default function TermsConditions({ onNavigate }: TermsConditionsProps) {
         {/* Clause 5: Task Outcome Disclaimer */}
         <div className="space-y-3" id="clause-outcome-disclaimer">
           <div className="flex items-center gap-3 text-white">
-            <div className="p-2 rounded-xl bg-neutral-900 border border-white/5 text-[#F03220]">
+            <div className="p-2 rounded-xl bg-[#161616] border border-white/5 text-[#F03220]">
               <CircleAlert className="w-5 h-5 stroke-[1.5px]" />
             </div>
             <h2 className="text-xl font-extrabold tracking-tight">5. Task Outcome Disclaimer</h2>
@@ -131,7 +131,7 @@ export default function TermsConditions({ onNavigate }: TermsConditionsProps) {
         {/* Clause 6: Payments & Transaction Escrow */}
         <div className="space-y-3" id="clause-payments-disclaimer">
           <div className="flex items-center gap-3 text-white">
-            <div className="p-2 rounded-xl bg-neutral-900 border border-white/5 text-[#F03220]">
+            <div className="p-2 rounded-xl bg-[#161616] border border-white/5 text-[#F03220]">
               <Landmark className="w-5 h-5 stroke-[1.5px]" />
             </div>
             <h2 className="text-xl font-extrabold tracking-tight">6. Payments Processing</h2>
@@ -142,9 +142,9 @@ export default function TermsConditions({ onNavigate }: TermsConditionsProps) {
         </div>
 
         {/* Clause 7: Prohibited Activities & Account Suspension */}
-        <div className="p-8 rounded-3xl bg-[#090909] border border-neutral-900 space-y-6" id="clause-prohibited-rules">
+        <div className="p-8 rounded-3xl bg-[#161616] border border-neutral-900 space-y-6" id="clause-prohibited-rules">
           <div className="flex items-center gap-3 text-white">
-            <div className="p-2 rounded-xl bg-neutral-950 border border-neutral-900 text-[#F03220]">
+            <div className="p-2 rounded-xl bg-[#1A1A1A] border border-neutral-900 text-[#F03220]">
               <Ban className="w-5 h-5 stroke-[1.5px]" />
             </div>
             <h3 className="text-lg font-extrabold text-white">7. Prohibited Activities & Suspension Policy</h3>
@@ -155,15 +155,15 @@ export default function TermsConditions({ onNavigate }: TermsConditionsProps) {
               To support localized platform integrity, users are strictly forbidden from participating in any of the following activities:
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pl-2">
-              <div className="p-5 bg-black border border-white/[0.04] rounded-2xl space-y-2">
+              <div className="p-5 bg-[#0D0D0D] border border-white/[0.04] rounded-2xl space-y-2">
                 <span className="text-xs font-bold text-white block uppercase tracking-wide">Fraud & Impersonation</span>
                 <span className="text-[11px] text-neutral-500 leading-normal block">Submitting spoofed papers, hijacking profiles, pretending to be another entity, or conducting fake accounts.</span>
               </div>
-              <div className="p-5 bg-black border border-white/[0.04] rounded-2xl space-y-2">
+              <div className="p-5 bg-[#0D0D0D] border border-white/[0.04] rounded-2xl space-y-2">
                 <span className="text-xs font-bold text-white block uppercase tracking-wide">Fake or Illegal Tasks</span>
                 <span className="text-[11px] text-neutral-500 leading-normal block">Posting spoof work, phantom listings, hazardous materials transfers, or other activities violating spatial local laws.</span>
               </div>
-              <div className="p-5 bg-black border border-white/[0.04] rounded-2xl space-y-2">
+              <div className="p-5 bg-[#0D0D0D] border border-white/[0.04] rounded-2xl space-y-2">
                 <span className="text-xs font-bold text-white block uppercase tracking-wide">Abuse & Platform Misuse</span>
                 <span className="text-[11px] text-neutral-500 leading-normal block">Initiating harassment, spamming text boxes, manipulating matching channels, or bypassing platform safety systems.</span>
               </div>

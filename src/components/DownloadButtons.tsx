@@ -8,7 +8,7 @@ export default function DownloadButtons() {
         href="#download"
         whileHover={{ scale: 1.03, y: -2 }}
         whileTap={{ scale: 0.98 }}
-        className="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-3.5 rounded-2xl bg-white text-black border border-neutral-200/50 shadow-[0_4px_24px_rgba(255,255,255,0.06)] hover:bg-neutral-50 hover:shadow-[0_8px_32px_rgba(255,255,255,0.12)] transition-all duration-300"
+        className="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-3.5 rounded-2xl bg-white text-[#0D0D0D] border border-neutral-200/50 shadow-[0_4px_24px_rgba(255,255,255,0.06)] hover:bg-neutral-50 hover:shadow-[0_8px_32px_rgba(255,255,255,0.12)] transition-all duration-300"
         id="app-store-download-btn"
       >
         <svg className="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="currentColor">
@@ -25,7 +25,7 @@ export default function DownloadButtons() {
         href="#download"
         whileHover={{ scale: 1.03, y: -2 }}
         whileTap={{ scale: 0.98 }}
-        className="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-3.5 rounded-2xl bg-neutral-900 text-white border border-white/10 shadow-[0_4px_24px_rgba(0,0,0,0.5)] hover:border-white/20 hover:shadow-[0_8px_32px_rgba(0,0,0,0.4)] transition-all duration-300"
+        className="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-3.5 rounded-2xl bg-[#161616] text-white border border-white/10 shadow-[0_4px_24px_rgba(0,0,0,0.5)] hover:border-white/20 hover:shadow-[0_8px_32px_rgba(0,0,0,0.4)] transition-all duration-300"
         id="google-play-download-btn"
       >
         <svg className="w-5 h-5 shrink-0" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -2,7 +2,7 @@ export default function SEOContent() {
   return (
     <section 
       id="seo-content-block" 
-      className="w-full py-12 border-t border-white/[0.04] bg-neutral-950/60 relative z-20 text-neutral-600 text-left font-mono"
+      className="w-full py-12 border-t border-white/[0.04] bg-transparent relative z-20 text-neutral-600 text-left font-mono"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-4">
         <div className="text-[10px] leading-relaxed space-y-3 font-medium opacity-60">
